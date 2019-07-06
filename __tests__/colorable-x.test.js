@@ -4,24 +4,24 @@ import colorable, {Colorable, minimums} from '../src/colorable-x';
 
 const colorsCSS = Object.freeze({...colors});
 const primaryColors = Object.freeze({
-  red: 'red',
-  green: 'green',
   blue: 'blue',
+  green: 'green',
+  red: 'red',
 });
 
 const primaryColorsNull = Object.freeze(
   Object.create(null, {
-    red: {
+    blue: {
       enumerable: true,
-      value: 'red',
+      value: 'blue',
     },
     green: {
       enumerable: true,
       value: 'green',
     },
-    blue: {
+    red: {
       enumerable: true,
-      value: 'blue',
+      value: 'red',
     },
   }),
 );

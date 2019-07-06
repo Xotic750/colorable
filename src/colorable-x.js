@@ -32,9 +32,9 @@ Object.defineProperties(Colorable.prototype, {
  */
 export const minimums = Object.freeze({
   aa: 4.5,
-  aaLarge: 3,
   aaa: 7,
   aaaLarge: 4.5,
+  aaLarge: 3,
 });
 
 /**
@@ -54,8 +54,8 @@ const getOptions = function getOptions(options) {
   return Object.freeze(
     assign(
       {
-        threshold: 0,
         compact: false,
+        threshold: 0,
         uniq: true,
       },
       options,

@@ -7534,7 +7534,7 @@ Array [
           "aaa": false,
           "aaaLarge": false,
         },
-        "contrast": 1.28483997166146,
+        "contrast": 1.6725321577860943,
         "hex": "#008000",
         "name": "green",
       },
@@ -7546,12 +7546,12 @@ Array [
           "aaaLarge": false,
         },
         "contrast": 2.148936170212766,
-        "hex": "#0000FF",
-        "name": "blue",
+        "hex": "#FF0000",
+        "name": "red",
       },
     ],
-    "hex": "#FF0000",
-    "name": "red",
+    "hex": "#0000FF",
+    "name": "blue",
   },
   Object {
     "combinations": Array [
@@ -7562,9 +7562,9 @@ Array [
           "aaa": false,
           "aaaLarge": false,
         },
-        "contrast": 1.28483997166146,
-        "hex": "#FF0000",
-        "name": "red",
+        "contrast": 1.6725321577860943,
+        "hex": "#0000FF",
+        "name": "blue",
       },
       Object {
         "accessibility": Object {
@@ -7573,9 +7573,9 @@ Array [
           "aaa": false,
           "aaaLarge": false,
         },
-        "contrast": 1.6725321577860943,
-        "hex": "#0000FF",
-        "name": "blue",
+        "contrast": 1.28483997166146,
+        "hex": "#FF0000",
+        "name": "red",
       },
     ],
     "hex": "#008000",
@@ -7591,8 +7591,8 @@ Array [
           "aaaLarge": false,
         },
         "contrast": 2.148936170212766,
-        "hex": "#FF0000",
-        "name": "red",
+        "hex": "#0000FF",
+        "name": "blue",
       },
       Object {
         "accessibility": Object {
@@ -7601,13 +7601,13 @@ Array [
           "aaa": false,
           "aaaLarge": false,
         },
-        "contrast": 1.6725321577860943,
+        "contrast": 1.28483997166146,
         "hex": "#008000",
         "name": "green",
       },
     ],
-    "hex": "#0000FF",
-    "name": "blue",
+    "hex": "#FF0000",
+    "name": "red",
   },
 ]
 `;
@@ -7616,9 +7616,9 @@ exports[`colorable-x primaryColors null object no user options 1`] = `
 Array [
   Object {
     "color": Array [
+      0,
+      0,
       255,
-      0,
-      0,
     ],
     "model": "rgb",
     "valpha": 1,
@@ -7634,9 +7634,9 @@ Array [
   },
   Object {
     "color": Array [
-      0,
-      0,
       255,
+      0,
+      0,
     ],
     "model": "rgb",
     "valpha": 1,
@@ -7648,9 +7648,9 @@ exports[`colorable-x primaryColors null object threshold 3 1`] = `
 Array [
   Object {
     "color": Array [
+      0,
+      0,
       255,
-      0,
-      0,
     ],
     "model": "rgb",
     "valpha": 1,
@@ -7666,9 +7666,9 @@ Array [
   },
   Object {
     "color": Array [
-      0,
-      0,
       255,
+      0,
+      0,
     ],
     "model": "rgb",
     "valpha": 1,
@@ -7680,9 +7680,9 @@ exports[`colorable-x primaryColors null object uniq false 1`] = `
 Array [
   Object {
     "color": Array [
+      0,
+      0,
       255,
-      0,
-      0,
     ],
     "model": "rgb",
     "valpha": 1,
@@ -7698,9 +7698,9 @@ Array [
   },
   Object {
     "color": Array [
-      0,
-      0,
       255,
+      0,
+      0,
     ],
     "model": "rgb",
     "valpha": 1,
@@ -7719,7 +7719,7 @@ Array [
           "aaa": false,
           "aaaLarge": false,
         },
-        "contrast": 1.28483997166146,
+        "contrast": 1.6725321577860943,
         "hex": "#008000",
         "name": "green",
       },
@@ -7731,12 +7731,12 @@ Array [
           "aaaLarge": false,
         },
         "contrast": 2.148936170212766,
-        "hex": "#0000FF",
-        "name": "blue",
+        "hex": "#FF0000",
+        "name": "red",
       },
     ],
-    "hex": "#FF0000",
-    "name": "red",
+    "hex": "#0000FF",
+    "name": "blue",
   },
   Object {
     "combinations": Array [
@@ -7747,9 +7747,9 @@ Array [
           "aaa": false,
           "aaaLarge": false,
         },
-        "contrast": 1.28483997166146,
-        "hex": "#FF0000",
-        "name": "red",
+        "contrast": 1.6725321577860943,
+        "hex": "#0000FF",
+        "name": "blue",
       },
       Object {
         "accessibility": Object {
@@ -7758,9 +7758,9 @@ Array [
           "aaa": false,
           "aaaLarge": false,
         },
-        "contrast": 1.6725321577860943,
-        "hex": "#0000FF",
-        "name": "blue",
+        "contrast": 1.28483997166146,
+        "hex": "#FF0000",
+        "name": "red",
       },
     ],
     "hex": "#008000",
@@ -7776,8 +7776,8 @@ Array [
           "aaaLarge": false,
         },
         "contrast": 2.148936170212766,
-        "hex": "#FF0000",
-        "name": "red",
+        "hex": "#0000FF",
+        "name": "blue",
       },
       Object {
         "accessibility": Object {
@@ -7786,13 +7786,13 @@ Array [
           "aaa": false,
           "aaaLarge": false,
         },
-        "contrast": 1.6725321577860943,
+        "contrast": 1.28483997166146,
         "hex": "#008000",
         "name": "green",
       },
     ],
-    "hex": "#0000FF",
-    "name": "blue",
+    "hex": "#FF0000",
+    "name": "red",
   },
 ]
 `;
@@ -7801,9 +7801,9 @@ exports[`colorable-x primaryColors object no user options 1`] = `
 Array [
   Object {
     "color": Array [
+      0,
+      0,
       255,
-      0,
-      0,
     ],
     "model": "rgb",
     "valpha": 1,
@@ -7819,9 +7819,9 @@ Array [
   },
   Object {
     "color": Array [
-      0,
-      0,
       255,
+      0,
+      0,
     ],
     "model": "rgb",
     "valpha": 1,
@@ -7833,9 +7833,9 @@ exports[`colorable-x primaryColors object threshold 3 1`] = `
 Array [
   Object {
     "color": Array [
+      0,
+      0,
       255,
-      0,
-      0,
     ],
     "model": "rgb",
     "valpha": 1,
@@ -7851,9 +7851,9 @@ Array [
   },
   Object {
     "color": Array [
-      0,
-      0,
       255,
+      0,
+      0,
     ],
     "model": "rgb",
     "valpha": 1,
@@ -7865,9 +7865,9 @@ exports[`colorable-x primaryColors object uniq false 1`] = `
 Array [
   Object {
     "color": Array [
+      0,
+      0,
       255,
-      0,
-      0,
     ],
     "model": "rgb",
     "valpha": 1,
@@ -7883,9 +7883,9 @@ Array [
   },
   Object {
     "color": Array [
-      0,
-      0,
       255,
+      0,
+      0,
     ],
     "model": "rgb",
     "valpha": 1,
