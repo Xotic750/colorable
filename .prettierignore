@@ -1,0 +1,9 @@
+!.eslintrc.js
+!jest.config.js
+dist/
+node_modules/
+__tests__/coverage/
+__tests__/__snapshots__/
+package-lock.json
+out*/
+redactor-3_1_6/

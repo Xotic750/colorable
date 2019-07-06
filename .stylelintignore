@@ -1,0 +1,4 @@
+dist/
+node_modules/
+__tests__/
+redactor-3_1_6/
