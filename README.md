@@ -20,6 +20,7 @@ alt="devDependency status" height="18"/>
 <img src="https://badge.fury.io/js/%40prorenata%2Fstyle-config.svg"
 alt="npm version" height="18">
 </a>
+
 Take a set color palette and get contrast values for every possible combination – 
 useful for finding safe color combinations with predefined colors
 and includes pass/fail scores for the
