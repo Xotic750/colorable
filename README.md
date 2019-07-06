@@ -1,4 +1,4 @@
-# Colorable-X
+# colorable-x
 <a href="https://travis-ci.org/Xotic750/colorable-x"
 title="Travis status">
 <img
