@@ -16,8 +16,8 @@ title="devDependency status">
 <img src="https://david-dm.org/Xotic750/colorable-x/dev-status.svg"
 alt="devDependency status" height="18"/>
 </a>
-<a href="https://badge.fury.io/js/%40prorenata%2Fstyle-config" title="npm version">
-<img src="https://badge.fury.io/js/%40prorenata%2Fstyle-config.svg"
+<a href="https://badge.fury.io/js/colorable-x" title="npm version">
+<img src="https://badge.fury.io/js/colorable-x.svg"
 alt="npm version" height="18">
 </a>
 
