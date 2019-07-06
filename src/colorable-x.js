@@ -23,6 +23,10 @@ Object.defineProperties(Colorable.prototype, {
     value: Colorable,
     writable: true,
   },
+  toJSON: {
+    value: undefined,
+    writable: true,
+  },
 });
 
 /**
@@ -112,15 +116,11 @@ export default function colorable(colors, options) {
       const textColorObject = new Color(textColor.value);
       const textProps = {
         combinations: [],
-        hex: textColorObject.hex(),
+        hexColor: textColorObject.hex(),
       };
 
       if (textColor.name) {
         textProps.name = textColor.name;
-      }
-
-      if (opts.compact) {
-        textProps.hex = textColorObject.hex();
       }
 
       colorsArray.forEach((backgroundColor) => {
@@ -130,7 +130,8 @@ export default function colorable(colors, options) {
 
         const backgroundColorObject = new Color(backgroundColor.value);
         const backgroundProps = {
-          contrast: textColorObject.contrast(backgroundColorObject),
+          contrastRatio: textColorObject.contrast(backgroundColorObject),
+          hexColor: backgroundColorObject.hex(),
         };
 
         if (backgroundColor.name) {
@@ -143,7 +144,7 @@ export default function colorable(colors, options) {
 
         backgroundProps.accessibility = Object.freeze(
           minimumsKeys.reduce((minimum, key) => {
-            minimum[key] = backgroundProps.contrast >= minimums[key];
+            minimum[key] = backgroundProps.contrastRatio >= minimums[key];
 
             return minimum;
           }, {}),
@@ -151,7 +152,7 @@ export default function colorable(colors, options) {
 
         Object.freeze(backgroundProps);
 
-        if (backgroundProps.contrast > opts.threshold) {
+        if (backgroundProps.contrastRatio > opts.threshold) {
           const combination = opts.compact ? backgroundProps : new Colorable(backgroundProps, backgroundColorObject);
 
           textProps.combinations.push(combination);

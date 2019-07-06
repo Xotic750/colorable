@@ -137,7 +137,7 @@ describe('colorable-x', () => {
       expect(everyColorable).toBe(true);
       expect(everyColorable).toBe(true);
       const everyContrast = actual.every((item) => {
-        return item.combinations.every((combination) => combination.contrast > 0);
+        return item.combinations.every((combination) => combination.contrastRatio > 0);
       });
       expect(everyContrast).toBe(true);
       expect(actual).toMatchSnapshot();
@@ -178,7 +178,7 @@ describe('colorable-x', () => {
       expect(everyColorable).toBe(true);
       expect(everyColorable).toBe(true);
       const everyContrast = actual.every((item) => {
-        return item.combinations.every((combination) => combination.contrast > 3);
+        return item.combinations.every((combination) => combination.contrastRatio > 3);
       });
       expect(everyContrast).toBe(true);
       expect(actual).toMatchSnapshot();
@@ -231,8 +231,11 @@ describe('colorable-x', () => {
 
   describe('bassColors array', () => {
     it('no user options', () => {
-      expect.assertions(1);
-      expect(colorable(bassColors)).toMatchSnapshot();
+      expect.assertions(2);
+      const actual = colorable(bassColors);
+      expect(actual).toMatchSnapshot();
+      const everyActual = actual.every((item) => Array.isArray(item.combinations));
+      expect(everyActual).toBe(true);
     });
 
     it('compact true', () => {

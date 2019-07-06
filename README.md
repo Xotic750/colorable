@@ -1,4 +1,5 @@
 # colorable-x
+
 <a href="https://travis-ci.org/Xotic750/colorable-x"
 title="Travis status">
 <img
@@ -21,7 +22,7 @@ alt="devDependency status" height="18"/>
 alt="npm version" height="18">
 </a>
 
-Take a set color palette and get contrast values for every possible combination – 
+Take a set color palette and get contrast values for every possible combination –
 useful for finding safe color combinations with predefined colors
 and includes pass/fail scores for the
 [WCAG accessibility guidelines](http://www.w3.org/TR/WCAG20/#visual-audio-contrast).
@@ -34,18 +35,18 @@ npm i --save colorable-x
 
 ## Usage
 
-Pass an array of color strings or an object with color strings as values. 
+Pass an array of color strings or an object with color strings as values.
 
 ```js
-var colorable = require('colorable-x')
+import colorable from 'colorable-x';
 
-var colors = {
+const colors = {
   red: 'red',
   green: 'green',
-  blue: 'blue'
-}
+  blue: 'blue',
+};
 
-var result = colorable(colors, { compact: true, threshold: 0 })
+const result = colorable(colors, {compact: true, threshold: 0});
 ```
 
 Returns an array of colors with combinations for all other colors and their
@@ -55,44 +56,127 @@ values.
 ```json
 [
   {
-    "hex": "#FF0000",
-    "name": "red",
     "combinations": [
       {
-        "hex": "#008000",
+        "contrastRatio": 1.6725321577860943,
+        "hexColor": "#008000",
         "name": "green",
-        "contrast": 1.28483997166146,
         "accessibility": {
           "aa": false,
-          "aaLarge": false,
           "aaa": false,
-          "aaaLarge": false
-        }
+          "aaaLarge": false,
+          "aaLarge": false
+        },
+        "model": "rgb",
+        "color": [0, 128, 0],
+        "valpha": 1
       },
       {
-        "hex": "#0000FF",
-        "name": "blue",
-        "contrast": 2.148936170212766,
+        "contrastRatio": 2.148936170212766,
+        "hexColor": "#FF0000",
+        "name": "red",
         "accessibility": {
           "aa": false,
-          "aaLarge": false,
           "aaa": false,
-          "aaaLarge": false
-        }
+          "aaaLarge": false,
+          "aaLarge": false
+        },
+        "model": "rgb",
+        "color": [255, 0, 0],
+        "valpha": 1
       }
-    ]
+    ],
+    "hexColor": "#0000FF",
+    "name": "blue",
+    "model": "rgb",
+    "color": [0, 0, 255],
+    "valpha": 1
   },
-  ...
+  {
+    "combinations": [
+      {
+        "contrastRatio": 1.6725321577860943,
+        "hexColor": "#0000FF",
+        "name": "blue",
+        "accessibility": {
+          "aa": false,
+          "aaa": false,
+          "aaaLarge": false,
+          "aaLarge": false
+        },
+        "model": "rgb",
+        "color": [0, 0, 255],
+        "valpha": 1
+      },
+      {
+        "contrastRatio": 1.28483997166146,
+        "hexColor": "#FF0000",
+        "name": "red",
+        "accessibility": {
+          "aa": false,
+          "aaa": false,
+          "aaaLarge": false,
+          "aaLarge": false
+        },
+        "model": "rgb",
+        "color": [255, 0, 0],
+        "valpha": 1
+      }
+    ],
+    "hexColor": "#008000",
+    "name": "green",
+    "model": "rgb",
+    "color": [0, 128, 0],
+    "valpha": 1
+  },
+  {
+    "combinations": [
+      {
+        "contrastRatio": 2.148936170212766,
+        "hexColor": "#0000FF",
+        "name": "blue",
+        "accessibility": {
+          "aa": false,
+          "aaa": false,
+          "aaaLarge": false,
+          "aaLarge": false
+        },
+        "model": "rgb",
+        "color": [0, 0, 255],
+        "valpha": 1
+      },
+      {
+        "contrastRatio": 1.28483997166146,
+        "hexColor": "#008000",
+        "name": "green",
+        "accessibility": {
+          "aa": false,
+          "aaa": false,
+          "aaaLarge": false,
+          "aaLarge": false
+        },
+        "model": "rgb",
+        "color": [0, 128, 0],
+        "valpha": 1
+      }
+    ],
+    "hexColor": "#FF0000",
+    "name": "red",
+    "model": "rgb",
+    "color": [255, 0, 0],
+    "valpha": 1
+  }
 ]
 ```
 
 ### Accessibility object
 
 Each key is a boolean value indicating if the color contrast meets the following criteria:
+
 - `aa` - greater than 4.5 (for normal sized text)
 - `aaLarge` - greater than 3 ([for bold text or text larger than 24px](http://www.w3.org/TR/WCAG20/#larger-scaledef))
-- `aaa` - greater than 7 
-- `aaaLarge` - greater than 4.5 
+- `aaa` - greater than 7
+- `aaaLarge` - greater than 4.5
 
 ---
 
@@ -117,8 +201,6 @@ _Type: Boolean (default: true)_
 
 When set to `true`, the array of colors is passed through lodash.uniq to remove duplicates.
 
-
 ---
 
 MIT License
-
