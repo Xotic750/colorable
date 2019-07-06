@@ -1,0 +1,7914 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`colorable-x bassColors array compact true 1`] = `
+Array [
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3354449362745746,
+        "hex": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.4966838178432673,
+        "hex": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.044317205496593,
+        "hex": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.801834462795621,
+        "hex": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.006996885950017,
+        "hex": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.807984261089612,
+        "hex": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.8866606655882596,
+        "hex": "#EEEEEE",
+      },
+    ],
+    "hex": "#0076DF",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3354449362745746,
+        "hex": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.869552049677274,
+        "hex": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.279627652780036,
+        "hex": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.7416956456200046,
+        "hex": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.326165904688667,
+        "hex": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.102658211369544,
+        "hex": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.910386313965656,
+        "hex": "#EEEEEE",
+      },
+    ],
+    "hex": "#FF4919",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.4966838178432673,
+        "hex": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.869552049677274,
+        "hex": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.2193443093352496,
+        "hex": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 6.9952947635374105,
+        "hex": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.4793361853228135,
+        "hex": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1246855693226137,
+        "hex": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5567292253072351,
+        "hex": "#EEEEEE",
+      },
+    ],
+    "hex": "#00DF3F",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.044317205496593,
+        "hex": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.279627652780036,
+        "hex": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.2193443093352496,
+        "hex": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.52967286204201,
+        "hex": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.023164468502338,
+        "hex": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0841646257359272,
+        "hex": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.276693722510517,
+        "hex": "#EEEEEE",
+      },
+    ],
+    "hex": "#FFCF00",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.801834462795621,
+        "hex": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.7416956456200046,
+        "hex": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 6.9952947635374105,
+        "hex": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.52967286204201,
+        "hex": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.8214385789826286,
+        "hex": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.867507073708571,
+        "hex": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 10.88977979803735,
+        "hex": "#EEEEEE",
+      },
+    ],
+    "hex": "#333333",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.006996885950017,
+        "hex": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.326165904688667,
+        "hex": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.4793361853228135,
+        "hex": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.023164468502338,
+        "hex": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.8214385789826286,
+        "hex": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.7884736291319454,
+        "hex": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.8596550990537786,
+        "hex": "#EEEEEE",
+      },
+    ],
+    "hex": "#777777",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.807984261089612,
+        "hex": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.102658211369544,
+        "hex": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1246855693226137,
+        "hex": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0841646257359272,
+        "hex": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.867507073708571,
+        "hex": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.7884736291319454,
+        "hex": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3841461718450223,
+        "hex": "#EEEEEE",
+      },
+    ],
+    "hex": "#CCCCCC",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.8866606655882596,
+        "hex": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.910386313965656,
+        "hex": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5567292253072351,
+        "hex": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.276693722510517,
+        "hex": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 10.88977979803735,
+        "hex": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.8596550990537786,
+        "hex": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3841461718450223,
+        "hex": "#CCCCCC",
+      },
+    ],
+    "hex": "#EEEEEE",
+  },
+]
+`;
+
+exports[`colorable-x bassColors array no user options 1`] = `
+Array [
+  Object {
+    "color": Array [
+      0,
+      118,
+      223,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      73,
+      25,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      223,
+      63,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      207,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      51,
+      51,
+      51,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      119,
+      119,
+      119,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      204,
+      204,
+      204,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      238,
+      238,
+      238,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x bassColors array threshold 3 1`] = `
+Array [
+  Object {
+    "color": Array [
+      0,
+      118,
+      223,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      73,
+      25,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      223,
+      63,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      207,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      51,
+      51,
+      51,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      119,
+      119,
+      119,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      204,
+      204,
+      204,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      238,
+      238,
+      238,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x bassColors array uniq false 1`] = `
+Array [
+  Object {
+    "color": Array [
+      0,
+      118,
+      223,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      73,
+      25,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      223,
+      63,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      207,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      51,
+      51,
+      51,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      119,
+      119,
+      119,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      204,
+      204,
+      204,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      238,
+      238,
+      238,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x bassColorsRepeat array compact true 1`] = `
+Array [
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3354449362745746,
+        "hex": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.4966838178432673,
+        "hex": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.044317205496593,
+        "hex": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.801834462795621,
+        "hex": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.006996885950017,
+        "hex": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.807984261089612,
+        "hex": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.8866606655882596,
+        "hex": "#EEEEEE",
+      },
+    ],
+    "hex": "#0076DF",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3354449362745746,
+        "hex": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.869552049677274,
+        "hex": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.279627652780036,
+        "hex": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.7416956456200046,
+        "hex": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.326165904688667,
+        "hex": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.102658211369544,
+        "hex": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.910386313965656,
+        "hex": "#EEEEEE",
+      },
+    ],
+    "hex": "#FF4919",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.4966838178432673,
+        "hex": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.869552049677274,
+        "hex": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.2193443093352496,
+        "hex": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 6.9952947635374105,
+        "hex": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.4793361853228135,
+        "hex": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1246855693226137,
+        "hex": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5567292253072351,
+        "hex": "#EEEEEE",
+      },
+    ],
+    "hex": "#00DF3F",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.044317205496593,
+        "hex": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.279627652780036,
+        "hex": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.2193443093352496,
+        "hex": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.52967286204201,
+        "hex": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.023164468502338,
+        "hex": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0841646257359272,
+        "hex": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.276693722510517,
+        "hex": "#EEEEEE",
+      },
+    ],
+    "hex": "#FFCF00",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.801834462795621,
+        "hex": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.7416956456200046,
+        "hex": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 6.9952947635374105,
+        "hex": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.52967286204201,
+        "hex": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.8214385789826286,
+        "hex": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.867507073708571,
+        "hex": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 10.88977979803735,
+        "hex": "#EEEEEE",
+      },
+    ],
+    "hex": "#333333",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.006996885950017,
+        "hex": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.326165904688667,
+        "hex": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.4793361853228135,
+        "hex": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.023164468502338,
+        "hex": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.8214385789826286,
+        "hex": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.7884736291319454,
+        "hex": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.8596550990537786,
+        "hex": "#EEEEEE",
+      },
+    ],
+    "hex": "#777777",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.807984261089612,
+        "hex": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.102658211369544,
+        "hex": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1246855693226137,
+        "hex": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0841646257359272,
+        "hex": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.867507073708571,
+        "hex": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.7884736291319454,
+        "hex": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3841461718450223,
+        "hex": "#EEEEEE",
+      },
+    ],
+    "hex": "#CCCCCC",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.8866606655882596,
+        "hex": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.910386313965656,
+        "hex": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5567292253072351,
+        "hex": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.276693722510517,
+        "hex": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 10.88977979803735,
+        "hex": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.8596550990537786,
+        "hex": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3841461718450223,
+        "hex": "#CCCCCC",
+      },
+    ],
+    "hex": "#EEEEEE",
+  },
+]
+`;
+
+exports[`colorable-x bassColorsRepeat array no user options 1`] = `
+Array [
+  Object {
+    "color": Array [
+      0,
+      118,
+      223,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      73,
+      25,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      223,
+      63,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      207,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      51,
+      51,
+      51,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      119,
+      119,
+      119,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      204,
+      204,
+      204,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      238,
+      238,
+      238,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x bassColorsRepeat array threshold 3 1`] = `
+Array [
+  Object {
+    "color": Array [
+      0,
+      118,
+      223,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      73,
+      25,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      223,
+      63,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      207,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      51,
+      51,
+      51,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      119,
+      119,
+      119,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      204,
+      204,
+      204,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      238,
+      238,
+      238,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x bassColorsRepeat array uniq false 1`] = `
+Array [
+  Object {
+    "color": Array [
+      0,
+      118,
+      223,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      73,
+      25,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      223,
+      63,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      207,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      51,
+      51,
+      51,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      119,
+      119,
+      119,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      204,
+      204,
+      204,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      238,
+      238,
+      238,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      118,
+      223,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      73,
+      25,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      223,
+      63,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      207,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      51,
+      51,
+      51,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      119,
+      119,
+      119,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      204,
+      204,
+      204,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      238,
+      238,
+      238,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x bassdockColors array compact true 1`] = `
+Array [
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.10997417054227,
+        "hex": "#667680",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 5.911704491113789,
+        "hex": "#C3C9C9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 9.316839001536513,
+        "hex": "#F3F9F9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.8439415085088933,
+        "hex": "#0089FF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.1008502097951083,
+        "hex": "#F95C10",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 6.3825347183762435,
+        "hex": "#00EF60",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.4646981772995575,
+        "hex": "#FFDF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.431284593914358,
+        "hex": "#00B9FF",
+      },
+    ],
+    "hex": "#304650",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.10997417054227,
+        "hex": "#304650",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.8017899809619293,
+        "hex": "#C3C9C9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.415617561395103,
+        "hex": "#F3F9F9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3478560772040122,
+        "hex": "#0089FF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4696152460473866,
+        "hex": "#F95C10",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.0249350003824516,
+        "hex": "#00EF60",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.5378149559911947,
+        "hex": "#FFDF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.1001605876414615,
+        "hex": "#00B9FF",
+      },
+    ],
+    "hex": "#667680",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 5.911704491113789,
+        "hex": "#304650",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.8017899809619293,
+        "hex": "#667680",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5759987691436828,
+        "hex": "#F3F9F9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.078701152406385,
+        "hex": "#0089FF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.9064785755982747,
+        "hex": "#F95C10",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0796437352323998,
+        "hex": "#00EF60",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.2626981251380478,
+        "hex": "#FFDF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.334083687432882,
+        "hex": "#00B9FF",
+      },
+    ],
+    "hex": "#C3C9C9",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 9.316839001536513,
+        "hex": "#304650",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.415617561395103,
+        "hex": "#667680",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5759987691436828,
+        "hex": "#C3C9C9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.2760304576100174,
+        "hex": "#0089FF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.0046078885416825,
+        "hex": "#F95C10",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4597396508807043,
+        "hex": "#00EF60",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.2481199882762022,
+        "hex": "#FFDF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.1025142493288875,
+        "hex": "#00B9FF",
+      },
+    ],
+    "hex": "#F3F9F9",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.8439415085088933,
+        "hex": "#304650",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3478560772040122,
+        "hex": "#667680",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.078701152406385,
+        "hex": "#C3C9C9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.2760304576100174,
+        "hex": "#F3F9F9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.090335437813176,
+        "hex": "#F95C10",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.2442566766159233,
+        "hex": "#00EF60",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.6247720478658416,
+        "hex": "#FFDF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5581489916920708,
+        "hex": "#00B9FF",
+      },
+    ],
+    "hex": "#0089FF",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.1008502097951083,
+        "hex": "#304650",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4696152460473866,
+        "hex": "#667680",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.9064785755982747,
+        "hex": "#C3C9C9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.0046078885416825,
+        "hex": "#F3F9F9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.090335437813176,
+        "hex": "#0089FF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.0583176504994665,
+        "hex": "#00EF60",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.407306923023797,
+        "hex": "#FFDF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4290547089042267,
+        "hex": "#00B9FF",
+      },
+    ],
+    "hex": "#F95C10",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 6.3825347183762435,
+        "hex": "#304650",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.0249350003824516,
+        "hex": "#667680",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0796437352323998,
+        "hex": "#C3C9C9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4597396508807043,
+        "hex": "#F3F9F9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.2442566766159233,
+        "hex": "#0089FF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.0583176504994665,
+        "hex": "#F95C10",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1695507359807396,
+        "hex": "#FFDF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4403350954126501,
+        "hex": "#00B9FF",
+      },
+    ],
+    "hex": "#00EF60",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.4646981772995575,
+        "hex": "#304650",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.5378149559911947,
+        "hex": "#667680",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.2626981251380478,
+        "hex": "#C3C9C9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.2481199882762022,
+        "hex": "#F3F9F9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.6247720478658416,
+        "hex": "#0089FF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.407306923023797,
+        "hex": "#F95C10",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1695507359807396,
+        "hex": "#00EF60",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.6845449708987534,
+        "hex": "#00B9FF",
+      },
+    ],
+    "hex": "#FFDF00",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.431284593914358,
+        "hex": "#304650",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.1001605876414615,
+        "hex": "#667680",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.334083687432882,
+        "hex": "#C3C9C9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.1025142493288875,
+        "hex": "#F3F9F9",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5581489916920708,
+        "hex": "#0089FF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4290547089042267,
+        "hex": "#F95C10",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4403350954126501,
+        "hex": "#00EF60",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.6845449708987534,
+        "hex": "#FFDF00",
+      },
+    ],
+    "hex": "#00B9FF",
+  },
+]
+`;
+
+exports[`colorable-x bassdockColors array no user options 1`] = `
+Array [
+  Object {
+    "color": Array [
+      48,
+      70,
+      80,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      102,
+      118,
+      128,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      195,
+      201,
+      201,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      243,
+      249,
+      249,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      137,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      249,
+      92,
+      16,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      239,
+      96,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      223,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      185,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x bassdockColors array threshold 3 1`] = `
+Array [
+  Object {
+    "color": Array [
+      48,
+      70,
+      80,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      102,
+      118,
+      128,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      195,
+      201,
+      201,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      243,
+      249,
+      249,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      137,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      249,
+      92,
+      16,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      239,
+      96,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      223,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      185,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x bassdockColors array uniq false 1`] = `
+Array [
+  Object {
+    "color": Array [
+      48,
+      70,
+      80,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      102,
+      118,
+      128,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      195,
+      201,
+      201,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      243,
+      249,
+      249,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      137,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      249,
+      92,
+      16,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      239,
+      96,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      223,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      185,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x colors object compact true 1`] = `
+Array [
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.9952646641202936,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.15284863814128,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 10.63205708430259,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.2617201515851961,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.2506719961232253,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3715818990210875,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.223750471560343,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 6.129689695312034,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5631758926423327,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.5749544972404705,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1491405634941205,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.4351812784886695,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4911144903074172,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5579776526922824,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.120238651667364,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1470501096757901,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#7FDBFF",
+    "name": "aqua",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.9952646641202936,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.4530867889037786,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.5496219121007844,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.373953257667409,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3308312669636564,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.1838029987549747,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3469427898619402,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.046460123787531,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.9161405176593487,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1935354294610994,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.4419801239412218,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.2299965881715487,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.0087422418534553,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.6665554105982725,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.046466676836074,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.4357186614872015,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#0074D9",
+    "name": "blue",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.15284863814128,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.4530867889037786,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.257152530278589,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4545723584704027,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.5946841456333765,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5812263243856912,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.5636477027043707,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.066604417469114,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.8021051990079928,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.12138142356072,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0032268242588918,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.8073954205328038,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7190293094636346,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3514156161941482,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 13.972800623522025,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0050551657827127,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#01FF70",
+    "name": "lime",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 10.63205708430259,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.5496219121007844,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.257152530278589,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.426636501719274,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.723947826523043,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.75167497609206,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.781137641240105,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7345179956554657,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 6.801574368147764,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.974039835334839,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.217728068957134,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.366022841182933,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.130275477445478,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 16.564507339492103,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1399711791956006,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.195502244628548,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#001F3F",
+    "name": "navy",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.2617201515851961,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.373953257667409,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4545723584704027,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.426636501719274,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7838123559297463,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0870729910256751,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7624751960777312,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.858200677551858,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.2389244086165971,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.833397320910647,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4498938059644995,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.9300486525709872,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1818107909539333,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.965731800121255,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 9.606122749517613,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4472562382559537,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#39CCCC",
+    "name": "teal",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.2506719961232253,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3308312669636564,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.5946841456333765,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.723947826523043,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7838123559297463,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.6409315387798236,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0121063603615528,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.7234931193307608,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4398072582342452,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5883942677557266,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.5863384858654803,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0819796410508775,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5093891252168123,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.5064966735003167,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 5.385164374259968,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.581633559997375,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#3D9970",
+    "name": "olive",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3715818990210875,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.1838029987549747,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5812263243856912,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.75167497609206,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0870729910256751,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.6409315387798236,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.6213034548993812,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.469065755159686,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1396883363348465,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.6064462499774557,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5761403963194283,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7754545173180576,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0871494377197901,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.136893947512097,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.836686063236696,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5732731677014669,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#2ECC40",
+    "name": "green",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.223750471560343,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3469427898619402,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.5636477027043707,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.781137641240105,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7624751960777312,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0121063603615528,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.6213034548993812,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.756464708475588,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.422584932397723,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.607623941157402,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.555401869959169,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.095078476489303,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4913344924318195,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.46455353985494,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 5.450359114780955,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.550753222294882,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#FF4136",
+    "name": "red",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 6.129689695312034,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.046460123787531,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.066604417469114,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7345179956554657,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.858200677551858,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.7234931193307608,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.469065755159686,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.756464708475588,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.9213051609634544,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7146203399353974,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.043875070514973,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.517138970087788,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.110810896920665,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 9.549919563234313,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.9773005248433513,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.031061237286228,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#85144B",
+    "name": "maroon",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5631758926423327,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.9161405176593487,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.8021051990079928,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 6.801574368147764,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.2389244086165971,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4398072582342452,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1396883363348465,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.422584932397723,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.9213051609634544,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.2869815956523643,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7963088261114348,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5578421404467366,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0483272094821228,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.4353931079640647,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.753598752843979,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7930410790979388,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#FF851B",
+    "name": "orange",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.5749544972404705,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1935354294610994,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.12138142356072,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.974039835334839,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.833397320910647,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5883942677557266,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.6064462499774557,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.607623941157402,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7146203399353974,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.2869815956523643,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.108125225424755,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4680445060990164,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.3975050343072155,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 5.569699216092427,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.3903196980613464,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.10065194814564,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#B10DC9",
+    "name": "purple",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1491405634941205,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.4419801239412218,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0032268242588918,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.217728068957134,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4498938059644995,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.5863384858654803,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5761403963194283,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.555401869959169,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.043875070514973,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7963088261114348,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.108125225424755,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.7983655865728028,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7135001456261136,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3557763968883287,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 13.927857873860255,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0018224607632191,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#FFDC00",
+    "name": "yellow",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.4351812784886695,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.2299965881715487,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.8073954205328038,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.366022841182933,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.9300486525709872,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0819796410508775,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7754545173180576,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.095078476489303,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.517138970087788,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5578421404467366,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4680445060990164,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.7983655865728028,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.6331283039081848,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.793958012139969,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.977140206658236,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.7932749525708593,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#F012BE",
+    "name": "fuchsia",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4911144903074172,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.0087422418534553,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7190293094636346,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.130275477445478,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1818107909539333,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5093891252168123,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0871494377197901,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4913344924318195,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.110810896920665,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0483272094821228,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.3975050343072155,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7135001456261136,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.6331283039081848,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.3231230535045992,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.128308544012997,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7103830396462827,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#AAAAAA",
+    "name": "gray",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5579776526922824,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.6665554105982725,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3514156161941482,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 16.564507339492103,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.965731800121255,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.5064966735003167,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.136893947512097,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.46455353985494,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 9.549919563234313,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.4353931079640647,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 5.569699216092427,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3557763968883287,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.793958012139969,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.3231230535045992,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 18.883060964594996,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3582472461753565,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#FFFFFF",
+    "name": "white",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.120238651667364,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.046466676836074,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 13.972800623522025,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1399711791956006,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 9.606122749517613,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 5.385164374259968,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.836686063236696,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 5.450359114780955,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.9773005248433513,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.753598752843979,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.3903196980613464,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 13.927857873860255,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.977140206658236,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.128308544012997,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 18.883060964594996,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 13.902521074691801,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#111111",
+    "name": "black",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.1470501096757901,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.4357186614872015,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0050551657827127,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.195502244628548,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.4472562382559537,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.581633559997375,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.5732731677014669,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.550753222294882,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.031061237286228,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7930410790979388,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.10065194814564,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.0018224607632191,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.7932749525708593,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.7103830396462827,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.3582472461753565,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 13.902521074691801,
+        "hex": "#111111",
+        "name": "black",
+      },
+    ],
+    "hex": "#DDDDDD",
+    "name": "silver",
+  },
+]
+`;
+
+exports[`colorable-x colors object compact true threshold 3 1`] = `
+Array [
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 10.63205708430259,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 6.129689695312034,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.5749544972404705,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.120238651667364,
+        "hex": "#111111",
+        "name": "black",
+      },
+    ],
+    "hex": "#7FDBFF",
+    "name": "aqua",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.4530867889037786,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.5496219121007844,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.4419801239412218,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.6665554105982725,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.046466676836074,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.4357186614872015,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#0074D9",
+    "name": "blue",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.4530867889037786,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.257152530278589,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.066604417469114,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.12138142356072,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 13.972800623522025,
+        "hex": "#111111",
+        "name": "black",
+      },
+    ],
+    "hex": "#01FF70",
+    "name": "lime",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 10.63205708430259,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.5496219121007844,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.257152530278589,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.426636501719274,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.723947826523043,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.75167497609206,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.781137641240105,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 6.801574368147764,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.217728068957134,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.366022841182933,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.130275477445478,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 16.564507339492103,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.195502244628548,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#001F3F",
+    "name": "navy",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.426636501719274,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.858200677551858,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 9.606122749517613,
+        "hex": "#111111",
+        "name": "black",
+      },
+    ],
+    "hex": "#39CCCC",
+    "name": "teal",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.723947826523043,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.5064966735003167,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 5.385164374259968,
+        "hex": "#111111",
+        "name": "black",
+      },
+    ],
+    "hex": "#3D9970",
+    "name": "olive",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.75167497609206,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.469065755159686,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.836686063236696,
+        "hex": "#111111",
+        "name": "black",
+      },
+    ],
+    "hex": "#2ECC40",
+    "name": "green",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.781137641240105,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.46455353985494,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 5.450359114780955,
+        "hex": "#111111",
+        "name": "black",
+      },
+    ],
+    "hex": "#FF4136",
+    "name": "red",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 6.129689695312034,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.066604417469114,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.858200677551858,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.469065755159686,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.9213051609634544,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.043875070514973,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.110810896920665,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 9.549919563234313,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.031061237286228,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#85144B",
+    "name": "maroon",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 6.801574368147764,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.9213051609634544,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.753598752843979,
+        "hex": "#111111",
+        "name": "black",
+      },
+    ],
+    "hex": "#FF851B",
+    "name": "orange",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.5749544972404705,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.12138142356072,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.108125225424755,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 5.569699216092427,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.3903196980613464,
+        "hex": "#111111",
+        "name": "black",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.10065194814564,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#B10DC9",
+    "name": "purple",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.4419801239412218,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.217728068957134,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.043875070514973,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.108125225424755,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 13.927857873860255,
+        "hex": "#111111",
+        "name": "black",
+      },
+    ],
+    "hex": "#FFDC00",
+    "name": "yellow",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.366022841182933,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.793958012139969,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.977140206658236,
+        "hex": "#111111",
+        "name": "black",
+      },
+    ],
+    "hex": "#F012BE",
+    "name": "fuchsia",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.130275477445478,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.110810896920665,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.128308544012997,
+        "hex": "#111111",
+        "name": "black",
+      },
+    ],
+    "hex": "#AAAAAA",
+    "name": "gray",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.6665554105982725,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 16.564507339492103,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.5064966735003167,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.46455353985494,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 9.549919563234313,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 5.569699216092427,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.793958012139969,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 18.883060964594996,
+        "hex": "#111111",
+        "name": "black",
+      },
+    ],
+    "hex": "#FFFFFF",
+    "name": "white",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.120238651667364,
+        "hex": "#7FDBFF",
+        "name": "aqua",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.046466676836074,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 13.972800623522025,
+        "hex": "#01FF70",
+        "name": "lime",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 9.606122749517613,
+        "hex": "#39CCCC",
+        "name": "teal",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 5.385164374259968,
+        "hex": "#3D9970",
+        "name": "olive",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.836686063236696,
+        "hex": "#2ECC40",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 5.450359114780955,
+        "hex": "#FF4136",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.753598752843979,
+        "hex": "#FF851B",
+        "name": "orange",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.3903196980613464,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 13.927857873860255,
+        "hex": "#FFDC00",
+        "name": "yellow",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrast": 4.977140206658236,
+        "hex": "#F012BE",
+        "name": "fuchsia",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 8.128308544012997,
+        "hex": "#AAAAAA",
+        "name": "gray",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 18.883060964594996,
+        "hex": "#FFFFFF",
+        "name": "white",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 13.902521074691801,
+        "hex": "#DDDDDD",
+        "name": "silver",
+      },
+    ],
+    "hex": "#111111",
+    "name": "black",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 3.4357186614872015,
+        "hex": "#0074D9",
+        "name": "blue",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 12.195502244628548,
+        "hex": "#001F3F",
+        "name": "navy",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 7.031061237286228,
+        "hex": "#85144B",
+        "name": "maroon",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 4.10065194814564,
+        "hex": "#B10DC9",
+        "name": "purple",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrast": 13.902521074691801,
+        "hex": "#111111",
+        "name": "black",
+      },
+    ],
+    "hex": "#DDDDDD",
+    "name": "silver",
+  },
+]
+`;
+
+exports[`colorable-x colors object no user options 1`] = `
+Array [
+  Object {
+    "color": Array [
+      127,
+      219,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      116,
+      217,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      1,
+      255,
+      112,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      31,
+      63,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      57,
+      204,
+      204,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      61,
+      153,
+      112,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      46,
+      204,
+      64,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      65,
+      54,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      133,
+      20,
+      75,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      133,
+      27,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      177,
+      13,
+      201,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      220,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      240,
+      18,
+      190,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      170,
+      170,
+      170,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      255,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      17,
+      17,
+      17,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      221,
+      221,
+      221,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x colors object threshold 3 1`] = `
+Array [
+  Object {
+    "color": Array [
+      127,
+      219,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      116,
+      217,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      1,
+      255,
+      112,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      31,
+      63,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      57,
+      204,
+      204,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      61,
+      153,
+      112,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      46,
+      204,
+      64,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      65,
+      54,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      133,
+      20,
+      75,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      133,
+      27,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      177,
+      13,
+      201,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      220,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      240,
+      18,
+      190,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      170,
+      170,
+      170,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      255,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      17,
+      17,
+      17,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      221,
+      221,
+      221,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x colors object uniq false 1`] = `
+Array [
+  Object {
+    "color": Array [
+      127,
+      219,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      116,
+      217,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      1,
+      255,
+      112,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      31,
+      63,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      57,
+      204,
+      204,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      61,
+      153,
+      112,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      46,
+      204,
+      64,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      65,
+      54,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      133,
+      20,
+      75,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      133,
+      27,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      177,
+      13,
+      201,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      220,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      240,
+      18,
+      190,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      170,
+      170,
+      170,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      255,
+      255,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      17,
+      17,
+      17,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      221,
+      221,
+      221,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x empty array matches snapshot 1`] = `Array []`;
+
+exports[`colorable-x empty null object matches snapshot 1`] = `Array []`;
+
+exports[`colorable-x empty object matches snapshot 1`] = `Array []`;
+
+exports[`colorable-x minimums matches snapshot 1`] = `
+Object {
+  "aa": 4.5,
+  "aaLarge": 3,
+  "aaa": 7,
+  "aaaLarge": 4.5,
+}
+`;
+
+exports[`colorable-x primaryColors null object compact true 1`] = `
+Array [
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.28483997166146,
+        "hex": "#008000",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.148936170212766,
+        "hex": "#0000FF",
+        "name": "blue",
+      },
+    ],
+    "hex": "#FF0000",
+    "name": "red",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.28483997166146,
+        "hex": "#FF0000",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.6725321577860943,
+        "hex": "#0000FF",
+        "name": "blue",
+      },
+    ],
+    "hex": "#008000",
+    "name": "green",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.148936170212766,
+        "hex": "#FF0000",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.6725321577860943,
+        "hex": "#008000",
+        "name": "green",
+      },
+    ],
+    "hex": "#0000FF",
+    "name": "blue",
+  },
+]
+`;
+
+exports[`colorable-x primaryColors null object no user options 1`] = `
+Array [
+  Object {
+    "color": Array [
+      255,
+      0,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      128,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      0,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x primaryColors null object threshold 3 1`] = `
+Array [
+  Object {
+    "color": Array [
+      255,
+      0,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      128,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      0,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x primaryColors null object uniq false 1`] = `
+Array [
+  Object {
+    "color": Array [
+      255,
+      0,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      128,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      0,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x primaryColors object compact true 1`] = `
+Array [
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.28483997166146,
+        "hex": "#008000",
+        "name": "green",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.148936170212766,
+        "hex": "#0000FF",
+        "name": "blue",
+      },
+    ],
+    "hex": "#FF0000",
+    "name": "red",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.28483997166146,
+        "hex": "#FF0000",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.6725321577860943,
+        "hex": "#0000FF",
+        "name": "blue",
+      },
+    ],
+    "hex": "#008000",
+    "name": "green",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 2.148936170212766,
+        "hex": "#FF0000",
+        "name": "red",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrast": 1.6725321577860943,
+        "hex": "#008000",
+        "name": "green",
+      },
+    ],
+    "hex": "#0000FF",
+    "name": "blue",
+  },
+]
+`;
+
+exports[`colorable-x primaryColors object no user options 1`] = `
+Array [
+  Object {
+    "color": Array [
+      255,
+      0,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      128,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      0,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x primaryColors object threshold 3 1`] = `
+Array [
+  Object {
+    "color": Array [
+      255,
+      0,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      128,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      0,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x primaryColors object uniq false 1`] = `
+Array [
+  Object {
+    "color": Array [
+      255,
+      0,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      128,
+      0,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Object {
+    "color": Array [
+      0,
+      0,
+      255,
+    ],
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable-x test Colorable is constructor and has correct inheritance 1`] = `
+Object {
+  "color": Array [
+    255,
+    0,
+    0,
+  ],
+  "model": "rgb",
+  "valpha": 1,
+}
+`;
+
+exports[`colorable-x throws a TypeError for non-array or non-object null 1`] = `"Must provide an array or object"`;
+
+exports[`colorable-x throws a TypeError for non-array or non-object number 1`] = `"Must provide an array or object"`;
+
+exports[`colorable-x throws a TypeError for non-array or non-object string 1`] = `"Must provide an array or object"`;
+
+exports[`colorable-x throws a TypeError for non-array or non-object undefined 1`] = `"Must provide an array or object"`;
