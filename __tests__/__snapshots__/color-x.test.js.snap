@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`color-x exceptions 1`] = `"Unable to parse color from string: unknow"`;
+
+exports[`color-x exceptions 2`] = `"Unable to parse color from object: {}"`;
+
+exports[`color-x exceptions 3`] = `"Unable to parse color from string: "`;

@@ -48,6 +48,8 @@
   ],
   "dependencies": {
     "color": "^3.1.2",
+    "color-convert": "^2.0.0",
+    "color-string": "^1.5.3",
     "lodash": "^4.17.11"
   },
   "devDependencies": {

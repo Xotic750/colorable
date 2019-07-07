@@ -1,5 +1,5 @@
 import colors from 'colors.css/js/colors';
-import Color from 'color';
+import Color from 'Src/color-x';
 import colorable, {Colorable, minimums} from '../src/colorable-x';
 
 const colorsCSS = Object.freeze({...colors});
