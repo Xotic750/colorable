@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`colorable-x bassColors array compact true 1`] = `
+exports[`colorable bassColors array compact true 1`] = `
 Array [
   Object {
     "combinations": Array [
@@ -661,1467 +661,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x bassColors array no user options 1`] = `
-Array [
-  Colorable {
-    "color": Array [
-      0,
-      118,
-      223,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          73,
-          25,
-        ],
-        "contrastRatio": 1.3354449362745746,
-        "hexColor": "#FF4919",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          223,
-          63,
-        ],
-        "contrastRatio": 2.4966838178432673,
-        "hexColor": "#00DF3F",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          207,
-          0,
-        ],
-        "contrastRatio": 3.044317205496593,
-        "hexColor": "#FFCF00",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          51,
-          51,
-          51,
-        ],
-        "contrastRatio": 2.801834462795621,
-        "hexColor": "#333333",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          119,
-          119,
-          119,
-        ],
-        "contrastRatio": 1.006996885950017,
-        "hexColor": "#777777",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          204,
-          204,
-          204,
-        ],
-        "contrastRatio": 2.807984261089612,
-        "hexColor": "#CCCCCC",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          238,
-          238,
-          238,
-        ],
-        "contrastRatio": 3.8866606655882596,
-        "hexColor": "#EEEEEE",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#0076DF",
-    "model": "rgb",
-    "valpha": 1,
-  },
-  Colorable {
-    "color": Array [
-      255,
-      73,
-      25,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          118,
-          223,
-        ],
-        "contrastRatio": 1.3354449362745746,
-        "hexColor": "#0076DF",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          223,
-          63,
-        ],
-        "contrastRatio": 1.869552049677274,
-        "hexColor": "#00DF3F",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          207,
-          0,
-        ],
-        "contrastRatio": 2.279627652780036,
-        "hexColor": "#FFCF00",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          51,
-          51,
-          51,
-        ],
-        "contrastRatio": 3.7416956456200046,
-        "hexColor": "#333333",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          119,
-          119,
-          119,
-        ],
-        "contrastRatio": 1.326165904688667,
-        "hexColor": "#777777",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          204,
-          204,
-          204,
-        ],
-        "contrastRatio": 2.102658211369544,
-        "hexColor": "#CCCCCC",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          238,
-          238,
-          238,
-        ],
-        "contrastRatio": 2.910386313965656,
-        "hexColor": "#EEEEEE",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#FF4919",
-    "model": "rgb",
-    "valpha": 1,
-  },
-  Colorable {
-    "color": Array [
-      0,
-      223,
-      63,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          118,
-          223,
-        ],
-        "contrastRatio": 2.4966838178432673,
-        "hexColor": "#0076DF",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          73,
-          25,
-        ],
-        "contrastRatio": 1.869552049677274,
-        "hexColor": "#FF4919",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          207,
-          0,
-        ],
-        "contrastRatio": 1.2193443093352496,
-        "hexColor": "#FFCF00",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          51,
-          51,
-          51,
-        ],
-        "contrastRatio": 6.9952947635374105,
-        "hexColor": "#333333",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          119,
-          119,
-          119,
-        ],
-        "contrastRatio": 2.4793361853228135,
-        "hexColor": "#777777",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          204,
-          204,
-          204,
-        ],
-        "contrastRatio": 1.1246855693226137,
-        "hexColor": "#CCCCCC",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          238,
-          238,
-          238,
-        ],
-        "contrastRatio": 1.5567292253072351,
-        "hexColor": "#EEEEEE",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#00DF3F",
-    "model": "rgb",
-    "valpha": 1,
-  },
-  Colorable {
-    "color": Array [
-      255,
-      207,
-      0,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          118,
-          223,
-        ],
-        "contrastRatio": 3.044317205496593,
-        "hexColor": "#0076DF",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          73,
-          25,
-        ],
-        "contrastRatio": 2.279627652780036,
-        "hexColor": "#FF4919",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          223,
-          63,
-        ],
-        "contrastRatio": 1.2193443093352496,
-        "hexColor": "#00DF3F",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": true,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          51,
-          51,
-          51,
-        ],
-        "contrastRatio": 8.52967286204201,
-        "hexColor": "#333333",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          119,
-          119,
-          119,
-        ],
-        "contrastRatio": 3.023164468502338,
-        "hexColor": "#777777",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          204,
-          204,
-          204,
-        ],
-        "contrastRatio": 1.0841646257359272,
-        "hexColor": "#CCCCCC",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          238,
-          238,
-          238,
-        ],
-        "contrastRatio": 1.276693722510517,
-        "hexColor": "#EEEEEE",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#FFCF00",
-    "model": "rgb",
-    "valpha": 1,
-  },
-  Colorable {
-    "color": Array [
-      51,
-      51,
-      51,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          118,
-          223,
-        ],
-        "contrastRatio": 2.801834462795621,
-        "hexColor": "#0076DF",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          73,
-          25,
-        ],
-        "contrastRatio": 3.7416956456200046,
-        "hexColor": "#FF4919",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          0,
-          223,
-          63,
-        ],
-        "contrastRatio": 6.9952947635374105,
-        "hexColor": "#00DF3F",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": true,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          255,
-          207,
-          0,
-        ],
-        "contrastRatio": 8.52967286204201,
-        "hexColor": "#FFCF00",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          119,
-          119,
-          119,
-        ],
-        "contrastRatio": 2.8214385789826286,
-        "hexColor": "#777777",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": true,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          204,
-          204,
-          204,
-        ],
-        "contrastRatio": 7.867507073708571,
-        "hexColor": "#CCCCCC",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": true,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          238,
-          238,
-          238,
-        ],
-        "contrastRatio": 10.88977979803735,
-        "hexColor": "#EEEEEE",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#333333",
-    "model": "rgb",
-    "valpha": 1,
-  },
-  Colorable {
-    "color": Array [
-      119,
-      119,
-      119,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          118,
-          223,
-        ],
-        "contrastRatio": 1.006996885950017,
-        "hexColor": "#0076DF",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          73,
-          25,
-        ],
-        "contrastRatio": 1.326165904688667,
-        "hexColor": "#FF4919",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          223,
-          63,
-        ],
-        "contrastRatio": 2.4793361853228135,
-        "hexColor": "#00DF3F",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          207,
-          0,
-        ],
-        "contrastRatio": 3.023164468502338,
-        "hexColor": "#FFCF00",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          51,
-          51,
-          51,
-        ],
-        "contrastRatio": 2.8214385789826286,
-        "hexColor": "#333333",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          204,
-          204,
-          204,
-        ],
-        "contrastRatio": 2.7884736291319454,
-        "hexColor": "#CCCCCC",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          238,
-          238,
-          238,
-        ],
-        "contrastRatio": 3.8596550990537786,
-        "hexColor": "#EEEEEE",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#777777",
-    "model": "rgb",
-    "valpha": 1,
-  },
-  Colorable {
-    "color": Array [
-      204,
-      204,
-      204,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          118,
-          223,
-        ],
-        "contrastRatio": 2.807984261089612,
-        "hexColor": "#0076DF",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          73,
-          25,
-        ],
-        "contrastRatio": 2.102658211369544,
-        "hexColor": "#FF4919",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          223,
-          63,
-        ],
-        "contrastRatio": 1.1246855693226137,
-        "hexColor": "#00DF3F",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          207,
-          0,
-        ],
-        "contrastRatio": 1.0841646257359272,
-        "hexColor": "#FFCF00",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": true,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          51,
-          51,
-          51,
-        ],
-        "contrastRatio": 7.867507073708571,
-        "hexColor": "#333333",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          119,
-          119,
-          119,
-        ],
-        "contrastRatio": 2.7884736291319454,
-        "hexColor": "#777777",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          238,
-          238,
-          238,
-        ],
-        "contrastRatio": 1.3841461718450223,
-        "hexColor": "#EEEEEE",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#CCCCCC",
-    "model": "rgb",
-    "valpha": 1,
-  },
-  Colorable {
-    "color": Array [
-      238,
-      238,
-      238,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          118,
-          223,
-        ],
-        "contrastRatio": 3.8866606655882596,
-        "hexColor": "#0076DF",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          73,
-          25,
-        ],
-        "contrastRatio": 2.910386313965656,
-        "hexColor": "#FF4919",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          223,
-          63,
-        ],
-        "contrastRatio": 1.5567292253072351,
-        "hexColor": "#00DF3F",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          207,
-          0,
-        ],
-        "contrastRatio": 1.276693722510517,
-        "hexColor": "#FFCF00",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": true,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          51,
-          51,
-          51,
-        ],
-        "contrastRatio": 10.88977979803735,
-        "hexColor": "#333333",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          119,
-          119,
-          119,
-        ],
-        "contrastRatio": 3.8596550990537786,
-        "hexColor": "#777777",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          204,
-          204,
-          204,
-        ],
-        "contrastRatio": 1.3841461718450223,
-        "hexColor": "#CCCCCC",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#EEEEEE",
-    "model": "rgb",
-    "valpha": 1,
-  },
-]
-`;
-
-exports[`colorable-x bassColors array threshold 3 1`] = `
-Array [
-  Colorable {
-    "color": Array [
-      0,
-      118,
-      223,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          207,
-          0,
-        ],
-        "contrastRatio": 3.044317205496593,
-        "hexColor": "#FFCF00",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          238,
-          238,
-          238,
-        ],
-        "contrastRatio": 3.8866606655882596,
-        "hexColor": "#EEEEEE",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#0076DF",
-    "model": "rgb",
-    "valpha": 1,
-  },
-  Colorable {
-    "color": Array [
-      255,
-      73,
-      25,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          51,
-          51,
-          51,
-        ],
-        "contrastRatio": 3.7416956456200046,
-        "hexColor": "#333333",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#FF4919",
-    "model": "rgb",
-    "valpha": 1,
-  },
-  Colorable {
-    "color": Array [
-      0,
-      223,
-      63,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          51,
-          51,
-          51,
-        ],
-        "contrastRatio": 6.9952947635374105,
-        "hexColor": "#333333",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#00DF3F",
-    "model": "rgb",
-    "valpha": 1,
-  },
-  Colorable {
-    "color": Array [
-      255,
-      207,
-      0,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          118,
-          223,
-        ],
-        "contrastRatio": 3.044317205496593,
-        "hexColor": "#0076DF",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": true,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          51,
-          51,
-          51,
-        ],
-        "contrastRatio": 8.52967286204201,
-        "hexColor": "#333333",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          119,
-          119,
-          119,
-        ],
-        "contrastRatio": 3.023164468502338,
-        "hexColor": "#777777",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#FFCF00",
-    "model": "rgb",
-    "valpha": 1,
-  },
-  Colorable {
-    "color": Array [
-      51,
-      51,
-      51,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          73,
-          25,
-        ],
-        "contrastRatio": 3.7416956456200046,
-        "hexColor": "#FF4919",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          0,
-          223,
-          63,
-        ],
-        "contrastRatio": 6.9952947635374105,
-        "hexColor": "#00DF3F",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": true,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          255,
-          207,
-          0,
-        ],
-        "contrastRatio": 8.52967286204201,
-        "hexColor": "#FFCF00",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": true,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          204,
-          204,
-          204,
-        ],
-        "contrastRatio": 7.867507073708571,
-        "hexColor": "#CCCCCC",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": true,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          238,
-          238,
-          238,
-        ],
-        "contrastRatio": 10.88977979803735,
-        "hexColor": "#EEEEEE",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#333333",
-    "model": "rgb",
-    "valpha": 1,
-  },
-  Colorable {
-    "color": Array [
-      119,
-      119,
-      119,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          255,
-          207,
-          0,
-        ],
-        "contrastRatio": 3.023164468502338,
-        "hexColor": "#FFCF00",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          238,
-          238,
-          238,
-        ],
-        "contrastRatio": 3.8596550990537786,
-        "hexColor": "#EEEEEE",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#777777",
-    "model": "rgb",
-    "valpha": 1,
-  },
-  Colorable {
-    "color": Array [
-      204,
-      204,
-      204,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": true,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          51,
-          51,
-          51,
-        ],
-        "contrastRatio": 7.867507073708571,
-        "hexColor": "#333333",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#CCCCCC",
-    "model": "rgb",
-    "valpha": 1,
-  },
-  Colorable {
-    "color": Array [
-      238,
-      238,
-      238,
-    ],
-    "combinations": Array [
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          0,
-          118,
-          223,
-        ],
-        "contrastRatio": 3.8866606655882596,
-        "hexColor": "#0076DF",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": true,
-          "aaLarge": true,
-          "aaa": true,
-          "aaaLarge": true,
-        },
-        "color": Array [
-          51,
-          51,
-          51,
-        ],
-        "contrastRatio": 10.88977979803735,
-        "hexColor": "#333333",
-        "model": "rgb",
-        "valpha": 1,
-      },
-      Colorable {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": true,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "color": Array [
-          119,
-          119,
-          119,
-        ],
-        "contrastRatio": 3.8596550990537786,
-        "hexColor": "#777777",
-        "model": "rgb",
-        "valpha": 1,
-      },
-    ],
-    "hexColor": "#EEEEEE",
-    "model": "rgb",
-    "valpha": 1,
-  },
-]
-`;
-
-exports[`colorable-x bassColors array uniq false 1`] = `
+exports[`colorable bassColors array no user options 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -3174,668 +1714,414 @@ Array [
 ]
 `;
 
-exports[`colorable-x bassColorsRepeat array compact true 1`] = `
+exports[`colorable bassColors array threshold 3 1`] = `
 Array [
-  Object {
+  Colorable {
+    "color": Array [
+      0,
+      118,
+      223,
+    ],
     "combinations": Array [
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.3354449362745746,
-        "hex": "#FF4919",
-        "hexColor": "#FF4919",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.4966838178432673,
-        "hex": "#00DF3F",
-        "hexColor": "#00DF3F",
-      },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": false,
           "aaLarge": true,
           "aaa": false,
           "aaaLarge": false,
         },
+        "color": Array [
+          255,
+          207,
+          0,
+        ],
         "contrastRatio": 3.044317205496593,
-        "hex": "#FFCF00",
         "hexColor": "#FFCF00",
+        "model": "rgb",
+        "valpha": 1,
       },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.801834462795621,
-        "hex": "#333333",
-        "hexColor": "#333333",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.006996885950017,
-        "hex": "#777777",
-        "hexColor": "#777777",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.807984261089612,
-        "hex": "#CCCCCC",
-        "hexColor": "#CCCCCC",
-      },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": false,
           "aaLarge": true,
           "aaa": false,
           "aaaLarge": false,
         },
+        "color": Array [
+          238,
+          238,
+          238,
+        ],
         "contrastRatio": 3.8866606655882596,
-        "hex": "#EEEEEE",
         "hexColor": "#EEEEEE",
+        "model": "rgb",
+        "valpha": 1,
       },
     ],
     "hexColor": "#0076DF",
+    "model": "rgb",
+    "valpha": 1,
   },
-  Object {
+  Colorable {
+    "color": Array [
+      255,
+      73,
+      25,
+    ],
     "combinations": Array [
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.3354449362745746,
-        "hex": "#0076DF",
-        "hexColor": "#0076DF",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.869552049677274,
-        "hex": "#00DF3F",
-        "hexColor": "#00DF3F",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.279627652780036,
-        "hex": "#FFCF00",
-        "hexColor": "#FFCF00",
-      },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": false,
           "aaLarge": true,
           "aaa": false,
           "aaaLarge": false,
         },
+        "color": Array [
+          51,
+          51,
+          51,
+        ],
         "contrastRatio": 3.7416956456200046,
-        "hex": "#333333",
         "hexColor": "#333333",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.326165904688667,
-        "hex": "#777777",
-        "hexColor": "#777777",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.102658211369544,
-        "hex": "#CCCCCC",
-        "hexColor": "#CCCCCC",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.910386313965656,
-        "hex": "#EEEEEE",
-        "hexColor": "#EEEEEE",
+        "model": "rgb",
+        "valpha": 1,
       },
     ],
     "hexColor": "#FF4919",
+    "model": "rgb",
+    "valpha": 1,
   },
-  Object {
+  Colorable {
+    "color": Array [
+      0,
+      223,
+      63,
+    ],
     "combinations": Array [
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.4966838178432673,
-        "hex": "#0076DF",
-        "hexColor": "#0076DF",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.869552049677274,
-        "hex": "#FF4919",
-        "hexColor": "#FF4919",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.2193443093352496,
-        "hex": "#FFCF00",
-        "hexColor": "#FFCF00",
-      },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": true,
           "aaLarge": true,
           "aaa": false,
           "aaaLarge": true,
         },
+        "color": Array [
+          51,
+          51,
+          51,
+        ],
         "contrastRatio": 6.9952947635374105,
-        "hex": "#333333",
         "hexColor": "#333333",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.4793361853228135,
-        "hex": "#777777",
-        "hexColor": "#777777",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.1246855693226137,
-        "hex": "#CCCCCC",
-        "hexColor": "#CCCCCC",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.5567292253072351,
-        "hex": "#EEEEEE",
-        "hexColor": "#EEEEEE",
+        "model": "rgb",
+        "valpha": 1,
       },
     ],
     "hexColor": "#00DF3F",
+    "model": "rgb",
+    "valpha": 1,
   },
-  Object {
+  Colorable {
+    "color": Array [
+      255,
+      207,
+      0,
+    ],
     "combinations": Array [
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": false,
           "aaLarge": true,
           "aaa": false,
           "aaaLarge": false,
         },
+        "color": Array [
+          0,
+          118,
+          223,
+        ],
         "contrastRatio": 3.044317205496593,
-        "hex": "#0076DF",
         "hexColor": "#0076DF",
+        "model": "rgb",
+        "valpha": 1,
       },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.279627652780036,
-        "hex": "#FF4919",
-        "hexColor": "#FF4919",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.2193443093352496,
-        "hex": "#00DF3F",
-        "hexColor": "#00DF3F",
-      },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": true,
           "aaLarge": true,
           "aaa": true,
           "aaaLarge": true,
         },
+        "color": Array [
+          51,
+          51,
+          51,
+        ],
         "contrastRatio": 8.52967286204201,
-        "hex": "#333333",
         "hexColor": "#333333",
+        "model": "rgb",
+        "valpha": 1,
       },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": false,
           "aaLarge": true,
           "aaa": false,
           "aaaLarge": false,
         },
+        "color": Array [
+          119,
+          119,
+          119,
+        ],
         "contrastRatio": 3.023164468502338,
-        "hex": "#777777",
         "hexColor": "#777777",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.0841646257359272,
-        "hex": "#CCCCCC",
-        "hexColor": "#CCCCCC",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.276693722510517,
-        "hex": "#EEEEEE",
-        "hexColor": "#EEEEEE",
+        "model": "rgb",
+        "valpha": 1,
       },
     ],
     "hexColor": "#FFCF00",
+    "model": "rgb",
+    "valpha": 1,
   },
-  Object {
+  Colorable {
+    "color": Array [
+      51,
+      51,
+      51,
+    ],
     "combinations": Array [
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.801834462795621,
-        "hex": "#0076DF",
-        "hexColor": "#0076DF",
-      },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": false,
           "aaLarge": true,
           "aaa": false,
           "aaaLarge": false,
         },
+        "color": Array [
+          255,
+          73,
+          25,
+        ],
         "contrastRatio": 3.7416956456200046,
-        "hex": "#FF4919",
         "hexColor": "#FF4919",
+        "model": "rgb",
+        "valpha": 1,
       },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": true,
           "aaLarge": true,
           "aaa": false,
           "aaaLarge": true,
         },
+        "color": Array [
+          0,
+          223,
+          63,
+        ],
         "contrastRatio": 6.9952947635374105,
-        "hex": "#00DF3F",
         "hexColor": "#00DF3F",
+        "model": "rgb",
+        "valpha": 1,
       },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": true,
           "aaLarge": true,
           "aaa": true,
           "aaaLarge": true,
         },
+        "color": Array [
+          255,
+          207,
+          0,
+        ],
         "contrastRatio": 8.52967286204201,
-        "hex": "#FFCF00",
         "hexColor": "#FFCF00",
+        "model": "rgb",
+        "valpha": 1,
       },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.8214385789826286,
-        "hex": "#777777",
-        "hexColor": "#777777",
-      },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": true,
           "aaLarge": true,
           "aaa": true,
           "aaaLarge": true,
         },
+        "color": Array [
+          204,
+          204,
+          204,
+        ],
         "contrastRatio": 7.867507073708571,
-        "hex": "#CCCCCC",
         "hexColor": "#CCCCCC",
+        "model": "rgb",
+        "valpha": 1,
       },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": true,
           "aaLarge": true,
           "aaa": true,
           "aaaLarge": true,
         },
+        "color": Array [
+          238,
+          238,
+          238,
+        ],
         "contrastRatio": 10.88977979803735,
-        "hex": "#EEEEEE",
         "hexColor": "#EEEEEE",
+        "model": "rgb",
+        "valpha": 1,
       },
     ],
     "hexColor": "#333333",
+    "model": "rgb",
+    "valpha": 1,
   },
-  Object {
+  Colorable {
+    "color": Array [
+      119,
+      119,
+      119,
+    ],
     "combinations": Array [
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.006996885950017,
-        "hex": "#0076DF",
-        "hexColor": "#0076DF",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.326165904688667,
-        "hex": "#FF4919",
-        "hexColor": "#FF4919",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.4793361853228135,
-        "hex": "#00DF3F",
-        "hexColor": "#00DF3F",
-      },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": false,
           "aaLarge": true,
           "aaa": false,
           "aaaLarge": false,
         },
+        "color": Array [
+          255,
+          207,
+          0,
+        ],
         "contrastRatio": 3.023164468502338,
-        "hex": "#FFCF00",
         "hexColor": "#FFCF00",
+        "model": "rgb",
+        "valpha": 1,
       },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.8214385789826286,
-        "hex": "#333333",
-        "hexColor": "#333333",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.7884736291319454,
-        "hex": "#CCCCCC",
-        "hexColor": "#CCCCCC",
-      },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": false,
           "aaLarge": true,
           "aaa": false,
           "aaaLarge": false,
         },
+        "color": Array [
+          238,
+          238,
+          238,
+        ],
         "contrastRatio": 3.8596550990537786,
-        "hex": "#EEEEEE",
         "hexColor": "#EEEEEE",
+        "model": "rgb",
+        "valpha": 1,
       },
     ],
     "hexColor": "#777777",
+    "model": "rgb",
+    "valpha": 1,
   },
-  Object {
+  Colorable {
+    "color": Array [
+      204,
+      204,
+      204,
+    ],
     "combinations": Array [
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.807984261089612,
-        "hex": "#0076DF",
-        "hexColor": "#0076DF",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.102658211369544,
-        "hex": "#FF4919",
-        "hexColor": "#FF4919",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.1246855693226137,
-        "hex": "#00DF3F",
-        "hexColor": "#00DF3F",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.0841646257359272,
-        "hex": "#FFCF00",
-        "hexColor": "#FFCF00",
-      },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": true,
           "aaLarge": true,
           "aaa": true,
           "aaaLarge": true,
         },
+        "color": Array [
+          51,
+          51,
+          51,
+        ],
         "contrastRatio": 7.867507073708571,
-        "hex": "#333333",
         "hexColor": "#333333",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.7884736291319454,
-        "hex": "#777777",
-        "hexColor": "#777777",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.3841461718450223,
-        "hex": "#EEEEEE",
-        "hexColor": "#EEEEEE",
+        "model": "rgb",
+        "valpha": 1,
       },
     ],
     "hexColor": "#CCCCCC",
+    "model": "rgb",
+    "valpha": 1,
   },
-  Object {
+  Colorable {
+    "color": Array [
+      238,
+      238,
+      238,
+    ],
     "combinations": Array [
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": false,
           "aaLarge": true,
           "aaa": false,
           "aaaLarge": false,
         },
+        "color": Array [
+          0,
+          118,
+          223,
+        ],
         "contrastRatio": 3.8866606655882596,
-        "hex": "#0076DF",
         "hexColor": "#0076DF",
+        "model": "rgb",
+        "valpha": 1,
       },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 2.910386313965656,
-        "hex": "#FF4919",
-        "hexColor": "#FF4919",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.5567292253072351,
-        "hex": "#00DF3F",
-        "hexColor": "#00DF3F",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.276693722510517,
-        "hex": "#FFCF00",
-        "hexColor": "#FFCF00",
-      },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": true,
           "aaLarge": true,
           "aaa": true,
           "aaaLarge": true,
         },
+        "color": Array [
+          51,
+          51,
+          51,
+        ],
         "contrastRatio": 10.88977979803735,
-        "hex": "#333333",
         "hexColor": "#333333",
+        "model": "rgb",
+        "valpha": 1,
       },
-      Object {
+      Colorable {
         "accessibility": Object {
           "aa": false,
           "aaLarge": true,
           "aaa": false,
           "aaaLarge": false,
         },
+        "color": Array [
+          119,
+          119,
+          119,
+        ],
         "contrastRatio": 3.8596550990537786,
-        "hex": "#777777",
         "hexColor": "#777777",
-      },
-      Object {
-        "accessibility": Object {
-          "aa": false,
-          "aaLarge": false,
-          "aaa": false,
-          "aaaLarge": false,
-        },
-        "contrastRatio": 1.3841461718450223,
-        "hex": "#CCCCCC",
-        "hexColor": "#CCCCCC",
+        "model": "rgb",
+        "valpha": 1,
       },
     ],
     "hexColor": "#EEEEEE",
+    "model": "rgb",
+    "valpha": 1,
   },
 ]
 `;
 
-exports[`colorable-x bassColorsRepeat array no user options 1`] = `
+exports[`colorable bassColors array uniq false 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -4888,7 +3174,1721 @@ Array [
 ]
 `;
 
-exports[`colorable-x bassColorsRepeat array threshold 3 1`] = `
+exports[`colorable bassColorsRepeat array compact true 1`] = `
+Array [
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.3354449362745746,
+        "hex": "#FF4919",
+        "hexColor": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.4966838178432673,
+        "hex": "#00DF3F",
+        "hexColor": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 3.044317205496593,
+        "hex": "#FFCF00",
+        "hexColor": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.801834462795621,
+        "hex": "#333333",
+        "hexColor": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.006996885950017,
+        "hex": "#777777",
+        "hexColor": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.807984261089612,
+        "hex": "#CCCCCC",
+        "hexColor": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 3.8866606655882596,
+        "hex": "#EEEEEE",
+        "hexColor": "#EEEEEE",
+      },
+    ],
+    "hexColor": "#0076DF",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.3354449362745746,
+        "hex": "#0076DF",
+        "hexColor": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.869552049677274,
+        "hex": "#00DF3F",
+        "hexColor": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.279627652780036,
+        "hex": "#FFCF00",
+        "hexColor": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 3.7416956456200046,
+        "hex": "#333333",
+        "hexColor": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.326165904688667,
+        "hex": "#777777",
+        "hexColor": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.102658211369544,
+        "hex": "#CCCCCC",
+        "hexColor": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.910386313965656,
+        "hex": "#EEEEEE",
+        "hexColor": "#EEEEEE",
+      },
+    ],
+    "hexColor": "#FF4919",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.4966838178432673,
+        "hex": "#0076DF",
+        "hexColor": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.869552049677274,
+        "hex": "#FF4919",
+        "hexColor": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.2193443093352496,
+        "hex": "#FFCF00",
+        "hexColor": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrastRatio": 6.9952947635374105,
+        "hex": "#333333",
+        "hexColor": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.4793361853228135,
+        "hex": "#777777",
+        "hexColor": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.1246855693226137,
+        "hex": "#CCCCCC",
+        "hexColor": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.5567292253072351,
+        "hex": "#EEEEEE",
+        "hexColor": "#EEEEEE",
+      },
+    ],
+    "hexColor": "#00DF3F",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 3.044317205496593,
+        "hex": "#0076DF",
+        "hexColor": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.279627652780036,
+        "hex": "#FF4919",
+        "hexColor": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.2193443093352496,
+        "hex": "#00DF3F",
+        "hexColor": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrastRatio": 8.52967286204201,
+        "hex": "#333333",
+        "hexColor": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 3.023164468502338,
+        "hex": "#777777",
+        "hexColor": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.0841646257359272,
+        "hex": "#CCCCCC",
+        "hexColor": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.276693722510517,
+        "hex": "#EEEEEE",
+        "hexColor": "#EEEEEE",
+      },
+    ],
+    "hexColor": "#FFCF00",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.801834462795621,
+        "hex": "#0076DF",
+        "hexColor": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 3.7416956456200046,
+        "hex": "#FF4919",
+        "hexColor": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "contrastRatio": 6.9952947635374105,
+        "hex": "#00DF3F",
+        "hexColor": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrastRatio": 8.52967286204201,
+        "hex": "#FFCF00",
+        "hexColor": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.8214385789826286,
+        "hex": "#777777",
+        "hexColor": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrastRatio": 7.867507073708571,
+        "hex": "#CCCCCC",
+        "hexColor": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrastRatio": 10.88977979803735,
+        "hex": "#EEEEEE",
+        "hexColor": "#EEEEEE",
+      },
+    ],
+    "hexColor": "#333333",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.006996885950017,
+        "hex": "#0076DF",
+        "hexColor": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.326165904688667,
+        "hex": "#FF4919",
+        "hexColor": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.4793361853228135,
+        "hex": "#00DF3F",
+        "hexColor": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 3.023164468502338,
+        "hex": "#FFCF00",
+        "hexColor": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.8214385789826286,
+        "hex": "#333333",
+        "hexColor": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.7884736291319454,
+        "hex": "#CCCCCC",
+        "hexColor": "#CCCCCC",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 3.8596550990537786,
+        "hex": "#EEEEEE",
+        "hexColor": "#EEEEEE",
+      },
+    ],
+    "hexColor": "#777777",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.807984261089612,
+        "hex": "#0076DF",
+        "hexColor": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.102658211369544,
+        "hex": "#FF4919",
+        "hexColor": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.1246855693226137,
+        "hex": "#00DF3F",
+        "hexColor": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.0841646257359272,
+        "hex": "#FFCF00",
+        "hexColor": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrastRatio": 7.867507073708571,
+        "hex": "#333333",
+        "hexColor": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.7884736291319454,
+        "hex": "#777777",
+        "hexColor": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.3841461718450223,
+        "hex": "#EEEEEE",
+        "hexColor": "#EEEEEE",
+      },
+    ],
+    "hexColor": "#CCCCCC",
+  },
+  Object {
+    "combinations": Array [
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 3.8866606655882596,
+        "hex": "#0076DF",
+        "hexColor": "#0076DF",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 2.910386313965656,
+        "hex": "#FF4919",
+        "hexColor": "#FF4919",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.5567292253072351,
+        "hex": "#00DF3F",
+        "hexColor": "#00DF3F",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.276693722510517,
+        "hex": "#FFCF00",
+        "hexColor": "#FFCF00",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "contrastRatio": 10.88977979803735,
+        "hex": "#333333",
+        "hexColor": "#333333",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 3.8596550990537786,
+        "hex": "#777777",
+        "hexColor": "#777777",
+      },
+      Object {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "contrastRatio": 1.3841461718450223,
+        "hex": "#CCCCCC",
+        "hexColor": "#CCCCCC",
+      },
+    ],
+    "hexColor": "#EEEEEE",
+  },
+]
+`;
+
+exports[`colorable bassColorsRepeat array no user options 1`] = `
+Array [
+  Colorable {
+    "color": Array [
+      0,
+      118,
+      223,
+    ],
+    "combinations": Array [
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          255,
+          73,
+          25,
+        ],
+        "contrastRatio": 1.3354449362745746,
+        "hexColor": "#FF4919",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          0,
+          223,
+          63,
+        ],
+        "contrastRatio": 2.4966838178432673,
+        "hexColor": "#00DF3F",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          255,
+          207,
+          0,
+        ],
+        "contrastRatio": 3.044317205496593,
+        "hexColor": "#FFCF00",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          51,
+          51,
+          51,
+        ],
+        "contrastRatio": 2.801834462795621,
+        "hexColor": "#333333",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          119,
+          119,
+          119,
+        ],
+        "contrastRatio": 1.006996885950017,
+        "hexColor": "#777777",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          204,
+          204,
+          204,
+        ],
+        "contrastRatio": 2.807984261089612,
+        "hexColor": "#CCCCCC",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          238,
+          238,
+          238,
+        ],
+        "contrastRatio": 3.8866606655882596,
+        "hexColor": "#EEEEEE",
+        "model": "rgb",
+        "valpha": 1,
+      },
+    ],
+    "hexColor": "#0076DF",
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Colorable {
+    "color": Array [
+      255,
+      73,
+      25,
+    ],
+    "combinations": Array [
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          0,
+          118,
+          223,
+        ],
+        "contrastRatio": 1.3354449362745746,
+        "hexColor": "#0076DF",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          0,
+          223,
+          63,
+        ],
+        "contrastRatio": 1.869552049677274,
+        "hexColor": "#00DF3F",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          255,
+          207,
+          0,
+        ],
+        "contrastRatio": 2.279627652780036,
+        "hexColor": "#FFCF00",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          51,
+          51,
+          51,
+        ],
+        "contrastRatio": 3.7416956456200046,
+        "hexColor": "#333333",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          119,
+          119,
+          119,
+        ],
+        "contrastRatio": 1.326165904688667,
+        "hexColor": "#777777",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          204,
+          204,
+          204,
+        ],
+        "contrastRatio": 2.102658211369544,
+        "hexColor": "#CCCCCC",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          238,
+          238,
+          238,
+        ],
+        "contrastRatio": 2.910386313965656,
+        "hexColor": "#EEEEEE",
+        "model": "rgb",
+        "valpha": 1,
+      },
+    ],
+    "hexColor": "#FF4919",
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Colorable {
+    "color": Array [
+      0,
+      223,
+      63,
+    ],
+    "combinations": Array [
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          0,
+          118,
+          223,
+        ],
+        "contrastRatio": 2.4966838178432673,
+        "hexColor": "#0076DF",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          255,
+          73,
+          25,
+        ],
+        "contrastRatio": 1.869552049677274,
+        "hexColor": "#FF4919",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          255,
+          207,
+          0,
+        ],
+        "contrastRatio": 1.2193443093352496,
+        "hexColor": "#FFCF00",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "color": Array [
+          51,
+          51,
+          51,
+        ],
+        "contrastRatio": 6.9952947635374105,
+        "hexColor": "#333333",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          119,
+          119,
+          119,
+        ],
+        "contrastRatio": 2.4793361853228135,
+        "hexColor": "#777777",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          204,
+          204,
+          204,
+        ],
+        "contrastRatio": 1.1246855693226137,
+        "hexColor": "#CCCCCC",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          238,
+          238,
+          238,
+        ],
+        "contrastRatio": 1.5567292253072351,
+        "hexColor": "#EEEEEE",
+        "model": "rgb",
+        "valpha": 1,
+      },
+    ],
+    "hexColor": "#00DF3F",
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Colorable {
+    "color": Array [
+      255,
+      207,
+      0,
+    ],
+    "combinations": Array [
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          0,
+          118,
+          223,
+        ],
+        "contrastRatio": 3.044317205496593,
+        "hexColor": "#0076DF",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          255,
+          73,
+          25,
+        ],
+        "contrastRatio": 2.279627652780036,
+        "hexColor": "#FF4919",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          0,
+          223,
+          63,
+        ],
+        "contrastRatio": 1.2193443093352496,
+        "hexColor": "#00DF3F",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "color": Array [
+          51,
+          51,
+          51,
+        ],
+        "contrastRatio": 8.52967286204201,
+        "hexColor": "#333333",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          119,
+          119,
+          119,
+        ],
+        "contrastRatio": 3.023164468502338,
+        "hexColor": "#777777",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          204,
+          204,
+          204,
+        ],
+        "contrastRatio": 1.0841646257359272,
+        "hexColor": "#CCCCCC",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          238,
+          238,
+          238,
+        ],
+        "contrastRatio": 1.276693722510517,
+        "hexColor": "#EEEEEE",
+        "model": "rgb",
+        "valpha": 1,
+      },
+    ],
+    "hexColor": "#FFCF00",
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Colorable {
+    "color": Array [
+      51,
+      51,
+      51,
+    ],
+    "combinations": Array [
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          0,
+          118,
+          223,
+        ],
+        "contrastRatio": 2.801834462795621,
+        "hexColor": "#0076DF",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          255,
+          73,
+          25,
+        ],
+        "contrastRatio": 3.7416956456200046,
+        "hexColor": "#FF4919",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": true,
+        },
+        "color": Array [
+          0,
+          223,
+          63,
+        ],
+        "contrastRatio": 6.9952947635374105,
+        "hexColor": "#00DF3F",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "color": Array [
+          255,
+          207,
+          0,
+        ],
+        "contrastRatio": 8.52967286204201,
+        "hexColor": "#FFCF00",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          119,
+          119,
+          119,
+        ],
+        "contrastRatio": 2.8214385789826286,
+        "hexColor": "#777777",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "color": Array [
+          204,
+          204,
+          204,
+        ],
+        "contrastRatio": 7.867507073708571,
+        "hexColor": "#CCCCCC",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "color": Array [
+          238,
+          238,
+          238,
+        ],
+        "contrastRatio": 10.88977979803735,
+        "hexColor": "#EEEEEE",
+        "model": "rgb",
+        "valpha": 1,
+      },
+    ],
+    "hexColor": "#333333",
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Colorable {
+    "color": Array [
+      119,
+      119,
+      119,
+    ],
+    "combinations": Array [
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          0,
+          118,
+          223,
+        ],
+        "contrastRatio": 1.006996885950017,
+        "hexColor": "#0076DF",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          255,
+          73,
+          25,
+        ],
+        "contrastRatio": 1.326165904688667,
+        "hexColor": "#FF4919",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          0,
+          223,
+          63,
+        ],
+        "contrastRatio": 2.4793361853228135,
+        "hexColor": "#00DF3F",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          255,
+          207,
+          0,
+        ],
+        "contrastRatio": 3.023164468502338,
+        "hexColor": "#FFCF00",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          51,
+          51,
+          51,
+        ],
+        "contrastRatio": 2.8214385789826286,
+        "hexColor": "#333333",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          204,
+          204,
+          204,
+        ],
+        "contrastRatio": 2.7884736291319454,
+        "hexColor": "#CCCCCC",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          238,
+          238,
+          238,
+        ],
+        "contrastRatio": 3.8596550990537786,
+        "hexColor": "#EEEEEE",
+        "model": "rgb",
+        "valpha": 1,
+      },
+    ],
+    "hexColor": "#777777",
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Colorable {
+    "color": Array [
+      204,
+      204,
+      204,
+    ],
+    "combinations": Array [
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          0,
+          118,
+          223,
+        ],
+        "contrastRatio": 2.807984261089612,
+        "hexColor": "#0076DF",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          255,
+          73,
+          25,
+        ],
+        "contrastRatio": 2.102658211369544,
+        "hexColor": "#FF4919",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          0,
+          223,
+          63,
+        ],
+        "contrastRatio": 1.1246855693226137,
+        "hexColor": "#00DF3F",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          255,
+          207,
+          0,
+        ],
+        "contrastRatio": 1.0841646257359272,
+        "hexColor": "#FFCF00",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "color": Array [
+          51,
+          51,
+          51,
+        ],
+        "contrastRatio": 7.867507073708571,
+        "hexColor": "#333333",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          119,
+          119,
+          119,
+        ],
+        "contrastRatio": 2.7884736291319454,
+        "hexColor": "#777777",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          238,
+          238,
+          238,
+        ],
+        "contrastRatio": 1.3841461718450223,
+        "hexColor": "#EEEEEE",
+        "model": "rgb",
+        "valpha": 1,
+      },
+    ],
+    "hexColor": "#CCCCCC",
+    "model": "rgb",
+    "valpha": 1,
+  },
+  Colorable {
+    "color": Array [
+      238,
+      238,
+      238,
+    ],
+    "combinations": Array [
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          0,
+          118,
+          223,
+        ],
+        "contrastRatio": 3.8866606655882596,
+        "hexColor": "#0076DF",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          255,
+          73,
+          25,
+        ],
+        "contrastRatio": 2.910386313965656,
+        "hexColor": "#FF4919",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          0,
+          223,
+          63,
+        ],
+        "contrastRatio": 1.5567292253072351,
+        "hexColor": "#00DF3F",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          255,
+          207,
+          0,
+        ],
+        "contrastRatio": 1.276693722510517,
+        "hexColor": "#FFCF00",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": true,
+          "aaLarge": true,
+          "aaa": true,
+          "aaaLarge": true,
+        },
+        "color": Array [
+          51,
+          51,
+          51,
+        ],
+        "contrastRatio": 10.88977979803735,
+        "hexColor": "#333333",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": true,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          119,
+          119,
+          119,
+        ],
+        "contrastRatio": 3.8596550990537786,
+        "hexColor": "#777777",
+        "model": "rgb",
+        "valpha": 1,
+      },
+      Colorable {
+        "accessibility": Object {
+          "aa": false,
+          "aaLarge": false,
+          "aaa": false,
+          "aaaLarge": false,
+        },
+        "color": Array [
+          204,
+          204,
+          204,
+        ],
+        "contrastRatio": 1.3841461718450223,
+        "hexColor": "#CCCCCC",
+        "model": "rgb",
+        "valpha": 1,
+      },
+    ],
+    "hexColor": "#EEEEEE",
+    "model": "rgb",
+    "valpha": 1,
+  },
+]
+`;
+
+exports[`colorable bassColorsRepeat array threshold 3 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -5295,7 +5295,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x bassColorsRepeat array uniq false 1`] = `
+exports[`colorable bassColorsRepeat array uniq false 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -9572,7 +9572,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x bassdockColors array compact true 1`] = `
+exports[`colorable bassdockColors array compact true 1`] = `
 Array [
   Object {
     "combinations": Array [
@@ -10414,7 +10414,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x bassdockColors array no user options 1`] = `
+exports[`colorable bassdockColors array no user options 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -11751,7 +11751,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x bassdockColors array threshold 3 1`] = `
+exports[`colorable bassdockColors array threshold 3 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -12238,7 +12238,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x bassdockColors array uniq false 1`] = `
+exports[`colorable bassdockColors array uniq false 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -13575,7 +13575,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x colors object compact true 1`] = `
+exports[`colorable colors object compact true 1`] = `
 Array [
   Object {
     "combinations": Array [
@@ -16946,7 +16946,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x colors object compact true threshold 3 1`] = `
+exports[`colorable colors object compact true threshold 3 1`] = `
 Array [
   Object {
     "combinations": Array [
@@ -18205,7 +18205,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x colors object no user options 1`] = `
+exports[`colorable colors object no user options 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -23327,7 +23327,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x colors object threshold 3 1`] = `
+exports[`colorable colors object threshold 3 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -25281,7 +25281,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x colors object uniq false 1`] = `
+exports[`colorable colors object uniq false 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -30403,13 +30403,13 @@ Array [
 ]
 `;
 
-exports[`colorable-x empty array matches snapshot 1`] = `Array []`;
+exports[`colorable empty array matches snapshot 1`] = `Array []`;
 
-exports[`colorable-x empty null object matches snapshot 1`] = `Array []`;
+exports[`colorable empty null object matches snapshot 1`] = `Array []`;
 
-exports[`colorable-x empty object matches snapshot 1`] = `Array []`;
+exports[`colorable empty object matches snapshot 1`] = `Array []`;
 
-exports[`colorable-x minimums matches snapshot 1`] = `
+exports[`colorable minimums matches snapshot 1`] = `
 Object {
   "aa": 4.5,
   "aaLarge": 3,
@@ -30418,7 +30418,7 @@ Object {
 }
 `;
 
-exports[`colorable-x primaryColors null object compact true 1`] = `
+exports[`colorable primaryColors null object compact true 1`] = `
 Array [
   Object {
     "combinations": Array [
@@ -30513,7 +30513,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x primaryColors null object no user options 1`] = `
+exports[`colorable primaryColors null object no user options 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -30665,7 +30665,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x primaryColors null object threshold 3 1`] = `
+exports[`colorable primaryColors null object threshold 3 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -30706,7 +30706,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x primaryColors null object uniq false 1`] = `
+exports[`colorable primaryColors null object uniq false 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -30858,7 +30858,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x primaryColors object compact true 1`] = `
+exports[`colorable primaryColors object compact true 1`] = `
 Array [
   Object {
     "combinations": Array [
@@ -30953,7 +30953,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x primaryColors object no user options 1`] = `
+exports[`colorable primaryColors object no user options 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -31105,7 +31105,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x primaryColors object threshold 3 1`] = `
+exports[`colorable primaryColors object threshold 3 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -31146,7 +31146,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x primaryColors object uniq false 1`] = `
+exports[`colorable primaryColors object uniq false 1`] = `
 Array [
   Colorable {
     "color": Array [
@@ -31298,7 +31298,7 @@ Array [
 ]
 `;
 
-exports[`colorable-x test Colorable is constructor and has correct inheritance 1`] = `
+exports[`colorable test Colorable is constructor and has correct inheritance 1`] = `
 Colorable {
   "color": Array [
     255,
@@ -31310,10 +31310,10 @@ Colorable {
 }
 `;
 
-exports[`colorable-x throws a TypeError for non-array or non-object null 1`] = `"Must provide an array or object"`;
+exports[`colorable throws a TypeError for non-array or non-object null 1`] = `"Must provide an array or object"`;
 
-exports[`colorable-x throws a TypeError for non-array or non-object number 1`] = `"Must provide an array or object"`;
+exports[`colorable throws a TypeError for non-array or non-object number 1`] = `"Must provide an array or object"`;
 
-exports[`colorable-x throws a TypeError for non-array or non-object string 1`] = `"Must provide an array or object"`;
+exports[`colorable throws a TypeError for non-array or non-object string 1`] = `"Must provide an array or object"`;
 
-exports[`colorable-x throws a TypeError for non-array or non-object undefined 1`] = `"Must provide an array or object"`;
+exports[`colorable throws a TypeError for non-array or non-object undefined 1`] = `"Must provide an array or object"`;

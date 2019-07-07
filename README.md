@@ -1,24 +1,24 @@
-# colorable-x
+# @xotic750/colorable
 
-<a href="https://travis-ci.org/Xotic750/colorable-x"
+<a href="https://travis-ci.org/Xotic750/colorable"
 title="Travis status">
 <img
-src="https://travis-ci.org/Xotic750/colorable-x.svg?branch=master"
+src="https://travis-ci.org/Xotic750/colorable.svg?branch=master"
 alt="Travis status" height="18">
 </a>
-<a href="https://david-dm.org/Xotic750/colorable-x"
+<a href="https://david-dm.org/Xotic750/colorable"
 title="Dependency status">
-<img src="https://david-dm.org/Xotic750/colorable-x/status.svg"
+<img src="https://david-dm.org/Xotic750/colorable/status.svg"
 alt="Dependency status" height="18"/>
 </a>
 <a
-href="https://david-dm.org/Xotic750/colorable-x?type=dev"
+href="https://david-dm.org/Xotic750/colorable?type=dev"
 title="devDependency status">
-<img src="https://david-dm.org/Xotic750/colorable-x/dev-status.svg"
+<img src="https://david-dm.org/Xotic750/colorable/dev-status.svg"
 alt="devDependency status" height="18"/>
 </a>
-<a href="https://badge.fury.io/js/colorable-x" title="npm version">
-<img src="https://badge.fury.io/js/colorable-x.svg"
+<a href="https://badge.fury.io/js/%40xotic750%2Fcolorable" title="npm version">
+<img src="https://badge.fury.io/js/%40xotic750%2Fcolorable.svg"
 alt="npm version" height="18">
 </a>
 
@@ -30,7 +30,7 @@ and includes pass/fail scores for the
 ## Getting Started
 
 ```bash
-npm i --save colorable-x
+npm i --save colorable
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ npm i --save colorable-x
 Pass an array of color strings or an object with color strings as values.
 
 ```js
-import colorable from 'colorable-x';
+import colorable from 'colorable';
 
 const colors = {
   red: 'red',

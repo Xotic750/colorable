@@ -1,7 +1,7 @@
 import assign from 'lodash/assign';
 import cloneDeep from 'lodash/cloneDeep';
 import uniq from 'lodash/uniq';
-import Color from 'Src/color-x';
+import Color from '@xotic750/color';
 
 /**
  * Colorable object.

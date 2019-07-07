@@ -54,7 +54,7 @@ utils.stdout(`Running Webpack build: ${ENVIRONMENT}`);
  *
  * @type {string}
  */
-const PROJECT_NAME = utils.getStringOption(PACKAGE, 'name');
+const PROJECT_NAME = utils.getStringOption(PACKAGE, 'name').replace('@xotic750/', '');
 
 /**
  * The filename to output.

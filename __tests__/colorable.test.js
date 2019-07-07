@@ -1,6 +1,6 @@
 import colors from 'colors.css/js/colors';
-import Color from 'Src/color-x';
-import colorable, {Colorable, minimums} from '../src/colorable-x';
+import Color from '@xotic750/color';
+import colorable, {Colorable, minimums} from '../src/colorable';
 
 const colorsCSS = Object.freeze({...colors});
 const primaryColors = Object.freeze({
@@ -40,7 +40,7 @@ const bassdockColors = Object.freeze([
   '#00B9FF',
 ]);
 
-describe('colorable-x', () => {
+describe('colorable', () => {
   describe('minimums', () => {
     it('matches snapshot', () => {
       expect.assertions(1);
