@@ -1,6 +1,6 @@
 import colors from 'colors.css/js/colors';
 import Color from '@xotic750/color';
-import colorable, {Colorable, minimums} from '../src/colorable';
+import colorable, {Colorable, Combination, minimums} from '../src/colorable';
 
 const colorsCSS = Object.freeze({...colors});
 const primaryColors = Object.freeze({
@@ -54,7 +54,7 @@ describe('colorable', () => {
       expect.assertions(4);
 
       expect(Colorable).toBeInstanceOf(Function);
-      const actual = new Colorable(null, primaryColorsNull.red);
+      const actual = new Colorable({name: 'red', value: primaryColorsNull.red});
       expect(actual).toBeInstanceOf(Colorable);
       expect(actual).toBeInstanceOf(Color);
       expect(actual).toMatchSnapshot();
@@ -137,7 +137,7 @@ describe('colorable', () => {
       expect(everyColorable).toBe(true);
       expect(everyColorable).toBe(true);
       const everyContrast = actual.every((item) => {
-        return item.combinations.every((combination) => combination.contrastRatio > 0);
+        return item.combinations.every((combination) => !(combination instanceof Combination) && combination.contrastRatio > 0);
       });
       expect(everyContrast).toBe(true);
       expect(actual).toMatchSnapshot();
@@ -151,7 +151,7 @@ describe('colorable', () => {
       const everyColorable = actual.every((item) => item instanceof Colorable);
       expect(everyColorable).toBe(true);
       const everyContrast = actual.every((item) => {
-        return item.combinations.every((combination) => item.contrast(combination) > 0);
+        return item.combinations.every((combination) => combination instanceof Combination && item.contrast(combination) > 0);
       });
       expect(everyContrast).toBe(true);
       expect(actual).toMatchSnapshot();
@@ -164,7 +164,7 @@ describe('colorable', () => {
       const everyColorable = actual.every((item) => item instanceof Colorable);
       expect(everyColorable).toBe(true);
       const everyContrast = actual.every((item) => {
-        return item.combinations.every((combination) => item.contrast(combination) > 3);
+        return item.combinations.every((combination) => combination instanceof Combination && item.contrast(combination) > 3);
       });
       expect(everyContrast).toBe(true);
       expect(colorable(colorsCSS, {threshold: 3})).toMatchSnapshot();
@@ -178,7 +178,7 @@ describe('colorable', () => {
       expect(everyColorable).toBe(true);
       expect(everyColorable).toBe(true);
       const everyContrast = actual.every((item) => {
-        return item.combinations.every((combination) => combination.contrastRatio > 3);
+        return item.combinations.every((combination) => !(combination instanceof Combination) && combination.contrastRatio > 3);
       });
       expect(everyContrast).toBe(true);
       expect(actual).toMatchSnapshot();

@@ -3,36 +3,25 @@ import cloneDeep from 'lodash/cloneDeep';
 import uniq from 'lodash/uniq';
 import Color from '@xotic750/color';
 
+const NAME = 'name';
+
 /**
- * Colorable object.
+ * Constructor options.
  *
- * @param {object} props - The name of the color object.
- * @param {number|string|object} colorDefinition - The color definition.
- * @param {string} [model] - The model type.
- * @class
+ * @typedef {object} ConstructorOptions
+ * @property {string} [model] - Color model.
+ * @property {string} [name] - The name of the color.
+ * @property {*} value - Color value.
  */
-export const Colorable = function Colorable(props, colorDefinition, model) {
-  assign(this, props);
-  Color.call(this, colorDefinition, model);
-};
-
-Colorable.prototype = Object.create(Color.prototype);
-
-Object.defineProperties(Colorable.prototype, {
-  constructor: {
-    value: Colorable,
-    writable: true,
-  },
-  toJSON: {
-    value: undefined,
-    writable: true,
-  },
-});
 
 /**
  * The minimum values for WCAG rating.
  *
- * @type {Readonly}
+ * @type {Readonly<number>}
+ * @property {number} aa - AA minimum value.
+ * @property {number} aaa - AAA minimum value.
+ * @property {number} aaaLarge - AAA Large minimum value.
+ * @property {number} aaLarge - AA Large minimum value.
  */
 export const minimums = Object.freeze({
   aa: 4.5,
@@ -42,11 +31,146 @@ export const minimums = Object.freeze({
 });
 
 /**
+ * An object of pass and fail results for accessibility.
+ *
+ * @typedef {object} Accessibility
+ * @property {boolean} aa - AA pass or fail.
+ * @property {boolean} aaa - AAA pass or fail.
+ * @property {boolean} aaaLarge - AAA Large pass or fail.
+ * @property {boolean} aaLarge - AA Large pass or fail.
+ */
+/**
  * WCAG rating keys.
  *
  * @type {ReadonlyArray<string>}
  */
 const minimumsKeys = Object.freeze(Object.keys(minimums));
+
+/**
+ * Colorable object.
+ *
+ * @class
+ * @type {object}
+ * @property {ReadonlyArray<Combination|object>} combinations - Combinations that matched threshold
+ * @property {string} hexColor - The hex color.
+ * @property {string} [name] - The name of the color.
+ */
+export class Colorable extends Color {
+  /**
+   * @param {ConstructorOptions} options -
+   */
+  constructor(options) {
+    const {model, name, value} = options;
+    super(value, model);
+
+    Object.defineProperties(this, {
+      combinations: {
+        enumerable: true,
+        value: [],
+      },
+      hexColor: {
+        enumerable: true,
+        value: this.hex(),
+      },
+    });
+
+    if (name) {
+      Object.defineProperty(this, NAME, {
+        enumerable: true,
+        value: name,
+      });
+    }
+  }
+
+  /**
+   * Give a compact representation.
+   *
+   * @returns {{hexColor: string, combinations: Array<{contrastRatio: number, hexColor: string, accessibility: Accessibility}>}} - Compact representation.
+   */
+  compact() {
+    const value = {
+      combinations: this.combinations.map((combination) => combination.compact()),
+      hexColor: this.hexColor,
+    };
+
+    if (this.name) {
+      value.name = this.name;
+    }
+
+    return value;
+  }
+}
+
+/**
+ * Combination object.
+ *
+ * @class
+ * @type {object}
+ * @property {Readonly<number>} accessibility - Accessibility scores.
+ * @property {number} contrastRatio - The contrast ratio.
+ * @property {string} hexColor - The hex color.
+ * @property {string} [name] - The name of the color.
+ */
+export class Combination extends Color {
+  /**
+   * @param {Colorable} color -
+   * @param {ConstructorOptions} options -
+   */
+  constructor(color, options) {
+    const {model, name, value} = options;
+    super(value, model);
+
+    const contrastRatio = color.contrast(this);
+    Object.defineProperties(this, {
+      accessibility: {
+        enumerable: true,
+        value: Object.freeze(
+          minimumsKeys.reduce((minimum, key) => {
+            minimum[key] = contrastRatio >= minimums[key];
+
+            return minimum;
+          }, {}),
+        ),
+      },
+      contrastRatio: {
+        enumerable: true,
+        value: contrastRatio,
+      },
+      hexColor: {
+        enumerable: true,
+        value: this.hex(),
+      },
+    });
+
+    if (name) {
+      Object.defineProperty(this, NAME, {
+        enumerable: true,
+        value: name,
+      });
+    }
+  }
+
+  /**
+   * Give a compact representation.
+   *
+   * @returns {{contrastRatio: number, hexColor: string, accessibility: Accessibility}} - Compact representation.
+   */
+  compact() {
+    /** @type {Accessibility} */
+    const accessibility = {...this.accessibility};
+    const value = {
+      accessibility,
+      contrastRatio: this.contrastRatio,
+      hexColor: this.hexColor,
+    };
+
+    if (this.name) {
+      value.name = this.name;
+    }
+
+    return value;
+  }
+}
 
 /**
  * Merge the default and user options.
@@ -113,56 +237,23 @@ export default function colorable(colors, options) {
 
   return Object.freeze(
     colorsArray.map((textColor) => {
-      const textColorObject = new Color(textColor.value);
-      const textProps = {
-        combinations: [],
-        hexColor: textColorObject.hex(),
-      };
-
-      if (textColor.name) {
-        textProps.name = textColor.name;
-      }
+      const color = new Colorable(textColor);
 
       colorsArray.forEach((backgroundColor) => {
         if (textColor === backgroundColor) {
           return;
         }
 
-        const backgroundColorObject = new Color(backgroundColor.value);
-        const backgroundProps = {
-          contrastRatio: textColorObject.contrast(backgroundColorObject),
-          hexColor: backgroundColorObject.hex(),
-        };
+        const combination = new Combination(color, backgroundColor);
 
-        if (backgroundColor.name) {
-          backgroundProps.name = backgroundColor.name;
-        }
-
-        if (opts.compact) {
-          backgroundProps.hex = backgroundColorObject.hex();
-        }
-
-        backgroundProps.accessibility = Object.freeze(
-          minimumsKeys.reduce((minimum, key) => {
-            minimum[key] = backgroundProps.contrastRatio >= minimums[key];
-
-            return minimum;
-          }, {}),
-        );
-
-        Object.freeze(backgroundProps);
-
-        if (backgroundProps.contrastRatio > opts.threshold) {
-          const combination = opts.compact ? backgroundProps : new Colorable(backgroundProps, backgroundColorObject);
-
-          textProps.combinations.push(combination);
+        if (combination.contrastRatio > opts.threshold) {
+          color.combinations.push(combination);
         }
       });
 
-      Object.freeze(textProps.combinations);
-      Object.freeze(textProps);
+      Object.freeze(color.combinations);
 
-      return opts.compact ? textProps : new Colorable(textProps, textColorObject);
+      return opts.compact ? color.compact() : color;
     }),
   );
 }
