@@ -17,7 +17,7 @@ const NAME = 'name';
 /**
  * The minimum values for WCAG rating.
  *
- * @type {Readonly<number>}
+ * @type {Readonly}
  * @property {number} aa - AA minimum value.
  * @property {number} aaa - AAA minimum value.
  * @property {number} aaaLarge - AAA Large minimum value.
