@@ -11,6 +11,22 @@
       }
     ]
   ],
+  "env": {
+    "esm": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "loose": false,
+            "modules": false,
+            "spec": true,
+            "useBuiltIns": false,
+            "debug": false
+          }
+        ]
+      ]
+    }
+  },
   "plugins": [
     "@babel/plugin-syntax-dynamic-import",
     "@babel/plugin-proposal-class-properties",
@@ -26,8 +42,7 @@
         "useESModules": false
       }
     ],
-    "lodash",
-    "transform-vue-jsx"
+    "lodash"
   ],
   "ignore": []
 }

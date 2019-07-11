@@ -1,27 +1,6162 @@
 /*!
 {
-  "copyrite": "Copyright (c) Graham Fairweather",
-  "date": "2019-07-09T23:17:29.558Z",
+  "author": "Graham Fairweather",
+  "copywrite": "Copyright (c) Graham Fairweather",
+  "date": "2019-07-11T21:14:37.492Z",
   "describe": "",
   "description": "Color palette combination contrast tester",
   "file": "colorable.js",
-  "hash": "087be00646b50cd99fc1",
+  "hash": "c6c5b6ab9e75e3de690b",
   "license": "MIT",
-  "version": "1.0.7"
+  "version": "1.0.8"
 }
 */
-!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define("@xotic750/colorable",[],e):"object"==typeof exports?exports["@xotic750/colorable"]=e():t["@xotic750/colorable"]=e()}(function(){"use strict";return"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:Function("return this")()}(),function(){return function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=12)}([function(t,e,n){var r=n(2),o=n(6);t.exports=function(t,e,n,a){var i=!n;n||(n={});for(var u=-1,l=e.length;++u<l;){var c=e[u],s=a?a(n[c],t[c],c,n,t):void 0;void 0===s&&(s=t[c]),i?o(n,c,s):r(n,c,s)}return n}},function(t,e,n){var r=n(7);t.exports=function(t,e){for(var n=t.length;n--;)if(r(t[n][0],e))return n;return-1}},function(t,e,n){var r=n(6),o=n(7),a=Object.prototype.hasOwnProperty;t.exports=function(t,e,n){var i=t[e];a.call(t,e)&&o(i,n)&&(void 0!==n||e in t)||r(t,e,n)}},function(t,e){t.exports=function(t){var e=typeof t;return null!=t&&("object"==e||"function"==e)}},function(t,e,n){var r=n(5)(Object.keys,Object);t.exports=r},function(t,e){t.exports=function(t,e){return function(n){return t(e(n))}}},function(t,e,n){var r=n(15);t.exports=function(t,e,n){"__proto__"==e&&r?r(t,e,{configurable:!0,enumerable:!0,value:n,writable:!0}):t[e]=n}},function(t,e){t.exports=function(t,e){return t===e||t!=t&&e!=e}},function(t,e){t.exports=function(){return!1}},function(t,e){var n;n=function(){return this}();try{n=n||new Function("return this")()}catch(t){"object"==typeof window&&(n=window)}t.exports=n},function(t,e){var n=Array.isArray;t.exports=n},function(t,e){t.exports=function(t,e,n){for(var r=n-1,o=t.length;++r<o;)if(t[r]===e)return r;return-1}},function(t,e,n){t.exports=n(13)},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=function(t,e){var n=this,r=M(e),o=_(t,r.uniq);return Object.freeze(o.map(function(t){var e=this;f(this,n);var a=new k(t);return o.forEach(function(n){if(f(this,e),t!==n){var o=new O(a,n);o.contrastRatio>r.threshold&&a.combinations.push(o)}}.bind(this)),Object.freeze(a.combinations),r.compact?a.compact():a}.bind(this)))},e.Combination=e.Colorable=e.minimums=void 0;var r=u(n(14)),o=u(n(28)),a=u(n(60)),i=u(n(68));function u(t){return t&&t.__esModule?t:{default:t}}function l(t){return(l="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function c(t,e){var n=Object.keys(t);return Object.getOwnPropertySymbols&&n.push.apply(n,Object.getOwnPropertySymbols(t)),e&&(n=n.filter(function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable})),n}function s(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}function f(t,e){if(t!==e)throw new TypeError("Cannot instantiate an arrow function")}function h(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function p(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}function b(t,e,n){return e&&p(t.prototype,e),n&&p(t,n),t}function d(t,e){return!e||"object"!==l(e)&&"function"!=typeof e?y(t):e}function v(t){return(v=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function y(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}function g(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&m(t,e)}function m(t,e){return(m=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}var w="name",x=Object.freeze({aa:4.5,aaa:7,aaaLarge:4.5,aaLarge:3});e.minimums=x;var j=Object.freeze(Object.keys(x)),k=function(t){function e(t){var n;h(this,e);var r=t.model,o=t.name,a=t.value;return n=d(this,v(e).call(this,a,r)),Object.defineProperties(y(n),{combinations:{enumerable:!0,value:[]},hexColor:{enumerable:!0,value:n.hex()}}),o&&Object.defineProperty(y(n),w,{enumerable:!0,value:o}),n}return g(e,i.default),b(e,[{key:"compact",value:function(){var t=this,e={combinations:this.combinations.map(function(e){return f(this,t),e.compact()}.bind(this)),hexColor:this.hexColor};return this.name&&(e.name=this.name),e}}]),e}();e.Colorable=k;var O=function(t){function e(t,n){var r,o=this;h(this,e);var a=n.model,i=n.name,u=n.value;r=d(this,v(e).call(this,u,a));var l=t.contrast(y(r));return Object.defineProperties(y(r),{accessibility:{enumerable:!0,value:Object.freeze(j.reduce(function(t,e){return f(this,o),t[e]=l>=x[e],t}.bind(this),{}))},contrastRatio:{enumerable:!0,value:l},hexColor:{enumerable:!0,value:r.hex()}}),i&&Object.defineProperty(y(r),w,{enumerable:!0,value:i}),r}return g(e,i.default),b(e,[{key:"compact",value:function(){var t={accessibility:function(t){for(var e=1;e<arguments.length;e++){var n=null!=arguments[e]?arguments[e]:{};e%2?c(n,!0).forEach(function(e){s(t,e,n[e])}):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(n)):c(n).forEach(function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(n,e))})}return t}({},this.accessibility),contrastRatio:this.contrastRatio,hexColor:this.hexColor};return this.name&&(t.name=this.name),t}}]),e}();e.Combination=O;var M=function(t){return Object.freeze((0,r.default)({compact:!1,threshold:0,uniq:!0},t))},P=function(t,e){return Object.freeze((0,o.default)(e?(0,a.default)(t):t))},_=function(t,e){var n=this;if(Array.isArray(t))return Object.freeze(P(t,e).map(function(t){return f(this,n),Object.freeze({value:t})}.bind(this)));if(t&&"object"===l(t))return Object.freeze(P(Object.keys(t),e).map(function(e){return f(this,n),Object.freeze({name:e,value:t[e]})}.bind(this)));throw new TypeError("Must provide an array or object")}},function(t,e,n){var r=n(2),o=n(0),a=n(17),i=n(24),u=n(8),l=n(4),c=Object.prototype.hasOwnProperty,s=a(function(t,e){if(u(e)||i(e))o(e,l(e),t);else for(var n in e)c.call(e,n)&&r(t,n,e[n])});t.exports=s},function(t,e,n){var r=n(16),o=function(){try{var t=r(Object,"defineProperty");return t({},"",{}),t}catch(t){}}();t.exports=o},function(t,e){t.exports=function(t,e){return null==t?void 0:t[e]}},function(t,e,n){var r=n(18),o=n(23);t.exports=function(t){return r(function(e,n){var r=-1,a=n.length,i=a>1?n[a-1]:void 0,u=a>2?n[2]:void 0;for(i=t.length>3&&"function"==typeof i?(a--,i):void 0,u&&o(n[0],n[1],u)&&(i=a<3?void 0:i,a=1),e=Object(e);++r<a;){var l=n[r];l&&t(e,l,r,i)}return e})}},function(t,e,n){var r=n(19),o=n(20),a=n(22);t.exports=function(t,e){return a(o(t,e,r),t+"")}},function(t,e){t.exports=function(t){return t}},function(t,e,n){var r=n(21),o=Math.max;t.exports=function(t,e,n){return e=o(void 0===e?t.length-1:e,0),function(){for(var a=arguments,i=-1,u=o(a.length-e,0),l=Array(u);++i<u;)l[i]=a[e+i];i=-1;for(var c=Array(e+1);++i<e;)c[i]=a[i];return c[e]=n(l),r(t,this,c)}}},function(t,e){t.exports=function(t,e,n){switch(n.length){case 0:return t.call(e);case 1:return t.call(e,n[0]);case 2:return t.call(e,n[0],n[1]);case 3:return t.call(e,n[0],n[1],n[2])}return t.apply(e,n)}},function(t,e){t.exports=function(t){return t}},function(t,e){t.exports=function(){return!1}},function(t,e,n){var r=n(25),o=n(27);t.exports=function(t){return null!=t&&o(t.length)&&!r(t)}},function(t,e,n){var r=n(26),o=n(3),a="[object AsyncFunction]",i="[object Function]",u="[object GeneratorFunction]",l="[object Proxy]";t.exports=function(t){if(!o(t))return!1;var e=r(t);return e==i||e==u||e==a||e==l}},function(t,e){var n=Object.prototype.toString;t.exports=function(t){return n.call(t)}},function(t,e){var n=9007199254740991;t.exports=function(t){return"number"==typeof t&&t>-1&&t%1==0&&t<=n}},function(t,e,n){var r=n(29),o=1,a=4;t.exports=function(t){return r(t,o|a)}},function(t,e,n){var r=n(30),o=n(36),a=n(2),i=n(37),u=n(38),l=n(40),c=n(44),s=n(45),f=n(47),h=n(49),p=n(50),b=n(51),d=n(52),v=n(53),y=n(54),g=n(10),m=n(57),w=n(58),x=n(3),j=n(59),k=n(4),O=1,M=2,P=4,_="[object Arguments]",A="[object Function]",S="[object GeneratorFunction]",z="[object Object]",E={};E[_]=E["[object Array]"]=E["[object ArrayBuffer]"]=E["[object DataView]"]=E["[object Boolean]"]=E["[object Date]"]=E["[object Float32Array]"]=E["[object Float64Array]"]=E["[object Int8Array]"]=E["[object Int16Array]"]=E["[object Int32Array]"]=E["[object Map]"]=E["[object Number]"]=E[z]=E["[object RegExp]"]=E["[object Set]"]=E["[object String]"]=E["[object Symbol]"]=E["[object Uint8Array]"]=E["[object Uint8ClampedArray]"]=E["[object Uint16Array]"]=E["[object Uint32Array]"]=!0,E["[object Error]"]=E[A]=E["[object WeakMap]"]=!1,t.exports=function t(e,n,F,C,q,I){var T,$=n&O,U=n&M,D=n&P;if(F&&(T=q?F(e,C,q,I):F(e)),void 0!==T)return T;if(!x(e))return e;var N=g(e);if(N){if(T=d(e),!$)return c(e,T)}else{var L=b(e),R=L==A||L==S;if(m(e))return l(e,$);if(L==z||L==_||R&&!q){if(T=U||R?{}:y(e),!$)return U?f(e,u(T,e)):s(e,i(T,e))}else{if(!E[L])return q?e:{};T=v(e,L,$)}}I||(I=new r);var B=I.get(e);if(B)return B;I.set(e,T),j(e)?e.forEach(function(r){T.add(t(r,n,F,r,e,I))}):w(e)&&e.forEach(function(r,o){T.set(o,t(r,n,F,o,e,I))});var G=D?U?p:h:U?keysIn:k,K=N?void 0:G(e);return o(K||e,function(r,o){K&&(r=e[o=r]),a(T,o,t(r,n,F,o,e,I))}),T}},function(t,e,n){var r=n(31),o=n(32),a=n(33),i=n(34),u=n(35);function l(t){var e=-1,n=null==t?0:t.length;for(this.clear();++e<n;){var r=t[e];this.set(r[0],r[1])}}l.prototype.clear=r,l.prototype.delete=o,l.prototype.get=a,l.prototype.has=i,l.prototype.set=u,t.exports=l},function(t,e){t.exports=function(){this.__data__=[],this.size=0}},function(t,e,n){var r=n(1),o=Array.prototype.splice;t.exports=function(t){var e=this.__data__,n=r(e,t);return!(n<0||(n==e.length-1?e.pop():o.call(e,n,1),--this.size,0))}},function(t,e,n){var r=n(1);t.exports=function(t){var e=this.__data__,n=r(e,t);return n<0?void 0:e[n][1]}},function(t,e,n){var r=n(1);t.exports=function(t){return r(this.__data__,t)>-1}},function(t,e,n){var r=n(1);t.exports=function(t,e){var n=this.__data__,o=r(n,t);return o<0?(++this.size,n.push([t,e])):n[o][1]=e,this}},function(t,e){t.exports=function(t,e){for(var n=-1,r=null==t?0:t.length;++n<r&&!1!==e(t[n],n,t););return t}},function(t,e,n){var r=n(0),o=n(4);t.exports=function(t,e){return t&&r(e,o(e),t)}},function(t,e,n){var r=n(0),o=n(39);t.exports=function(t,e){return t&&r(e,o(e),t)}},function(t,e){t.exports=function(t){var e=[];if(null!=t)for(var n in Object(t))e.push(n);return e}},function(t,e,n){(function(t){var r=n(42),o=e&&!e.nodeType&&e,a=o&&"object"==typeof t&&t&&!t.nodeType&&t,i=a&&a.exports===o?r.Buffer:void 0,u=i?i.allocUnsafe:void 0;t.exports=function(t,e){if(e)return t.slice();var n=t.length,r=u?u(n):new t.constructor(n);return t.copy(r),r}}).call(this,n(41)(t))},function(t,e){t.exports=function(t){return t.webpackPolyfill||(t.deprecate=function(){},t.paths=[],t.children||(t.children=[]),Object.defineProperty(t,"loaded",{enumerable:!0,get:function(){return t.l}}),Object.defineProperty(t,"id",{enumerable:!0,get:function(){return t.i}}),t.webpackPolyfill=1),t}},function(t,e,n){var r=n(43),o="object"==typeof self&&self&&self.Object===Object&&self,a=r||o||Function("return this")();t.exports=a},function(t,e,n){(function(e){var n="object"==typeof e&&e&&e.Object===Object&&e;t.exports=n}).call(this,n(9))},function(t,e){t.exports=function(t,e){var n=-1,r=t.length;for(e||(e=Array(r));++n<r;)e[n]=t[n];return e}},function(t,e,n){var r=n(0),o=n(46);t.exports=function(t,e){return r(t,o(t),e)}},function(t,e){t.exports=function(){return[]}},function(t,e,n){var r=n(0),o=n(48);t.exports=function(t,e){return r(t,o(t),e)}},function(t,e){t.exports=function(){return[]}},function(t,e,n){var r=n(5)(Object.keys,Object);t.exports=r},function(t,e){t.exports=function(t){var e=[];if(null!=t)for(var n in Object(t))e.push(n);return e}},function(t,e){var n=Object.prototype.toString;t.exports=function(t){return n.call(t)}},function(t,e){var n=Object.prototype.hasOwnProperty;t.exports=function(t){var e=t.length,r=new t.constructor(e);return e&&"string"==typeof t[0]&&n.call(t,"index")&&(r.index=t.index,r.input=t.input),r}},function(t,e){t.exports=function(t){return t}},function(t,e,n){var r=n(55),o=n(56),a=n(8);t.exports=function(t){return"function"!=typeof t.constructor||a(t)?{}:r(o(t))}},function(t,e,n){var r=n(3),o=Object.create,a=function(){function t(){}return function(e){if(!r(e))return{};if(o)return o(e);t.prototype=e;var n=new t;return t.prototype=void 0,n}}();t.exports=a},function(t,e,n){var r=n(5)(Object.getPrototypeOf,Object);t.exports=r},function(t,e){t.exports=function(){return!1}},function(t,e){t.exports=function(){return!1}},function(t,e){t.exports=function(){return!1}},function(t,e,n){var r=n(61);t.exports=function(t){return t&&t.length?r(t):[]}},function(t,e,n){var r=n(62),o=n(63),a=n(64),i=n(65),u=n(66),l=n(67),c=200;t.exports=function(t,e,n){var s=-1,f=o,h=t.length,p=!0,b=[],d=b;if(n)p=!1,f=a;else if(h>=c){var v=e?null:u(t);if(v)return l(v);p=!1,f=i,d=new r}else d=e?[]:b;t:for(;++s<h;){var y=t[s],g=e?e(y):y;if(y=n||0!==y?y:0,p&&g==g){for(var m=d.length;m--;)if(d[m]===g)continue t;e&&d.push(g),b.push(y)}else f(d,g,n)||(d!==b&&d.push(g),b.push(y))}return b}},function(t,e,n){var r=n(10);t.exports=function(){if(!arguments.length)return[];var t=arguments[0];return r(t)?t:[t]}},function(t,e,n){var r=n(11);t.exports=function(t,e){return!(null==t||!t.length)&&r(t,e,0)>-1}},function(t,e){t.exports=function(t,e,n){for(var r=-1,o=null==t?0:t.length;++r<o;)if(n(e,t[r]))return!0;return!1}},function(t,e,n){var r=n(11);t.exports=function(t,e){return!(null==t||!t.length)&&r(t,e,0)>-1}},function(t,e){t.exports=function(){}},function(t,e){t.exports=function(){return[]}},function(t,e,n){(function(e){
-/*!
-{
-  "copyrite": "Copyright (c) Graham Fairweather",
-  "date": "2019-07-09T23:12:30.565Z",
-  "describe": "",
-  "description": "Color conversion and manipulation library",
-  "file": "color.js",
-  "hash": "86fea96f29bb45ce2b92",
-  "license": "MIT",
-  "version": "1.0.4"
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["colorable"] = factory();
+	else
+		root["colorable"] = factory();
+})((function () {
+  'use strict';
+
+  if (typeof self !== 'undefined') {
+    return self;
+  }
+
+  if (typeof window !== 'undefined') {
+    return window;
+  }
+
+  if (typeof global !== 'undefined') {
+    return global;
+  }
+
+  return Function('return this')();
+}()), function() {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 100);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+const conversions = __webpack_require__(22);
+const route = __webpack_require__(84);
+
+const convert = {};
+
+const models = Object.keys(conversions);
+
+function wrapRaw(fn) {
+	const wrappedFn = function (...args) {
+		const arg0 = args[0];
+		if (arg0 === undefined || arg0 === null) {
+			return arg0;
+		}
+
+		if (arg0.length > 1) {
+			args = arg0;
+		}
+
+		return fn(args);
+	};
+
+	// Preserve .conversion property if there is one
+	if ('conversion' in fn) {
+		wrappedFn.conversion = fn.conversion;
+	}
+
+	return wrappedFn;
 }
+
+function wrapRounded(fn) {
+	const wrappedFn = function (...args) {
+		const arg0 = args[0];
+
+		if (arg0 === undefined || arg0 === null) {
+			return arg0;
+		}
+
+		if (arg0.length > 1) {
+			args = arg0;
+		}
+
+		const result = fn(args);
+
+		// We're assuming the result is an array here.
+		// see notice in conversions.js; don't use box types
+		// in conversion functions.
+		if (typeof result === 'object') {
+			for (let len = result.length, i = 0; i < len; i++) {
+				result[i] = Math.round(result[i]);
+			}
+		}
+
+		return result;
+	};
+
+	// Preserve .conversion property if there is one
+	if ('conversion' in fn) {
+		wrappedFn.conversion = fn.conversion;
+	}
+
+	return wrappedFn;
+}
+
+models.forEach(fromModel => {
+	convert[fromModel] = {};
+
+	Object.defineProperty(convert[fromModel], 'channels', {value: conversions[fromModel].channels});
+	Object.defineProperty(convert[fromModel], 'labels', {value: conversions[fromModel].labels});
+
+	const routes = route(fromModel);
+	const routeModels = Object.keys(routes);
+
+	routeModels.forEach(toModel => {
+		const fn = routes[toModel];
+
+		convert[fromModel][toModel] = wrapRounded(fn);
+		convert[fromModel][toModel].raw = wrapRaw(fn);
+	});
+});
+
+module.exports = convert;
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+/**
+ * Checks if `value` is classified as an `Array` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+ * @example
+ *
+ * _.isArray([1, 2, 3]);
+ * // => true
+ *
+ * _.isArray(document.body.children);
+ * // => false
+ *
+ * _.isArray('abc');
+ * // => false
+ *
+ * _.isArray(_.noop);
+ * // => false
+ */
+var isArray = Array.isArray;
+
+module.exports = isArray;
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* MIT license */
+var colorNames = __webpack_require__(80);
+var swizzle = __webpack_require__(81);
+
+var reverseNames = {};
+
+// create a list of reverse color names
+for (var name in colorNames) {
+	if (colorNames.hasOwnProperty(name)) {
+		reverseNames[colorNames[name]] = name;
+	}
+}
+
+var cs = module.exports = {
+	to: {},
+	get: {}
+};
+
+cs.get = function (string) {
+	var prefix = string.substring(0, 3).toLowerCase();
+	var val;
+	var model;
+	switch (prefix) {
+		case 'hsl':
+			val = cs.get.hsl(string);
+			model = 'hsl';
+			break;
+		case 'hwb':
+			val = cs.get.hwb(string);
+			model = 'hwb';
+			break;
+		default:
+			val = cs.get.rgb(string);
+			model = 'rgb';
+			break;
+	}
+
+	if (!val) {
+		return null;
+	}
+
+	return {model: model, value: val};
+};
+
+cs.get.rgb = function (string) {
+	if (!string) {
+		return null;
+	}
+
+	var abbr = /^#([a-f0-9]{3,4})$/i;
+	var hex = /^#([a-f0-9]{6})([a-f0-9]{2})?$/i;
+	var rgba = /^rgba?\(\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)$/;
+	var per = /^rgba?\(\s*([+-]?[\d\.]+)\%\s*,\s*([+-]?[\d\.]+)\%\s*,\s*([+-]?[\d\.]+)\%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)$/;
+	var keyword = /(\D+)/;
+
+	var rgb = [0, 0, 0, 1];
+	var match;
+	var i;
+	var hexAlpha;
+
+	if (match = string.match(hex)) {
+		hexAlpha = match[2];
+		match = match[1];
+
+		for (i = 0; i < 3; i++) {
+			// https://jsperf.com/slice-vs-substr-vs-substring-methods-long-string/19
+			var i2 = i * 2;
+			rgb[i] = parseInt(match.slice(i2, i2 + 2), 16);
+		}
+
+		if (hexAlpha) {
+			rgb[3] = Math.round((parseInt(hexAlpha, 16) / 255) * 100) / 100;
+		}
+	} else if (match = string.match(abbr)) {
+		match = match[1];
+		hexAlpha = match[3];
+
+		for (i = 0; i < 3; i++) {
+			rgb[i] = parseInt(match[i] + match[i], 16);
+		}
+
+		if (hexAlpha) {
+			rgb[3] = Math.round((parseInt(hexAlpha + hexAlpha, 16) / 255) * 100) / 100;
+		}
+	} else if (match = string.match(rgba)) {
+		for (i = 0; i < 3; i++) {
+			rgb[i] = parseInt(match[i + 1], 0);
+		}
+
+		if (match[4]) {
+			rgb[3] = parseFloat(match[4]);
+		}
+	} else if (match = string.match(per)) {
+		for (i = 0; i < 3; i++) {
+			rgb[i] = Math.round(parseFloat(match[i + 1]) * 2.55);
+		}
+
+		if (match[4]) {
+			rgb[3] = parseFloat(match[4]);
+		}
+	} else if (match = string.match(keyword)) {
+		if (match[1] === 'transparent') {
+			return [0, 0, 0, 0];
+		}
+
+		rgb = colorNames[match[1]];
+
+		if (!rgb) {
+			return null;
+		}
+
+		rgb[3] = 1;
+
+		return rgb;
+	} else {
+		return null;
+	}
+
+	for (i = 0; i < 3; i++) {
+		rgb[i] = clamp(rgb[i], 0, 255);
+	}
+	rgb[3] = clamp(rgb[3], 0, 1);
+
+	return rgb;
+};
+
+cs.get.hsl = function (string) {
+	if (!string) {
+		return null;
+	}
+
+	var hsl = /^hsla?\(\s*([+-]?(?:\d*\.)?\d+)(?:deg)?\s*,\s*([+-]?[\d\.]+)%\s*,\s*([+-]?[\d\.]+)%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)$/;
+	var match = string.match(hsl);
+
+	if (match) {
+		var alpha = parseFloat(match[4]);
+		var h = (parseFloat(match[1]) + 360) % 360;
+		var s = clamp(parseFloat(match[2]), 0, 100);
+		var l = clamp(parseFloat(match[3]), 0, 100);
+		var a = clamp(isNaN(alpha) ? 1 : alpha, 0, 1);
+
+		return [h, s, l, a];
+	}
+
+	return null;
+};
+
+cs.get.hwb = function (string) {
+	if (!string) {
+		return null;
+	}
+
+	var hwb = /^hwb\(\s*([+-]?\d*[\.]?\d+)(?:deg)?\s*,\s*([+-]?[\d\.]+)%\s*,\s*([+-]?[\d\.]+)%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)$/;
+	var match = string.match(hwb);
+
+	if (match) {
+		var alpha = parseFloat(match[4]);
+		var h = ((parseFloat(match[1]) % 360) + 360) % 360;
+		var w = clamp(parseFloat(match[2]), 0, 100);
+		var b = clamp(parseFloat(match[3]), 0, 100);
+		var a = clamp(isNaN(alpha) ? 1 : alpha, 0, 1);
+		return [h, w, b, a];
+	}
+
+	return null;
+};
+
+cs.to.hex = function () {
+	var rgba = swizzle(arguments);
+
+	return (
+		'#' +
+		hexDouble(rgba[0]) +
+		hexDouble(rgba[1]) +
+		hexDouble(rgba[2]) +
+		(rgba[3] < 1
+			? (hexDouble(Math.round(rgba[3] * 255)))
+			: '')
+	);
+};
+
+cs.to.rgb = function () {
+	var rgba = swizzle(arguments);
+
+	return rgba.length < 4 || rgba[3] === 1
+		? 'rgb(' + Math.round(rgba[0]) + ', ' + Math.round(rgba[1]) + ', ' + Math.round(rgba[2]) + ')'
+		: 'rgba(' + Math.round(rgba[0]) + ', ' + Math.round(rgba[1]) + ', ' + Math.round(rgba[2]) + ', ' + rgba[3] + ')';
+};
+
+cs.to.rgb.percent = function () {
+	var rgba = swizzle(arguments);
+
+	var r = Math.round(rgba[0] / 255 * 100);
+	var g = Math.round(rgba[1] / 255 * 100);
+	var b = Math.round(rgba[2] / 255 * 100);
+
+	return rgba.length < 4 || rgba[3] === 1
+		? 'rgb(' + r + '%, ' + g + '%, ' + b + '%)'
+		: 'rgba(' + r + '%, ' + g + '%, ' + b + '%, ' + rgba[3] + ')';
+};
+
+cs.to.hsl = function () {
+	var hsla = swizzle(arguments);
+	return hsla.length < 4 || hsla[3] === 1
+		? 'hsl(' + hsla[0] + ', ' + hsla[1] + '%, ' + hsla[2] + '%)'
+		: 'hsla(' + hsla[0] + ', ' + hsla[1] + '%, ' + hsla[2] + '%, ' + hsla[3] + ')';
+};
+
+// hwb is a bit different than rgb(a) & hsl(a) since there is no alpha specific syntax
+// (hwb have alpha optional & 1 is default value)
+cs.to.hwb = function () {
+	var hwba = swizzle(arguments);
+
+	var a = '';
+	if (hwba.length >= 4 && hwba[3] !== 1) {
+		a = ', ' + hwba[3];
+	}
+
+	return 'hwb(' + hwba[0] + ', ' + hwba[1] + '%, ' + hwba[2] + '%' + a + ')';
+};
+
+cs.to.keyword = function (rgb) {
+	return reverseNames[rgb.slice(0, 3)];
+};
+
+// helpers
+function clamp(num, min, max) {
+	return Math.min(Math.max(min, num), max);
+}
+
+function hexDouble(num) {
+	var str = num.toString(16).toUpperCase();
+	return (str.length < 2) ? '0' + str : str;
+}
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var assignValue = __webpack_require__(8),
+    baseAssignValue = __webpack_require__(16);
+
+/**
+ * Copies properties of `source` to `object`.
+ *
+ * @private
+ * @param {Object} source The object to copy properties from.
+ * @param {Array} props The property identifiers to copy.
+ * @param {Object} [object={}] The object to copy properties to.
+ * @param {Function} [customizer] The function to customize copied values.
+ * @returns {Object} Returns `object`.
+ */
+function copyObject(source, props, object, customizer) {
+  var isNew = !object;
+  object || (object = {});
+
+  var index = -1,
+      length = props.length;
+
+  while (++index < length) {
+    var key = props[index];
+
+    var newValue = customizer
+      ? customizer(object[key], source[key], key, object, source)
+      : undefined;
+
+    if (newValue === undefined) {
+      newValue = source[key];
+    }
+    if (isNew) {
+      baseAssignValue(object, key, newValue);
+    } else {
+      assignValue(object, key, newValue);
+    }
+  }
+  return object;
+}
+
+module.exports = copyObject;
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var toFinite = __webpack_require__(87);
+
+/**
+ * Converts `value` to an integer.
+ *
+ * **Note:** This method is loosely based on
+ * [`ToInteger`](http://www.ecma-international.org/ecma-262/7.0/#sec-tointeger).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to convert.
+ * @returns {number} Returns the converted integer.
+ * @example
+ *
+ * _.toInteger(3.2);
+ * // => 3
+ *
+ * _.toInteger(Number.MIN_VALUE);
+ * // => 0
+ *
+ * _.toInteger(Infinity);
+ * // => 1.7976931348623157e+308
+ *
+ * _.toInteger('3.2');
+ * // => 3
+ */
+function toInteger(value) {
+  var result = toFinite(value),
+      remainder = result % 1;
+
+  return result === result ? (remainder ? result - remainder : result) : 0;
+}
+
+module.exports = toInteger;
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseHas = __webpack_require__(89),
+    hasPath = __webpack_require__(90);
+
+/**
+ * Checks if `path` is a direct property of `object`.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Object
+ * @param {Object} object The object to query.
+ * @param {Array|string} path The path to check.
+ * @returns {boolean} Returns `true` if `path` exists, else `false`.
+ * @example
+ *
+ * var object = { 'a': { 'b': 2 } };
+ * var other = _.create({ 'a': _.create({ 'b': 2 }) });
+ *
+ * _.has(object, 'a');
+ * // => true
+ *
+ * _.has(object, 'a.b');
+ * // => true
+ *
+ * _.has(object, ['a', 'b']);
+ * // => true
+ *
+ * _.has(other, 'a');
+ * // => false
+ */
+function has(object, path) {
+  return object != null && hasPath(object, path, baseHas);
+}
+
+module.exports = has;
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var eq = __webpack_require__(17);
+
+/**
+ * Gets the index at which the `key` is found in `array` of key-value pairs.
+ *
+ * @private
+ * @param {Array} array The array to inspect.
+ * @param {*} key The key to search for.
+ * @returns {number} Returns the index of the matched value, else `-1`.
+ */
+function assocIndexOf(array, key) {
+  var length = array.length;
+  while (length--) {
+    if (eq(array[length][0], key)) {
+      return length;
+    }
+  }
+  return -1;
+}
+
+module.exports = assocIndexOf;
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseClamp = __webpack_require__(85),
+    toNumber = __webpack_require__(23);
+
+/**
+ * Clamps `number` within the inclusive `lower` and `upper` bounds.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Number
+ * @param {number} number The number to clamp.
+ * @param {number} [lower] The lower bound.
+ * @param {number} upper The upper bound.
+ * @returns {number} Returns the clamped number.
+ * @example
+ *
+ * _.clamp(-10, -5, 5);
+ * // => -5
+ *
+ * _.clamp(10, -5, 5);
+ * // => 5
+ */
+function clamp(number, lower, upper) {
+  if (upper === undefined) {
+    upper = lower;
+    lower = undefined;
+  }
+  if (upper !== undefined) {
+    upper = toNumber(upper);
+    upper = upper === upper ? upper : 0;
+  }
+  if (lower !== undefined) {
+    lower = toNumber(lower);
+    lower = lower === lower ? lower : 0;
+  }
+  return baseClamp(toNumber(number), lower, upper);
+}
+
+module.exports = clamp;
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseAssignValue = __webpack_require__(16),
+    eq = __webpack_require__(17);
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Assigns `value` to `key` of `object` if the existing value is not equivalent
+ * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * for equality comparisons.
+ *
+ * @private
+ * @param {Object} object The object to modify.
+ * @param {string} key The key of the property to assign.
+ * @param {*} value The value to assign.
+ */
+function assignValue(object, key, value) {
+  var objValue = object[key];
+  if (!(hasOwnProperty.call(object, key) && eq(objValue, value)) ||
+      (value === undefined && !(key in object))) {
+    baseAssignValue(object, key, value);
+  }
+}
+
+module.exports = assignValue;
+
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+/**
+ * Checks if `value` is the
+ * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+ * @example
+ *
+ * _.isObject({});
+ * // => true
+ *
+ * _.isObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isObject(_.noop);
+ * // => true
+ *
+ * _.isObject(null);
+ * // => false
+ */
+function isObject(value) {
+  var type = typeof value;
+  return value != null && (type == 'object' || type == 'function');
+}
+
+module.exports = isObject;
+
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var overArg = __webpack_require__(11);
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeKeys = overArg(Object.keys, Object);
+
+module.exports = nativeKeys;
+
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports) {
+
+/**
+ * Creates a unary function that invokes `func` with its argument transformed.
+ *
+ * @private
+ * @param {Function} func The function to wrap.
+ * @param {Function} transform The argument transform.
+ * @returns {Function} Returns the new function.
+ */
+function overArg(func, transform) {
+  return function(arg) {
+    return func(transform(arg));
+  };
+}
+
+module.exports = overArg;
+
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports) {
+
+/**
+ * A specialized version of `_.indexOf` which performs strict equality
+ * comparisons of values, i.e. `===`.
+ *
+ * @private
+ * @param {Array} array The array to inspect.
+ * @param {*} value The value to search for.
+ * @param {number} fromIndex The index to search from.
+ * @returns {number} Returns the index of the matched value, else `-1`.
+ */
+function strictIndexOf(array, value, fromIndex) {
+  var index = fromIndex - 1,
+      length = array.length;
+
+  while (++index < length) {
+    if (array[index] === value) {
+      return index;
+    }
+  }
+  return -1;
+}
+
+module.exports = strictIndexOf;
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseSlice = __webpack_require__(86),
+    isIterateeCall = __webpack_require__(18),
+    toInteger = __webpack_require__(4);
+
+/**
+ * Creates a slice of `array` from `start` up to, but not including, `end`.
+ *
+ * **Note:** This method is used instead of
+ * [`Array#slice`](https://mdn.io/Array/slice) to ensure dense arrays are
+ * returned.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.0.0
+ * @category Array
+ * @param {Array} array The array to slice.
+ * @param {number} [start=0] The start position.
+ * @param {number} [end=array.length] The end position.
+ * @returns {Array} Returns the slice of `array`.
+ */
+function slice(array, start, end) {
+  var length = array == null ? 0 : array.length;
+  if (!length) {
+    return [];
+  }
+  if (end && typeof end != 'number' && isIterateeCall(array, start, end)) {
+    start = 0;
+    end = length;
+  }
+  else {
+    start = start == null ? 0 : toInteger(start);
+    end = end === undefined ? length : toInteger(end);
+  }
+  return baseSlice(array, start, end);
+}
+
+module.exports = slice;
+
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isArray = __webpack_require__(1);
+
+/**
+ * Casts `value` as an array if it's not one.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.4.0
+ * @category Lang
+ * @param {*} value The value to inspect.
+ * @returns {Array} Returns the cast array.
+ * @example
+ *
+ * _.castArray(1);
+ * // => [1]
+ *
+ * _.castArray({ 'a': 1 });
+ * // => [{ 'a': 1 }]
+ *
+ * _.castArray('abc');
+ * // => ['abc']
+ *
+ * _.castArray(null);
+ * // => [null]
+ *
+ * _.castArray(undefined);
+ * // => [undefined]
+ *
+ * _.castArray();
+ * // => []
+ *
+ * var array = [1, 2, 3];
+ * console.log(_.castArray(array) === array);
+ * // => true
+ */
+function castArray() {
+  if (!arguments.length) {
+    return [];
+  }
+  var value = arguments[0];
+  return isArray(value) ? value : [value];
+}
+
+module.exports = castArray;
+
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseIndexOf = __webpack_require__(12);
+
+/**
+ * A specialized version of `_.includes` for arrays without support for
+ * specifying an index to search from.
+ *
+ * @private
+ * @param {Array} [array] The array to inspect.
+ * @param {*} target The value to search for.
+ * @returns {boolean} Returns `true` if `target` is found, else `false`.
+ */
+function arrayIncludes(array, value) {
+  var length = array == null ? 0 : array.length;
+  return !!length && baseIndexOf(array, value, 0) > -1;
+}
+
+module.exports = arrayIncludes;
+
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var defineProperty = __webpack_require__(31);
+
+/**
+ * The base implementation of `assignValue` and `assignMergeValue` without
+ * value checks.
+ *
+ * @private
+ * @param {Object} object The object to modify.
+ * @param {string} key The key of the property to assign.
+ * @param {*} value The value to assign.
+ */
+function baseAssignValue(object, key, value) {
+  if (key == '__proto__' && defineProperty) {
+    defineProperty(object, key, {
+      'configurable': true,
+      'enumerable': true,
+      'value': value,
+      'writable': true
+    });
+  } else {
+    object[key] = value;
+  }
+}
+
+module.exports = baseAssignValue;
+
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports) {
+
+/**
+ * Performs a
+ * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * comparison between two values to determine if they are equivalent.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to compare.
+ * @param {*} other The other value to compare.
+ * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ * var other = { 'a': 1 };
+ *
+ * _.eq(object, object);
+ * // => true
+ *
+ * _.eq(object, other);
+ * // => false
+ *
+ * _.eq('a', 'a');
+ * // => true
+ *
+ * _.eq('a', Object('a'));
+ * // => false
+ *
+ * _.eq(NaN, NaN);
+ * // => true
+ */
+function eq(value, other) {
+  return value === other || (value !== value && other !== other);
+}
+
+module.exports = eq;
+
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns `false`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {boolean} Returns `false`.
+ * @example
+ *
+ * _.times(2, _.stubFalse);
+ * // => [false, false]
+ */
+function stubFalse() {
+  return false;
+}
+
+module.exports = stubFalse;
+
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports) {
+
+/** Used as references for various `Number` constants. */
+var MAX_SAFE_INTEGER = 9007199254740991;
+
+/**
+ * Checks if `value` is a valid array-like length.
+ *
+ * **Note:** This method is loosely based on
+ * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+ * @example
+ *
+ * _.isLength(3);
+ * // => true
+ *
+ * _.isLength(Number.MIN_VALUE);
+ * // => false
+ *
+ * _.isLength(Infinity);
+ * // => false
+ *
+ * _.isLength('3');
+ * // => false
+ */
+function isLength(value) {
+  return typeof value == 'number' &&
+    value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+}
+
+module.exports = isLength;
+
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns `false`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {boolean} Returns `false`.
+ * @example
+ *
+ * _.times(2, _.stubFalse);
+ * // => [false, false]
+ */
+function stubFalse() {
+  return false;
+}
+
+module.exports = stubFalse;
+
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var freeGlobal = __webpack_require__(55);
+
+/** Detect free variable `self`. */
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = freeGlobal || freeSelf || Function('return this')();
+
+module.exports = root;
+
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* MIT license */
+/* eslint-disable no-mixed-operators */
+const cssKeywords = __webpack_require__(83);
+
+// NOTE: conversions should only return primitive values (i.e. arrays, or
+//       values that give correct `typeof` results).
+//       do not use box values types (i.e. Number(), String(), etc.)
+
+const reverseKeywords = {};
+for (const key of Object.keys(cssKeywords)) {
+	reverseKeywords[cssKeywords[key]] = key;
+}
+
+const convert = {
+	rgb: {channels: 3, labels: 'rgb'},
+	hsl: {channels: 3, labels: 'hsl'},
+	hsv: {channels: 3, labels: 'hsv'},
+	hwb: {channels: 3, labels: 'hwb'},
+	cmyk: {channels: 4, labels: 'cmyk'},
+	xyz: {channels: 3, labels: 'xyz'},
+	lab: {channels: 3, labels: 'lab'},
+	lch: {channels: 3, labels: 'lch'},
+	hex: {channels: 1, labels: ['hex']},
+	keyword: {channels: 1, labels: ['keyword']},
+	ansi16: {channels: 1, labels: ['ansi16']},
+	ansi256: {channels: 1, labels: ['ansi256']},
+	hcg: {channels: 3, labels: ['h', 'c', 'g']},
+	apple: {channels: 3, labels: ['r16', 'g16', 'b16']},
+	gray: {channels: 1, labels: ['gray']}
+};
+
+module.exports = convert;
+
+// Hide .channels and .labels properties
+for (const model of Object.keys(convert)) {
+	if (!('channels' in convert[model])) {
+		throw new Error('missing channels property: ' + model);
+	}
+
+	if (!('labels' in convert[model])) {
+		throw new Error('missing channel labels property: ' + model);
+	}
+
+	if (convert[model].labels.length !== convert[model].channels) {
+		throw new Error('channel and label counts mismatch: ' + model);
+	}
+
+	const {channels, labels} = convert[model];
+	delete convert[model].channels;
+	delete convert[model].labels;
+	Object.defineProperty(convert[model], 'channels', {value: channels});
+	Object.defineProperty(convert[model], 'labels', {value: labels});
+}
+
+convert.rgb.hsl = function (rgb) {
+	const r = rgb[0] / 255;
+	const g = rgb[1] / 255;
+	const b = rgb[2] / 255;
+	const min = Math.min(r, g, b);
+	const max = Math.max(r, g, b);
+	const delta = max - min;
+	let h;
+	let s;
+
+	if (max === min) {
+		h = 0;
+	} else if (r === max) {
+		h = (g - b) / delta;
+	} else if (g === max) {
+		h = 2 + (b - r) / delta;
+	} else if (b === max) {
+		h = 4 + (r - g) / delta;
+	}
+
+	h = Math.min(h * 60, 360);
+
+	if (h < 0) {
+		h += 360;
+	}
+
+	const l = (min + max) / 2;
+
+	if (max === min) {
+		s = 0;
+	} else if (l <= 0.5) {
+		s = delta / (max + min);
+	} else {
+		s = delta / (2 - max - min);
+	}
+
+	return [h, s * 100, l * 100];
+};
+
+convert.rgb.hsv = function (rgb) {
+	let rdif;
+	let gdif;
+	let bdif;
+	let h;
+	let s;
+
+	const r = rgb[0] / 255;
+	const g = rgb[1] / 255;
+	const b = rgb[2] / 255;
+	const v = Math.max(r, g, b);
+	const diff = v - Math.min(r, g, b);
+	const diffc = function (c) {
+		return (v - c) / 6 / diff + 1 / 2;
+	};
+
+	if (diff === 0) {
+		h = 0;
+		s = 0;
+	} else {
+		s = diff / v;
+		rdif = diffc(r);
+		gdif = diffc(g);
+		bdif = diffc(b);
+
+		if (r === v) {
+			h = bdif - gdif;
+		} else if (g === v) {
+			h = (1 / 3) + rdif - bdif;
+		} else if (b === v) {
+			h = (2 / 3) + gdif - rdif;
+		}
+
+		if (h < 0) {
+			h += 1;
+		} else if (h > 1) {
+			h -= 1;
+		}
+	}
+
+	return [
+		h * 360,
+		s * 100,
+		v * 100
+	];
+};
+
+convert.rgb.hwb = function (rgb) {
+	const r = rgb[0];
+	const g = rgb[1];
+	let b = rgb[2];
+	const h = convert.rgb.hsl(rgb)[0];
+	const w = 1 / 255 * Math.min(r, Math.min(g, b));
+
+	b = 1 - 1 / 255 * Math.max(r, Math.max(g, b));
+
+	return [h, w * 100, b * 100];
+};
+
+convert.rgb.cmyk = function (rgb) {
+	const r = rgb[0] / 255;
+	const g = rgb[1] / 255;
+	const b = rgb[2] / 255;
+
+	const k = Math.min(1 - r, 1 - g, 1 - b);
+	const c = (1 - r - k) / (1 - k) || 0;
+	const m = (1 - g - k) / (1 - k) || 0;
+	const y = (1 - b - k) / (1 - k) || 0;
+
+	return [c * 100, m * 100, y * 100, k * 100];
+};
+
+function comparativeDistance(x, y) {
+	/*
+		See https://en.m.wikipedia.org/wiki/Euclidean_distance#Squared_Euclidean_distance
+	*/
+	return (
+		((x[0] - y[0]) ** 2) +
+		((x[1] - y[1]) ** 2) +
+		((x[2] - y[2]) ** 2)
+	);
+}
+
+convert.rgb.keyword = function (rgb) {
+	const reversed = reverseKeywords[rgb];
+	if (reversed) {
+		return reversed;
+	}
+
+	let currentClosestDistance = Infinity;
+	let currentClosestKeyword;
+
+	for (const keyword of Object.keys(cssKeywords)) {
+		const value = cssKeywords[keyword];
+
+		// Compute comparative distance
+		const distance = comparativeDistance(rgb, value);
+
+		// Check if its less, if so set as closest
+		if (distance < currentClosestDistance) {
+			currentClosestDistance = distance;
+			currentClosestKeyword = keyword;
+		}
+	}
+
+	return currentClosestKeyword;
+};
+
+convert.keyword.rgb = function (keyword) {
+	return cssKeywords[keyword];
+};
+
+convert.rgb.xyz = function (rgb) {
+	let r = rgb[0] / 255;
+	let g = rgb[1] / 255;
+	let b = rgb[2] / 255;
+
+	// Assume sRGB
+	r = r > 0.04045 ? (((r + 0.055) / 1.055) ** 2.4) : (r / 12.92);
+	g = g > 0.04045 ? (((g + 0.055) / 1.055) ** 2.4) : (g / 12.92);
+	b = b > 0.04045 ? (((b + 0.055) / 1.055) ** 2.4) : (b / 12.92);
+
+	const x = (r * 0.4124) + (g * 0.3576) + (b * 0.1805);
+	const y = (r * 0.2126) + (g * 0.7152) + (b * 0.0722);
+	const z = (r * 0.0193) + (g * 0.1192) + (b * 0.9505);
+
+	return [x * 100, y * 100, z * 100];
+};
+
+convert.rgb.lab = function (rgb) {
+	const xyz = convert.rgb.xyz(rgb);
+	let x = xyz[0];
+	let y = xyz[1];
+	let z = xyz[2];
+
+	x /= 95.047;
+	y /= 100;
+	z /= 108.883;
+
+	x = x > 0.008856 ? (x ** (1 / 3)) : (7.787 * x) + (16 / 116);
+	y = y > 0.008856 ? (y ** (1 / 3)) : (7.787 * y) + (16 / 116);
+	z = z > 0.008856 ? (z ** (1 / 3)) : (7.787 * z) + (16 / 116);
+
+	const l = (116 * y) - 16;
+	const a = 500 * (x - y);
+	const b = 200 * (y - z);
+
+	return [l, a, b];
+};
+
+convert.hsl.rgb = function (hsl) {
+	const h = hsl[0] / 360;
+	const s = hsl[1] / 100;
+	const l = hsl[2] / 100;
+	let t2;
+	let t3;
+	let val;
+
+	if (s === 0) {
+		val = l * 255;
+		return [val, val, val];
+	}
+
+	if (l < 0.5) {
+		t2 = l * (1 + s);
+	} else {
+		t2 = l + s - l * s;
+	}
+
+	const t1 = 2 * l - t2;
+
+	const rgb = [0, 0, 0];
+	for (let i = 0; i < 3; i++) {
+		t3 = h + 1 / 3 * -(i - 1);
+		if (t3 < 0) {
+			t3++;
+		}
+
+		if (t3 > 1) {
+			t3--;
+		}
+
+		if (6 * t3 < 1) {
+			val = t1 + (t2 - t1) * 6 * t3;
+		} else if (2 * t3 < 1) {
+			val = t2;
+		} else if (3 * t3 < 2) {
+			val = t1 + (t2 - t1) * (2 / 3 - t3) * 6;
+		} else {
+			val = t1;
+		}
+
+		rgb[i] = val * 255;
+	}
+
+	return rgb;
+};
+
+convert.hsl.hsv = function (hsl) {
+	const h = hsl[0];
+	let s = hsl[1] / 100;
+	let l = hsl[2] / 100;
+	let smin = s;
+	const lmin = Math.max(l, 0.01);
+
+	l *= 2;
+	s *= (l <= 1) ? l : 2 - l;
+	smin *= lmin <= 1 ? lmin : 2 - lmin;
+	const v = (l + s) / 2;
+	const sv = l === 0 ? (2 * smin) / (lmin + smin) : (2 * s) / (l + s);
+
+	return [h, sv * 100, v * 100];
+};
+
+convert.hsv.rgb = function (hsv) {
+	const h = hsv[0] / 60;
+	const s = hsv[1] / 100;
+	let v = hsv[2] / 100;
+	const hi = Math.floor(h) % 6;
+
+	const f = h - Math.floor(h);
+	const p = 255 * v * (1 - s);
+	const q = 255 * v * (1 - (s * f));
+	const t = 255 * v * (1 - (s * (1 - f)));
+	v *= 255;
+
+	switch (hi) {
+		case 0:
+			return [v, t, p];
+		case 1:
+			return [q, v, p];
+		case 2:
+			return [p, v, t];
+		case 3:
+			return [p, q, v];
+		case 4:
+			return [t, p, v];
+		case 5:
+			return [v, p, q];
+	}
+};
+
+convert.hsv.hsl = function (hsv) {
+	const h = hsv[0];
+	const s = hsv[1] / 100;
+	const v = hsv[2] / 100;
+	const vmin = Math.max(v, 0.01);
+	let sl;
+	let l;
+
+	l = (2 - s) * v;
+	const lmin = (2 - s) * vmin;
+	sl = s * vmin;
+	sl /= (lmin <= 1) ? lmin : 2 - lmin;
+	sl = sl || 0;
+	l /= 2;
+
+	return [h, sl * 100, l * 100];
+};
+
+// http://dev.w3.org/csswg/css-color/#hwb-to-rgb
+convert.hwb.rgb = function (hwb) {
+	const h = hwb[0] / 360;
+	let wh = hwb[1] / 100;
+	let bl = hwb[2] / 100;
+	const ratio = wh + bl;
+	let f;
+
+	// Wh + bl cant be > 1
+	if (ratio > 1) {
+		wh /= ratio;
+		bl /= ratio;
+	}
+
+	const i = Math.floor(6 * h);
+	const v = 1 - bl;
+	f = 6 * h - i;
+
+	if ((i & 0x01) !== 0) {
+		f = 1 - f;
+	}
+
+	const n = wh + f * (v - wh); // Linear interpolation
+
+	let r;
+	let g;
+	let b;
+	/* eslint-disable max-statements-per-line,no-multi-spaces */
+	switch (i) {
+		default:
+		case 6:
+		case 0: r = v;  g = n;  b = wh; break;
+		case 1: r = n;  g = v;  b = wh; break;
+		case 2: r = wh; g = v;  b = n; break;
+		case 3: r = wh; g = n;  b = v; break;
+		case 4: r = n;  g = wh; b = v; break;
+		case 5: r = v;  g = wh; b = n; break;
+	}
+	/* eslint-enable max-statements-per-line,no-multi-spaces */
+
+	return [r * 255, g * 255, b * 255];
+};
+
+convert.cmyk.rgb = function (cmyk) {
+	const c = cmyk[0] / 100;
+	const m = cmyk[1] / 100;
+	const y = cmyk[2] / 100;
+	const k = cmyk[3] / 100;
+
+	const r = 1 - Math.min(1, c * (1 - k) + k);
+	const g = 1 - Math.min(1, m * (1 - k) + k);
+	const b = 1 - Math.min(1, y * (1 - k) + k);
+
+	return [r * 255, g * 255, b * 255];
+};
+
+convert.xyz.rgb = function (xyz) {
+	const x = xyz[0] / 100;
+	const y = xyz[1] / 100;
+	const z = xyz[2] / 100;
+	let r;
+	let g;
+	let b;
+
+	r = (x * 3.2406) + (y * -1.5372) + (z * -0.4986);
+	g = (x * -0.9689) + (y * 1.8758) + (z * 0.0415);
+	b = (x * 0.0557) + (y * -0.2040) + (z * 1.0570);
+
+	// Assume sRGB
+	r = r > 0.0031308
+		? ((1.055 * (r ** (1.0 / 2.4))) - 0.055)
+		: r * 12.92;
+
+	g = g > 0.0031308
+		? ((1.055 * (g ** (1.0 / 2.4))) - 0.055)
+		: g * 12.92;
+
+	b = b > 0.0031308
+		? ((1.055 * (b ** (1.0 / 2.4))) - 0.055)
+		: b * 12.92;
+
+	r = Math.min(Math.max(0, r), 1);
+	g = Math.min(Math.max(0, g), 1);
+	b = Math.min(Math.max(0, b), 1);
+
+	return [r * 255, g * 255, b * 255];
+};
+
+convert.xyz.lab = function (xyz) {
+	let x = xyz[0];
+	let y = xyz[1];
+	let z = xyz[2];
+
+	x /= 95.047;
+	y /= 100;
+	z /= 108.883;
+
+	x = x > 0.008856 ? (x ** (1 / 3)) : (7.787 * x) + (16 / 116);
+	y = y > 0.008856 ? (y ** (1 / 3)) : (7.787 * y) + (16 / 116);
+	z = z > 0.008856 ? (z ** (1 / 3)) : (7.787 * z) + (16 / 116);
+
+	const l = (116 * y) - 16;
+	const a = 500 * (x - y);
+	const b = 200 * (y - z);
+
+	return [l, a, b];
+};
+
+convert.lab.xyz = function (lab) {
+	const l = lab[0];
+	const a = lab[1];
+	const b = lab[2];
+	let x;
+	let y;
+	let z;
+
+	y = (l + 16) / 116;
+	x = a / 500 + y;
+	z = y - b / 200;
+
+	const y2 = y ** 3;
+	const x2 = x ** 3;
+	const z2 = z ** 3;
+	y = y2 > 0.008856 ? y2 : (y - 16 / 116) / 7.787;
+	x = x2 > 0.008856 ? x2 : (x - 16 / 116) / 7.787;
+	z = z2 > 0.008856 ? z2 : (z - 16 / 116) / 7.787;
+
+	x *= 95.047;
+	y *= 100;
+	z *= 108.883;
+
+	return [x, y, z];
+};
+
+convert.lab.lch = function (lab) {
+	const l = lab[0];
+	const a = lab[1];
+	const b = lab[2];
+	let h;
+
+	const hr = Math.atan2(b, a);
+	h = hr * 360 / 2 / Math.PI;
+
+	if (h < 0) {
+		h += 360;
+	}
+
+	const c = Math.sqrt(a * a + b * b);
+
+	return [l, c, h];
+};
+
+convert.lch.lab = function (lch) {
+	const l = lch[0];
+	const c = lch[1];
+	const h = lch[2];
+
+	const hr = h / 360 * 2 * Math.PI;
+	const a = c * Math.cos(hr);
+	const b = c * Math.sin(hr);
+
+	return [l, a, b];
+};
+
+convert.rgb.ansi16 = function (args, saturation = null) {
+	const [r, g, b] = args;
+	let value = saturation === null ? convert.rgb.hsv(args)[2] : saturation; // Hsv -> ansi16 optimization
+
+	value = Math.round(value / 50);
+
+	if (value === 0) {
+		return 30;
+	}
+
+	let ansi = 30
+		+ ((Math.round(b / 255) << 2)
+		| (Math.round(g / 255) << 1)
+		| Math.round(r / 255));
+
+	if (value === 2) {
+		ansi += 60;
+	}
+
+	return ansi;
+};
+
+convert.hsv.ansi16 = function (args) {
+	// Optimization here; we already know the value and don't need to get
+	// it converted for us.
+	return convert.rgb.ansi16(convert.hsv.rgb(args), args[2]);
+};
+
+convert.rgb.ansi256 = function (args) {
+	const r = args[0];
+	const g = args[1];
+	const b = args[2];
+
+	// We use the extended greyscale palette here, with the exception of
+	// black and white. normal palette only has 4 greyscale shades.
+	if (r === g && g === b) {
+		if (r < 8) {
+			return 16;
+		}
+
+		if (r > 248) {
+			return 231;
+		}
+
+		return Math.round(((r - 8) / 247) * 24) + 232;
+	}
+
+	const ansi = 16
+		+ (36 * Math.round(r / 255 * 5))
+		+ (6 * Math.round(g / 255 * 5))
+		+ Math.round(b / 255 * 5);
+
+	return ansi;
+};
+
+convert.ansi16.rgb = function (args) {
+	let color = args % 10;
+
+	// Handle greyscale
+	if (color === 0 || color === 7) {
+		if (args > 50) {
+			color += 3.5;
+		}
+
+		color = color / 10.5 * 255;
+
+		return [color, color, color];
+	}
+
+	const mult = (~~(args > 50) + 1) * 0.5;
+	const r = ((color & 1) * mult) * 255;
+	const g = (((color >> 1) & 1) * mult) * 255;
+	const b = (((color >> 2) & 1) * mult) * 255;
+
+	return [r, g, b];
+};
+
+convert.ansi256.rgb = function (args) {
+	// Handle greyscale
+	if (args >= 232) {
+		const c = (args - 232) * 10 + 8;
+		return [c, c, c];
+	}
+
+	args -= 16;
+
+	let rem;
+	const r = Math.floor(args / 36) / 5 * 255;
+	const g = Math.floor((rem = args % 36) / 6) / 5 * 255;
+	const b = (rem % 6) / 5 * 255;
+
+	return [r, g, b];
+};
+
+convert.rgb.hex = function (args) {
+	const integer = ((Math.round(args[0]) & 0xFF) << 16)
+		+ ((Math.round(args[1]) & 0xFF) << 8)
+		+ (Math.round(args[2]) & 0xFF);
+
+	const string = integer.toString(16).toUpperCase();
+	return '000000'.substring(string.length) + string;
+};
+
+convert.hex.rgb = function (args) {
+	const match = args.toString(16).match(/[a-f0-9]{6}|[a-f0-9]{3}/i);
+	if (!match) {
+		return [0, 0, 0];
+	}
+
+	let colorString = match[0];
+
+	if (match[0].length === 3) {
+		colorString = colorString.split('').map(char => {
+			return char + char;
+		}).join('');
+	}
+
+	const integer = parseInt(colorString, 16);
+	const r = (integer >> 16) & 0xFF;
+	const g = (integer >> 8) & 0xFF;
+	const b = integer & 0xFF;
+
+	return [r, g, b];
+};
+
+convert.rgb.hcg = function (rgb) {
+	const r = rgb[0] / 255;
+	const g = rgb[1] / 255;
+	const b = rgb[2] / 255;
+	const max = Math.max(Math.max(r, g), b);
+	const min = Math.min(Math.min(r, g), b);
+	const chroma = (max - min);
+	let grayscale;
+	let hue;
+
+	if (chroma < 1) {
+		grayscale = min / (1 - chroma);
+	} else {
+		grayscale = 0;
+	}
+
+	if (chroma <= 0) {
+		hue = 0;
+	} else
+	if (max === r) {
+		hue = ((g - b) / chroma) % 6;
+	} else
+	if (max === g) {
+		hue = 2 + (b - r) / chroma;
+	} else {
+		hue = 4 + (r - g) / chroma + 4;
+	}
+
+	hue /= 6;
+	hue %= 1;
+
+	return [hue * 360, chroma * 100, grayscale * 100];
+};
+
+convert.hsl.hcg = function (hsl) {
+	const s = hsl[1] / 100;
+	const l = hsl[2] / 100;
+
+	const c = l < 0.5 ? (2.0 * s * l) : (2.0 * s * (1.0 - l));
+
+	let f = 0;
+	if (c < 1.0) {
+		f = (l - 0.5 * c) / (1.0 - c);
+	}
+
+	return [hsl[0], c * 100, f * 100];
+};
+
+convert.hsv.hcg = function (hsv) {
+	const s = hsv[1] / 100;
+	const v = hsv[2] / 100;
+
+	const c = s * v;
+	let f = 0;
+
+	if (c < 1.0) {
+		f = (v - c) / (1 - c);
+	}
+
+	return [hsv[0], c * 100, f * 100];
+};
+
+convert.hcg.rgb = function (hcg) {
+	const h = hcg[0] / 360;
+	const c = hcg[1] / 100;
+	const g = hcg[2] / 100;
+
+	if (c === 0.0) {
+		return [g * 255, g * 255, g * 255];
+	}
+
+	const pure = [0, 0, 0];
+	const hi = (h % 1) * 6;
+	const v = hi % 1;
+	const w = 1 - v;
+	let mg = 0;
+
+	/* eslint-disable max-statements-per-line */
+	switch (Math.floor(hi)) {
+		case 0:
+			pure[0] = 1; pure[1] = v; pure[2] = 0; break;
+		case 1:
+			pure[0] = w; pure[1] = 1; pure[2] = 0; break;
+		case 2:
+			pure[0] = 0; pure[1] = 1; pure[2] = v; break;
+		case 3:
+			pure[0] = 0; pure[1] = w; pure[2] = 1; break;
+		case 4:
+			pure[0] = v; pure[1] = 0; pure[2] = 1; break;
+		default:
+			pure[0] = 1; pure[1] = 0; pure[2] = w;
+	}
+	/* eslint-enable max-statements-per-line */
+
+	mg = (1.0 - c) * g;
+
+	return [
+		(c * pure[0] + mg) * 255,
+		(c * pure[1] + mg) * 255,
+		(c * pure[2] + mg) * 255
+	];
+};
+
+convert.hcg.hsv = function (hcg) {
+	const c = hcg[1] / 100;
+	const g = hcg[2] / 100;
+
+	const v = c + g * (1.0 - c);
+	let f = 0;
+
+	if (v > 0.0) {
+		f = c / v;
+	}
+
+	return [hcg[0], f * 100, v * 100];
+};
+
+convert.hcg.hsl = function (hcg) {
+	const c = hcg[1] / 100;
+	const g = hcg[2] / 100;
+
+	const l = g * (1.0 - c) + 0.5 * c;
+	let s = 0;
+
+	if (l > 0.0 && l < 0.5) {
+		s = c / (2 * l);
+	} else
+	if (l >= 0.5 && l < 1.0) {
+		s = c / (2 * (1 - l));
+	}
+
+	return [hcg[0], s * 100, l * 100];
+};
+
+convert.hcg.hwb = function (hcg) {
+	const c = hcg[1] / 100;
+	const g = hcg[2] / 100;
+	const v = c + g * (1.0 - c);
+	return [hcg[0], (v - c) * 100, (1 - v) * 100];
+};
+
+convert.hwb.hcg = function (hwb) {
+	const w = hwb[1] / 100;
+	const b = hwb[2] / 100;
+	const v = 1 - b;
+	const c = v - w;
+	let g = 0;
+
+	if (c < 1) {
+		g = (v - c) / (1 - c);
+	}
+
+	return [hwb[0], c * 100, g * 100];
+};
+
+convert.apple.rgb = function (apple) {
+	return [(apple[0] / 65535) * 255, (apple[1] / 65535) * 255, (apple[2] / 65535) * 255];
+};
+
+convert.rgb.apple = function (rgb) {
+	return [(rgb[0] / 255) * 65535, (rgb[1] / 255) * 65535, (rgb[2] / 255) * 65535];
+};
+
+convert.gray.rgb = function (args) {
+	return [args[0] / 100 * 255, args[0] / 100 * 255, args[0] / 100 * 255];
+};
+
+convert.gray.hsl = function (args) {
+	return [0, 0, args[0]];
+};
+
+convert.gray.hsv = convert.gray.hsl;
+
+convert.gray.hwb = function (gray) {
+	return [0, 100, gray[0]];
+};
+
+convert.gray.cmyk = function (gray) {
+	return [0, 0, 0, gray[0]];
+};
+
+convert.gray.lab = function (gray) {
+	return [gray[0], 0, 0];
+};
+
+convert.gray.hex = function (gray) {
+	const val = Math.round(gray[0] / 100 * 255) & 0xFF;
+	const integer = (val << 16) + (val << 8) + val;
+
+	const string = integer.toString(16).toUpperCase();
+	return '000000'.substring(string.length) + string;
+};
+
+convert.rgb.gray = function (rgb) {
+	const val = (rgb[0] + rgb[1] + rgb[2]) / 3;
+	return [val / 255 * 100];
+};
+
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns the first argument it receives.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Util
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ *
+ * console.log(_.identity(object) === object);
+ * // => true
+ */
+function identity(value) {
+  return value;
+}
+
+module.exports = identity;
+
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns the first argument it receives.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Util
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ *
+ * console.log(_.identity(object) === object);
+ * // => true
+ */
+function identity(value) {
+  return value;
+}
+
+module.exports = identity;
+
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var assignValue = __webpack_require__(8),
+    copyObject = __webpack_require__(3),
+    createAssigner = __webpack_require__(33),
+    isArrayLike = __webpack_require__(39),
+    isPrototype = __webpack_require__(20),
+    keys = __webpack_require__(10);
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Assigns own enumerable string keyed properties of source objects to the
+ * destination object. Source objects are applied from left to right.
+ * Subsequent sources overwrite property assignments of previous sources.
+ *
+ * **Note:** This method mutates `object` and is loosely based on
+ * [`Object.assign`](https://mdn.io/Object/assign).
+ *
+ * @static
+ * @memberOf _
+ * @since 0.10.0
+ * @category Object
+ * @param {Object} object The destination object.
+ * @param {...Object} [sources] The source objects.
+ * @returns {Object} Returns `object`.
+ * @see _.assignIn
+ * @example
+ *
+ * function Foo() {
+ *   this.a = 1;
+ * }
+ *
+ * function Bar() {
+ *   this.c = 3;
+ * }
+ *
+ * Foo.prototype.b = 2;
+ * Bar.prototype.d = 4;
+ *
+ * _.assign({ 'a': 0 }, new Foo, new Bar);
+ * // => { 'a': 1, 'c': 3 }
+ */
+var assign = createAssigner(function(object, source) {
+  if (isPrototype(source) || isArrayLike(source)) {
+    copyObject(source, keys(source), object);
+    return;
+  }
+  for (var key in source) {
+    if (hasOwnProperty.call(source, key)) {
+      assignValue(object, key, source[key]);
+    }
+  }
+});
+
+module.exports = assign;
+
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseClone = __webpack_require__(42);
+
+/** Used to compose bitmasks for cloning. */
+var CLONE_DEEP_FLAG = 1,
+    CLONE_SYMBOLS_FLAG = 4;
+
+/**
+ * This method is like `_.clone` except that it recursively clones `value`.
+ *
+ * @static
+ * @memberOf _
+ * @since 1.0.0
+ * @category Lang
+ * @param {*} value The value to recursively clone.
+ * @returns {*} Returns the deep cloned value.
+ * @see _.clone
+ * @example
+ *
+ * var objects = [{ 'a': 1 }, { 'b': 2 }];
+ *
+ * var deep = _.cloneDeep(objects);
+ * console.log(deep[0] === objects[0]);
+ * // => false
+ */
+function cloneDeep(value) {
+  return baseClone(value, CLONE_DEEP_FLAG | CLONE_SYMBOLS_FLAG);
+}
+
+module.exports = cloneDeep;
+
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseUniq = __webpack_require__(73);
+
+/**
+ * Creates a duplicate-free version of an array, using
+ * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * for equality comparisons, in which only the first occurrence of each element
+ * is kept. The order of result values is determined by the order they occur
+ * in the array.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Array
+ * @param {Array} array The array to inspect.
+ * @returns {Array} Returns the new duplicate free array.
+ * @example
+ *
+ * _.uniq([2, 1, 2]);
+ * // => [2, 1]
+ */
+function uniq(array) {
+  return (array && array.length) ? baseUniq(array) : [];
+}
+
+module.exports = uniq;
+
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var createRound = __webpack_require__(88);
+
+/**
+ * Computes `number` rounded to `precision`.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.10.0
+ * @category Math
+ * @param {number} number The number to round.
+ * @param {number} [precision=0] The precision to round to.
+ * @returns {number} Returns the rounded number.
+ * @example
+ *
+ * _.round(4.006);
+ * // => 4
+ *
+ * _.round(4.006, 2);
+ * // => 4.01
+ *
+ * _.round(4060, -2);
+ * // => 4100
+ */
+var round = createRound('round');
+
+module.exports = round;
+
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+/**
+ * Checks if `value` is `null` or `undefined`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is nullish, else `false`.
+ * @example
+ *
+ * _.isNil(null);
+ * // => true
+ *
+ * _.isNil(void 0);
+ * // => true
+ *
+ * _.isNil(NaN);
+ * // => false
+ */
+function isNil(value) {
+  return value == null;
+}
+
+module.exports = isNil;
+
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isInteger = __webpack_require__(99);
+
+/** Used as references for various `Number` constants. */
+var MAX_SAFE_INTEGER = 9007199254740991;
+
+/**
+ * Checks if `value` is a safe integer. An integer is safe if it's an IEEE-754
+ * double precision number which isn't the result of a rounded unsafe integer.
+ *
+ * **Note:** This method is based on
+ * [`Number.isSafeInteger`](https://mdn.io/Number/isSafeInteger).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a safe integer, else `false`.
+ * @example
+ *
+ * _.isSafeInteger(3);
+ * // => true
+ *
+ * _.isSafeInteger(Number.MIN_VALUE);
+ * // => false
+ *
+ * _.isSafeInteger(Infinity);
+ * // => false
+ *
+ * _.isSafeInteger('3');
+ * // => false
+ */
+function isSafeInteger(value) {
+  return isInteger(value) && value >= -MAX_SAFE_INTEGER && value <= MAX_SAFE_INTEGER;
+}
+
+module.exports = isSafeInteger;
+
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var getNative = __webpack_require__(32);
+
+var defineProperty = (function() {
+  try {
+    var func = getNative(Object, 'defineProperty');
+    func({}, '', {});
+    return func;
+  } catch (e) {}
+}());
+
+module.exports = defineProperty;
+
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+/**
+ * Gets the value at `key` of `object`.
+ *
+ * @private
+ * @param {Object} [object] The object to query.
+ * @param {string} key The key of the property to get.
+ * @returns {*} Returns the property value.
+ */
+function getValue(object, key) {
+  return object == null ? undefined : object[key];
+}
+
+module.exports = getValue;
+
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseRest = __webpack_require__(34),
+    isIterateeCall = __webpack_require__(18);
+
+/**
+ * Creates a function like `_.assign`.
+ *
+ * @private
+ * @param {Function} assigner The function to assign values.
+ * @returns {Function} Returns the new assigner function.
+ */
+function createAssigner(assigner) {
+  return baseRest(function(object, sources) {
+    var index = -1,
+        length = sources.length,
+        customizer = length > 1 ? sources[length - 1] : undefined,
+        guard = length > 2 ? sources[2] : undefined;
+
+    customizer = (assigner.length > 3 && typeof customizer == 'function')
+      ? (length--, customizer)
+      : undefined;
+
+    if (guard && isIterateeCall(sources[0], sources[1], guard)) {
+      customizer = length < 3 ? undefined : customizer;
+      length = 1;
+    }
+    object = Object(object);
+    while (++index < length) {
+      var source = sources[index];
+      if (source) {
+        assigner(object, source, index, customizer);
+      }
+    }
+    return object;
+  });
+}
+
+module.exports = createAssigner;
+
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var identity = __webpack_require__(35),
+    overRest = __webpack_require__(36),
+    setToString = __webpack_require__(38);
+
+/**
+ * The base implementation of `_.rest` which doesn't validate or coerce arguments.
+ *
+ * @private
+ * @param {Function} func The function to apply a rest parameter to.
+ * @param {number} [start=func.length-1] The start position of the rest parameter.
+ * @returns {Function} Returns the new function.
+ */
+function baseRest(func, start) {
+  return setToString(overRest(func, start, identity), func + '');
+}
+
+module.exports = baseRest;
+
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns the first argument it receives.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Util
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ *
+ * console.log(_.identity(object) === object);
+ * // => true
+ */
+function identity(value) {
+  return value;
+}
+
+module.exports = identity;
+
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var apply = __webpack_require__(37);
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeMax = Math.max;
+
+/**
+ * A specialized version of `baseRest` which transforms the rest array.
+ *
+ * @private
+ * @param {Function} func The function to apply a rest parameter to.
+ * @param {number} [start=func.length-1] The start position of the rest parameter.
+ * @param {Function} transform The rest array transform.
+ * @returns {Function} Returns the new function.
+ */
+function overRest(func, start, transform) {
+  start = nativeMax(start === undefined ? (func.length - 1) : start, 0);
+  return function() {
+    var args = arguments,
+        index = -1,
+        length = nativeMax(args.length - start, 0),
+        array = Array(length);
+
+    while (++index < length) {
+      array[index] = args[start + index];
+    }
+    index = -1;
+    var otherArgs = Array(start + 1);
+    while (++index < start) {
+      otherArgs[index] = args[index];
+    }
+    otherArgs[start] = transform(array);
+    return apply(func, this, otherArgs);
+  };
+}
+
+module.exports = overRest;
+
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports) {
+
+/**
+ * A faster alternative to `Function#apply`, this function invokes `func`
+ * with the `this` binding of `thisArg` and the arguments of `args`.
+ *
+ * @private
+ * @param {Function} func The function to invoke.
+ * @param {*} thisArg The `this` binding of `func`.
+ * @param {Array} args The arguments to invoke `func` with.
+ * @returns {*} Returns the result of `func`.
+ */
+function apply(func, thisArg, args) {
+  switch (args.length) {
+    case 0: return func.call(thisArg);
+    case 1: return func.call(thisArg, args[0]);
+    case 2: return func.call(thisArg, args[0], args[1]);
+    case 3: return func.call(thisArg, args[0], args[1], args[2]);
+  }
+  return func.apply(thisArg, args);
+}
+
+module.exports = apply;
+
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns the first argument it receives.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Util
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ *
+ * console.log(_.identity(object) === object);
+ * // => true
+ */
+function identity(value) {
+  return value;
+}
+
+module.exports = identity;
+
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isFunction = __webpack_require__(40),
+    isLength = __webpack_require__(19);
+
+/**
+ * Checks if `value` is array-like. A value is considered array-like if it's
+ * not a function and has a `value.length` that's an integer greater than or
+ * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+ * @example
+ *
+ * _.isArrayLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isArrayLike(document.body.children);
+ * // => true
+ *
+ * _.isArrayLike('abc');
+ * // => true
+ *
+ * _.isArrayLike(_.noop);
+ * // => false
+ */
+function isArrayLike(value) {
+  return value != null && isLength(value.length) && !isFunction(value);
+}
+
+module.exports = isArrayLike;
+
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseGetTag = __webpack_require__(41),
+    isObject = __webpack_require__(9);
+
+/** `Object#toString` result references. */
+var asyncTag = '[object AsyncFunction]',
+    funcTag = '[object Function]',
+    genTag = '[object GeneratorFunction]',
+    proxyTag = '[object Proxy]';
+
+/**
+ * Checks if `value` is classified as a `Function` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a function, else `false`.
+ * @example
+ *
+ * _.isFunction(_);
+ * // => true
+ *
+ * _.isFunction(/abc/);
+ * // => false
+ */
+function isFunction(value) {
+  if (!isObject(value)) {
+    return false;
+  }
+  // The use of `Object#toString` avoids issues with the `typeof` operator
+  // in Safari 9 which returns 'object' for typed arrays and other constructors.
+  var tag = baseGetTag(value);
+  return tag == funcTag || tag == genTag || tag == asyncTag || tag == proxyTag;
+}
+
+module.exports = isFunction;
+
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports) {
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var nativeObjectToString = objectProto.toString;
+
+/**
+ * Converts `value` to a string using `Object.prototype.toString`.
+ *
+ * @private
+ * @param {*} value The value to convert.
+ * @returns {string} Returns the converted string.
+ */
+function objectToString(value) {
+  return nativeObjectToString.call(value);
+}
+
+module.exports = objectToString;
+
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Stack = __webpack_require__(43),
+    arrayEach = __webpack_require__(49),
+    assignValue = __webpack_require__(8),
+    baseAssign = __webpack_require__(50),
+    baseAssignIn = __webpack_require__(51),
+    cloneBuffer = __webpack_require__(53),
+    copyArray = __webpack_require__(57),
+    copySymbols = __webpack_require__(58),
+    copySymbolsIn = __webpack_require__(60),
+    getAllKeys = __webpack_require__(62),
+    getAllKeysIn = __webpack_require__(63),
+    getTag = __webpack_require__(64),
+    initCloneArray = __webpack_require__(65),
+    initCloneByTag = __webpack_require__(66),
+    initCloneObject = __webpack_require__(67),
+    isArray = __webpack_require__(1),
+    isBuffer = __webpack_require__(70),
+    isMap = __webpack_require__(71),
+    isObject = __webpack_require__(9),
+    isSet = __webpack_require__(72),
+    keys = __webpack_require__(10);
+
+/** Used to compose bitmasks for cloning. */
+var CLONE_DEEP_FLAG = 1,
+    CLONE_FLAT_FLAG = 2,
+    CLONE_SYMBOLS_FLAG = 4;
+
+/** `Object#toString` result references. */
+var argsTag = '[object Arguments]',
+    arrayTag = '[object Array]',
+    boolTag = '[object Boolean]',
+    dateTag = '[object Date]',
+    errorTag = '[object Error]',
+    funcTag = '[object Function]',
+    genTag = '[object GeneratorFunction]',
+    mapTag = '[object Map]',
+    numberTag = '[object Number]',
+    objectTag = '[object Object]',
+    regexpTag = '[object RegExp]',
+    setTag = '[object Set]',
+    stringTag = '[object String]',
+    symbolTag = '[object Symbol]',
+    weakMapTag = '[object WeakMap]';
+
+var arrayBufferTag = '[object ArrayBuffer]',
+    dataViewTag = '[object DataView]',
+    float32Tag = '[object Float32Array]',
+    float64Tag = '[object Float64Array]',
+    int8Tag = '[object Int8Array]',
+    int16Tag = '[object Int16Array]',
+    int32Tag = '[object Int32Array]',
+    uint8Tag = '[object Uint8Array]',
+    uint8ClampedTag = '[object Uint8ClampedArray]',
+    uint16Tag = '[object Uint16Array]',
+    uint32Tag = '[object Uint32Array]';
+
+/** Used to identify `toStringTag` values supported by `_.clone`. */
+var cloneableTags = {};
+cloneableTags[argsTag] = cloneableTags[arrayTag] =
+cloneableTags[arrayBufferTag] = cloneableTags[dataViewTag] =
+cloneableTags[boolTag] = cloneableTags[dateTag] =
+cloneableTags[float32Tag] = cloneableTags[float64Tag] =
+cloneableTags[int8Tag] = cloneableTags[int16Tag] =
+cloneableTags[int32Tag] = cloneableTags[mapTag] =
+cloneableTags[numberTag] = cloneableTags[objectTag] =
+cloneableTags[regexpTag] = cloneableTags[setTag] =
+cloneableTags[stringTag] = cloneableTags[symbolTag] =
+cloneableTags[uint8Tag] = cloneableTags[uint8ClampedTag] =
+cloneableTags[uint16Tag] = cloneableTags[uint32Tag] = true;
+cloneableTags[errorTag] = cloneableTags[funcTag] =
+cloneableTags[weakMapTag] = false;
+
+/**
+ * The base implementation of `_.clone` and `_.cloneDeep` which tracks
+ * traversed objects.
+ *
+ * @private
+ * @param {*} value The value to clone.
+ * @param {boolean} bitmask The bitmask flags.
+ *  1 - Deep clone
+ *  2 - Flatten inherited properties
+ *  4 - Clone symbols
+ * @param {Function} [customizer] The function to customize cloning.
+ * @param {string} [key] The key of `value`.
+ * @param {Object} [object] The parent object of `value`.
+ * @param {Object} [stack] Tracks traversed objects and their clone counterparts.
+ * @returns {*} Returns the cloned value.
+ */
+function baseClone(value, bitmask, customizer, key, object, stack) {
+  var result,
+      isDeep = bitmask & CLONE_DEEP_FLAG,
+      isFlat = bitmask & CLONE_FLAT_FLAG,
+      isFull = bitmask & CLONE_SYMBOLS_FLAG;
+
+  if (customizer) {
+    result = object ? customizer(value, key, object, stack) : customizer(value);
+  }
+  if (result !== undefined) {
+    return result;
+  }
+  if (!isObject(value)) {
+    return value;
+  }
+  var isArr = isArray(value);
+  if (isArr) {
+    result = initCloneArray(value);
+    if (!isDeep) {
+      return copyArray(value, result);
+    }
+  } else {
+    var tag = getTag(value),
+        isFunc = tag == funcTag || tag == genTag;
+
+    if (isBuffer(value)) {
+      return cloneBuffer(value, isDeep);
+    }
+    if (tag == objectTag || tag == argsTag || (isFunc && !object)) {
+      result = (isFlat || isFunc) ? {} : initCloneObject(value);
+      if (!isDeep) {
+        return isFlat
+          ? copySymbolsIn(value, baseAssignIn(result, value))
+          : copySymbols(value, baseAssign(result, value));
+      }
+    } else {
+      if (!cloneableTags[tag]) {
+        return object ? value : {};
+      }
+      result = initCloneByTag(value, tag, isDeep);
+    }
+  }
+  // Check for circular references and return its corresponding clone.
+  stack || (stack = new Stack);
+  var stacked = stack.get(value);
+  if (stacked) {
+    return stacked;
+  }
+  stack.set(value, result);
+
+  if (isSet(value)) {
+    value.forEach(function(subValue) {
+      result.add(baseClone(subValue, bitmask, customizer, subValue, value, stack));
+    });
+  } else if (isMap(value)) {
+    value.forEach(function(subValue, key) {
+      result.set(key, baseClone(subValue, bitmask, customizer, key, value, stack));
+    });
+  }
+
+  var keysFunc = isFull
+    ? (isFlat ? getAllKeysIn : getAllKeys)
+    : (isFlat ? keysIn : keys);
+
+  var props = isArr ? undefined : keysFunc(value);
+  arrayEach(props || value, function(subValue, key) {
+    if (props) {
+      key = subValue;
+      subValue = value[key];
+    }
+    // Recursively populate clone (susceptible to call stack limits).
+    assignValue(result, key, baseClone(subValue, bitmask, customizer, key, value, stack));
+  });
+  return result;
+}
+
+module.exports = baseClone;
+
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var listCacheClear = __webpack_require__(44),
+    listCacheDelete = __webpack_require__(45),
+    listCacheGet = __webpack_require__(46),
+    listCacheHas = __webpack_require__(47),
+    listCacheSet = __webpack_require__(48);
+
+/**
+ * Creates an list cache object.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */
+function ListCache(entries) {
+  var index = -1,
+      length = entries == null ? 0 : entries.length;
+
+  this.clear();
+  while (++index < length) {
+    var entry = entries[index];
+    this.set(entry[0], entry[1]);
+  }
+}
+
+// Add methods to `ListCache`.
+ListCache.prototype.clear = listCacheClear;
+ListCache.prototype['delete'] = listCacheDelete;
+ListCache.prototype.get = listCacheGet;
+ListCache.prototype.has = listCacheHas;
+ListCache.prototype.set = listCacheSet;
+
+module.exports = ListCache;
+
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports) {
+
+/**
+ * Removes all key-value entries from the list cache.
+ *
+ * @private
+ * @name clear
+ * @memberOf ListCache
+ */
+function listCacheClear() {
+  this.__data__ = [];
+  this.size = 0;
+}
+
+module.exports = listCacheClear;
+
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var assocIndexOf = __webpack_require__(6);
+
+/** Used for built-in method references. */
+var arrayProto = Array.prototype;
+
+/** Built-in value references. */
+var splice = arrayProto.splice;
+
+/**
+ * Removes `key` and its value from the list cache.
+ *
+ * @private
+ * @name delete
+ * @memberOf ListCache
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */
+function listCacheDelete(key) {
+  var data = this.__data__,
+      index = assocIndexOf(data, key);
+
+  if (index < 0) {
+    return false;
+  }
+  var lastIndex = data.length - 1;
+  if (index == lastIndex) {
+    data.pop();
+  } else {
+    splice.call(data, index, 1);
+  }
+  --this.size;
+  return true;
+}
+
+module.exports = listCacheDelete;
+
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var assocIndexOf = __webpack_require__(6);
+
+/**
+ * Gets the list cache value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf ListCache
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */
+function listCacheGet(key) {
+  var data = this.__data__,
+      index = assocIndexOf(data, key);
+
+  return index < 0 ? undefined : data[index][1];
+}
+
+module.exports = listCacheGet;
+
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var assocIndexOf = __webpack_require__(6);
+
+/**
+ * Checks if a list cache value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf ListCache
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */
+function listCacheHas(key) {
+  return assocIndexOf(this.__data__, key) > -1;
+}
+
+module.exports = listCacheHas;
+
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var assocIndexOf = __webpack_require__(6);
+
+/**
+ * Sets the list cache `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf ListCache
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the list cache instance.
+ */
+function listCacheSet(key, value) {
+  var data = this.__data__,
+      index = assocIndexOf(data, key);
+
+  if (index < 0) {
+    ++this.size;
+    data.push([key, value]);
+  } else {
+    data[index][1] = value;
+  }
+  return this;
+}
+
+module.exports = listCacheSet;
+
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports) {
+
+/**
+ * A specialized version of `_.forEach` for arrays without support for
+ * iteratee shorthands.
+ *
+ * @private
+ * @param {Array} [array] The array to iterate over.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array} Returns `array`.
+ */
+function arrayEach(array, iteratee) {
+  var index = -1,
+      length = array == null ? 0 : array.length;
+
+  while (++index < length) {
+    if (iteratee(array[index], index, array) === false) {
+      break;
+    }
+  }
+  return array;
+}
+
+module.exports = arrayEach;
+
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var copyObject = __webpack_require__(3),
+    keys = __webpack_require__(10);
+
+/**
+ * The base implementation of `_.assign` without support for multiple sources
+ * or `customizer` functions.
+ *
+ * @private
+ * @param {Object} object The destination object.
+ * @param {Object} source The source object.
+ * @returns {Object} Returns `object`.
+ */
+function baseAssign(object, source) {
+  return object && copyObject(source, keys(source), object);
+}
+
+module.exports = baseAssign;
+
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var copyObject = __webpack_require__(3),
+    keysIn = __webpack_require__(52);
+
+/**
+ * The base implementation of `_.assignIn` without support for multiple sources
+ * or `customizer` functions.
+ *
+ * @private
+ * @param {Object} object The destination object.
+ * @param {Object} source The source object.
+ * @returns {Object} Returns `object`.
+ */
+function baseAssignIn(object, source) {
+  return object && copyObject(source, keysIn(source), object);
+}
+
+module.exports = baseAssignIn;
+
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports) {
+
+/**
+ * This function is like
+ * [`Object.keys`](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+ * except that it includes inherited enumerable properties.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */
+function nativeKeysIn(object) {
+  var result = [];
+  if (object != null) {
+    for (var key in Object(object)) {
+      result.push(key);
+    }
+  }
+  return result;
+}
+
+module.exports = nativeKeysIn;
+
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(21);
+
+/** Detect free variable `exports`. */
+var freeExports =  true && exports && !exports.nodeType && exports;
+
+/** Detect free variable `module`. */
+var freeModule = freeExports && typeof module == 'object' && module && !module.nodeType && module;
+
+/** Detect the popular CommonJS extension `module.exports`. */
+var moduleExports = freeModule && freeModule.exports === freeExports;
+
+/** Built-in value references. */
+var Buffer = moduleExports ? root.Buffer : undefined,
+    allocUnsafe = Buffer ? Buffer.allocUnsafe : undefined;
+
+/**
+ * Creates a clone of  `buffer`.
+ *
+ * @private
+ * @param {Buffer} buffer The buffer to clone.
+ * @param {boolean} [isDeep] Specify a deep clone.
+ * @returns {Buffer} Returns the cloned buffer.
+ */
+function cloneBuffer(buffer, isDeep) {
+  if (isDeep) {
+    return buffer.slice();
+  }
+  var length = buffer.length,
+      result = allocUnsafe ? allocUnsafe(length) : new buffer.constructor(length);
+
+  buffer.copy(result);
+  return result;
+}
+
+module.exports = cloneBuffer;
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(54)(module)))
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports) {
+
+module.exports = function(module) {
+	if (!module.webpackPolyfill) {
+		module.deprecate = function() {};
+		module.paths = [];
+		// module.parent = undefined by default
+		if (!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function() {
+				return module.i;
+			}
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
+var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+
+module.exports = freeGlobal;
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(56)))
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports) {
+
+/**
+ * Copies the values of `source` to `array`.
+ *
+ * @private
+ * @param {Array} source The array to copy values from.
+ * @param {Array} [array=[]] The array to copy values to.
+ * @returns {Array} Returns `array`.
+ */
+function copyArray(source, array) {
+  var index = -1,
+      length = source.length;
+
+  array || (array = Array(length));
+  while (++index < length) {
+    array[index] = source[index];
+  }
+  return array;
+}
+
+module.exports = copyArray;
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var copyObject = __webpack_require__(3),
+    getSymbols = __webpack_require__(59);
+
+/**
+ * Copies own symbols of `source` to `object`.
+ *
+ * @private
+ * @param {Object} source The object to copy symbols from.
+ * @param {Object} [object={}] The object to copy symbols to.
+ * @returns {Object} Returns `object`.
+ */
+function copySymbols(source, object) {
+  return copyObject(source, getSymbols(source), object);
+}
+
+module.exports = copySymbols;
+
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns a new empty array.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {Array} Returns the new empty array.
+ * @example
+ *
+ * var arrays = _.times(2, _.stubArray);
+ *
+ * console.log(arrays);
+ * // => [[], []]
+ *
+ * console.log(arrays[0] === arrays[1]);
+ * // => false
+ */
+function stubArray() {
+  return [];
+}
+
+module.exports = stubArray;
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var copyObject = __webpack_require__(3),
+    getSymbolsIn = __webpack_require__(61);
+
+/**
+ * Copies own and inherited symbols of `source` to `object`.
+ *
+ * @private
+ * @param {Object} source The object to copy symbols from.
+ * @param {Object} [object={}] The object to copy symbols to.
+ * @returns {Object} Returns `object`.
+ */
+function copySymbolsIn(source, object) {
+  return copyObject(source, getSymbolsIn(source), object);
+}
+
+module.exports = copySymbolsIn;
+
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns a new empty array.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {Array} Returns the new empty array.
+ * @example
+ *
+ * var arrays = _.times(2, _.stubArray);
+ *
+ * console.log(arrays);
+ * // => [[], []]
+ *
+ * console.log(arrays[0] === arrays[1]);
+ * // => false
+ */
+function stubArray() {
+  return [];
+}
+
+module.exports = stubArray;
+
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var overArg = __webpack_require__(11);
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeKeys = overArg(Object.keys, Object);
+
+module.exports = nativeKeys;
+
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports) {
+
+/**
+ * This function is like
+ * [`Object.keys`](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+ * except that it includes inherited enumerable properties.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */
+function nativeKeysIn(object) {
+  var result = [];
+  if (object != null) {
+    for (var key in Object(object)) {
+      result.push(key);
+    }
+  }
+  return result;
+}
+
+module.exports = nativeKeysIn;
+
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports) {
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var nativeObjectToString = objectProto.toString;
+
+/**
+ * Converts `value` to a string using `Object.prototype.toString`.
+ *
+ * @private
+ * @param {*} value The value to convert.
+ * @returns {string} Returns the converted string.
+ */
+function objectToString(value) {
+  return nativeObjectToString.call(value);
+}
+
+module.exports = objectToString;
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports) {
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Initializes an array clone.
+ *
+ * @private
+ * @param {Array} array The array to clone.
+ * @returns {Array} Returns the initialized clone.
+ */
+function initCloneArray(array) {
+  var length = array.length,
+      result = new array.constructor(length);
+
+  // Add properties assigned by `RegExp#exec`.
+  if (length && typeof array[0] == 'string' && hasOwnProperty.call(array, 'index')) {
+    result.index = array.index;
+    result.input = array.input;
+  }
+  return result;
+}
+
+module.exports = initCloneArray;
+
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns the first argument it receives.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Util
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ *
+ * console.log(_.identity(object) === object);
+ * // => true
+ */
+function identity(value) {
+  return value;
+}
+
+module.exports = identity;
+
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseCreate = __webpack_require__(68),
+    getPrototype = __webpack_require__(69),
+    isPrototype = __webpack_require__(20);
+
+/**
+ * Initializes an object clone.
+ *
+ * @private
+ * @param {Object} object The object to clone.
+ * @returns {Object} Returns the initialized clone.
+ */
+function initCloneObject(object) {
+  return (typeof object.constructor == 'function' && !isPrototype(object))
+    ? baseCreate(getPrototype(object))
+    : {};
+}
+
+module.exports = initCloneObject;
+
+
+/***/ }),
+/* 68 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isObject = __webpack_require__(9);
+
+/** Built-in value references. */
+var objectCreate = Object.create;
+
+/**
+ * The base implementation of `_.create` without support for assigning
+ * properties to the created object.
+ *
+ * @private
+ * @param {Object} proto The object to inherit from.
+ * @returns {Object} Returns the new object.
+ */
+var baseCreate = (function() {
+  function object() {}
+  return function(proto) {
+    if (!isObject(proto)) {
+      return {};
+    }
+    if (objectCreate) {
+      return objectCreate(proto);
+    }
+    object.prototype = proto;
+    var result = new object;
+    object.prototype = undefined;
+    return result;
+  };
+}());
+
+module.exports = baseCreate;
+
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var overArg = __webpack_require__(11);
+
+/** Built-in value references. */
+var getPrototype = overArg(Object.getPrototypeOf, Object);
+
+module.exports = getPrototype;
+
+
+/***/ }),
+/* 70 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns `false`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {boolean} Returns `false`.
+ * @example
+ *
+ * _.times(2, _.stubFalse);
+ * // => [false, false]
+ */
+function stubFalse() {
+  return false;
+}
+
+module.exports = stubFalse;
+
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns `false`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {boolean} Returns `false`.
+ * @example
+ *
+ * _.times(2, _.stubFalse);
+ * // => [false, false]
+ */
+function stubFalse() {
+  return false;
+}
+
+module.exports = stubFalse;
+
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns `false`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {boolean} Returns `false`.
+ * @example
+ *
+ * _.times(2, _.stubFalse);
+ * // => [false, false]
+ */
+function stubFalse() {
+  return false;
+}
+
+module.exports = stubFalse;
+
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var SetCache = __webpack_require__(74),
+    arrayIncludes = __webpack_require__(75),
+    arrayIncludesWith = __webpack_require__(76),
+    cacheHas = __webpack_require__(77),
+    createSet = __webpack_require__(78),
+    setToArray = __webpack_require__(79);
+
+/** Used as the size to enable large array optimizations. */
+var LARGE_ARRAY_SIZE = 200;
+
+/**
+ * The base implementation of `_.uniqBy` without support for iteratee shorthands.
+ *
+ * @private
+ * @param {Array} array The array to inspect.
+ * @param {Function} [iteratee] The iteratee invoked per element.
+ * @param {Function} [comparator] The comparator invoked per element.
+ * @returns {Array} Returns the new duplicate free array.
+ */
+function baseUniq(array, iteratee, comparator) {
+  var index = -1,
+      includes = arrayIncludes,
+      length = array.length,
+      isCommon = true,
+      result = [],
+      seen = result;
+
+  if (comparator) {
+    isCommon = false;
+    includes = arrayIncludesWith;
+  }
+  else if (length >= LARGE_ARRAY_SIZE) {
+    var set = iteratee ? null : createSet(array);
+    if (set) {
+      return setToArray(set);
+    }
+    isCommon = false;
+    includes = cacheHas;
+    seen = new SetCache;
+  }
+  else {
+    seen = iteratee ? [] : result;
+  }
+  outer:
+  while (++index < length) {
+    var value = array[index],
+        computed = iteratee ? iteratee(value) : value;
+
+    value = (comparator || value !== 0) ? value : 0;
+    if (isCommon && computed === computed) {
+      var seenIndex = seen.length;
+      while (seenIndex--) {
+        if (seen[seenIndex] === computed) {
+          continue outer;
+        }
+      }
+      if (iteratee) {
+        seen.push(computed);
+      }
+      result.push(value);
+    }
+    else if (!includes(seen, computed, comparator)) {
+      if (seen !== result) {
+        seen.push(computed);
+      }
+      result.push(value);
+    }
+  }
+  return result;
+}
+
+module.exports = baseUniq;
+
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isArray = __webpack_require__(1);
+
+/**
+ * Casts `value` as an array if it's not one.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.4.0
+ * @category Lang
+ * @param {*} value The value to inspect.
+ * @returns {Array} Returns the cast array.
+ * @example
+ *
+ * _.castArray(1);
+ * // => [1]
+ *
+ * _.castArray({ 'a': 1 });
+ * // => [{ 'a': 1 }]
+ *
+ * _.castArray('abc');
+ * // => ['abc']
+ *
+ * _.castArray(null);
+ * // => [null]
+ *
+ * _.castArray(undefined);
+ * // => [undefined]
+ *
+ * _.castArray();
+ * // => []
+ *
+ * var array = [1, 2, 3];
+ * console.log(_.castArray(array) === array);
+ * // => true
+ */
+function castArray() {
+  if (!arguments.length) {
+    return [];
+  }
+  var value = arguments[0];
+  return isArray(value) ? value : [value];
+}
+
+module.exports = castArray;
+
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseIndexOf = __webpack_require__(12);
+
+/**
+ * A specialized version of `_.includes` for arrays without support for
+ * specifying an index to search from.
+ *
+ * @private
+ * @param {Array} [array] The array to inspect.
+ * @param {*} target The value to search for.
+ * @returns {boolean} Returns `true` if `target` is found, else `false`.
+ */
+function arrayIncludes(array, value) {
+  var length = array == null ? 0 : array.length;
+  return !!length && baseIndexOf(array, value, 0) > -1;
+}
+
+module.exports = arrayIncludes;
+
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports) {
+
+/**
+ * This function is like `arrayIncludes` except that it accepts a comparator.
+ *
+ * @private
+ * @param {Array} [array] The array to inspect.
+ * @param {*} target The value to search for.
+ * @param {Function} comparator The comparator invoked per element.
+ * @returns {boolean} Returns `true` if `target` is found, else `false`.
+ */
+function arrayIncludesWith(array, value, comparator) {
+  var index = -1,
+      length = array == null ? 0 : array.length;
+
+  while (++index < length) {
+    if (comparator(value, array[index])) {
+      return true;
+    }
+  }
+  return false;
+}
+
+module.exports = arrayIncludesWith;
+
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseIndexOf = __webpack_require__(12);
+
+/**
+ * A specialized version of `_.includes` for arrays without support for
+ * specifying an index to search from.
+ *
+ * @private
+ * @param {Array} [array] The array to inspect.
+ * @param {*} target The value to search for.
+ * @returns {boolean} Returns `true` if `target` is found, else `false`.
+ */
+function arrayIncludes(array, value) {
+  var length = array == null ? 0 : array.length;
+  return !!length && baseIndexOf(array, value, 0) > -1;
+}
+
+module.exports = arrayIncludes;
+
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns `undefined`.
+ *
+ * @static
+ * @memberOf _
+ * @since 2.3.0
+ * @category Util
+ * @example
+ *
+ * _.times(2, _.noop);
+ * // => [undefined, undefined]
+ */
+function noop() {
+  // No operation performed.
+}
+
+module.exports = noop;
+
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns a new empty array.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {Array} Returns the new empty array.
+ * @example
+ *
+ * var arrays = _.times(2, _.stubArray);
+ *
+ * console.log(arrays);
+ * // => [[], []]
+ *
+ * console.log(arrays[0] === arrays[1]);
+ * // => false
+ */
+function stubArray() {
+  return [];
+}
+
+module.exports = stubArray;
+
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = {
+	"aliceblue": [240, 248, 255],
+	"antiquewhite": [250, 235, 215],
+	"aqua": [0, 255, 255],
+	"aquamarine": [127, 255, 212],
+	"azure": [240, 255, 255],
+	"beige": [245, 245, 220],
+	"bisque": [255, 228, 196],
+	"black": [0, 0, 0],
+	"blanchedalmond": [255, 235, 205],
+	"blue": [0, 0, 255],
+	"blueviolet": [138, 43, 226],
+	"brown": [165, 42, 42],
+	"burlywood": [222, 184, 135],
+	"cadetblue": [95, 158, 160],
+	"chartreuse": [127, 255, 0],
+	"chocolate": [210, 105, 30],
+	"coral": [255, 127, 80],
+	"cornflowerblue": [100, 149, 237],
+	"cornsilk": [255, 248, 220],
+	"crimson": [220, 20, 60],
+	"cyan": [0, 255, 255],
+	"darkblue": [0, 0, 139],
+	"darkcyan": [0, 139, 139],
+	"darkgoldenrod": [184, 134, 11],
+	"darkgray": [169, 169, 169],
+	"darkgreen": [0, 100, 0],
+	"darkgrey": [169, 169, 169],
+	"darkkhaki": [189, 183, 107],
+	"darkmagenta": [139, 0, 139],
+	"darkolivegreen": [85, 107, 47],
+	"darkorange": [255, 140, 0],
+	"darkorchid": [153, 50, 204],
+	"darkred": [139, 0, 0],
+	"darksalmon": [233, 150, 122],
+	"darkseagreen": [143, 188, 143],
+	"darkslateblue": [72, 61, 139],
+	"darkslategray": [47, 79, 79],
+	"darkslategrey": [47, 79, 79],
+	"darkturquoise": [0, 206, 209],
+	"darkviolet": [148, 0, 211],
+	"deeppink": [255, 20, 147],
+	"deepskyblue": [0, 191, 255],
+	"dimgray": [105, 105, 105],
+	"dimgrey": [105, 105, 105],
+	"dodgerblue": [30, 144, 255],
+	"firebrick": [178, 34, 34],
+	"floralwhite": [255, 250, 240],
+	"forestgreen": [34, 139, 34],
+	"fuchsia": [255, 0, 255],
+	"gainsboro": [220, 220, 220],
+	"ghostwhite": [248, 248, 255],
+	"gold": [255, 215, 0],
+	"goldenrod": [218, 165, 32],
+	"gray": [128, 128, 128],
+	"green": [0, 128, 0],
+	"greenyellow": [173, 255, 47],
+	"grey": [128, 128, 128],
+	"honeydew": [240, 255, 240],
+	"hotpink": [255, 105, 180],
+	"indianred": [205, 92, 92],
+	"indigo": [75, 0, 130],
+	"ivory": [255, 255, 240],
+	"khaki": [240, 230, 140],
+	"lavender": [230, 230, 250],
+	"lavenderblush": [255, 240, 245],
+	"lawngreen": [124, 252, 0],
+	"lemonchiffon": [255, 250, 205],
+	"lightblue": [173, 216, 230],
+	"lightcoral": [240, 128, 128],
+	"lightcyan": [224, 255, 255],
+	"lightgoldenrodyellow": [250, 250, 210],
+	"lightgray": [211, 211, 211],
+	"lightgreen": [144, 238, 144],
+	"lightgrey": [211, 211, 211],
+	"lightpink": [255, 182, 193],
+	"lightsalmon": [255, 160, 122],
+	"lightseagreen": [32, 178, 170],
+	"lightskyblue": [135, 206, 250],
+	"lightslategray": [119, 136, 153],
+	"lightslategrey": [119, 136, 153],
+	"lightsteelblue": [176, 196, 222],
+	"lightyellow": [255, 255, 224],
+	"lime": [0, 255, 0],
+	"limegreen": [50, 205, 50],
+	"linen": [250, 240, 230],
+	"magenta": [255, 0, 255],
+	"maroon": [128, 0, 0],
+	"mediumaquamarine": [102, 205, 170],
+	"mediumblue": [0, 0, 205],
+	"mediumorchid": [186, 85, 211],
+	"mediumpurple": [147, 112, 219],
+	"mediumseagreen": [60, 179, 113],
+	"mediumslateblue": [123, 104, 238],
+	"mediumspringgreen": [0, 250, 154],
+	"mediumturquoise": [72, 209, 204],
+	"mediumvioletred": [199, 21, 133],
+	"midnightblue": [25, 25, 112],
+	"mintcream": [245, 255, 250],
+	"mistyrose": [255, 228, 225],
+	"moccasin": [255, 228, 181],
+	"navajowhite": [255, 222, 173],
+	"navy": [0, 0, 128],
+	"oldlace": [253, 245, 230],
+	"olive": [128, 128, 0],
+	"olivedrab": [107, 142, 35],
+	"orange": [255, 165, 0],
+	"orangered": [255, 69, 0],
+	"orchid": [218, 112, 214],
+	"palegoldenrod": [238, 232, 170],
+	"palegreen": [152, 251, 152],
+	"paleturquoise": [175, 238, 238],
+	"palevioletred": [219, 112, 147],
+	"papayawhip": [255, 239, 213],
+	"peachpuff": [255, 218, 185],
+	"peru": [205, 133, 63],
+	"pink": [255, 192, 203],
+	"plum": [221, 160, 221],
+	"powderblue": [176, 224, 230],
+	"purple": [128, 0, 128],
+	"rebeccapurple": [102, 51, 153],
+	"red": [255, 0, 0],
+	"rosybrown": [188, 143, 143],
+	"royalblue": [65, 105, 225],
+	"saddlebrown": [139, 69, 19],
+	"salmon": [250, 128, 114],
+	"sandybrown": [244, 164, 96],
+	"seagreen": [46, 139, 87],
+	"seashell": [255, 245, 238],
+	"sienna": [160, 82, 45],
+	"silver": [192, 192, 192],
+	"skyblue": [135, 206, 235],
+	"slateblue": [106, 90, 205],
+	"slategray": [112, 128, 144],
+	"slategrey": [112, 128, 144],
+	"snow": [255, 250, 250],
+	"springgreen": [0, 255, 127],
+	"steelblue": [70, 130, 180],
+	"tan": [210, 180, 140],
+	"teal": [0, 128, 128],
+	"thistle": [216, 191, 216],
+	"tomato": [255, 99, 71],
+	"turquoise": [64, 224, 208],
+	"violet": [238, 130, 238],
+	"wheat": [245, 222, 179],
+	"white": [255, 255, 255],
+	"whitesmoke": [245, 245, 245],
+	"yellow": [255, 255, 0],
+	"yellowgreen": [154, 205, 50]
+};
+
+
+/***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var isArrayish = __webpack_require__(82);
+
+var concat = Array.prototype.concat;
+var slice = Array.prototype.slice;
+
+var swizzle = module.exports = function swizzle(args) {
+	var results = [];
+
+	for (var i = 0, len = args.length; i < len; i++) {
+		var arg = args[i];
+
+		if (isArrayish(arg)) {
+			// http://jsperf.com/javascript-array-concat-vs-push/98
+			results = concat.call(results, slice.call(arg));
+		} else {
+			results.push(arg);
+		}
+	}
+
+	return results;
+};
+
+swizzle.wrap = function (fn) {
+	return function () {
+		return fn(swizzle(arguments));
+	};
+};
+
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports) {
+
+module.exports = function isArrayish(obj) {
+	if (!obj || typeof obj === 'string') {
+		return false;
+	}
+
+	return obj instanceof Array || Array.isArray(obj) ||
+		(obj.length >= 0 && (obj.splice instanceof Function ||
+			(Object.getOwnPropertyDescriptor(obj, (obj.length - 1)) && obj.constructor.name !== 'String')));
+};
+
+
+/***/ }),
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = {
+	"aliceblue": [240, 248, 255],
+	"antiquewhite": [250, 235, 215],
+	"aqua": [0, 255, 255],
+	"aquamarine": [127, 255, 212],
+	"azure": [240, 255, 255],
+	"beige": [245, 245, 220],
+	"bisque": [255, 228, 196],
+	"black": [0, 0, 0],
+	"blanchedalmond": [255, 235, 205],
+	"blue": [0, 0, 255],
+	"blueviolet": [138, 43, 226],
+	"brown": [165, 42, 42],
+	"burlywood": [222, 184, 135],
+	"cadetblue": [95, 158, 160],
+	"chartreuse": [127, 255, 0],
+	"chocolate": [210, 105, 30],
+	"coral": [255, 127, 80],
+	"cornflowerblue": [100, 149, 237],
+	"cornsilk": [255, 248, 220],
+	"crimson": [220, 20, 60],
+	"cyan": [0, 255, 255],
+	"darkblue": [0, 0, 139],
+	"darkcyan": [0, 139, 139],
+	"darkgoldenrod": [184, 134, 11],
+	"darkgray": [169, 169, 169],
+	"darkgreen": [0, 100, 0],
+	"darkgrey": [169, 169, 169],
+	"darkkhaki": [189, 183, 107],
+	"darkmagenta": [139, 0, 139],
+	"darkolivegreen": [85, 107, 47],
+	"darkorange": [255, 140, 0],
+	"darkorchid": [153, 50, 204],
+	"darkred": [139, 0, 0],
+	"darksalmon": [233, 150, 122],
+	"darkseagreen": [143, 188, 143],
+	"darkslateblue": [72, 61, 139],
+	"darkslategray": [47, 79, 79],
+	"darkslategrey": [47, 79, 79],
+	"darkturquoise": [0, 206, 209],
+	"darkviolet": [148, 0, 211],
+	"deeppink": [255, 20, 147],
+	"deepskyblue": [0, 191, 255],
+	"dimgray": [105, 105, 105],
+	"dimgrey": [105, 105, 105],
+	"dodgerblue": [30, 144, 255],
+	"firebrick": [178, 34, 34],
+	"floralwhite": [255, 250, 240],
+	"forestgreen": [34, 139, 34],
+	"fuchsia": [255, 0, 255],
+	"gainsboro": [220, 220, 220],
+	"ghostwhite": [248, 248, 255],
+	"gold": [255, 215, 0],
+	"goldenrod": [218, 165, 32],
+	"gray": [128, 128, 128],
+	"green": [0, 128, 0],
+	"greenyellow": [173, 255, 47],
+	"grey": [128, 128, 128],
+	"honeydew": [240, 255, 240],
+	"hotpink": [255, 105, 180],
+	"indianred": [205, 92, 92],
+	"indigo": [75, 0, 130],
+	"ivory": [255, 255, 240],
+	"khaki": [240, 230, 140],
+	"lavender": [230, 230, 250],
+	"lavenderblush": [255, 240, 245],
+	"lawngreen": [124, 252, 0],
+	"lemonchiffon": [255, 250, 205],
+	"lightblue": [173, 216, 230],
+	"lightcoral": [240, 128, 128],
+	"lightcyan": [224, 255, 255],
+	"lightgoldenrodyellow": [250, 250, 210],
+	"lightgray": [211, 211, 211],
+	"lightgreen": [144, 238, 144],
+	"lightgrey": [211, 211, 211],
+	"lightpink": [255, 182, 193],
+	"lightsalmon": [255, 160, 122],
+	"lightseagreen": [32, 178, 170],
+	"lightskyblue": [135, 206, 250],
+	"lightslategray": [119, 136, 153],
+	"lightslategrey": [119, 136, 153],
+	"lightsteelblue": [176, 196, 222],
+	"lightyellow": [255, 255, 224],
+	"lime": [0, 255, 0],
+	"limegreen": [50, 205, 50],
+	"linen": [250, 240, 230],
+	"magenta": [255, 0, 255],
+	"maroon": [128, 0, 0],
+	"mediumaquamarine": [102, 205, 170],
+	"mediumblue": [0, 0, 205],
+	"mediumorchid": [186, 85, 211],
+	"mediumpurple": [147, 112, 219],
+	"mediumseagreen": [60, 179, 113],
+	"mediumslateblue": [123, 104, 238],
+	"mediumspringgreen": [0, 250, 154],
+	"mediumturquoise": [72, 209, 204],
+	"mediumvioletred": [199, 21, 133],
+	"midnightblue": [25, 25, 112],
+	"mintcream": [245, 255, 250],
+	"mistyrose": [255, 228, 225],
+	"moccasin": [255, 228, 181],
+	"navajowhite": [255, 222, 173],
+	"navy": [0, 0, 128],
+	"oldlace": [253, 245, 230],
+	"olive": [128, 128, 0],
+	"olivedrab": [107, 142, 35],
+	"orange": [255, 165, 0],
+	"orangered": [255, 69, 0],
+	"orchid": [218, 112, 214],
+	"palegoldenrod": [238, 232, 170],
+	"palegreen": [152, 251, 152],
+	"paleturquoise": [175, 238, 238],
+	"palevioletred": [219, 112, 147],
+	"papayawhip": [255, 239, 213],
+	"peachpuff": [255, 218, 185],
+	"peru": [205, 133, 63],
+	"pink": [255, 192, 203],
+	"plum": [221, 160, 221],
+	"powderblue": [176, 224, 230],
+	"purple": [128, 0, 128],
+	"rebeccapurple": [102, 51, 153],
+	"red": [255, 0, 0],
+	"rosybrown": [188, 143, 143],
+	"royalblue": [65, 105, 225],
+	"saddlebrown": [139, 69, 19],
+	"salmon": [250, 128, 114],
+	"sandybrown": [244, 164, 96],
+	"seagreen": [46, 139, 87],
+	"seashell": [255, 245, 238],
+	"sienna": [160, 82, 45],
+	"silver": [192, 192, 192],
+	"skyblue": [135, 206, 235],
+	"slateblue": [106, 90, 205],
+	"slategray": [112, 128, 144],
+	"slategrey": [112, 128, 144],
+	"snow": [255, 250, 250],
+	"springgreen": [0, 255, 127],
+	"steelblue": [70, 130, 180],
+	"tan": [210, 180, 140],
+	"teal": [0, 128, 128],
+	"thistle": [216, 191, 216],
+	"tomato": [255, 99, 71],
+	"turquoise": [64, 224, 208],
+	"violet": [238, 130, 238],
+	"wheat": [245, 222, 179],
+	"white": [255, 255, 255],
+	"whitesmoke": [245, 245, 245],
+	"yellow": [255, 255, 0],
+	"yellowgreen": [154, 205, 50]
+};
+
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
+
+const conversions = __webpack_require__(22);
+
+/*
+	This function routes a model to all other models.
+
+	all functions that are routed have a property `.conversion` attached
+	to the returned synthetic function. This property is an array
+	of strings, each with the steps in between the 'from' and 'to'
+	color models (inclusive).
+
+	conversions that are not possible simply are not included.
 */
-(function(){"use strict";"undefined"!=typeof self?self:"undefined"!=typeof window?window:void 0!==e||Function("return this")()})(),t.exports=function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=7)}([function(t,e){var n=Array.isArray;t.exports=n},function(t,e){t.exports=function(){return!1}},function(t,e,n){var r=n(18),o=n(1),a=NaN,i=/^\s+|\s+$/g,u=/^[-+]0x[0-9a-f]+$/i,l=/^0b[01]+$/i,c=/^0o[0-7]+$/i,s=parseInt;t.exports=function(t){if("number"==typeof t)return t;if(o(t))return a;if(r(t)){var e="function"==typeof t.valueOf?t.valueOf():t;t=r(e)?e+"":e}if("string"!=typeof t)return 0===t?t:+t;t=t.replace(i,"");var n=l.test(t);return n||c.test(t)?s(t.slice(2),n?2:8):u.test(t)?a:+t}},function(t,e,n){var r=n(22);t.exports=function(t){var e=r(t),n=e%1;return e==e?n?e-n:e:0}},function(t,e,n){const r=n(14),o={};for(const t of Object.keys(r))o[r[t]]=t;const a={rgb:{channels:3,labels:"rgb"},hsl:{channels:3,labels:"hsl"},hsv:{channels:3,labels:"hsv"},hwb:{channels:3,labels:"hwb"},cmyk:{channels:4,labels:"cmyk"},xyz:{channels:3,labels:"xyz"},lab:{channels:3,labels:"lab"},lch:{channels:3,labels:"lch"},hex:{channels:1,labels:["hex"]},keyword:{channels:1,labels:["keyword"]},ansi16:{channels:1,labels:["ansi16"]},ansi256:{channels:1,labels:["ansi256"]},hcg:{channels:3,labels:["h","c","g"]},apple:{channels:3,labels:["r16","g16","b16"]},gray:{channels:1,labels:["gray"]}};t.exports=a;for(const t of Object.keys(a)){if(!("channels"in a[t]))throw new Error("missing channels property: "+t);if(!("labels"in a[t]))throw new Error("missing channel labels property: "+t);if(a[t].labels.length!==a[t].channels)throw new Error("channel and label counts mismatch: "+t);const{channels:e,labels:n}=a[t];delete a[t].channels,delete a[t].labels,Object.defineProperty(a[t],"channels",{value:e}),Object.defineProperty(a[t],"labels",{value:n})}a.rgb.hsl=function(t){const e=t[0]/255,n=t[1]/255,r=t[2]/255,o=Math.min(e,n,r),a=Math.max(e,n,r),i=a-o;let u,l;a===o?u=0:e===a?u=(n-r)/i:n===a?u=2+(r-e)/i:r===a&&(u=4+(e-n)/i),(u=Math.min(60*u,360))<0&&(u+=360);const c=(o+a)/2;return[u,100*(l=a===o?0:c<=.5?i/(a+o):i/(2-a-o)),100*c]},a.rgb.hsv=function(t){let e,n,r,o,a;const i=t[0]/255,u=t[1]/255,l=t[2]/255,c=Math.max(i,u,l),s=c-Math.min(i,u,l),f=function(t){return(c-t)/6/s+.5};return 0===s?(o=0,a=0):(a=s/c,e=f(i),n=f(u),r=f(l),i===c?o=r-n:u===c?o=1/3+e-r:l===c&&(o=2/3+n-e),o<0?o+=1:o>1&&(o-=1)),[360*o,100*a,100*c]},a.rgb.hwb=function(t){const e=t[0],n=t[1];let r=t[2];return[a.rgb.hsl(t)[0],1/255*Math.min(e,Math.min(n,r))*100,100*(r=1-1/255*Math.max(e,Math.max(n,r)))]},a.rgb.cmyk=function(t){const e=t[0]/255,n=t[1]/255,r=t[2]/255,o=Math.min(1-e,1-n,1-r);return[100*((1-e-o)/(1-o)||0),100*((1-n-o)/(1-o)||0),100*((1-r-o)/(1-o)||0),100*o]},a.rgb.keyword=function(t){const e=o[t];if(e)return e;let n,a=1/0;for(const e of Object.keys(r)){const o=r[e],l=(u=o,((i=t)[0]-u[0])**2+(i[1]-u[1])**2+(i[2]-u[2])**2);l<a&&(a=l,n=e)}var i,u;return n},a.keyword.rgb=function(t){return r[t]},a.rgb.xyz=function(t){let e=t[0]/255,n=t[1]/255,r=t[2]/255;return[100*(.4124*(e=e>.04045?((e+.055)/1.055)**2.4:e/12.92)+.3576*(n=n>.04045?((n+.055)/1.055)**2.4:n/12.92)+.1805*(r=r>.04045?((r+.055)/1.055)**2.4:r/12.92)),100*(.2126*e+.7152*n+.0722*r),100*(.0193*e+.1192*n+.9505*r)]},a.rgb.lab=function(t){const e=a.rgb.xyz(t);let n=e[0],r=e[1],o=e[2];return[116*(r=(r/=100)>.008856?r**(1/3):7.787*r+16/116)-16,500*((n=(n/=95.047)>.008856?n**(1/3):7.787*n+16/116)-r),200*(r-(o=(o/=108.883)>.008856?o**(1/3):7.787*o+16/116))]},a.hsl.rgb=function(t){const e=t[0]/360,n=t[1]/100,r=t[2]/100;let o,a,i;if(0===n)return[i=255*r,i,i];const u=2*r-(o=r<.5?r*(1+n):r+n-r*n),l=[0,0,0];for(let t=0;t<3;t++)(a=e+1/3*-(t-1))<0&&a++,a>1&&a--,i=6*a<1?u+6*(o-u)*a:2*a<1?o:3*a<2?u+(o-u)*(2/3-a)*6:u,l[t]=255*i;return l},a.hsl.hsv=function(t){const e=t[0];let n=t[1]/100,r=t[2]/100,o=n;const a=Math.max(r,.01);return n*=(r*=2)<=1?r:2-r,o*=a<=1?a:2-a,[e,100*(0===r?2*o/(a+o):2*n/(r+n)),(r+n)/2*100]},a.hsv.rgb=function(t){const e=t[0]/60,n=t[1]/100;let r=t[2]/100;const o=Math.floor(e)%6,a=e-Math.floor(e),i=255*r*(1-n),u=255*r*(1-n*a),l=255*r*(1-n*(1-a));switch(r*=255,o){case 0:return[r,l,i];case 1:return[u,r,i];case 2:return[i,r,l];case 3:return[i,u,r];case 4:return[l,i,r];case 5:return[r,i,u]}},a.hsv.hsl=function(t){const e=t[0],n=t[1]/100,r=t[2]/100,o=Math.max(r,.01);let a,i;i=(2-n)*r;const u=(2-n)*o;return a=n*o,[e,100*(a=(a/=u<=1?u:2-u)||0),100*(i/=2)]},a.hwb.rgb=function(t){const e=t[0]/360;let n=t[1]/100,r=t[2]/100;const o=n+r;let a;o>1&&(n/=o,r/=o);const i=Math.floor(6*e),u=1-r;a=6*e-i,0!=(1&i)&&(a=1-a);const l=n+a*(u-n);let c,s,f;switch(i){default:case 6:case 0:c=u,s=l,f=n;break;case 1:c=l,s=u,f=n;break;case 2:c=n,s=u,f=l;break;case 3:c=n,s=l,f=u;break;case 4:c=l,s=n,f=u;break;case 5:c=u,s=n,f=l}return[255*c,255*s,255*f]},a.cmyk.rgb=function(t){const e=t[0]/100,n=t[1]/100,r=t[2]/100,o=t[3]/100;return[255*(1-Math.min(1,e*(1-o)+o)),255*(1-Math.min(1,n*(1-o)+o)),255*(1-Math.min(1,r*(1-o)+o))]},a.xyz.rgb=function(t){const e=t[0]/100,n=t[1]/100,r=t[2]/100;let o,a,i;return o=(o=3.2406*e+-1.5372*n+-.4986*r)>.0031308?1.055*o**(1/2.4)-.055:12.92*o,a=(a=-.9689*e+1.8758*n+.0415*r)>.0031308?1.055*a**(1/2.4)-.055:12.92*a,i=(i=.0557*e+-.204*n+1.057*r)>.0031308?1.055*i**(1/2.4)-.055:12.92*i,[255*(o=Math.min(Math.max(0,o),1)),255*(a=Math.min(Math.max(0,a),1)),255*(i=Math.min(Math.max(0,i),1))]},a.xyz.lab=function(t){let e=t[0],n=t[1],r=t[2];return[116*(n=(n/=100)>.008856?n**(1/3):7.787*n+16/116)-16,500*((e=(e/=95.047)>.008856?e**(1/3):7.787*e+16/116)-n),200*(n-(r=(r/=108.883)>.008856?r**(1/3):7.787*r+16/116))]},a.lab.xyz=function(t){let e,n,r;const o=(n=(t[0]+16)/116)**3,a=(e=t[1]/500+n)**3,i=(r=n-t[2]/200)**3;return n=o>.008856?o:(n-16/116)/7.787,e=a>.008856?a:(e-16/116)/7.787,r=i>.008856?i:(r-16/116)/7.787,[e*=95.047,n*=100,r*=108.883]},a.lab.lch=function(t){const e=t[0],n=t[1],r=t[2];let o;return(o=360*Math.atan2(r,n)/2/Math.PI)<0&&(o+=360),[e,Math.sqrt(n*n+r*r),o]},a.lch.lab=function(t){const e=t[0],n=t[1],r=t[2]/360*2*Math.PI;return[e,n*Math.cos(r),n*Math.sin(r)]},a.rgb.ansi16=function(t,e=null){const[n,r,o]=t;let i=null===e?a.rgb.hsv(t)[2]:e;if(0===(i=Math.round(i/50)))return 30;let u=30+(Math.round(o/255)<<2|Math.round(r/255)<<1|Math.round(n/255));return 2===i&&(u+=60),u},a.hsv.ansi16=function(t){return a.rgb.ansi16(a.hsv.rgb(t),t[2])},a.rgb.ansi256=function(t){const e=t[0],n=t[1],r=t[2];return e===n&&n===r?e<8?16:e>248?231:Math.round((e-8)/247*24)+232:16+36*Math.round(e/255*5)+6*Math.round(n/255*5)+Math.round(r/255*5)},a.ansi16.rgb=function(t){let e=t%10;if(0===e||7===e)return t>50&&(e+=3.5),[e=e/10.5*255,e,e];const n=.5*(1+~~(t>50));return[(1&e)*n*255,(e>>1&1)*n*255,(e>>2&1)*n*255]},a.ansi256.rgb=function(t){if(t>=232){const e=10*(t-232)+8;return[e,e,e]}let e;return t-=16,[Math.floor(t/36)/5*255,Math.floor((e=t%36)/6)/5*255,e%6/5*255]},a.rgb.hex=function(t){const e=(((255&Math.round(t[0]))<<16)+((255&Math.round(t[1]))<<8)+(255&Math.round(t[2]))).toString(16).toUpperCase();return"000000".substring(e.length)+e},a.hex.rgb=function(t){const e=t.toString(16).match(/[a-f0-9]{6}|[a-f0-9]{3}/i);if(!e)return[0,0,0];let n=e[0];3===e[0].length&&(n=n.split("").map(t=>t+t).join(""));const r=parseInt(n,16);return[r>>16&255,r>>8&255,255&r]},a.rgb.hcg=function(t){const e=t[0]/255,n=t[1]/255,r=t[2]/255,o=Math.max(Math.max(e,n),r),a=Math.min(Math.min(e,n),r),i=o-a;let u,l;return l=i<=0?0:o===e?(n-r)/i%6:o===n?2+(r-e)/i:4+(e-n)/i+4,l/=6,[360*(l%=1),100*i,100*(u=i<1?a/(1-i):0)]},a.hsl.hcg=function(t){const e=t[1]/100,n=t[2]/100,r=n<.5?2*e*n:2*e*(1-n);let o=0;return r<1&&(o=(n-.5*r)/(1-r)),[t[0],100*r,100*o]},a.hsv.hcg=function(t){const e=t[1]/100,n=t[2]/100,r=e*n;let o=0;return r<1&&(o=(n-r)/(1-r)),[t[0],100*r,100*o]},a.hcg.rgb=function(t){const e=t[0]/360,n=t[1]/100,r=t[2]/100;if(0===n)return[255*r,255*r,255*r];const o=[0,0,0],a=e%1*6,i=a%1,u=1-i;let l=0;switch(Math.floor(a)){case 0:o[0]=1,o[1]=i,o[2]=0;break;case 1:o[0]=u,o[1]=1,o[2]=0;break;case 2:o[0]=0,o[1]=1,o[2]=i;break;case 3:o[0]=0,o[1]=u,o[2]=1;break;case 4:o[0]=i,o[1]=0,o[2]=1;break;default:o[0]=1,o[1]=0,o[2]=u}return l=(1-n)*r,[255*(n*o[0]+l),255*(n*o[1]+l),255*(n*o[2]+l)]},a.hcg.hsv=function(t){const e=t[1]/100,n=e+t[2]/100*(1-e);let r=0;return n>0&&(r=e/n),[t[0],100*r,100*n]},a.hcg.hsl=function(t){const e=t[1]/100,n=t[2]/100*(1-e)+.5*e;let r=0;return n>0&&n<.5?r=e/(2*n):n>=.5&&n<1&&(r=e/(2*(1-n))),[t[0],100*r,100*n]},a.hcg.hwb=function(t){const e=t[1]/100,n=e+t[2]/100*(1-e);return[t[0],100*(n-e),100*(1-n)]},a.hwb.hcg=function(t){const e=t[1]/100,n=1-t[2]/100,r=n-e;let o=0;return r<1&&(o=(n-r)/(1-r)),[t[0],100*r,100*o]},a.apple.rgb=function(t){return[t[0]/65535*255,t[1]/65535*255,t[2]/65535*255]},a.rgb.apple=function(t){return[t[0]/255*65535,t[1]/255*65535,t[2]/255*65535]},a.gray.rgb=function(t){return[t[0]/100*255,t[0]/100*255,t[0]/100*255]},a.gray.hsl=function(t){return[0,0,t[0]]},a.gray.hsv=a.gray.hsl,a.gray.hwb=function(t){return[0,100,t[0]]},a.gray.cmyk=function(t){return[0,0,0,t[0]]},a.gray.lab=function(t){return[t[0],0,0]},a.gray.hex=function(t){const e=255&Math.round(t[0]/100*255),n=((e<<16)+(e<<8)+e).toString(16).toUpperCase();return"000000".substring(n.length)+n},a.rgb.gray=function(t){return[(t[0]+t[1]+t[2])/3/255*100]}},function(t,e,n){var r=n(25),o="object"==typeof self&&self&&self.Object===Object&&self,a=r||o||Function("return this")();t.exports=a},function(t,e,n){var r=n(27);t.exports=function(t){return null==t?"":r(t)}},function(t,e,n){t.exports=n(8)},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=e.hashedModelKeys=void 0;var r=b(n(9)),o=b(n(13)),a=b(n(16)),i=b(n(19)),u=b(n(23)),l=b(n(30)),c=b(n(31)),s=b(n(42)),f=b(n(3)),h=b(n(43)),p=b(n(45));function b(t){return t&&t.__esModule?t:{default:t}}function d(t,e){return function(t){if(Array.isArray(t))return t}(t)||function(t,e){var n=[],r=!0,o=!1,a=void 0;try{for(var i,u=t[Symbol.iterator]();!(r=(i=u.next()).done)&&(n.push(i.value),!e||n.length!==e);r=!0);}catch(t){o=!0,a=t}finally{try{r||null==u.return||u.return()}finally{if(o)throw a}}return n}(t,e)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance")}()}function v(t){return(v="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function y(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}function g(t){return function(t){if(Array.isArray(t)){for(var e=0,n=new Array(t.length);e<t.length;e++)n[e]=t[e];return n}}(t)||function(t){if(Symbol.iterator in Object(t)||"[object Arguments]"===Object.prototype.toString.call(t))return Array.from(t)}(t)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance")}()}function m(t,e){if(t!==e)throw new TypeError("Cannot instantiate an arrow function")}var w="",x="alpha",j="rgb",k=Object.freeze(j.split(w)),O=Object.freeze(["keyword","gray","hex"]),M=Object.freeze(Object.keys(o.default).reduce(function(t,e){return m(this,void 0),t[(0,i.default)(o.default[e].labels).sort().join(w)]=e,t}.bind(void 0),Object.create(null)));e.hashedModelKeys=M;var P=Object.freeze({aa:4.5,aaa:7,aaaLarge:4.5,aaLarge:3}),_=function(t){return function(e){return(0,a.default)(e,0,t)}},A=function(t){for(var e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0,n=0;n<e;n+=1)"number"!=typeof t[n]&&(t[n]=0);return t},S=function(t){var e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:1;return"number"==typeof t?(0,f.default)(t)||0:e},z=function(t){var e=t.color,n=t.valpha;return 1===n?e:[].concat(g(e),[n])},E=function(t){if(function(t){return"string"==typeof t&&Boolean(t.trim())}(t)){if((0,h.default)(O,t))return null;if(!(0,c.default)(o.default,t))throw new Error("Unknown model: ".concat(t))}return t},F=Object.freeze({configurable:!1,enumerable:!0,writable:!1}),C=Object.freeze({color:F,model:F,valpha:F}),q=Object.create(null),I=function(){function t(e,n){var u=this;!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t);var l=E(n);if((0,s.default)(e))this.model=j,this.color=[0,0,0],this.valpha=1;else if(e instanceof t)this.model=e.model,this.color=g(e.color),this.valpha=e.valpha;else if("string"==typeof e){var f=r.default.get(e);if(null===f)throw new Error("Unable to parse color from string: ".concat(e));this.model=f.model;var h=o.default[this.model].channels;this.color=f.value.slice(0,h),this.valpha="number"==typeof f.value[h]?f.value[h]:1}else if((0,p.default)(e.length)){this.model=l||j;var b=o.default[this.model].channels,d=(0,i.default)(e,0,b);this.color=A(d,b),this.valpha="number"==typeof e[b]?e[b]:1}else if("number"==typeof e){this.model=j;var v=16777215&e;this.color=[v>>16&255,v>>8&255,255&v],this.valpha=1}else{this.valpha=1;var y=Object.keys(e);(0,c.default)(e,x)&&(y.splice(y.indexOf(x),1),this.valpha="number"==typeof e.alpha?e.alpha:0);var k=y.sort().join(w);if(!(0,c.default)(M,k))throw new Error("Unable to parse color from object: ".concat(JSON.stringify(e)));this.model=M[k];var O=o.default[this.model].labels.split(w).map(function(t){return m(this,u),e[t]}.bind(this));this.color=A(O)}if(q[this.model])for(var P=o.default[this.model].channels,_=q[this.model],S=0;S<P;S+=1){var z=_[S];z&&(this.color[S]=z(this.color[S]))}this.valpha=(0,a.default)(this.valpha,0,1),Object.freeze(this.color),Object.defineProperties(this,C)}var e,n;return e=t,(n=[{key:"toString",value:function(){return this.string()}},{key:"string",value:function(t){var e=((0,c.default)(r.default.to,this.model)?this:this.rgb()).round(S(t)),n=z(e);return r.default.to[e.model](n)}},{key:"percentString",value:function(t){var e=this.rgb().round(S(t)),n=z(e);return r.default.to.rgb.percent(n)}},{key:"array",value:function(){return z(this)}},{key:"object",value:function(){var t=this,e=o.default[this.model].labels.split(w).reduce(function(e,n,r){return m(this,t),e[n]=this.color[r],e}.bind(this),{});return 1!==this.valpha&&(e.alpha=this.valpha),e}},{key:"unitArray",value:function(){var t=this,e=this.rgb().color.map(function(e){return m(this,t),e/255}.bind(this));return 1!==this.valpha&&e.push(this.valpha),e}},{key:"unitObject",value:function(){var t=this,e=k.reduce(function(e,n){return m(this,t),e[n]/=255,e}.bind(this),this.rgb().object());return 1!==this.valpha&&(e.alpha=this.valpha),e}},{key:"round",value:function(e){var n=this,r=Math.max(S(e,0),0);return new t([].concat(g(this.color.map(function(t){return m(this,n),(0,u.default)(t,r)}.bind(this))),[this.valpha]),this.model)}},{key:"alpha",value:function(e){return arguments.length?new t([].concat(g(this.color),[(0,a.default)(e,0,1)]),this.model):this.valpha}},{key:"keyword",value:function(e){return arguments.length?new t(e):o.default[this.model].keyword(this.color)}},{key:"hex",value:function(e){return arguments.length?new t(e):r.default.to.hex(this.rgb().round().color)}},{key:"rgbNumber",value:function(){var t=this.rgb().color;return(255&t[0])<<16|(255&t[1])<<8|255&t[2]}},{key:"luminosity",value:function(){var t=this,e=this.rgb().color.map(function(e){m(this,t);var n=e/255;return n<=.03928?n/12.92:Math.pow((n+.055)/1.055,2.4)}.bind(this));return.2126*e[0]+.7152*e[1]+.0722*e[2]}},{key:"contrast",value:function(e){if(!(e instanceof t))throw new Error('Argument to "contrast" was not a Color instance, but rather an instance of '.concat(v(e)));var n=this.luminosity(),r=e.luminosity();return n>r?(n+.05)/(r+.05):(r+.05)/(n+.05)}},{key:"level",value:function(e){if(!(e instanceof t))throw new Error('Argument to "level" was not a Color instance, but rather an instance of '.concat(v(e)));var n=this.contrast(e);return n>=P.aaa?"AAA":n>=P.aa?"AA":w}},{key:"isDark",value:function(){var t=this.rgb().color;return(299*t[0]+587*t[1]+114*t[2])/1e3<128}},{key:"isLight",value:function(){return!this.isDark()}},{key:"negate",value:function(){var e=this,n=k.reduce(function(t,n){return m(this,e),t[n]=255-t[n],t}.bind(this),this.rgb().object());return 1!==this.valpha&&(n.alpha=this.valpha),new t(n,this.model)}},{key:"lighten",value:function(e){var n=g(this.hsl().color),r={h:n[0],l:n[2]+n[2]*e,s:n[1]};return 1!==this.valpha&&(r.alpha=this.valpha),new t(r,this.model)}},{key:"darken",value:function(e){var n=g(this.hsl().color),r={h:n[0],l:n[2]-n[2]*e,s:n[1]};return 1!==this.valpha&&(r.alpha=this.valpha),new t(r,this.model)}},{key:"saturate",value:function(e){var n=g(this.hsl().color),r={h:n[0],l:n[2],s:n[1]+n[1]*e};return 1!==this.valpha&&(r.alpha=this.valpha),new t(r,this.model)}},{key:"desaturate",value:function(e){var n=g(this.hsl().color),r={h:n[0],l:n[2],s:n[1]-n[1]*e};return 1!==this.valpha&&(r.alpha=this.valpha),new t(r,this.model)}},{key:"whiten",value:function(e){var n=g(this.hwb().color),r={b:n[2],h:n[0],w:n[1]+n[1]*e};return 1!==this.valpha&&(r.alpha=this.valpha),new t(r,this.model)}},{key:"blacken",value:function(e){var n=g(this.hwb().color),r={b:n[2]+n[2]*e,h:n[0],w:n[1]};return 1!==this.valpha&&(r.alpha=this.valpha),new t(r,this.model)}},{key:"grayscale",value:function(){var e=this.rgb().color,n=.3*e[0]+.59*e[1]+.11*e[2];return t.rgb(n,n,n)}},{key:"fade",value:function(t){return this.alpha(this.valpha-this.valpha*t)}},{key:"opaquer",value:function(t){return this.alpha(this.valpha+this.valpha*t)}},{key:"rotate",value:function(e){var n=g(this.hsl().color),r=(d(n,1)[0]+e)%360;n[0]=r<0?360+r:r;var o={h:n[0],l:n[2],s:n[1]};return 1!==this.valpha&&(o.alpha=this.valpha),new t(o,this.model)}},{key:"mix",value:function(e,n){if(!(e instanceof t))throw new Error('Argument to "mix" was not a Color instance, but rather an instance of '.concat(v(e)));var r=e.rgb(),o=this.rgb(),a=arguments.length>=2?n:.5,i=2*a-1,u=r.alpha()-o.alpha(),l=((i*u==-1?i:(i+u)/(1+i*u))+1)/2,c=1-l;return t.rgb(l*r.red()+c*o.red(),l*r.green()+c*o.green(),l*r.blue()+c*o.blue(),r.alpha()*a+o.alpha()*(1-a))}}])&&y(e.prototype,n),t}();e.default=I;var T=_(100),$=_(255),U=function(t,e,n){var r=this,o=(0,l.default)(t);o.forEach(function(t){m(this,r),Array.isArray(q[t])||(q[t]=[]),q[t][e]=n}.bind(this));var a=d(o,1)[0];return function(t){var r=this;if(arguments.length){var o=n?n(t):t,i=g(this[a]().color);i[e]=o;var u=a.split(w).reduce(function(t,e,n){return m(this,r),t[e]=i[n],t}.bind(this),{});return 1!==this.valpha&&(u.alpha=this.valpha),new I(u,a)}var l=this[a]().color[e];return n?n(l):l}};Object.defineProperties(I.prototype,{a:{value:U("lab",1)},b:{value:U("lab",2)},black:{value:U("cmyk",3,T)},blue:{value:U(j,2,$)},chroma:{value:U("hcg",1,T)},cyan:{value:U("cmyk",0,T)},gray:{value:U("hcg",2,T)},green:{value:U(j,1,$)},hue:{value:U(["hsl","hsv","hwb","hcg"],0,function(t){return m(this,void 0),(t%360+360)%360}.bind(void 0))},l:{value:U("lab",0,T)},lightness:{value:U("hsl",2,T)},magenta:{value:U("cmyk",1,T)},red:{value:U(j,0,$)},saturationl:{value:U("hsl",1,T)},saturationv:{value:U("hsv",1,T)},value:{value:U("hsv",2,T)},wblack:{value:U("hwb",2,T)},white:{value:U("hwb",1,T)},x:{value:U("xyz",0,T)},y:{value:U("xyz",1,T)},yellow:{value:U("cmyk",2,T)},z:{value:U("xyz",2,T)}}),Object.keys(o.default).forEach(function(t){if(m(this,void 0),!(0,h.default)(O,t)){var e=o.default[t].channels;Object.defineProperty(I.prototype,t,{value:function(){if(this.model===t)return new I(this);for(var n=arguments.length,r=new Array(n),a=0;a<n;a++)r[a]=arguments[a];if(r.length)return new I(r,t);var i="number"==typeof r[e]?e:this.valpha;return new I([].concat(g((0,l.default)(o.default[this.model][t].raw(this.color))),[i]),t)}}),Object.defineProperty(I,t,{enumerable:!0,value:function(){for(var n=arguments.length,r=new Array(n),o=0;o<n;o++)r[o]=arguments[o];var a=r[0],i="number"==typeof a?A(r,e):a;return new I(i,t)}})}}.bind(void 0))},function(t,e,n){var r=n(10),o=n(11),a={};for(var i in r)r.hasOwnProperty(i)&&(a[r[i]]=i);var u=t.exports={to:{},get:{}};function l(t,e,n){return Math.min(Math.max(e,t),n)}function c(t){var e=t.toString(16).toUpperCase();return e.length<2?"0"+e:e}u.get=function(t){var e,n;switch(t.substring(0,3).toLowerCase()){case"hsl":e=u.get.hsl(t),n="hsl";break;case"hwb":e=u.get.hwb(t),n="hwb";break;default:e=u.get.rgb(t),n="rgb"}return e?{model:n,value:e}:null},u.get.rgb=function(t){if(!t)return null;var e,n,o,a=[0,0,0,1];if(e=t.match(/^#([a-f0-9]{6})([a-f0-9]{2})?$/i)){for(o=e[2],e=e[1],n=0;n<3;n++){var i=2*n;a[n]=parseInt(e.slice(i,i+2),16)}o&&(a[3]=Math.round(parseInt(o,16)/255*100)/100)}else if(e=t.match(/^#([a-f0-9]{3,4})$/i)){for(o=(e=e[1])[3],n=0;n<3;n++)a[n]=parseInt(e[n]+e[n],16);o&&(a[3]=Math.round(parseInt(o+o,16)/255*100)/100)}else if(e=t.match(/^rgba?\(\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)$/)){for(n=0;n<3;n++)a[n]=parseInt(e[n+1],0);e[4]&&(a[3]=parseFloat(e[4]))}else{if(!(e=t.match(/^rgba?\(\s*([+-]?[\d\.]+)\%\s*,\s*([+-]?[\d\.]+)\%\s*,\s*([+-]?[\d\.]+)\%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)$/)))return(e=t.match(/(\D+)/))?"transparent"===e[1]?[0,0,0,0]:(a=r[e[1]])?(a[3]=1,a):null:null;for(n=0;n<3;n++)a[n]=Math.round(2.55*parseFloat(e[n+1]));e[4]&&(a[3]=parseFloat(e[4]))}for(n=0;n<3;n++)a[n]=l(a[n],0,255);return a[3]=l(a[3],0,1),a},u.get.hsl=function(t){if(!t)return null;var e=t.match(/^hsla?\(\s*([+-]?(?:\d*\.)?\d+)(?:deg)?\s*,\s*([+-]?[\d\.]+)%\s*,\s*([+-]?[\d\.]+)%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)$/);if(e){var n=parseFloat(e[4]);return[(parseFloat(e[1])+360)%360,l(parseFloat(e[2]),0,100),l(parseFloat(e[3]),0,100),l(isNaN(n)?1:n,0,1)]}return null},u.get.hwb=function(t){if(!t)return null;var e=t.match(/^hwb\(\s*([+-]?\d*[\.]?\d+)(?:deg)?\s*,\s*([+-]?[\d\.]+)%\s*,\s*([+-]?[\d\.]+)%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)$/);if(e){var n=parseFloat(e[4]);return[(parseFloat(e[1])%360+360)%360,l(parseFloat(e[2]),0,100),l(parseFloat(e[3]),0,100),l(isNaN(n)?1:n,0,1)]}return null},u.to.hex=function(){var t=o(arguments);return"#"+c(t[0])+c(t[1])+c(t[2])+(t[3]<1?c(Math.round(255*t[3])):"")},u.to.rgb=function(){var t=o(arguments);return t.length<4||1===t[3]?"rgb("+Math.round(t[0])+", "+Math.round(t[1])+", "+Math.round(t[2])+")":"rgba("+Math.round(t[0])+", "+Math.round(t[1])+", "+Math.round(t[2])+", "+t[3]+")"},u.to.rgb.percent=function(){var t=o(arguments),e=Math.round(t[0]/255*100),n=Math.round(t[1]/255*100),r=Math.round(t[2]/255*100);return t.length<4||1===t[3]?"rgb("+e+"%, "+n+"%, "+r+"%)":"rgba("+e+"%, "+n+"%, "+r+"%, "+t[3]+")"},u.to.hsl=function(){var t=o(arguments);return t.length<4||1===t[3]?"hsl("+t[0]+", "+t[1]+"%, "+t[2]+"%)":"hsla("+t[0]+", "+t[1]+"%, "+t[2]+"%, "+t[3]+")"},u.to.hwb=function(){var t=o(arguments),e="";return t.length>=4&&1!==t[3]&&(e=", "+t[3]),"hwb("+t[0]+", "+t[1]+"%, "+t[2]+"%"+e+")"},u.to.keyword=function(t){return a[t.slice(0,3)]}},function(t,e,n){"use strict";t.exports={aliceblue:[240,248,255],antiquewhite:[250,235,215],aqua:[0,255,255],aquamarine:[127,255,212],azure:[240,255,255],beige:[245,245,220],bisque:[255,228,196],black:[0,0,0],blanchedalmond:[255,235,205],blue:[0,0,255],blueviolet:[138,43,226],brown:[165,42,42],burlywood:[222,184,135],cadetblue:[95,158,160],chartreuse:[127,255,0],chocolate:[210,105,30],coral:[255,127,80],cornflowerblue:[100,149,237],cornsilk:[255,248,220],crimson:[220,20,60],cyan:[0,255,255],darkblue:[0,0,139],darkcyan:[0,139,139],darkgoldenrod:[184,134,11],darkgray:[169,169,169],darkgreen:[0,100,0],darkgrey:[169,169,169],darkkhaki:[189,183,107],darkmagenta:[139,0,139],darkolivegreen:[85,107,47],darkorange:[255,140,0],darkorchid:[153,50,204],darkred:[139,0,0],darksalmon:[233,150,122],darkseagreen:[143,188,143],darkslateblue:[72,61,139],darkslategray:[47,79,79],darkslategrey:[47,79,79],darkturquoise:[0,206,209],darkviolet:[148,0,211],deeppink:[255,20,147],deepskyblue:[0,191,255],dimgray:[105,105,105],dimgrey:[105,105,105],dodgerblue:[30,144,255],firebrick:[178,34,34],floralwhite:[255,250,240],forestgreen:[34,139,34],fuchsia:[255,0,255],gainsboro:[220,220,220],ghostwhite:[248,248,255],gold:[255,215,0],goldenrod:[218,165,32],gray:[128,128,128],green:[0,128,0],greenyellow:[173,255,47],grey:[128,128,128],honeydew:[240,255,240],hotpink:[255,105,180],indianred:[205,92,92],indigo:[75,0,130],ivory:[255,255,240],khaki:[240,230,140],lavender:[230,230,250],lavenderblush:[255,240,245],lawngreen:[124,252,0],lemonchiffon:[255,250,205],lightblue:[173,216,230],lightcoral:[240,128,128],lightcyan:[224,255,255],lightgoldenrodyellow:[250,250,210],lightgray:[211,211,211],lightgreen:[144,238,144],lightgrey:[211,211,211],lightpink:[255,182,193],lightsalmon:[255,160,122],lightseagreen:[32,178,170],lightskyblue:[135,206,250],lightslategray:[119,136,153],lightslategrey:[119,136,153],lightsteelblue:[176,196,222],lightyellow:[255,255,224],lime:[0,255,0],limegreen:[50,205,50],linen:[250,240,230],magenta:[255,0,255],maroon:[128,0,0],mediumaquamarine:[102,205,170],mediumblue:[0,0,205],mediumorchid:[186,85,211],mediumpurple:[147,112,219],mediumseagreen:[60,179,113],mediumslateblue:[123,104,238],mediumspringgreen:[0,250,154],mediumturquoise:[72,209,204],mediumvioletred:[199,21,133],midnightblue:[25,25,112],mintcream:[245,255,250],mistyrose:[255,228,225],moccasin:[255,228,181],navajowhite:[255,222,173],navy:[0,0,128],oldlace:[253,245,230],olive:[128,128,0],olivedrab:[107,142,35],orange:[255,165,0],orangered:[255,69,0],orchid:[218,112,214],palegoldenrod:[238,232,170],palegreen:[152,251,152],paleturquoise:[175,238,238],palevioletred:[219,112,147],papayawhip:[255,239,213],peachpuff:[255,218,185],peru:[205,133,63],pink:[255,192,203],plum:[221,160,221],powderblue:[176,224,230],purple:[128,0,128],rebeccapurple:[102,51,153],red:[255,0,0],rosybrown:[188,143,143],royalblue:[65,105,225],saddlebrown:[139,69,19],salmon:[250,128,114],sandybrown:[244,164,96],seagreen:[46,139,87],seashell:[255,245,238],sienna:[160,82,45],silver:[192,192,192],skyblue:[135,206,235],slateblue:[106,90,205],slategray:[112,128,144],slategrey:[112,128,144],snow:[255,250,250],springgreen:[0,255,127],steelblue:[70,130,180],tan:[210,180,140],teal:[0,128,128],thistle:[216,191,216],tomato:[255,99,71],turquoise:[64,224,208],violet:[238,130,238],wheat:[245,222,179],white:[255,255,255],whitesmoke:[245,245,245],yellow:[255,255,0],yellowgreen:[154,205,50]}},function(t,e,n){"use strict";var r=n(12),o=Array.prototype.concat,a=Array.prototype.slice,i=t.exports=function(t){for(var e=[],n=0,i=t.length;n<i;n++){var u=t[n];r(u)?e=o.call(e,a.call(u)):e.push(u)}return e};i.wrap=function(t){return function(){return t(i(arguments))}}},function(t,e){t.exports=function(t){return!(!t||"string"==typeof t)&&(t instanceof Array||Array.isArray(t)||t.length>=0&&(t.splice instanceof Function||Object.getOwnPropertyDescriptor(t,t.length-1)&&"String"!==t.constructor.name))}},function(t,e,n){const r=n(4),o=n(15),a={};Object.keys(r).forEach(t=>{a[t]={},Object.defineProperty(a[t],"channels",{value:r[t].channels}),Object.defineProperty(a[t],"labels",{value:r[t].labels});const e=o(t);Object.keys(e).forEach(n=>{const r=e[n];a[t][n]=function(t){const e=function(...e){const n=e[0];if(null==n)return n;n.length>1&&(e=n);const r=t(e);if("object"==typeof r)for(let t=r.length,e=0;e<t;e++)r[e]=Math.round(r[e]);return r};return"conversion"in t&&(e.conversion=t.conversion),e}(r),a[t][n].raw=function(t){const e=function(...e){const n=e[0];return null==n?n:(n.length>1&&(e=n),t(e))};return"conversion"in t&&(e.conversion=t.conversion),e}(r)})}),t.exports=a},function(t,e,n){"use strict";t.exports={aliceblue:[240,248,255],antiquewhite:[250,235,215],aqua:[0,255,255],aquamarine:[127,255,212],azure:[240,255,255],beige:[245,245,220],bisque:[255,228,196],black:[0,0,0],blanchedalmond:[255,235,205],blue:[0,0,255],blueviolet:[138,43,226],brown:[165,42,42],burlywood:[222,184,135],cadetblue:[95,158,160],chartreuse:[127,255,0],chocolate:[210,105,30],coral:[255,127,80],cornflowerblue:[100,149,237],cornsilk:[255,248,220],crimson:[220,20,60],cyan:[0,255,255],darkblue:[0,0,139],darkcyan:[0,139,139],darkgoldenrod:[184,134,11],darkgray:[169,169,169],darkgreen:[0,100,0],darkgrey:[169,169,169],darkkhaki:[189,183,107],darkmagenta:[139,0,139],darkolivegreen:[85,107,47],darkorange:[255,140,0],darkorchid:[153,50,204],darkred:[139,0,0],darksalmon:[233,150,122],darkseagreen:[143,188,143],darkslateblue:[72,61,139],darkslategray:[47,79,79],darkslategrey:[47,79,79],darkturquoise:[0,206,209],darkviolet:[148,0,211],deeppink:[255,20,147],deepskyblue:[0,191,255],dimgray:[105,105,105],dimgrey:[105,105,105],dodgerblue:[30,144,255],firebrick:[178,34,34],floralwhite:[255,250,240],forestgreen:[34,139,34],fuchsia:[255,0,255],gainsboro:[220,220,220],ghostwhite:[248,248,255],gold:[255,215,0],goldenrod:[218,165,32],gray:[128,128,128],green:[0,128,0],greenyellow:[173,255,47],grey:[128,128,128],honeydew:[240,255,240],hotpink:[255,105,180],indianred:[205,92,92],indigo:[75,0,130],ivory:[255,255,240],khaki:[240,230,140],lavender:[230,230,250],lavenderblush:[255,240,245],lawngreen:[124,252,0],lemonchiffon:[255,250,205],lightblue:[173,216,230],lightcoral:[240,128,128],lightcyan:[224,255,255],lightgoldenrodyellow:[250,250,210],lightgray:[211,211,211],lightgreen:[144,238,144],lightgrey:[211,211,211],lightpink:[255,182,193],lightsalmon:[255,160,122],lightseagreen:[32,178,170],lightskyblue:[135,206,250],lightslategray:[119,136,153],lightslategrey:[119,136,153],lightsteelblue:[176,196,222],lightyellow:[255,255,224],lime:[0,255,0],limegreen:[50,205,50],linen:[250,240,230],magenta:[255,0,255],maroon:[128,0,0],mediumaquamarine:[102,205,170],mediumblue:[0,0,205],mediumorchid:[186,85,211],mediumpurple:[147,112,219],mediumseagreen:[60,179,113],mediumslateblue:[123,104,238],mediumspringgreen:[0,250,154],mediumturquoise:[72,209,204],mediumvioletred:[199,21,133],midnightblue:[25,25,112],mintcream:[245,255,250],mistyrose:[255,228,225],moccasin:[255,228,181],navajowhite:[255,222,173],navy:[0,0,128],oldlace:[253,245,230],olive:[128,128,0],olivedrab:[107,142,35],orange:[255,165,0],orangered:[255,69,0],orchid:[218,112,214],palegoldenrod:[238,232,170],palegreen:[152,251,152],paleturquoise:[175,238,238],palevioletred:[219,112,147],papayawhip:[255,239,213],peachpuff:[255,218,185],peru:[205,133,63],pink:[255,192,203],plum:[221,160,221],powderblue:[176,224,230],purple:[128,0,128],rebeccapurple:[102,51,153],red:[255,0,0],rosybrown:[188,143,143],royalblue:[65,105,225],saddlebrown:[139,69,19],salmon:[250,128,114],sandybrown:[244,164,96],seagreen:[46,139,87],seashell:[255,245,238],sienna:[160,82,45],silver:[192,192,192],skyblue:[135,206,235],slateblue:[106,90,205],slategray:[112,128,144],slategrey:[112,128,144],snow:[255,250,250],springgreen:[0,255,127],steelblue:[70,130,180],tan:[210,180,140],teal:[0,128,128],thistle:[216,191,216],tomato:[255,99,71],turquoise:[64,224,208],violet:[238,130,238],wheat:[245,222,179],white:[255,255,255],whitesmoke:[245,245,245],yellow:[255,255,0],yellowgreen:[154,205,50]}},function(t,e,n){const r=n(4);function o(t){const e=function(){const t={},e=Object.keys(r);for(let n=e.length,r=0;r<n;r++)t[e[r]]={distance:-1,parent:null};return t}(),n=[t];for(e[t].distance=0;n.length;){const t=n.pop(),o=Object.keys(r[t]);for(let r=o.length,a=0;a<r;a++){const r=o[a],i=e[r];-1===i.distance&&(i.distance=e[t].distance+1,i.parent=t,n.unshift(r))}}return e}function a(t,e){return function(n){return e(t(n))}}function i(t,e){const n=[e[t].parent,t];let o=r[e[t].parent][t],i=e[t].parent;for(;e[i].parent;)n.unshift(e[i].parent),o=a(r[e[i].parent][i],o),i=e[i].parent;return o.conversion=n,o}t.exports=function(t){const e=o(t),n={},r=Object.keys(e);for(let t=r.length,o=0;o<t;o++){const t=r[o];null!==e[t].parent&&(n[t]=i(t,e))}return n}},function(t,e,n){var r=n(17),o=n(2);t.exports=function(t,e,n){return void 0===n&&(n=e,e=void 0),void 0!==n&&(n=(n=o(n))==n?n:0),void 0!==e&&(e=(e=o(e))==e?e:0),r(o(t),e,n)}},function(t,e){t.exports=function(t,e,n){return t==t&&(void 0!==n&&(t=t<=n?t:n),void 0!==e&&(t=t>=e?t:e)),t}},function(t,e){t.exports=function(t){var e=typeof t;return null!=t&&("object"==e||"function"==e)}},function(t,e,n){var r=n(20),o=n(21),a=n(3);t.exports=function(t,e,n){var i=null==t?0:t.length;return i?(n&&"number"!=typeof n&&o(t,e,n)?(e=0,n=i):(e=null==e?0:a(e),n=void 0===n?i:a(n)),r(t,e,n)):[]}},function(t,e){t.exports=function(t,e,n){var r=-1,o=t.length;e<0&&(e=-e>o?0:o+e),(n=n>o?o:n)<0&&(n+=o),o=e>n?0:n-e>>>0,e>>>=0;for(var a=Array(o);++r<o;)a[r]=t[r+e];return a}},function(t,e){t.exports=function(){return!1}},function(t,e,n){var r=n(2);t.exports=function(t){return t?(t=r(t))===1/0||t===-1/0?1.7976931348623157e308*(t<0?-1:1):t==t?t:0:0===t?t:0}},function(t,e,n){var r=n(24)("round");t.exports=r},function(t,e,n){var r=n(5),o=n(3),a=n(2),i=n(6),u=r.isFinite,l=Math.min;t.exports=function(t){var e=Math[t];return function(t,n){if(t=a(t),(n=null==n?0:l(o(n),292))&&u(t)){var r=(i(t)+"e").split("e"),c=e(r[0]+"e"+(+r[1]+n));return+((r=(i(c)+"e").split("e"))[0]+"e"+(+r[1]-n))}return e(t)}}},function(t,e,n){(function(e){var n="object"==typeof e&&e&&e.Object===Object&&e;t.exports=n}).call(this,n(26))},function(t,e){var n;n=function(){return this}();try{n=n||new Function("return this")()}catch(t){"object"==typeof window&&(n=window)}t.exports=n},function(t,e,n){var r=n(28),o=n(29),a=n(0),i=n(1),u=r?r.prototype:void 0,l=u?u.toString:void 0;t.exports=function t(e){if("string"==typeof e)return e;if(a(e))return o(e,t)+"";if(i(e))return l?l.call(e):"";var n=e+"";return"0"==n&&1/e==-1/0?"-0":n}},function(t,e,n){var r=n(5).Symbol;t.exports=r},function(t,e){t.exports=function(t,e){for(var n=-1,r=null==t?0:t.length,o=Array(r);++n<r;)o[n]=e(t[n],n,t);return o}},function(t,e,n){var r=n(0);t.exports=function(){if(!arguments.length)return[];var t=arguments[0];return r(t)?t:[t]}},function(t,e,n){var r=n(32),o=n(33);t.exports=function(t,e){return null!=t&&o(t,e,r)}},function(t,e){var n=Object.prototype.hasOwnProperty;t.exports=function(t,e){return null!=t&&n.call(t,e)}},function(t,e,n){var r=n(34),o=n(38),a=n(0),i=n(39),u=n(40),l=n(41);t.exports=function(t,e,n){for(var c=-1,s=(e=r(e,t)).length,f=!1;++c<s;){var h=l(e[c]);if(!(f=null!=t&&n(t,h)))break;t=t[h]}return f||++c!=s?f:!!(s=null==t?0:t.length)&&u(s)&&i(h,s)&&(a(t)||o(t))}},function(t,e,n){var r=n(0),o=n(35),a=n(36),i=n(6);t.exports=function(t,e){return r(t)?t:o(t,e)?[t]:a(i(t))}},function(t,e,n){var r=n(0),o=n(1),a=/\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,i=/^\w*$/;t.exports=function(t,e){if(r(t))return!1;var n=typeof t;return!("number"!=n&&"symbol"!=n&&"boolean"!=n&&null!=t&&!o(t))||i.test(t)||!a.test(t)||null!=e&&t in Object(e)}},function(t,e,n){var r=n(37),o=/[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g,a=/\\(\\)?/g,i=r(function(t){var e=[];return 46===t.charCodeAt(0)&&e.push(""),t.replace(o,function(t,n,r,o){e.push(r?o.replace(a,"$1"):n||t)}),e});t.exports=i},function(t,e){t.exports=function(t){return t}},function(t,e){t.exports=function(){return!1}},function(t,e){var n=/^(?:0|[1-9]\d*)$/;t.exports=function(t,e){var r=typeof t;return!!(e=null==e?9007199254740991:e)&&("number"==r||"symbol"!=r&&n.test(t))&&t>-1&&t%1==0&&t<e}},function(t,e){t.exports=function(t){return"number"==typeof t&&t>-1&&t%1==0&&t<=9007199254740991}},function(t,e,n){var r=n(1);t.exports=function(t){if("string"==typeof t||r(t))return t;var e=t+"";return"0"==e&&1/t==-1/0?"-0":e}},function(t,e){t.exports=function(t){return null==t}},function(t,e,n){var r=n(44);t.exports=function(t,e){return!(null==t||!t.length)&&r(t,e,0)>-1}},function(t,e){t.exports=function(t,e,n){for(var r=n-1,o=t.length;++r<o;)if(t[r]===e)return r;return-1}},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=function(t){return Number.isSafeInteger(t)&&t>0}}])}).call(this,n(9))}])});
+
+function buildGraph() {
+	const graph = {};
+	// https://jsperf.com/object-keys-vs-for-in-with-closure/3
+	const models = Object.keys(conversions);
+
+	for (let len = models.length, i = 0; i < len; i++) {
+		graph[models[i]] = {
+			// http://jsperf.com/1-vs-infinity
+			// micro-opt, but this is simple.
+			distance: -1,
+			parent: null
+		};
+	}
+
+	return graph;
+}
+
+// https://en.wikipedia.org/wiki/Breadth-first_search
+function deriveBFS(fromModel) {
+	const graph = buildGraph();
+	const queue = [fromModel]; // Unshift -> queue -> pop
+
+	graph[fromModel].distance = 0;
+
+	while (queue.length) {
+		const current = queue.pop();
+		const adjacents = Object.keys(conversions[current]);
+
+		for (let len = adjacents.length, i = 0; i < len; i++) {
+			const adjacent = adjacents[i];
+			const node = graph[adjacent];
+
+			if (node.distance === -1) {
+				node.distance = graph[current].distance + 1;
+				node.parent = current;
+				queue.unshift(adjacent);
+			}
+		}
+	}
+
+	return graph;
+}
+
+function link(from, to) {
+	return function (args) {
+		return to(from(args));
+	};
+}
+
+function wrapConversion(toModel, graph) {
+	const path = [graph[toModel].parent, toModel];
+	let fn = conversions[graph[toModel].parent][toModel];
+
+	let cur = graph[toModel].parent;
+	while (graph[cur].parent) {
+		path.unshift(graph[cur].parent);
+		fn = link(conversions[graph[cur].parent][cur], fn);
+		cur = graph[cur].parent;
+	}
+
+	fn.conversion = path;
+	return fn;
+}
+
+module.exports = function (fromModel) {
+	const graph = deriveBFS(fromModel);
+	const conversion = {};
+
+	const models = Object.keys(graph);
+	for (let len = models.length, i = 0; i < len; i++) {
+		const toModel = models[i];
+		const node = graph[toModel];
+
+		if (node.parent === null) {
+			// No possible conversion, or this node is the source model.
+			continue;
+		}
+
+		conversion[toModel] = wrapConversion(toModel, graph);
+	}
+
+	return conversion;
+};
+
+
+
+/***/ }),
+/* 85 */
+/***/ (function(module, exports) {
+
+/**
+ * The base implementation of `_.clamp` which doesn't coerce arguments.
+ *
+ * @private
+ * @param {number} number The number to clamp.
+ * @param {number} [lower] The lower bound.
+ * @param {number} upper The upper bound.
+ * @returns {number} Returns the clamped number.
+ */
+function baseClamp(number, lower, upper) {
+  if (number === number) {
+    if (upper !== undefined) {
+      number = number <= upper ? number : upper;
+    }
+    if (lower !== undefined) {
+      number = number >= lower ? number : lower;
+    }
+  }
+  return number;
+}
+
+module.exports = baseClamp;
+
+
+/***/ }),
+/* 86 */
+/***/ (function(module, exports) {
+
+/**
+ * The base implementation of `_.slice` without an iteratee call guard.
+ *
+ * @private
+ * @param {Array} array The array to slice.
+ * @param {number} [start=0] The start position.
+ * @param {number} [end=array.length] The end position.
+ * @returns {Array} Returns the slice of `array`.
+ */
+function baseSlice(array, start, end) {
+  var index = -1,
+      length = array.length;
+
+  if (start < 0) {
+    start = -start > length ? 0 : (length + start);
+  }
+  end = end > length ? length : end;
+  if (end < 0) {
+    end += length;
+  }
+  length = start > end ? 0 : ((end - start) >>> 0);
+  start >>>= 0;
+
+  var result = Array(length);
+  while (++index < length) {
+    result[index] = array[index + start];
+  }
+  return result;
+}
+
+module.exports = baseSlice;
+
+
+/***/ }),
+/* 87 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns the first argument it receives.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Util
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ *
+ * console.log(_.identity(object) === object);
+ * // => true
+ */
+function identity(value) {
+  return value;
+}
+
+module.exports = identity;
+
+
+/***/ }),
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var root = __webpack_require__(21),
+    toInteger = __webpack_require__(4),
+    toNumber = __webpack_require__(23),
+    toString = __webpack_require__(24);
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeIsFinite = root.isFinite,
+    nativeMin = Math.min;
+
+/**
+ * Creates a function like `_.round`.
+ *
+ * @private
+ * @param {string} methodName The name of the `Math` method to use when rounding.
+ * @returns {Function} Returns the new round function.
+ */
+function createRound(methodName) {
+  var func = Math[methodName];
+  return function(number, precision) {
+    number = toNumber(number);
+    precision = precision == null ? 0 : nativeMin(toInteger(precision), 292);
+    if (precision && nativeIsFinite(number)) {
+      // Shift with exponential notation to avoid floating-point issues.
+      // See [MDN](https://mdn.io/round#Examples) for more details.
+      var pair = (toString(number) + 'e').split('e'),
+          value = func(pair[0] + 'e' + (+pair[1] + precision));
+
+      pair = (toString(value) + 'e').split('e');
+      return +(pair[0] + 'e' + (+pair[1] - precision));
+    }
+    return func(number);
+  };
+}
+
+module.exports = createRound;
+
+
+/***/ }),
+/* 89 */
+/***/ (function(module, exports) {
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * The base implementation of `_.has` without support for deep paths.
+ *
+ * @private
+ * @param {Object} [object] The object to query.
+ * @param {Array|string} key The key to check.
+ * @returns {boolean} Returns `true` if `key` exists, else `false`.
+ */
+function baseHas(object, key) {
+  return object != null && hasOwnProperty.call(object, key);
+}
+
+module.exports = baseHas;
+
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var castPath = __webpack_require__(91),
+    isArguments = __webpack_require__(96),
+    isArray = __webpack_require__(1),
+    isIndex = __webpack_require__(97),
+    isLength = __webpack_require__(19),
+    toKey = __webpack_require__(98);
+
+/**
+ * Checks if `path` exists on `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @param {Array|string} path The path to check.
+ * @param {Function} hasFunc The function to check properties.
+ * @returns {boolean} Returns `true` if `path` exists, else `false`.
+ */
+function hasPath(object, path, hasFunc) {
+  path = castPath(path, object);
+
+  var index = -1,
+      length = path.length,
+      result = false;
+
+  while (++index < length) {
+    var key = toKey(path[index]);
+    if (!(result = object != null && hasFunc(object, key))) {
+      break;
+    }
+    object = object[key];
+  }
+  if (result || ++index != length) {
+    return result;
+  }
+  length = object == null ? 0 : object.length;
+  return !!length && isLength(length) && isIndex(key, length) &&
+    (isArray(object) || isArguments(object));
+}
+
+module.exports = hasPath;
+
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isArray = __webpack_require__(1),
+    isKey = __webpack_require__(92),
+    stringToPath = __webpack_require__(94),
+    toString = __webpack_require__(24);
+
+/**
+ * Casts `value` to a path array if it's not one.
+ *
+ * @private
+ * @param {*} value The value to inspect.
+ * @param {Object} [object] The object to query keys on.
+ * @returns {Array} Returns the cast property path array.
+ */
+function castPath(value, object) {
+  if (isArray(value)) {
+    return value;
+  }
+  return isKey(value, object) ? [value] : stringToPath(toString(value));
+}
+
+module.exports = castPath;
+
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isArray = __webpack_require__(1),
+    isSymbol = __webpack_require__(93);
+
+/** Used to match property names within property paths. */
+var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
+    reIsPlainProp = /^\w*$/;
+
+/**
+ * Checks if `value` is a property name and not a property path.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @param {Object} [object] The object to query keys on.
+ * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
+ */
+function isKey(value, object) {
+  if (isArray(value)) {
+    return false;
+  }
+  var type = typeof value;
+  if (type == 'number' || type == 'symbol' || type == 'boolean' ||
+      value == null || isSymbol(value)) {
+    return true;
+  }
+  return reIsPlainProp.test(value) || !reIsDeepProp.test(value) ||
+    (object != null && value in Object(object));
+}
+
+module.exports = isKey;
+
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns `false`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {boolean} Returns `false`.
+ * @example
+ *
+ * _.times(2, _.stubFalse);
+ * // => [false, false]
+ */
+function stubFalse() {
+  return false;
+}
+
+module.exports = stubFalse;
+
+
+/***/ }),
+/* 94 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var memoizeCapped = __webpack_require__(95);
+
+/** Used to match property names within property paths. */
+var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
+
+/** Used to match backslashes in property paths. */
+var reEscapeChar = /\\(\\)?/g;
+
+/**
+ * Converts `string` to a property path array.
+ *
+ * @private
+ * @param {string} string The string to convert.
+ * @returns {Array} Returns the property path array.
+ */
+var stringToPath = memoizeCapped(function(string) {
+  var result = [];
+  if (string.charCodeAt(0) === 46 /* . */) {
+    result.push('');
+  }
+  string.replace(rePropName, function(match, number, quote, subString) {
+    result.push(quote ? subString.replace(reEscapeChar, '$1') : (number || match));
+  });
+  return result;
+});
+
+module.exports = stringToPath;
+
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns the first argument it receives.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Util
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ *
+ * console.log(_.identity(object) === object);
+ * // => true
+ */
+function identity(value) {
+  return value;
+}
+
+module.exports = identity;
+
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns `false`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {boolean} Returns `false`.
+ * @example
+ *
+ * _.times(2, _.stubFalse);
+ * // => [false, false]
+ */
+function stubFalse() {
+  return false;
+}
+
+module.exports = stubFalse;
+
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports) {
+
+/** Used as references for various `Number` constants. */
+var MAX_SAFE_INTEGER = 9007199254740991;
+
+/** Used to detect unsigned integer values. */
+var reIsUint = /^(?:0|[1-9]\d*)$/;
+
+/**
+ * Checks if `value` is a valid array-like index.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
+ * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
+ */
+function isIndex(value, length) {
+  var type = typeof value;
+  length = length == null ? MAX_SAFE_INTEGER : length;
+
+  return !!length &&
+    (type == 'number' ||
+      (type != 'symbol' && reIsUint.test(value))) &&
+        (value > -1 && value % 1 == 0 && value < length);
+}
+
+module.exports = isIndex;
+
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns the first argument it receives.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Util
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ *
+ * console.log(_.identity(object) === object);
+ * // => true
+ */
+function identity(value) {
+  return value;
+}
+
+module.exports = identity;
+
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var toInteger = __webpack_require__(4);
+
+/**
+ * Checks if `value` is an integer.
+ *
+ * **Note:** This method is based on
+ * [`Number.isInteger`](https://mdn.io/Number/isInteger).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an integer, else `false`.
+ * @example
+ *
+ * _.isInteger(3);
+ * // => true
+ *
+ * _.isInteger(Number.MIN_VALUE);
+ * // => false
+ *
+ * _.isInteger(Infinity);
+ * // => false
+ *
+ * _.isInteger('3');
+ * // => false
+ */
+function isInteger(value) {
+  return typeof value == 'number' && value == toInteger(value);
+}
+
+module.exports = isInteger;
+
+
+/***/ }),
+/* 100 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+// EXTERNAL MODULE: ./node_modules/lodash/assign.js
+var lodash_assign = __webpack_require__(25);
+var assign_default = /*#__PURE__*/__webpack_require__.n(lodash_assign);
+
+// EXTERNAL MODULE: ./node_modules/lodash/cloneDeep.js
+var cloneDeep = __webpack_require__(26);
+var cloneDeep_default = /*#__PURE__*/__webpack_require__.n(cloneDeep);
+
+// EXTERNAL MODULE: ./node_modules/lodash/uniq.js
+var uniq = __webpack_require__(27);
+var uniq_default = /*#__PURE__*/__webpack_require__.n(uniq);
+
+// EXTERNAL MODULE: ./node_modules/color-string/index.js
+var color_string = __webpack_require__(2);
+var color_string_default = /*#__PURE__*/__webpack_require__.n(color_string);
+
+// EXTERNAL MODULE: ./node_modules/color-convert/index.js
+var color_convert = __webpack_require__(0);
+var color_convert_default = /*#__PURE__*/__webpack_require__.n(color_convert);
+
+// EXTERNAL MODULE: ./node_modules/lodash/clamp.js
+var clamp = __webpack_require__(7);
+var clamp_default = /*#__PURE__*/__webpack_require__.n(clamp);
+
+// EXTERNAL MODULE: ./node_modules/lodash/slice.js
+var slice = __webpack_require__(13);
+var slice_default = /*#__PURE__*/__webpack_require__.n(slice);
+
+// EXTERNAL MODULE: ./node_modules/lodash/round.js
+var lodash_round = __webpack_require__(28);
+var round_default = /*#__PURE__*/__webpack_require__.n(lodash_round);
+
+// EXTERNAL MODULE: ./node_modules/lodash/castArray.js
+var castArray = __webpack_require__(14);
+var castArray_default = /*#__PURE__*/__webpack_require__.n(castArray);
+
+// EXTERNAL MODULE: ./node_modules/lodash/has.js
+var has = __webpack_require__(5);
+var has_default = /*#__PURE__*/__webpack_require__.n(has);
+
+// EXTERNAL MODULE: ./node_modules/lodash/isNil.js
+var isNil = __webpack_require__(29);
+var isNil_default = /*#__PURE__*/__webpack_require__.n(isNil);
+
+// EXTERNAL MODULE: ./node_modules/lodash/toInteger.js
+var toInteger = __webpack_require__(4);
+var toInteger_default = /*#__PURE__*/__webpack_require__.n(toInteger);
+
+// EXTERNAL MODULE: ./node_modules/lodash/includes.js
+var includes = __webpack_require__(15);
+var includes_default = /*#__PURE__*/__webpack_require__.n(includes);
+
+// EXTERNAL MODULE: ./node_modules/lodash/isSafeInteger.js
+var isSafeInteger = __webpack_require__(30);
+var isSafeInteger_default = /*#__PURE__*/__webpack_require__.n(isSafeInteger);
+
+// CONCATENATED MODULE: ./node_modules/@xotic750/color/dist/color.esm.js
+var _this = undefined;
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function _newArrowCheck(innerThis, boundThis) { if (innerThis !== boundThis) { throw new TypeError("Cannot instantiate an arrow function"); } }
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Test if a value is a counting number, 1 -> MAX_SAFE_INTEGER.
+ *
+ * @param {*} value - The value to be tested.
+ * @returns {boolean} True if value is a counting number.
+ */
+
+var color_esm_isCountingNumber = function isCountingNumber(value) {
+  return isSafeInteger_default()(value) && value > 0;
+};
+
+var EMPTY_STRING = '';
+var ALPHA = 'alpha';
+var RGB = 'rgb';
+var HSL = 'hsl';
+var HSV = 'hsv';
+var HWB = 'hwb';
+var HCG = 'hcg';
+var XYZ = 'xyz';
+var LAB = 'lab';
+var CMYK = 'cmyk';
+var AA = 'AA';
+var AAA = 'AAA';
+/** @type {ReadonlyArray<string>} */
+
+var rgbKeys = Object.freeze(RGB.split(EMPTY_STRING));
+/** @type {ReadonlyArray<string>} */
+
+var skippedModels = Object.freeze([
+/* to be honest, I don't really feel like keyword belongs in color convert, but eh. */
+'keyword',
+/* gray conflicts with some method names, and has its own method defined. */
+'gray',
+/* shouldn't really be in color-convert either... */
+'hex']);
+/** @type {Readonly<string>} */
+
+var hashedModelKeys = Object.freeze(Object.keys(color_convert_default.a).reduce(function (hashed, model) {
+  _newArrowCheck(this, _this);
+
+  var prop = slice_default()(color_convert_default.a[model].labels).sort().join(EMPTY_STRING);
+  hashed[prop] = model;
+  return hashed;
+}.bind(undefined), Object.create(null)));
+/**
+ * The minimum values for WCAG rating.
+ *
+ * @type {Readonly}
+ * @property {number} aa - AA minimum value.
+ * @property {number} aaa - AAA minimum value.
+ * @property {number} aaaLarge - AAA Large minimum value.
+ * @property {number} aaLarge - AA Large minimum value.
+ */
+
+var minimums = Object.freeze({
+  aa: 4.5,
+  aaa: 7,
+  aaaLarge: 4.5,
+  aaLarge: 3
+});
+/**
+ * Create a bound function that clamps the value to between 0 and max inclusive.
+ *
+ * @param {number} max - The maximum value.
+ * @returns {function({value: number}): number} - The bound clamp function.
+ */
+
+var color_esm_maxfn = function maxfn(max) {
+  return function boundMaxfn(value) {
+    // noinspection JSCheckFunctionSignatures
+    return clamp_default()(value, 0, max);
+  };
+};
+/**
+ * Partially zeros an array to a specified length.
+ *
+ * @param {Array} array - The array to be partially zeroed.
+ * @param {number} [length=0] - The length to zero to.
+ * @returns {Array<*>} - The partially zeroed array.
+ */
+
+
+var zeroArray = function zeroArray(array) {
+  var length = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+
+  for (var index = 0; index < length; index += 1) {
+    if (typeof array[index] !== 'number') {
+      array[index] = 0;
+    }
+  }
+
+  return array;
+};
+/**
+ * Test if a value is a possible model.
+ *
+ * @param {*} value - The value to test.
+ * @returns {boolean} - Indicates if value is a possible model.
+ */
+
+
+var isModel = function isModel(value) {
+  return typeof value === 'string' && Boolean(value.trim());
+};
+/**
+ * Convert value to appropriate number for rounding places.
+ *
+ * @param {*} value - The value to convert.
+ * @param {number} [defaultTo=1] - The value to use if value is not a number.
+ * @returns {number} - The number of places.
+ */
+
+
+var color_esm_getPlaces = function getPlaces(value) {
+  var defaultTo = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+  return typeof value === 'number' ? toInteger_default()(value) || 0 : defaultTo;
+};
+/**
+ * Convert a color object to an array.
+ *
+ * @param {Color} colorObject - The color object.
+ * @returns {Array<number>} - The array from the color object.
+ */
+
+
+var getColorArray = function getColorArray(colorObject) {
+  var color = colorObject.color,
+      valpha = colorObject.valpha; // noinspection JSIncompatibleTypesComparison
+
+  return valpha === 1 ? color : [].concat(_toConsumableArray(color), [valpha]);
+};
+/**
+ * Get the model.
+ *
+ * @param {*} value - The value provided as the model.
+ * @returns {null|string} - The model.
+ * @throws {Error} - If model is invalid.
+ */
+
+
+var color_esm_getModel = function getModel(value) {
+  if (isModel(value)) {
+    if (includes_default()(skippedModels, value)) {
+      return null;
+    }
+
+    if (!has_default()(color_convert_default.a, value)) {
+      throw new Error("Unknown model: ".concat(value));
+    }
+  }
+
+  return value;
+};
+/**
+ * @type {Readonly<{enumerable: boolean, configurable: boolean, writable: boolean}>}
+ * */
+
+
+var instanceLockDescription = Object.freeze({
+  configurable: false,
+  enumerable: true,
+  writable: false
+});
+/**
+ *
+ * @type {Readonly<{color: Readonly<{enumerable: boolean, configurable: boolean, writable: boolean}>, model: Readonly<{enumerable: boolean, configurable: boolean, writable: boolean}>, valpha: Readonly<{enumerable: boolean, configurable: boolean, writable: boolean}>}>}
+ */
+
+var colorDescription = Object.freeze({
+  color: instanceLockDescription,
+  model: instanceLockDescription,
+  valpha: instanceLockDescription
+});
+var limiters = Object.create(null);
+/**
+ * The Color class.
+ *
+ * @class Color
+ * @type {object}
+ * @property {Array<number>} color - The color represented in the model array.
+ * @property {string} model - The color model.
+ * @property {number} valpha - The alpha value of the color.
+ */
+
+var color_esm_Color =
+/*#__PURE__*/
+function () {
+  /**
+   * @param {*} obj - The color definition.
+   * @param {string} [modelOption] - The model.
+   */
+  function Color(obj, modelOption) {
+    var _this2 = this;
+
+    _classCallCheck(this, Color);
+
+    var model = color_esm_getModel(modelOption);
+
+    if (isNil_default()(obj)) {
+      this.model = RGB;
+      this.color = [0, 0, 0];
+      this.valpha = 1;
+    } else if (obj instanceof Color) {
+      this.model = obj.model;
+      this.color = _toConsumableArray(obj.color);
+      this.valpha = obj.valpha;
+    } else if (typeof obj === 'string') {
+      var result = color_string_default.a.get(obj);
+
+      if (result === null) {
+        throw new Error("Unable to parse color from string: ".concat(obj));
+      }
+
+      this.model = result.model;
+      var channels = color_convert_default.a[this.model].channels;
+      this.color = result.value.slice(0, channels);
+      this.valpha = typeof result.value[channels] === 'number' ? result.value[channels] : 1;
+    } else if (color_esm_isCountingNumber(obj.length)) {
+      this.model = model || RGB;
+      var _channels = color_convert_default.a[this.model].channels;
+      var newArr = slice_default()(obj, 0, _channels);
+      this.color = zeroArray(newArr, _channels);
+      this.valpha = typeof obj[_channels] === 'number' ? obj[_channels] : 1;
+    } else if (typeof obj === 'number') {
+      /* this is always RGB - can be converted later on. */
+      this.model = RGB;
+      /* eslint-disable-next-line no-bitwise */
+
+      var number = obj & 0xffffff;
+      /* eslint-disable-next-line no-bitwise */
+
+      this.color = [number >> 16 & 0xff, number >> 8 & 0xff, number & 0xff];
+      this.valpha = 1;
+    } else {
+      this.valpha = 1;
+      var keys = Object.keys(obj);
+
+      if (has_default()(obj, ALPHA)) {
+        keys.splice(keys.indexOf(ALPHA), 1);
+        this.valpha = typeof obj.alpha === 'number' ? obj.alpha : 0;
+      }
+
+      var hashedKeys = keys.sort().join(EMPTY_STRING);
+
+      if (!has_default()(hashedModelKeys, hashedKeys)) {
+        throw new Error("Unable to parse color from object: ".concat(JSON.stringify(obj)));
+      }
+
+      this.model = hashedModelKeys[hashedKeys];
+      var color = color_convert_default.a[this.model].labels.split(EMPTY_STRING).map(function (label) {
+        _newArrowCheck(this, _this2);
+
+        return obj[label];
+      }.bind(this));
+      this.color = zeroArray(color);
+    }
+    /* perform limitations (clamping, etc.) */
+
+
+    if (limiters[this.model]) {
+      var _channels2 = color_convert_default.a[this.model].channels;
+      var limiter = limiters[this.model];
+
+      for (var index = 0; index < _channels2; index += 1) {
+        var limit = limiter[index];
+
+        if (limit) {
+          this.color[index] = limit(this.color[index]);
+        }
+      }
+    }
+
+    this.valpha = clamp_default()(this.valpha, 0, 1);
+    Object.freeze(this.color);
+    Object.defineProperties(this, colorDescription);
+  }
+  /**
+   * @returns {string} - The string representation.
+   */
+
+
+  _createClass(Color, [{
+    key: "toString",
+    value: function toString() {
+      return this.string();
+    } // toJSON() {
+    //   return this[this.model]();
+    // }
+
+    /**
+     * @param {number} [places] - The number of places to round to.
+     * @returns {string} - The string representation.
+     */
+
+  }, {
+    key: "string",
+    value: function string(places) {
+      var colorObject = (has_default()(color_string_default.a.to, this.model) ? this : this.rgb()).round(color_esm_getPlaces(places));
+      var args = getColorArray(colorObject);
+      return color_string_default.a.to[colorObject.model](args);
+    }
+    /**
+     * @param {number} [places] - The number of places to round to.
+     * @returns {string} - The string representation.
+     */
+
+  }, {
+    key: "percentString",
+    value: function percentString(places) {
+      var colorObject = this.rgb().round(color_esm_getPlaces(places));
+      var args = getColorArray(colorObject);
+      return color_string_default.a.to.rgb.percent(args);
+    }
+    /**
+     * @returns {Array<number>} - An array representation of the model.
+     */
+
+  }, {
+    key: "array",
+    value: function array() {
+      return getColorArray(this);
+    }
+    /**
+     * @returns {object} - The plain object representation of the model.
+     */
+
+  }, {
+    key: "object",
+    value: function object() {
+      var _this3 = this;
+
+      var labels = color_convert_default.a[this.model].labels;
+      var result = labels.split(EMPTY_STRING).reduce(function (obj, key, index) {
+        _newArrowCheck(this, _this3);
+
+        obj[key] = this.color[index];
+        return obj;
+      }.bind(this), {});
+
+      if (this.valpha !== 1) {
+        result.alpha = this.valpha;
+      }
+
+      return result;
+    }
+    /**
+     * @returns {Array<number>} - An rgb array representation.
+     */
+
+  }, {
+    key: "unitArray",
+    value: function unitArray() {
+      var _this4 = this;
+
+      var rgb = this.rgb().color.map(function (value) {
+        _newArrowCheck(this, _this4);
+
+        return value / 255;
+      }.bind(this));
+
+      if (this.valpha !== 1) {
+        rgb.push(this.valpha);
+      }
+
+      return rgb;
+    }
+    /**
+     * @returns {object} - The rgb plain object representation.
+     */
+
+  }, {
+    key: "unitObject",
+    value: function unitObject() {
+      var _this5 = this;
+
+      var rgb = rgbKeys.reduce(function (object, key) {
+        _newArrowCheck(this, _this5);
+
+        object[key] /= 255;
+        return object;
+      }.bind(this), this.rgb().object());
+
+      if (this.valpha !== 1) {
+        rgb.alpha = this.valpha;
+      }
+
+      return rgb;
+    }
+    /**
+     * @param {number} [places] - The number of places to round to.
+     * @returns {Color} - A new Color object that has been rounded as specified.
+     */
+
+  }, {
+    key: "round",
+    value: function round(places) {
+      var _this6 = this;
+
+      var placesMax = Math.max(color_esm_getPlaces(places, 0), 0); // noinspection JSCheckFunctionSignatures
+
+      return new Color([].concat(_toConsumableArray(this.color.map(function (value) {
+        _newArrowCheck(this, _this6);
+
+        return round_default()(value, placesMax);
+      }.bind(this))), [this.valpha]), this.model);
+    }
+    /**
+     * @param {number} [val] - The value to modify by.
+     * @returns {number|Color} - A new Color object if val is specified, or the current alpha.
+     */
+
+  }, {
+    key: "alpha",
+    value: function alpha(val) {
+      if (arguments.length) {
+        return new Color([].concat(_toConsumableArray(this.color), [clamp_default()(val, 0, 1)]), this.model);
+      }
+
+      return this.valpha;
+    }
+    /**
+     * @param {*} [val] - A new color definition.
+     * @returns {string|Color} - A new Color object if val is specified, or the current keyword.
+     */
+
+  }, {
+    key: "keyword",
+    value: function keyword(val) {
+      if (arguments.length) {
+        return new Color(val);
+      }
+
+      return color_convert_default.a[this.model].keyword(this.color);
+    }
+    /**
+     * @param {*} [val] - A new color definition.
+     * @returns {string|Color} - A new Color object if val is specified, or the current hex.
+     */
+
+  }, {
+    key: "hex",
+    value: function hex(val) {
+      if (arguments.length) {
+        return new Color(val);
+      }
+
+      return color_string_default.a.to.hex(this.rgb().round().color);
+    }
+    /**
+     * @returns {number} - The current RGB value.
+     */
+
+  }, {
+    key: "rgbNumber",
+    value: function rgbNumber() {
+      var rgb = this.rgb().color;
+      /* eslint-disable-next-line no-bitwise */
+
+      return (rgb[0] & 0xff) << 16 | (rgb[1] & 0xff) << 8 | rgb[2] & 0xff;
+    }
+    /**
+     * @returns {number} - The current luminosity value.
+     */
+
+  }, {
+    key: "luminosity",
+    value: function luminosity() {
+      var _this7 = this;
+
+      /** @see {http://www.w3.org/TR/WCAG20/#relativeluminancedef} */
+      var rgb = this.rgb().color;
+      var lum = rgb.map(function (channel) {
+        _newArrowCheck(this, _this7);
+
+        var chan = channel / 255;
+        return chan <= 0.03928 ? chan / 12.92 : Math.pow((chan + 0.055) / 1.055, 2.4);
+      }.bind(this));
+      return 0.2126 * lum[0] + 0.7152 * lum[1] + 0.0722 * lum[2];
+    }
+    /**
+     * @param {Color} color2 - The color object to contrast this color with.
+     * @returns {number} - The contrast value.
+     */
+
+  }, {
+    key: "contrast",
+    value: function contrast(color2) {
+      if (!(color2 instanceof Color)) {
+        throw new Error("Argument to \"contrast\" was not a Color instance, but rather an instance of ".concat(_typeof(color2)));
+      }
+      /** @see {http://www.w3.org/TR/WCAG20/#contrast-ratiodef} */
+
+
+      var lum1 = this.luminosity();
+      var lum2 = color2.luminosity();
+
+      if (lum1 > lum2) {
+        return (lum1 + 0.05) / (lum2 + 0.05);
+      }
+
+      return (lum2 + 0.05) / (lum1 + 0.05);
+    }
+    /**
+     * @param {Color} color2 - The color object to contrast this color with.
+     * @returns {string} - The WCAG contrast level.
+     */
+
+  }, {
+    key: "level",
+    value: function level(color2) {
+      if (!(color2 instanceof Color)) {
+        throw new Error("Argument to \"level\" was not a Color instance, but rather an instance of ".concat(_typeof(color2)));
+      }
+
+      var contrastRatio = this.contrast(color2);
+
+      if (contrastRatio >= minimums.aaa) {
+        return AAA;
+      }
+
+      return contrastRatio >= minimums.aa ? AA : EMPTY_STRING;
+    }
+    /**
+     * @returns {boolean} - True if color is considered dark.
+     */
+
+  }, {
+    key: "isDark",
+    value: function isDark() {
+      var rgb = this.rgb().color;
+      /**
+       * YIQ equation.
+       *
+       * @see {http://24ways.org/2010/calculating-color-contrast}
+       */
+
+      var yiq = (rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 1000;
+      return yiq < 128;
+    }
+    /**
+     * @returns {boolean} - True if color is considered light.
+     */
+
+  }, {
+    key: "isLight",
+    value: function isLight() {
+      return !this.isDark();
+    }
+    /**
+     * @returns {Color} - The new negated color.
+     */
+
+  }, {
+    key: "negate",
+    value: function negate() {
+      var _this8 = this;
+
+      var rgb = rgbKeys.reduce(function (object, key) {
+        _newArrowCheck(this, _this8);
+
+        object[key] = 255 - object[key];
+        return object;
+      }.bind(this), this.rgb().object());
+
+      if (this.valpha !== 1) {
+        rgb.alpha = this.valpha;
+      }
+
+      return new Color(rgb, this.model);
+    }
+    /**
+     * @param {number} ratio - The ratio to lighten by.
+     * @returns {Color} - The new lightened color.
+     */
+
+  }, {
+    key: "lighten",
+    value: function lighten(ratio) {
+      var color = _toConsumableArray(this.hsl().color);
+
+      var obj = {
+        h: color[0],
+        l: color[2] + color[2] * ratio,
+        s: color[1]
+      };
+
+      if (this.valpha !== 1) {
+        obj.alpha = this.valpha;
+      }
+
+      return new Color(obj, this.model);
+    }
+    /**
+     * @param {number} ratio - The ratio to darken by.
+     * @returns {Color} - The new darkened color.
+     */
+
+  }, {
+    key: "darken",
+    value: function darken(ratio) {
+      var color = _toConsumableArray(this.hsl().color);
+
+      var obj = {
+        h: color[0],
+        l: color[2] - color[2] * ratio,
+        s: color[1]
+      };
+
+      if (this.valpha !== 1) {
+        obj.alpha = this.valpha;
+      }
+
+      return new Color(obj, this.model);
+    }
+    /**
+     * @param {number} ratio - The ratio to saturate by.
+     * @returns {Color} - The new saturated color.
+     */
+
+  }, {
+    key: "saturate",
+    value: function saturate(ratio) {
+      var color = _toConsumableArray(this.hsl().color);
+
+      var obj = {
+        h: color[0],
+        l: color[2],
+        s: color[1] + color[1] * ratio
+      };
+
+      if (this.valpha !== 1) {
+        obj.alpha = this.valpha;
+      }
+
+      return new Color(obj, this.model);
+    }
+    /**
+     * @param {number} ratio - The ratio to desaturate by.
+     * @returns {Color} - The new desaturated color.
+     */
+
+  }, {
+    key: "desaturate",
+    value: function desaturate(ratio) {
+      var color = _toConsumableArray(this.hsl().color);
+
+      var obj = {
+        h: color[0],
+        l: color[2],
+        s: color[1] - color[1] * ratio
+      };
+
+      if (this.valpha !== 1) {
+        obj.alpha = this.valpha;
+      }
+
+      return new Color(obj, this.model);
+    }
+    /**
+     * @param {number} ratio - The ratio to whiten by.
+     * @returns {Color} - The new whitened color.
+     */
+
+  }, {
+    key: "whiten",
+    value: function whiten(ratio) {
+      var color = _toConsumableArray(this.hwb().color);
+
+      var obj = {
+        b: color[2],
+        h: color[0],
+        w: color[1] + color[1] * ratio
+      };
+
+      if (this.valpha !== 1) {
+        obj.alpha = this.valpha;
+      }
+
+      return new Color(obj, this.model);
+    }
+    /**
+     * @param {number} ratio - The ratio to blacken by.
+     * @returns {Color} - The new blackened color.
+     */
+
+  }, {
+    key: "blacken",
+    value: function blacken(ratio) {
+      var color = _toConsumableArray(this.hwb().color);
+
+      var obj = {
+        b: color[2] + color[2] * ratio,
+        h: color[0],
+        w: color[1]
+      };
+
+      if (this.valpha !== 1) {
+        obj.alpha = this.valpha;
+      }
+
+      return new Color(obj, this.model);
+    }
+    /**
+     * @returns {Color} - The new greyscale color.
+     */
+
+  }, {
+    key: "grayscale",
+    value: function grayscale() {
+      /** @see {http://en.wikipedia.org/wiki/Grayscale#Converting_color_to_grayscale} */
+      var rgb = this.rgb().color;
+      var val = rgb[0] * 0.3 + rgb[1] * 0.59 + rgb[2] * 0.11;
+      return Color.rgb(val, val, val);
+    }
+    /**
+     * @param {number} ratio - The ratio to fade by.
+     * @returns {Color} - The new faded color.
+     */
+
+  }, {
+    key: "fade",
+    value: function fade(ratio) {
+      return this.alpha(this.valpha - this.valpha * ratio);
+    }
+    /**
+     * @param {number} ratio - The ratio to modify opacity by.
+     * @returns {Color} - The new opacity modified color.
+     */
+
+  }, {
+    key: "opaquer",
+    value: function opaquer(ratio) {
+      return this.alpha(this.valpha + this.valpha * ratio);
+    }
+    /**
+     * @param {number} degrees - The number of degrees to rotate by.
+     * @returns {Color} - The new rotated color.
+     */
+
+  }, {
+    key: "rotate",
+    value: function rotate(degrees) {
+      var color = _toConsumableArray(this.hsl().color);
+
+      var _color = _slicedToArray(color, 1),
+          hue = _color[0];
+
+      var hueAngle = (hue + degrees) % 360;
+      color[0] = hueAngle < 0 ? 360 + hueAngle : hueAngle;
+      var obj = {
+        h: color[0],
+        l: color[2],
+        s: color[1]
+      };
+
+      if (this.valpha !== 1) {
+        obj.alpha = this.valpha;
+      }
+
+      return new Color(obj, this.model);
+    }
+    /**
+     * @param {Color} mixinColor - The color to mix in.
+     * @param {number} [weight=0.5] - The mixing weight.
+     * @returns {Color} - The new mixed color.
+     * @throws {Error} if mixinColor is not a Color object.
+     */
+
+  }, {
+    key: "mix",
+    value: function mix(mixinColor, weight) {
+      /**
+       * Ported from sass implementation in C.
+       *
+       * @see {https://github.com/sass/libsass/blob/0e6b4a2850092356aa3ece07c6b249f0221caced/functions.cpp#L209}
+       */
+      if (!(mixinColor instanceof Color)) {
+        throw new Error("Argument to \"mix\" was not a Color instance, but rather an instance of ".concat(_typeof(mixinColor)));
+      }
+
+      var color1 = mixinColor.rgb();
+      var color2 = this.rgb();
+      var p = arguments.length >= 2 ? weight : 0.5;
+      var w = 2 * p - 1;
+      var a = color1.alpha() - color2.alpha();
+      var w1 = ((w * a === -1 ? w : (w + a) / (1 + w * a)) + 1) / 2.0;
+      var w2 = 1 - w1;
+      return Color.rgb(w1 * color1.red() + w2 * color2.red(), w1 * color1.green() + w2 * color2.green(), w1 * color1.blue() + w2 * color2.blue(), color1.alpha() * p + color2.alpha() * (1 - p));
+    }
+  }]);
+
+  return Color;
+}();
+
+
+var maxfn100 = color_esm_maxfn(100);
+var maxfn255 = color_esm_maxfn(255);
+/**
+ * @param {string|Array<string>} model - The model(s).
+ * @param {number} channel - The channel number.
+ * @param {Function} [modifier] - The modifier function.
+ * @returns {Function} - The bound getset function.
+ */
+
+var color_esm_getset = function getset(model, channel, modifier) {
+  var _this9 = this;
+
+  var modelArray = castArray_default()(model);
+  modelArray.forEach(function (m) {
+    _newArrowCheck(this, _this9);
+
+    if (!Array.isArray(limiters[m])) {
+      limiters[m] = [];
+    }
+
+    limiters[m][channel] = modifier;
+  }.bind(this));
+
+  var _modelArray = _slicedToArray(modelArray, 1),
+      modelValue = _modelArray[0];
+
+  return function boundGetset(value) {
+    var _this10 = this;
+
+    if (arguments.length) {
+      var val = modifier ? modifier(value) : value;
+      /* eslint-disable-next-line babel/no-invalid-this */
+
+      var colorInstance = this[modelValue]();
+
+      var color = _toConsumableArray(colorInstance.color);
+
+      color[channel] = val;
+      var object = modelValue.split(EMPTY_STRING).reduce(function (obj, key, index) {
+        _newArrowCheck(this, _this10);
+
+        obj[key] = color[index];
+        return obj;
+      }.bind(this), {});
+      /* eslint-disable-next-line babel/no-invalid-this */
+
+      if (this.valpha !== 1) {
+        /* eslint-disable-next-line babel/no-invalid-this */
+        object.alpha = this.valpha;
+      }
+
+      return new color_esm_Color(object, modelValue);
+    }
+    /* eslint-disable-next-line babel/no-invalid-this */
+
+
+    var colorChannel = this[modelValue]().color[channel];
+    return modifier ? modifier(colorChannel) : colorChannel;
+  };
+};
+
+Object.defineProperties(color_esm_Color.prototype, {
+  a: {
+    value: color_esm_getset(LAB, 1)
+  },
+  b: {
+    value: color_esm_getset(LAB, 2)
+  },
+  black: {
+    value: color_esm_getset(CMYK, 3, maxfn100)
+  },
+  blue: {
+    value: color_esm_getset(RGB, 2, maxfn255)
+  },
+  chroma: {
+    value: color_esm_getset(HCG, 1, maxfn100)
+  },
+  cyan: {
+    value: color_esm_getset(CMYK, 0, maxfn100)
+  },
+  gray: {
+    value: color_esm_getset(HCG, 2, maxfn100)
+  },
+  green: {
+    value: color_esm_getset(RGB, 1, maxfn255)
+  },
+  hue: {
+    value: color_esm_getset([HSL, HSV, HWB, HCG], 0, function (val) {
+      _newArrowCheck(this, _this);
+
+      return (val % 360 + 360) % 360;
+    }.bind(undefined))
+  },
+  l: {
+    value: color_esm_getset(LAB, 0, maxfn100)
+  },
+  lightness: {
+    value: color_esm_getset(HSL, 2, maxfn100)
+  },
+  magenta: {
+    value: color_esm_getset(CMYK, 1, maxfn100)
+  },
+
+  /* rgb */
+  red: {
+    value: color_esm_getset(RGB, 0, maxfn255)
+  },
+  saturationl: {
+    value: color_esm_getset(HSL, 1, maxfn100)
+  },
+  saturationv: {
+    value: color_esm_getset(HSV, 1, maxfn100)
+  },
+  value: {
+    value: color_esm_getset(HSV, 2, maxfn100)
+  },
+  wblack: {
+    value: color_esm_getset(HWB, 2, maxfn100)
+  },
+  white: {
+    value: color_esm_getset(HWB, 1, maxfn100)
+  },
+  x: {
+    value: color_esm_getset(XYZ, 0, maxfn100)
+  },
+  y: {
+    value: color_esm_getset(XYZ, 1, maxfn100)
+  },
+  yellow: {
+    value: color_esm_getset(CMYK, 2, maxfn100)
+  },
+  z: {
+    value: color_esm_getset(XYZ, 2, maxfn100)
+  }
+});
+/* model conversion methods and static constructors */
+
+Object.keys(color_convert_default.a).forEach(function (model) {
+  _newArrowCheck(this, _this);
+
+  if (includes_default()(skippedModels, model)) {
+    return;
+  }
+
+  var channels = color_convert_default.a[model].channels;
+  /* conversion methods */
+
+  Object.defineProperty(color_esm_Color.prototype, model, {
+    value: function conversionMethod() {
+      if (this.model === model) {
+        return new color_esm_Color(this);
+      }
+
+      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      if (args.length) {
+        return new color_esm_Color(args, model);
+      }
+
+      var newAlpha = typeof args[channels] === 'number' ? channels : this.valpha;
+      return new color_esm_Color([].concat(_toConsumableArray(castArray_default()(color_convert_default.a[this.model][model].raw(this.color))), [newAlpha]), model);
+    }
+  });
+  /* 'static' construction methods */
+
+  Object.defineProperty(color_esm_Color, model, {
+    enumerable: true,
+    value: function constructionMethod() {
+      for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+        args[_key2] = arguments[_key2];
+      }
+
+      var color = args[0];
+      var col = typeof color === 'number' ? zeroArray(args, channels) : color;
+      return new color_esm_Color(col, model);
+    }
+  });
+}.bind(undefined));
+
+
+// CONCATENATED MODULE: ./dist/colorable.esm.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "minimums", function() { return colorable_esm_minimums; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Colorable", function() { return Colorable; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Combination", function() { return Combination; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return colorable; });
+function colorable_esm_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { colorable_esm_typeof = function _typeof(obj) { return typeof obj; }; } else { colorable_esm_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return colorable_esm_typeof(obj); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { keys.push.apply(keys, Object.getOwnPropertySymbols(object)); } if (enumerableOnly) keys = keys.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function colorable_esm_newArrowCheck(innerThis, boundThis) { if (innerThis !== boundThis) { throw new TypeError("Cannot instantiate an arrow function"); } }
+
+function colorable_esm_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function colorable_esm_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function colorable_esm_createClass(Constructor, protoProps, staticProps) { if (protoProps) colorable_esm_defineProperties(Constructor.prototype, protoProps); if (staticProps) colorable_esm_defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (colorable_esm_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var NAME = 'name';
+/**
+ * Constructor options.
+ *
+ * @typedef {object} ConstructorOptions
+ * @property {string} [model] - Color model.
+ * @property {string} [name] - The name of the color.
+ * @property {*} value - Color value.
+ */
+
+/**
+ * The minimum values for WCAG rating.
+ *
+ * @type {Readonly}
+ * @property {number} aa - AA minimum value.
+ * @property {number} aaa - AAA minimum value.
+ * @property {number} aaaLarge - AAA Large minimum value.
+ * @property {number} aaLarge - AA Large minimum value.
+ */
+
+var colorable_esm_minimums = Object.freeze({
+  aa: 4.5,
+  aaa: 7,
+  aaaLarge: 4.5,
+  aaLarge: 3
+});
+/**
+ * An object of pass and fail results for accessibility.
+ *
+ * @typedef {object} Accessibility
+ * @property {boolean} aa - AA pass or fail.
+ * @property {boolean} aaa - AAA pass or fail.
+ * @property {boolean} aaaLarge - AAA Large pass or fail.
+ * @property {boolean} aaLarge - AA Large pass or fail.
+ */
+
+/**
+ * WCAG rating keys.
+ *
+ * @type {ReadonlyArray<string>}
+ */
+
+var minimumsKeys = Object.freeze(Object.keys(colorable_esm_minimums));
+/**
+ * Colorable object.
+ *
+ * @class
+ * @type {object}
+ * @property {ReadonlyArray<Combination|object>} combinations - Combinations that matched threshold
+ * @property {string} hexColor - The hex color.
+ * @property {string} [name] - The name of the color.
+ */
+
+var Colorable =
+/*#__PURE__*/
+function (_Color) {
+  _inherits(Colorable, _Color);
+
+  /**
+   * @param {ConstructorOptions} options -
+   */
+  function Colorable(options) {
+    var _this;
+
+    colorable_esm_classCallCheck(this, Colorable);
+
+    var model = options.model,
+        name = options.name,
+        value = options.value;
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Colorable).call(this, value, model));
+    Object.defineProperties(_assertThisInitialized(_this), {
+      combinations: {
+        enumerable: true,
+        value: []
+      },
+      hexColor: {
+        enumerable: true,
+        value: _this.hex()
+      }
+    });
+
+    if (name) {
+      Object.defineProperty(_assertThisInitialized(_this), NAME, {
+        enumerable: true,
+        value: name
+      });
+    }
+
+    return _this;
+  }
+  /**
+   * Give a compact representation.
+   *
+   * @returns {{hexColor: string, combinations: Array<{contrastRatio: number, hexColor: string, accessibility: Accessibility}>}} - Compact representation.
+   */
+
+
+  colorable_esm_createClass(Colorable, [{
+    key: "compact",
+    value: function compact() {
+      var _this2 = this;
+
+      var value = {
+        combinations: this.combinations.map(function (combination) {
+          colorable_esm_newArrowCheck(this, _this2);
+
+          return combination.compact();
+        }.bind(this)),
+        hexColor: this.hexColor
+      };
+
+      if (this.name) {
+        value.name = this.name;
+      }
+
+      return value;
+    }
+  }]);
+
+  return Colorable;
+}(color_esm_Color);
+/**
+ * Combination object.
+ *
+ * @class
+ * @type {object}
+ * @property {Readonly<number>} accessibility - Accessibility scores.
+ * @property {number} contrastRatio - The contrast ratio.
+ * @property {string} hexColor - The hex color.
+ * @property {string} [name] - The name of the color.
+ */
+
+var Combination =
+/*#__PURE__*/
+function (_Color2) {
+  _inherits(Combination, _Color2);
+
+  /**
+   * @param {Colorable} color -
+   * @param {ConstructorOptions} options -
+   */
+  function Combination(color, options) {
+    var _this4 = this;
+
+    var _this3;
+
+    colorable_esm_classCallCheck(this, Combination);
+
+    var model = options.model,
+        name = options.name,
+        value = options.value;
+    _this3 = _possibleConstructorReturn(this, _getPrototypeOf(Combination).call(this, value, model));
+    var contrastRatio = color.contrast(_assertThisInitialized(_this3));
+    Object.defineProperties(_assertThisInitialized(_this3), {
+      accessibility: {
+        enumerable: true,
+        value: Object.freeze(minimumsKeys.reduce(function (minimum, key) {
+          colorable_esm_newArrowCheck(this, _this4);
+
+          minimum[key] = contrastRatio >= colorable_esm_minimums[key];
+          return minimum;
+        }.bind(this), {}))
+      },
+      contrastRatio: {
+        enumerable: true,
+        value: contrastRatio
+      },
+      hexColor: {
+        enumerable: true,
+        value: _this3.hex()
+      }
+    });
+
+    if (name) {
+      Object.defineProperty(_assertThisInitialized(_this3), NAME, {
+        enumerable: true,
+        value: name
+      });
+    }
+
+    return _this3;
+  }
+  /**
+   * Give a compact representation.
+   *
+   * @returns {{contrastRatio: number, hexColor: string, accessibility: Accessibility}} - Compact representation.
+   */
+
+
+  colorable_esm_createClass(Combination, [{
+    key: "compact",
+    value: function compact() {
+      /** @type {Accessibility} */
+      var accessibility = _objectSpread({}, this.accessibility);
+
+      var value = {
+        accessibility: accessibility,
+        contrastRatio: this.contrastRatio,
+        hexColor: this.hexColor
+      };
+
+      if (this.name) {
+        value.name = this.name;
+      }
+
+      return value;
+    }
+  }]);
+
+  return Combination;
+}(color_esm_Color);
+/**
+ * Merge the default and user options.
+ *
+ * @param {object} options - The user option object.
+ * @returns {Readonly} - The options object.
+ */
+
+var colorable_esm_getOptions = function getOptions(options) {
+  return Object.freeze(assign_default()({
+    compact: false,
+    threshold: 0,
+    uniq: true
+  }, options));
+};
+/**
+ * Creates a shallow copy of the original array or an array of unique values.
+ *
+ * @param {Array} array - The array of values.
+ * @param {boolean} unique - Whether the returned array should be unique.
+ * @returns {ReadonlyArray<any>} - An array of values.
+ */
+
+
+var colorable_esm_getIterationArray = function getIterationArray(array, unique) {
+  return Object.freeze(cloneDeep_default()(unique ? uniq_default()(array) : array));
+};
+/**
+ * Creates an array of color objects from the provided definitions.
+ *
+ * @param {Array<string>|object} colors - The color definitions.
+ * @param {boolean} unique - Whether the results should be unique.
+ * @returns {ReadonlyArray<Readonly<{name: any, value: *}>>} - An array of objects.
+ * @throws {TypeError} - If definition is not an array or object.
+ */
+
+
+var getColors = function getColors(colors, unique) {
+  var _this5 = this;
+
+  if (Array.isArray(colors)) {
+    return Object.freeze(colorable_esm_getIterationArray(colors, unique).map(function (value) {
+      colorable_esm_newArrowCheck(this, _this5);
+
+      return Object.freeze({
+        value: value
+      });
+    }.bind(this)));
+  }
+
+  if (colors && colorable_esm_typeof(colors) === 'object') {
+    return Object.freeze(colorable_esm_getIterationArray(Object.keys(colors), unique).map(function (key) {
+      colorable_esm_newArrowCheck(this, _this5);
+
+      return Object.freeze({
+        name: key,
+        value: colors[key]
+      });
+    }.bind(this)));
+  }
+
+  throw new TypeError('Must provide an array or object');
+};
+/**
+ * Colorable combination contrast tester.
+ *
+ * @param {Array|object} [colors] - The color definitions.
+ * @param {object} [options] - User options.
+ * @returns {ReadonlyArray<Readonly>} - An array objects in colorable format.
+ */
+
+
+function colorable(colors, options) {
+  var _this6 = this;
+
+  var opts = colorable_esm_getOptions(options);
+  var colorsArray = getColors(colors, opts.uniq);
+  return Object.freeze(colorsArray.map(function (textColor) {
+    var _this7 = this;
+
+    colorable_esm_newArrowCheck(this, _this6);
+
+    var color = new Colorable(textColor);
+    colorsArray.forEach(function (backgroundColor) {
+      colorable_esm_newArrowCheck(this, _this7);
+
+      if (textColor === backgroundColor) {
+        return;
+      }
+
+      var combination = new Combination(color, backgroundColor);
+
+      if (combination.contrastRatio > opts.threshold) {
+        color.combinations.push(combination);
+      }
+    }.bind(this));
+    Object.freeze(color.combinations);
+    return opts.compact ? color.compact() : color;
+  }.bind(this)));
+}
+
+
+
+/***/ })
+/******/ ]);
+});
 //# sourceMappingURL=colorable.js.map

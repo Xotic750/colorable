@@ -1,6 +1,6 @@
 import colors from 'colors.css/js/colors';
 import Color from '@xotic750/color';
-import colorable, {Colorable, Combination, minimums} from '../src/colorable';
+import colorable, {Colorable, Combination, minimums} from 'src/colorable';
 
 const colorsCSS = Object.freeze({...colors});
 const primaryColors = Object.freeze({

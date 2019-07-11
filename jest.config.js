@@ -7,8 +7,7 @@ module.exports = {
   moduleNameMapper: {
     '^RootDir/(.*)$': '<rootDir>/$1',
     '^dist/(.*)$': '<rootDir>/dist/$1',
-    '^Src/(.*)$': '<rootDir>/src/$1',
-    '^Global/(.*)$': '<rootDir>/Global/$1',
+    '^src/(.*)$': '<rootDir>/src/$1',
   },
   testMatch: ['**/*.test.js'],
   verbose: true,
