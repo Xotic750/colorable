@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) Graham Fairweather",
-  "date": "2019-07-11T21:14:37.492Z",
+  "date": "2019-07-19T00:43:45.283Z",
   "describe": "",
   "description": "Color palette combination contrast tester",
   "file": "colorable.js",
-  "hash": "c6c5b6ab9e75e3de690b",
+  "hash": "59871b4c493a55790e79",
   "license": "MIT",
-  "version": "1.0.8"
+  "version": "1.0.9"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -5596,7 +5596,7 @@ function () {
      * @param {Color} mixinColor - The color to mix in.
      * @param {number} [weight=0.5] - The mixing weight.
      * @returns {Color} - The new mixed color.
-     * @throws {Error} if mixinColor is not a Color object.
+     * @throws {Error} If mixinColor is not a Color object.
      */
 
   }, {
@@ -5815,7 +5815,7 @@ Object.keys(color_convert_default.a).forEach(function (model) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return colorable; });
 function colorable_esm_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { colorable_esm_typeof = function _typeof(obj) { return typeof obj; }; } else { colorable_esm_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return colorable_esm_typeof(obj); }
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { keys.push.apply(keys, Object.getOwnPropertySymbols(object)); } if (enumerableOnly) keys = keys.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
@@ -5891,7 +5891,7 @@ var minimumsKeys = Object.freeze(Object.keys(colorable_esm_minimums));
  *
  * @class
  * @type {object}
- * @property {ReadonlyArray<Combination|object>} combinations - Combinations that matched threshold
+ * @property {ReadonlyArray<Combination|object>} combinations - Combinations that matched threshold.
  * @property {string} hexColor - The hex color.
  * @property {string} [name] - The name of the color.
  */

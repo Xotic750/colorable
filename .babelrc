@@ -28,11 +28,7 @@
     }
   },
   "plugins": [
-    "@babel/plugin-syntax-dynamic-import",
-    "@babel/plugin-proposal-class-properties",
     "@babel/plugin-transform-property-mutators",
-    "@babel/plugin-syntax-export-default-from",
-    "@babel/plugin-syntax-export-namespace-from",
     [
       "@babel/plugin-transform-runtime",
       {
@@ -41,8 +37,6 @@
         "regenerator": false,
         "useESModules": false
       }
-    ],
-    "lodash"
-  ],
-  "ignore": []
+    ]
+  ]
 }

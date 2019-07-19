@@ -3,13 +3,14 @@ language: node_js
 branches:
   only:
     - master
+    - /^greenkeeper/.*$/
 notifications:
   email: false
 node_js:
-  - "10"
-  - "9"
-  - "8"
+  - '10'
+  - '9'
+  - '8'
 script:
-  - 'npm test'
+  - npm run test:ci
 matrix:
   fast_finish: true

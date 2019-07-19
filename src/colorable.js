@@ -51,7 +51,7 @@ const minimumsKeys = Object.freeze(Object.keys(minimums));
  *
  * @class
  * @type {object}
- * @property {ReadonlyArray<Combination|object>} combinations - Combinations that matched threshold
+ * @property {ReadonlyArray<Combination|object>} combinations - Combinations that matched threshold.
  * @property {string} hexColor - The hex color.
  * @property {string} [name] - The name of the color.
  */
