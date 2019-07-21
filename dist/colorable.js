@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) Graham Fairweather",
-  "date": "2019-07-21T01:44:50.322Z",
+  "date": "2019-07-21T13:53:30.834Z",
   "describe": "",
   "description": "Color palette combination contrast tester",
   "file": "colorable.js",
   "hash": "59871b4c493a55790e79",
   "license": "MIT",
-  "version": "1.0.14"
+  "version": "1.0.15"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
