@@ -1,6 +1,6 @@
 {
   "name": "@xotic750/colorable",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "Color palette combination contrast tester",
   "homepage": "https://github.com/Xotic750/colorable",
   "author": {
@@ -20,6 +20,7 @@
   ],
   "module": "dist/colorable.esm.js",
   "main": "dist/colorable.js",
+  "jsdelivr": "dist/colorable.min.js",
   "scripts": {
     "build:esm": "mkdirp dist && babel -s true --env-name esm src/colorable.js -o dist/colorable.esm.js",
     "build:base": "webpack --bail --progress --profile --colors",
@@ -47,7 +48,7 @@
     "url": "https://github.com/Xotic750/colorable/issues"
   },
   "dependencies": {
-    "@xotic750/color": "^1.0.11",
+    "@xotic750/color": "^1.0.12",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
@@ -87,7 +88,7 @@
     "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.13.6",
-    "eslint-plugin-jsdoc": "^15.7.1",
+    "eslint-plugin-jsdoc": "^15.7.2",
     "eslint-plugin-json": "^1.4.0",
     "eslint-plugin-lodash": "^5.1.0",
     "eslint-plugin-no-use-extend-native": "^0.4.1",
