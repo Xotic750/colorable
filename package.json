@@ -1,6 +1,6 @@
 {
   "name": "@xotic750/colorable",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "Color palette combination contrast tester",
   "homepage": "https://github.com/Xotic750/colorable",
   "author": {
@@ -71,7 +71,7 @@
     "babel-plugin-lodash": "^3.3.4",
     "caniuse-lite": "^1.0.30000985",
     "chalk": "^2.4.2",
-    "colors.css": "^3.0.0\n",
+    "colors.css": "^3.0.0",
     "concurrently": "^4.1.1",
     "cross-env": "^5.2.0",
     "eslint": "=5.16.0",
