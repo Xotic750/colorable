@@ -1,26 +1,32 @@
-# @xotic750/colorable
-
 <a href="https://travis-ci.org/Xotic750/colorable"
-title="Travis status">
+  title="Travis status">
 <img
-src="https://travis-ci.org/Xotic750/colorable.svg?branch=master"
-alt="Travis status" height="18">
+  src="https://travis-ci.org/Xotic750/colorable.svg?branch=master"
+  alt="Travis status" height="18">
 </a>
-<a href="https://david-dm.org/Xotic750/colorable"
-title="Dependency status">
-<img src="https://david-dm.org/Xotic750/colorable/status.svg"
-alt="Dependency status" height="18"/>
+<a href="https://david-dm.org/Xotic750/Xotic750/colorable"
+  title="Dependency status">
+<img src="https://david-dm.org/Xotic750/Xotic750/colorable/status.svg"
+  alt="Dependency status" height="18"/>
 </a>
 <a
-href="https://david-dm.org/Xotic750/colorable?type=dev"
-title="devDependency status">
-<img src="https://david-dm.org/Xotic750/colorable/dev-status.svg"
-alt="devDependency status" height="18"/>
+  href="https://david-dm.org/Xotic750/Xotic750/colorable?type=dev"
+  title="devDependency status">
+<img src="https://david-dm.org/Xotic750/Xotic750/colorable/dev-status.svg"
+  alt="devDependency status" height="18"/>
 </a>
-<a href="https://badge.fury.io/js/%40xotic750%2Fcolorable" title="npm version">
-<img src="https://badge.fury.io/js/%40xotic750%2Fcolorable.svg"
-alt="npm version" height="18">
+<a href="https://badge.fury.io/js/%40xotic750%2Fcolor" 
+  title="npm version">
+<img src="https://badge.fury.io/js/%40xotic750%2Fcolor.svg"
+    alt="npm version" height="18">
 </a>
+<a href="https://www.jsdelivr.com/package/npm/@xotic750/colorable"
+  title="jsDelivr hits">
+<img src="https://data.jsdelivr.com/v1/package/npm/@xotic750/colorable/badge?style=rounded"
+  alt="jsDelivr hits" height="18">
+</a>
+
+# @xotic750/colorable
 
 Take a set color palette and get contrast values for every possible combination –
 useful for finding safe color combinations with predefined colors
