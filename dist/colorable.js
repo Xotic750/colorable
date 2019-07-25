@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) Graham Fairweather",
-  "date": "2019-07-24T18:04:40.039Z",
+  "date": "2019-07-25T23:26:16.290Z",
   "describe": "",
   "description": "Color palette combination contrast tester",
   "file": "colorable.js",
-  "hash": "59871b4c493a55790e79",
+  "hash": "bf41c1b32d99ed2ba8ae",
   "license": "MIT",
-  "version": "1.0.23"
+  "version": "1.0.24"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -120,15 +120,15 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 100);
+/******/ 	return __webpack_require__(__webpack_require__.s = 99);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const conversions = __webpack_require__(22);
-const route = __webpack_require__(84);
+const conversions = __webpack_require__(23);
+const route = __webpack_require__(83);
 
 const convert = {};
 
@@ -247,7 +247,7 @@ module.exports = isArray;
 /***/ (function(module, exports, __webpack_require__) {
 
 /* MIT license */
-var colorNames = __webpack_require__(80);
+var colorNames = __webpack_require__(22);
 var swizzle = __webpack_require__(81);
 
 var reverseNames = {};
@@ -532,7 +532,7 @@ module.exports = copyObject;
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toFinite = __webpack_require__(87);
+var toFinite = __webpack_require__(86);
 
 /**
  * Converts `value` to an integer.
@@ -574,8 +574,8 @@ module.exports = toInteger;
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseHas = __webpack_require__(89),
-    hasPath = __webpack_require__(90);
+var baseHas = __webpack_require__(88),
+    hasPath = __webpack_require__(89);
 
 /**
  * Checks if `path` is a direct property of `object`.
@@ -642,8 +642,8 @@ module.exports = assocIndexOf;
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseClamp = __webpack_require__(85),
-    toNumber = __webpack_require__(23);
+var baseClamp = __webpack_require__(84),
+    toNumber = __webpack_require__(24);
 
 /**
  * Clamps `number` within the inclusive `lower` and `upper` bounds.
@@ -820,7 +820,7 @@ module.exports = strictIndexOf;
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseSlice = __webpack_require__(86),
+var baseSlice = __webpack_require__(85),
     isIterateeCall = __webpack_require__(18),
     toInteger = __webpack_require__(4);
 
@@ -936,7 +936,7 @@ module.exports = arrayIncludes;
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var defineProperty = __webpack_require__(31);
+var defineProperty = __webpack_require__(32);
 
 /**
  * The base implementation of `assignValue` and `assignMergeValue` without
@@ -1099,7 +1099,7 @@ module.exports = stubFalse;
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var freeGlobal = __webpack_require__(55);
+var freeGlobal = __webpack_require__(56);
 
 /** Detect free variable `self`. */
 var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
@@ -1114,9 +1114,168 @@ module.exports = root;
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+module.exports = {
+	"aliceblue": [240, 248, 255],
+	"antiquewhite": [250, 235, 215],
+	"aqua": [0, 255, 255],
+	"aquamarine": [127, 255, 212],
+	"azure": [240, 255, 255],
+	"beige": [245, 245, 220],
+	"bisque": [255, 228, 196],
+	"black": [0, 0, 0],
+	"blanchedalmond": [255, 235, 205],
+	"blue": [0, 0, 255],
+	"blueviolet": [138, 43, 226],
+	"brown": [165, 42, 42],
+	"burlywood": [222, 184, 135],
+	"cadetblue": [95, 158, 160],
+	"chartreuse": [127, 255, 0],
+	"chocolate": [210, 105, 30],
+	"coral": [255, 127, 80],
+	"cornflowerblue": [100, 149, 237],
+	"cornsilk": [255, 248, 220],
+	"crimson": [220, 20, 60],
+	"cyan": [0, 255, 255],
+	"darkblue": [0, 0, 139],
+	"darkcyan": [0, 139, 139],
+	"darkgoldenrod": [184, 134, 11],
+	"darkgray": [169, 169, 169],
+	"darkgreen": [0, 100, 0],
+	"darkgrey": [169, 169, 169],
+	"darkkhaki": [189, 183, 107],
+	"darkmagenta": [139, 0, 139],
+	"darkolivegreen": [85, 107, 47],
+	"darkorange": [255, 140, 0],
+	"darkorchid": [153, 50, 204],
+	"darkred": [139, 0, 0],
+	"darksalmon": [233, 150, 122],
+	"darkseagreen": [143, 188, 143],
+	"darkslateblue": [72, 61, 139],
+	"darkslategray": [47, 79, 79],
+	"darkslategrey": [47, 79, 79],
+	"darkturquoise": [0, 206, 209],
+	"darkviolet": [148, 0, 211],
+	"deeppink": [255, 20, 147],
+	"deepskyblue": [0, 191, 255],
+	"dimgray": [105, 105, 105],
+	"dimgrey": [105, 105, 105],
+	"dodgerblue": [30, 144, 255],
+	"firebrick": [178, 34, 34],
+	"floralwhite": [255, 250, 240],
+	"forestgreen": [34, 139, 34],
+	"fuchsia": [255, 0, 255],
+	"gainsboro": [220, 220, 220],
+	"ghostwhite": [248, 248, 255],
+	"gold": [255, 215, 0],
+	"goldenrod": [218, 165, 32],
+	"gray": [128, 128, 128],
+	"green": [0, 128, 0],
+	"greenyellow": [173, 255, 47],
+	"grey": [128, 128, 128],
+	"honeydew": [240, 255, 240],
+	"hotpink": [255, 105, 180],
+	"indianred": [205, 92, 92],
+	"indigo": [75, 0, 130],
+	"ivory": [255, 255, 240],
+	"khaki": [240, 230, 140],
+	"lavender": [230, 230, 250],
+	"lavenderblush": [255, 240, 245],
+	"lawngreen": [124, 252, 0],
+	"lemonchiffon": [255, 250, 205],
+	"lightblue": [173, 216, 230],
+	"lightcoral": [240, 128, 128],
+	"lightcyan": [224, 255, 255],
+	"lightgoldenrodyellow": [250, 250, 210],
+	"lightgray": [211, 211, 211],
+	"lightgreen": [144, 238, 144],
+	"lightgrey": [211, 211, 211],
+	"lightpink": [255, 182, 193],
+	"lightsalmon": [255, 160, 122],
+	"lightseagreen": [32, 178, 170],
+	"lightskyblue": [135, 206, 250],
+	"lightslategray": [119, 136, 153],
+	"lightslategrey": [119, 136, 153],
+	"lightsteelblue": [176, 196, 222],
+	"lightyellow": [255, 255, 224],
+	"lime": [0, 255, 0],
+	"limegreen": [50, 205, 50],
+	"linen": [250, 240, 230],
+	"magenta": [255, 0, 255],
+	"maroon": [128, 0, 0],
+	"mediumaquamarine": [102, 205, 170],
+	"mediumblue": [0, 0, 205],
+	"mediumorchid": [186, 85, 211],
+	"mediumpurple": [147, 112, 219],
+	"mediumseagreen": [60, 179, 113],
+	"mediumslateblue": [123, 104, 238],
+	"mediumspringgreen": [0, 250, 154],
+	"mediumturquoise": [72, 209, 204],
+	"mediumvioletred": [199, 21, 133],
+	"midnightblue": [25, 25, 112],
+	"mintcream": [245, 255, 250],
+	"mistyrose": [255, 228, 225],
+	"moccasin": [255, 228, 181],
+	"navajowhite": [255, 222, 173],
+	"navy": [0, 0, 128],
+	"oldlace": [253, 245, 230],
+	"olive": [128, 128, 0],
+	"olivedrab": [107, 142, 35],
+	"orange": [255, 165, 0],
+	"orangered": [255, 69, 0],
+	"orchid": [218, 112, 214],
+	"palegoldenrod": [238, 232, 170],
+	"palegreen": [152, 251, 152],
+	"paleturquoise": [175, 238, 238],
+	"palevioletred": [219, 112, 147],
+	"papayawhip": [255, 239, 213],
+	"peachpuff": [255, 218, 185],
+	"peru": [205, 133, 63],
+	"pink": [255, 192, 203],
+	"plum": [221, 160, 221],
+	"powderblue": [176, 224, 230],
+	"purple": [128, 0, 128],
+	"rebeccapurple": [102, 51, 153],
+	"red": [255, 0, 0],
+	"rosybrown": [188, 143, 143],
+	"royalblue": [65, 105, 225],
+	"saddlebrown": [139, 69, 19],
+	"salmon": [250, 128, 114],
+	"sandybrown": [244, 164, 96],
+	"seagreen": [46, 139, 87],
+	"seashell": [255, 245, 238],
+	"sienna": [160, 82, 45],
+	"silver": [192, 192, 192],
+	"skyblue": [135, 206, 235],
+	"slateblue": [106, 90, 205],
+	"slategray": [112, 128, 144],
+	"slategrey": [112, 128, 144],
+	"snow": [255, 250, 250],
+	"springgreen": [0, 255, 127],
+	"steelblue": [70, 130, 180],
+	"tan": [210, 180, 140],
+	"teal": [0, 128, 128],
+	"thistle": [216, 191, 216],
+	"tomato": [255, 99, 71],
+	"turquoise": [64, 224, 208],
+	"violet": [238, 130, 238],
+	"wheat": [245, 222, 179],
+	"white": [255, 255, 255],
+	"whitesmoke": [245, 245, 245],
+	"yellow": [255, 255, 0],
+	"yellowgreen": [154, 205, 50]
+};
+
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /* MIT license */
 /* eslint-disable no-mixed-operators */
-const cssKeywords = __webpack_require__(83);
+const cssKeywords = __webpack_require__(22);
 
 // NOTE: conversions should only return primitive values (i.e. arrays, or
 //       values that give correct `typeof` results).
@@ -1956,33 +2115,6 @@ convert.rgb.gray = function (rgb) {
 
 
 /***/ }),
-/* 23 */
-/***/ (function(module, exports) {
-
-/**
- * This method returns the first argument it receives.
- *
- * @static
- * @since 0.1.0
- * @memberOf _
- * @category Util
- * @param {*} value Any value.
- * @returns {*} Returns `value`.
- * @example
- *
- * var object = { 'a': 1 };
- *
- * console.log(_.identity(object) === object);
- * // => true
- */
-function identity(value) {
-  return value;
-}
-
-module.exports = identity;
-
-
-/***/ }),
 /* 24 */
 /***/ (function(module, exports) {
 
@@ -2011,12 +2143,39 @@ module.exports = identity;
 
 /***/ }),
 /* 25 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns the first argument it receives.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Util
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ *
+ * console.log(_.identity(object) === object);
+ * // => true
+ */
+function identity(value) {
+  return value;
+}
+
+module.exports = identity;
+
+
+/***/ }),
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assignValue = __webpack_require__(8),
     copyObject = __webpack_require__(3),
-    createAssigner = __webpack_require__(33),
-    isArrayLike = __webpack_require__(39),
+    createAssigner = __webpack_require__(34),
+    isArrayLike = __webpack_require__(40),
     isPrototype = __webpack_require__(20),
     keys = __webpack_require__(10);
 
@@ -2074,10 +2233,10 @@ module.exports = assign;
 
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseClone = __webpack_require__(42);
+var baseClone = __webpack_require__(43);
 
 /** Used to compose bitmasks for cloning. */
 var CLONE_DEEP_FLAG = 1,
@@ -2109,10 +2268,10 @@ module.exports = cloneDeep;
 
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseUniq = __webpack_require__(73);
+var baseUniq = __webpack_require__(74);
 
 /**
  * Creates a duplicate-free version of an array, using
@@ -2140,10 +2299,10 @@ module.exports = uniq;
 
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var createRound = __webpack_require__(88);
+var createRound = __webpack_require__(87);
 
 /**
  * Computes `number` rounded to `precision`.
@@ -2172,7 +2331,7 @@ module.exports = round;
 
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports) {
 
 /**
@@ -2203,10 +2362,10 @@ module.exports = isNil;
 
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isInteger = __webpack_require__(99);
+var isInteger = __webpack_require__(98);
 
 /** Used as references for various `Number` constants. */
 var MAX_SAFE_INTEGER = 9007199254740991;
@@ -2246,10 +2405,10 @@ module.exports = isSafeInteger;
 
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getNative = __webpack_require__(32);
+var getNative = __webpack_require__(33);
 
 var defineProperty = (function() {
   try {
@@ -2263,7 +2422,7 @@ module.exports = defineProperty;
 
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports) {
 
 /**
@@ -2282,10 +2441,10 @@ module.exports = getValue;
 
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseRest = __webpack_require__(34),
+var baseRest = __webpack_require__(35),
     isIterateeCall = __webpack_require__(18);
 
 /**
@@ -2325,12 +2484,12 @@ module.exports = createAssigner;
 
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var identity = __webpack_require__(35),
-    overRest = __webpack_require__(36),
-    setToString = __webpack_require__(38);
+var identity = __webpack_require__(36),
+    overRest = __webpack_require__(37),
+    setToString = __webpack_require__(39);
 
 /**
  * The base implementation of `_.rest` which doesn't validate or coerce arguments.
@@ -2348,7 +2507,7 @@ module.exports = baseRest;
 
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports) {
 
 /**
@@ -2375,10 +2534,10 @@ module.exports = identity;
 
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var apply = __webpack_require__(37);
+var apply = __webpack_require__(38);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
@@ -2417,7 +2576,7 @@ module.exports = overRest;
 
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports) {
 
 /**
@@ -2444,7 +2603,7 @@ module.exports = apply;
 
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports) {
 
 /**
@@ -2471,10 +2630,10 @@ module.exports = identity;
 
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isFunction = __webpack_require__(40),
+var isFunction = __webpack_require__(41),
     isLength = __webpack_require__(19);
 
 /**
@@ -2510,10 +2669,10 @@ module.exports = isArrayLike;
 
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(41),
+var baseGetTag = __webpack_require__(42),
     isObject = __webpack_require__(9);
 
 /** `Object#toString` result references. */
@@ -2553,7 +2712,7 @@ module.exports = isFunction;
 
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -2581,29 +2740,29 @@ module.exports = objectToString;
 
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Stack = __webpack_require__(43),
-    arrayEach = __webpack_require__(49),
+var Stack = __webpack_require__(44),
+    arrayEach = __webpack_require__(50),
     assignValue = __webpack_require__(8),
-    baseAssign = __webpack_require__(50),
-    baseAssignIn = __webpack_require__(51),
-    cloneBuffer = __webpack_require__(53),
-    copyArray = __webpack_require__(57),
-    copySymbols = __webpack_require__(58),
-    copySymbolsIn = __webpack_require__(60),
-    getAllKeys = __webpack_require__(62),
-    getAllKeysIn = __webpack_require__(63),
-    getTag = __webpack_require__(64),
-    initCloneArray = __webpack_require__(65),
-    initCloneByTag = __webpack_require__(66),
-    initCloneObject = __webpack_require__(67),
+    baseAssign = __webpack_require__(51),
+    baseAssignIn = __webpack_require__(52),
+    cloneBuffer = __webpack_require__(54),
+    copyArray = __webpack_require__(58),
+    copySymbols = __webpack_require__(59),
+    copySymbolsIn = __webpack_require__(61),
+    getAllKeys = __webpack_require__(63),
+    getAllKeysIn = __webpack_require__(64),
+    getTag = __webpack_require__(65),
+    initCloneArray = __webpack_require__(66),
+    initCloneByTag = __webpack_require__(67),
+    initCloneObject = __webpack_require__(68),
     isArray = __webpack_require__(1),
-    isBuffer = __webpack_require__(70),
-    isMap = __webpack_require__(71),
+    isBuffer = __webpack_require__(71),
+    isMap = __webpack_require__(72),
     isObject = __webpack_require__(9),
-    isSet = __webpack_require__(72),
+    isSet = __webpack_require__(73),
     keys = __webpack_require__(10);
 
 /** Used to compose bitmasks for cloning. */
@@ -2752,14 +2911,14 @@ module.exports = baseClone;
 
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var listCacheClear = __webpack_require__(44),
-    listCacheDelete = __webpack_require__(45),
-    listCacheGet = __webpack_require__(46),
-    listCacheHas = __webpack_require__(47),
-    listCacheSet = __webpack_require__(48);
+var listCacheClear = __webpack_require__(45),
+    listCacheDelete = __webpack_require__(46),
+    listCacheGet = __webpack_require__(47),
+    listCacheHas = __webpack_require__(48),
+    listCacheSet = __webpack_require__(49);
 
 /**
  * Creates an list cache object.
@@ -2790,7 +2949,7 @@ module.exports = ListCache;
 
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports) {
 
 /**
@@ -2809,7 +2968,7 @@ module.exports = listCacheClear;
 
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(6);
@@ -2850,7 +3009,7 @@ module.exports = listCacheDelete;
 
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(6);
@@ -2875,7 +3034,7 @@ module.exports = listCacheGet;
 
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(6);
@@ -2897,7 +3056,7 @@ module.exports = listCacheHas;
 
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(6);
@@ -2929,7 +3088,7 @@ module.exports = listCacheSet;
 
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports) {
 
 /**
@@ -2957,7 +3116,7 @@ module.exports = arrayEach;
 
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(3),
@@ -2980,11 +3139,11 @@ module.exports = baseAssign;
 
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(3),
-    keysIn = __webpack_require__(52);
+    keysIn = __webpack_require__(53);
 
 /**
  * The base implementation of `_.assignIn` without support for multiple sources
@@ -3003,7 +3162,7 @@ module.exports = baseAssignIn;
 
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports) {
 
 /**
@@ -3029,7 +3188,7 @@ module.exports = nativeKeysIn;
 
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(21);
@@ -3068,10 +3227,10 @@ function cloneBuffer(buffer, isDeep) {
 
 module.exports = cloneBuffer;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(54)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(55)(module)))
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -3099,7 +3258,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
@@ -3107,10 +3266,10 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 
 module.exports = freeGlobal;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(56)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(57)))
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports) {
 
 var g;
@@ -3136,7 +3295,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports) {
 
 /**
@@ -3162,11 +3321,11 @@ module.exports = copyArray;
 
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(3),
-    getSymbols = __webpack_require__(59);
+    getSymbols = __webpack_require__(60);
 
 /**
  * Copies own symbols of `source` to `object`.
@@ -3184,7 +3343,7 @@ module.exports = copySymbols;
 
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports) {
 
 /**
@@ -3213,11 +3372,11 @@ module.exports = stubArray;
 
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(3),
-    getSymbolsIn = __webpack_require__(61);
+    getSymbolsIn = __webpack_require__(62);
 
 /**
  * Copies own and inherited symbols of `source` to `object`.
@@ -3235,7 +3394,7 @@ module.exports = copySymbolsIn;
 
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports) {
 
 /**
@@ -3264,7 +3423,7 @@ module.exports = stubArray;
 
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var overArg = __webpack_require__(11);
@@ -3276,7 +3435,7 @@ module.exports = nativeKeys;
 
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports) {
 
 /**
@@ -3302,7 +3461,7 @@ module.exports = nativeKeysIn;
 
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -3330,7 +3489,7 @@ module.exports = objectToString;
 
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -3362,7 +3521,7 @@ module.exports = initCloneArray;
 
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports) {
 
 /**
@@ -3389,11 +3548,11 @@ module.exports = identity;
 
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseCreate = __webpack_require__(68),
-    getPrototype = __webpack_require__(69),
+var baseCreate = __webpack_require__(69),
+    getPrototype = __webpack_require__(70),
     isPrototype = __webpack_require__(20);
 
 /**
@@ -3413,7 +3572,7 @@ module.exports = initCloneObject;
 
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(9);
@@ -3449,7 +3608,7 @@ module.exports = baseCreate;
 
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var overArg = __webpack_require__(11);
@@ -3458,30 +3617,6 @@ var overArg = __webpack_require__(11);
 var getPrototype = overArg(Object.getPrototypeOf, Object);
 
 module.exports = getPrototype;
-
-
-/***/ }),
-/* 70 */
-/***/ (function(module, exports) {
-
-/**
- * This method returns `false`.
- *
- * @static
- * @memberOf _
- * @since 4.13.0
- * @category Util
- * @returns {boolean} Returns `false`.
- * @example
- *
- * _.times(2, _.stubFalse);
- * // => [false, false]
- */
-function stubFalse() {
-  return false;
-}
-
-module.exports = stubFalse;
 
 
 /***/ }),
@@ -3534,14 +3669,38 @@ module.exports = stubFalse;
 
 /***/ }),
 /* 73 */
+/***/ (function(module, exports) {
+
+/**
+ * This method returns `false`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {boolean} Returns `false`.
+ * @example
+ *
+ * _.times(2, _.stubFalse);
+ * // => [false, false]
+ */
+function stubFalse() {
+  return false;
+}
+
+module.exports = stubFalse;
+
+
+/***/ }),
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var SetCache = __webpack_require__(74),
-    arrayIncludes = __webpack_require__(75),
-    arrayIncludesWith = __webpack_require__(76),
-    cacheHas = __webpack_require__(77),
-    createSet = __webpack_require__(78),
-    setToArray = __webpack_require__(79);
+var SetCache = __webpack_require__(75),
+    arrayIncludes = __webpack_require__(76),
+    arrayIncludesWith = __webpack_require__(77),
+    cacheHas = __webpack_require__(78),
+    createSet = __webpack_require__(79),
+    setToArray = __webpack_require__(80);
 
 /** Used as the size to enable large array optimizations. */
 var LARGE_ARRAY_SIZE = 200;
@@ -3611,7 +3770,7 @@ module.exports = baseUniq;
 
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArray = __webpack_require__(1);
@@ -3661,7 +3820,7 @@ module.exports = castArray;
 
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIndexOf = __webpack_require__(12);
@@ -3684,7 +3843,7 @@ module.exports = arrayIncludes;
 
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports) {
 
 /**
@@ -3712,7 +3871,7 @@ module.exports = arrayIncludesWith;
 
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIndexOf = __webpack_require__(12);
@@ -3735,7 +3894,7 @@ module.exports = arrayIncludes;
 
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports) {
 
 /**
@@ -3758,7 +3917,7 @@ module.exports = noop;
 
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports) {
 
 /**
@@ -3784,165 +3943,6 @@ function stubArray() {
 }
 
 module.exports = stubArray;
-
-
-/***/ }),
-/* 80 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = {
-	"aliceblue": [240, 248, 255],
-	"antiquewhite": [250, 235, 215],
-	"aqua": [0, 255, 255],
-	"aquamarine": [127, 255, 212],
-	"azure": [240, 255, 255],
-	"beige": [245, 245, 220],
-	"bisque": [255, 228, 196],
-	"black": [0, 0, 0],
-	"blanchedalmond": [255, 235, 205],
-	"blue": [0, 0, 255],
-	"blueviolet": [138, 43, 226],
-	"brown": [165, 42, 42],
-	"burlywood": [222, 184, 135],
-	"cadetblue": [95, 158, 160],
-	"chartreuse": [127, 255, 0],
-	"chocolate": [210, 105, 30],
-	"coral": [255, 127, 80],
-	"cornflowerblue": [100, 149, 237],
-	"cornsilk": [255, 248, 220],
-	"crimson": [220, 20, 60],
-	"cyan": [0, 255, 255],
-	"darkblue": [0, 0, 139],
-	"darkcyan": [0, 139, 139],
-	"darkgoldenrod": [184, 134, 11],
-	"darkgray": [169, 169, 169],
-	"darkgreen": [0, 100, 0],
-	"darkgrey": [169, 169, 169],
-	"darkkhaki": [189, 183, 107],
-	"darkmagenta": [139, 0, 139],
-	"darkolivegreen": [85, 107, 47],
-	"darkorange": [255, 140, 0],
-	"darkorchid": [153, 50, 204],
-	"darkred": [139, 0, 0],
-	"darksalmon": [233, 150, 122],
-	"darkseagreen": [143, 188, 143],
-	"darkslateblue": [72, 61, 139],
-	"darkslategray": [47, 79, 79],
-	"darkslategrey": [47, 79, 79],
-	"darkturquoise": [0, 206, 209],
-	"darkviolet": [148, 0, 211],
-	"deeppink": [255, 20, 147],
-	"deepskyblue": [0, 191, 255],
-	"dimgray": [105, 105, 105],
-	"dimgrey": [105, 105, 105],
-	"dodgerblue": [30, 144, 255],
-	"firebrick": [178, 34, 34],
-	"floralwhite": [255, 250, 240],
-	"forestgreen": [34, 139, 34],
-	"fuchsia": [255, 0, 255],
-	"gainsboro": [220, 220, 220],
-	"ghostwhite": [248, 248, 255],
-	"gold": [255, 215, 0],
-	"goldenrod": [218, 165, 32],
-	"gray": [128, 128, 128],
-	"green": [0, 128, 0],
-	"greenyellow": [173, 255, 47],
-	"grey": [128, 128, 128],
-	"honeydew": [240, 255, 240],
-	"hotpink": [255, 105, 180],
-	"indianred": [205, 92, 92],
-	"indigo": [75, 0, 130],
-	"ivory": [255, 255, 240],
-	"khaki": [240, 230, 140],
-	"lavender": [230, 230, 250],
-	"lavenderblush": [255, 240, 245],
-	"lawngreen": [124, 252, 0],
-	"lemonchiffon": [255, 250, 205],
-	"lightblue": [173, 216, 230],
-	"lightcoral": [240, 128, 128],
-	"lightcyan": [224, 255, 255],
-	"lightgoldenrodyellow": [250, 250, 210],
-	"lightgray": [211, 211, 211],
-	"lightgreen": [144, 238, 144],
-	"lightgrey": [211, 211, 211],
-	"lightpink": [255, 182, 193],
-	"lightsalmon": [255, 160, 122],
-	"lightseagreen": [32, 178, 170],
-	"lightskyblue": [135, 206, 250],
-	"lightslategray": [119, 136, 153],
-	"lightslategrey": [119, 136, 153],
-	"lightsteelblue": [176, 196, 222],
-	"lightyellow": [255, 255, 224],
-	"lime": [0, 255, 0],
-	"limegreen": [50, 205, 50],
-	"linen": [250, 240, 230],
-	"magenta": [255, 0, 255],
-	"maroon": [128, 0, 0],
-	"mediumaquamarine": [102, 205, 170],
-	"mediumblue": [0, 0, 205],
-	"mediumorchid": [186, 85, 211],
-	"mediumpurple": [147, 112, 219],
-	"mediumseagreen": [60, 179, 113],
-	"mediumslateblue": [123, 104, 238],
-	"mediumspringgreen": [0, 250, 154],
-	"mediumturquoise": [72, 209, 204],
-	"mediumvioletred": [199, 21, 133],
-	"midnightblue": [25, 25, 112],
-	"mintcream": [245, 255, 250],
-	"mistyrose": [255, 228, 225],
-	"moccasin": [255, 228, 181],
-	"navajowhite": [255, 222, 173],
-	"navy": [0, 0, 128],
-	"oldlace": [253, 245, 230],
-	"olive": [128, 128, 0],
-	"olivedrab": [107, 142, 35],
-	"orange": [255, 165, 0],
-	"orangered": [255, 69, 0],
-	"orchid": [218, 112, 214],
-	"palegoldenrod": [238, 232, 170],
-	"palegreen": [152, 251, 152],
-	"paleturquoise": [175, 238, 238],
-	"palevioletred": [219, 112, 147],
-	"papayawhip": [255, 239, 213],
-	"peachpuff": [255, 218, 185],
-	"peru": [205, 133, 63],
-	"pink": [255, 192, 203],
-	"plum": [221, 160, 221],
-	"powderblue": [176, 224, 230],
-	"purple": [128, 0, 128],
-	"rebeccapurple": [102, 51, 153],
-	"red": [255, 0, 0],
-	"rosybrown": [188, 143, 143],
-	"royalblue": [65, 105, 225],
-	"saddlebrown": [139, 69, 19],
-	"salmon": [250, 128, 114],
-	"sandybrown": [244, 164, 96],
-	"seagreen": [46, 139, 87],
-	"seashell": [255, 245, 238],
-	"sienna": [160, 82, 45],
-	"silver": [192, 192, 192],
-	"skyblue": [135, 206, 235],
-	"slateblue": [106, 90, 205],
-	"slategray": [112, 128, 144],
-	"slategrey": [112, 128, 144],
-	"snow": [255, 250, 250],
-	"springgreen": [0, 255, 127],
-	"steelblue": [70, 130, 180],
-	"tan": [210, 180, 140],
-	"teal": [0, 128, 128],
-	"thistle": [216, 191, 216],
-	"tomato": [255, 99, 71],
-	"turquoise": [64, 224, 208],
-	"violet": [238, 130, 238],
-	"wheat": [245, 222, 179],
-	"white": [255, 255, 255],
-	"whitesmoke": [245, 245, 245],
-	"yellow": [255, 255, 0],
-	"yellowgreen": [154, 205, 50]
-};
 
 
 /***/ }),
@@ -4000,166 +4000,7 @@ module.exports = function isArrayish(obj) {
 /* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-module.exports = {
-	"aliceblue": [240, 248, 255],
-	"antiquewhite": [250, 235, 215],
-	"aqua": [0, 255, 255],
-	"aquamarine": [127, 255, 212],
-	"azure": [240, 255, 255],
-	"beige": [245, 245, 220],
-	"bisque": [255, 228, 196],
-	"black": [0, 0, 0],
-	"blanchedalmond": [255, 235, 205],
-	"blue": [0, 0, 255],
-	"blueviolet": [138, 43, 226],
-	"brown": [165, 42, 42],
-	"burlywood": [222, 184, 135],
-	"cadetblue": [95, 158, 160],
-	"chartreuse": [127, 255, 0],
-	"chocolate": [210, 105, 30],
-	"coral": [255, 127, 80],
-	"cornflowerblue": [100, 149, 237],
-	"cornsilk": [255, 248, 220],
-	"crimson": [220, 20, 60],
-	"cyan": [0, 255, 255],
-	"darkblue": [0, 0, 139],
-	"darkcyan": [0, 139, 139],
-	"darkgoldenrod": [184, 134, 11],
-	"darkgray": [169, 169, 169],
-	"darkgreen": [0, 100, 0],
-	"darkgrey": [169, 169, 169],
-	"darkkhaki": [189, 183, 107],
-	"darkmagenta": [139, 0, 139],
-	"darkolivegreen": [85, 107, 47],
-	"darkorange": [255, 140, 0],
-	"darkorchid": [153, 50, 204],
-	"darkred": [139, 0, 0],
-	"darksalmon": [233, 150, 122],
-	"darkseagreen": [143, 188, 143],
-	"darkslateblue": [72, 61, 139],
-	"darkslategray": [47, 79, 79],
-	"darkslategrey": [47, 79, 79],
-	"darkturquoise": [0, 206, 209],
-	"darkviolet": [148, 0, 211],
-	"deeppink": [255, 20, 147],
-	"deepskyblue": [0, 191, 255],
-	"dimgray": [105, 105, 105],
-	"dimgrey": [105, 105, 105],
-	"dodgerblue": [30, 144, 255],
-	"firebrick": [178, 34, 34],
-	"floralwhite": [255, 250, 240],
-	"forestgreen": [34, 139, 34],
-	"fuchsia": [255, 0, 255],
-	"gainsboro": [220, 220, 220],
-	"ghostwhite": [248, 248, 255],
-	"gold": [255, 215, 0],
-	"goldenrod": [218, 165, 32],
-	"gray": [128, 128, 128],
-	"green": [0, 128, 0],
-	"greenyellow": [173, 255, 47],
-	"grey": [128, 128, 128],
-	"honeydew": [240, 255, 240],
-	"hotpink": [255, 105, 180],
-	"indianred": [205, 92, 92],
-	"indigo": [75, 0, 130],
-	"ivory": [255, 255, 240],
-	"khaki": [240, 230, 140],
-	"lavender": [230, 230, 250],
-	"lavenderblush": [255, 240, 245],
-	"lawngreen": [124, 252, 0],
-	"lemonchiffon": [255, 250, 205],
-	"lightblue": [173, 216, 230],
-	"lightcoral": [240, 128, 128],
-	"lightcyan": [224, 255, 255],
-	"lightgoldenrodyellow": [250, 250, 210],
-	"lightgray": [211, 211, 211],
-	"lightgreen": [144, 238, 144],
-	"lightgrey": [211, 211, 211],
-	"lightpink": [255, 182, 193],
-	"lightsalmon": [255, 160, 122],
-	"lightseagreen": [32, 178, 170],
-	"lightskyblue": [135, 206, 250],
-	"lightslategray": [119, 136, 153],
-	"lightslategrey": [119, 136, 153],
-	"lightsteelblue": [176, 196, 222],
-	"lightyellow": [255, 255, 224],
-	"lime": [0, 255, 0],
-	"limegreen": [50, 205, 50],
-	"linen": [250, 240, 230],
-	"magenta": [255, 0, 255],
-	"maroon": [128, 0, 0],
-	"mediumaquamarine": [102, 205, 170],
-	"mediumblue": [0, 0, 205],
-	"mediumorchid": [186, 85, 211],
-	"mediumpurple": [147, 112, 219],
-	"mediumseagreen": [60, 179, 113],
-	"mediumslateblue": [123, 104, 238],
-	"mediumspringgreen": [0, 250, 154],
-	"mediumturquoise": [72, 209, 204],
-	"mediumvioletred": [199, 21, 133],
-	"midnightblue": [25, 25, 112],
-	"mintcream": [245, 255, 250],
-	"mistyrose": [255, 228, 225],
-	"moccasin": [255, 228, 181],
-	"navajowhite": [255, 222, 173],
-	"navy": [0, 0, 128],
-	"oldlace": [253, 245, 230],
-	"olive": [128, 128, 0],
-	"olivedrab": [107, 142, 35],
-	"orange": [255, 165, 0],
-	"orangered": [255, 69, 0],
-	"orchid": [218, 112, 214],
-	"palegoldenrod": [238, 232, 170],
-	"palegreen": [152, 251, 152],
-	"paleturquoise": [175, 238, 238],
-	"palevioletred": [219, 112, 147],
-	"papayawhip": [255, 239, 213],
-	"peachpuff": [255, 218, 185],
-	"peru": [205, 133, 63],
-	"pink": [255, 192, 203],
-	"plum": [221, 160, 221],
-	"powderblue": [176, 224, 230],
-	"purple": [128, 0, 128],
-	"rebeccapurple": [102, 51, 153],
-	"red": [255, 0, 0],
-	"rosybrown": [188, 143, 143],
-	"royalblue": [65, 105, 225],
-	"saddlebrown": [139, 69, 19],
-	"salmon": [250, 128, 114],
-	"sandybrown": [244, 164, 96],
-	"seagreen": [46, 139, 87],
-	"seashell": [255, 245, 238],
-	"sienna": [160, 82, 45],
-	"silver": [192, 192, 192],
-	"skyblue": [135, 206, 235],
-	"slateblue": [106, 90, 205],
-	"slategray": [112, 128, 144],
-	"slategrey": [112, 128, 144],
-	"snow": [255, 250, 250],
-	"springgreen": [0, 255, 127],
-	"steelblue": [70, 130, 180],
-	"tan": [210, 180, 140],
-	"teal": [0, 128, 128],
-	"thistle": [216, 191, 216],
-	"tomato": [255, 99, 71],
-	"turquoise": [64, 224, 208],
-	"violet": [238, 130, 238],
-	"wheat": [245, 222, 179],
-	"white": [255, 255, 255],
-	"whitesmoke": [245, 245, 245],
-	"yellow": [255, 255, 0],
-	"yellowgreen": [154, 205, 50]
-};
-
-
-/***/ }),
-/* 84 */
-/***/ (function(module, exports, __webpack_require__) {
-
-const conversions = __webpack_require__(22);
+const conversions = __webpack_require__(23);
 
 /*
 	This function routes a model to all other models.
@@ -4259,7 +4100,7 @@ module.exports = function (fromModel) {
 
 
 /***/ }),
-/* 85 */
+/* 84 */
 /***/ (function(module, exports) {
 
 /**
@@ -4287,7 +4128,7 @@ module.exports = baseClamp;
 
 
 /***/ }),
-/* 86 */
+/* 85 */
 /***/ (function(module, exports) {
 
 /**
@@ -4324,7 +4165,7 @@ module.exports = baseSlice;
 
 
 /***/ }),
-/* 87 */
+/* 86 */
 /***/ (function(module, exports) {
 
 /**
@@ -4351,13 +4192,13 @@ module.exports = identity;
 
 
 /***/ }),
-/* 88 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(21),
     toInteger = __webpack_require__(4),
-    toNumber = __webpack_require__(23),
-    toString = __webpack_require__(24);
+    toNumber = __webpack_require__(24),
+    toString = __webpack_require__(25);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeIsFinite = root.isFinite,
@@ -4392,7 +4233,7 @@ module.exports = createRound;
 
 
 /***/ }),
-/* 89 */
+/* 88 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -4417,15 +4258,15 @@ module.exports = baseHas;
 
 
 /***/ }),
-/* 90 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var castPath = __webpack_require__(91),
-    isArguments = __webpack_require__(96),
+var castPath = __webpack_require__(90),
+    isArguments = __webpack_require__(95),
     isArray = __webpack_require__(1),
-    isIndex = __webpack_require__(97),
+    isIndex = __webpack_require__(96),
     isLength = __webpack_require__(19),
-    toKey = __webpack_require__(98);
+    toKey = __webpack_require__(97);
 
 /**
  * Checks if `path` exists on `object`.
@@ -4462,13 +4303,13 @@ module.exports = hasPath;
 
 
 /***/ }),
-/* 91 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArray = __webpack_require__(1),
-    isKey = __webpack_require__(92),
-    stringToPath = __webpack_require__(94),
-    toString = __webpack_require__(24);
+    isKey = __webpack_require__(91),
+    stringToPath = __webpack_require__(93),
+    toString = __webpack_require__(25);
 
 /**
  * Casts `value` to a path array if it's not one.
@@ -4489,11 +4330,11 @@ module.exports = castPath;
 
 
 /***/ }),
-/* 92 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArray = __webpack_require__(1),
-    isSymbol = __webpack_require__(93);
+    isSymbol = __webpack_require__(92);
 
 /** Used to match property names within property paths. */
 var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
@@ -4524,7 +4365,7 @@ module.exports = isKey;
 
 
 /***/ }),
-/* 93 */
+/* 92 */
 /***/ (function(module, exports) {
 
 /**
@@ -4548,10 +4389,10 @@ module.exports = stubFalse;
 
 
 /***/ }),
-/* 94 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var memoizeCapped = __webpack_require__(95);
+var memoizeCapped = __webpack_require__(94);
 
 /** Used to match property names within property paths. */
 var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
@@ -4581,7 +4422,7 @@ module.exports = stringToPath;
 
 
 /***/ }),
-/* 95 */
+/* 94 */
 /***/ (function(module, exports) {
 
 /**
@@ -4608,7 +4449,7 @@ module.exports = identity;
 
 
 /***/ }),
-/* 96 */
+/* 95 */
 /***/ (function(module, exports) {
 
 /**
@@ -4632,7 +4473,7 @@ module.exports = stubFalse;
 
 
 /***/ }),
-/* 97 */
+/* 96 */
 /***/ (function(module, exports) {
 
 /** Used as references for various `Number` constants. */
@@ -4663,7 +4504,7 @@ module.exports = isIndex;
 
 
 /***/ }),
-/* 98 */
+/* 97 */
 /***/ (function(module, exports) {
 
 /**
@@ -4690,7 +4531,7 @@ module.exports = identity;
 
 
 /***/ }),
-/* 99 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var toInteger = __webpack_require__(4);
@@ -4729,22 +4570,22 @@ module.exports = isInteger;
 
 
 /***/ }),
-/* 100 */
+/* 99 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./node_modules/lodash/assign.js
-var lodash_assign = __webpack_require__(25);
+var lodash_assign = __webpack_require__(26);
 var assign_default = /*#__PURE__*/__webpack_require__.n(lodash_assign);
 
 // EXTERNAL MODULE: ./node_modules/lodash/cloneDeep.js
-var cloneDeep = __webpack_require__(26);
+var cloneDeep = __webpack_require__(27);
 var cloneDeep_default = /*#__PURE__*/__webpack_require__.n(cloneDeep);
 
 // EXTERNAL MODULE: ./node_modules/lodash/uniq.js
-var uniq = __webpack_require__(27);
+var uniq = __webpack_require__(28);
 var uniq_default = /*#__PURE__*/__webpack_require__.n(uniq);
 
 // EXTERNAL MODULE: ./node_modules/color-string/index.js
@@ -4764,7 +4605,7 @@ var slice = __webpack_require__(13);
 var slice_default = /*#__PURE__*/__webpack_require__.n(slice);
 
 // EXTERNAL MODULE: ./node_modules/lodash/round.js
-var lodash_round = __webpack_require__(28);
+var lodash_round = __webpack_require__(29);
 var round_default = /*#__PURE__*/__webpack_require__.n(lodash_round);
 
 // EXTERNAL MODULE: ./node_modules/lodash/castArray.js
@@ -4776,7 +4617,7 @@ var has = __webpack_require__(5);
 var has_default = /*#__PURE__*/__webpack_require__.n(has);
 
 // EXTERNAL MODULE: ./node_modules/lodash/isNil.js
-var isNil = __webpack_require__(29);
+var isNil = __webpack_require__(30);
 var isNil_default = /*#__PURE__*/__webpack_require__.n(isNil);
 
 // EXTERNAL MODULE: ./node_modules/lodash/toInteger.js
@@ -4788,7 +4629,7 @@ var includes = __webpack_require__(15);
 var includes_default = /*#__PURE__*/__webpack_require__.n(includes);
 
 // EXTERNAL MODULE: ./node_modules/lodash/isSafeInteger.js
-var isSafeInteger = __webpack_require__(30);
+var isSafeInteger = __webpack_require__(31);
 var isSafeInteger_default = /*#__PURE__*/__webpack_require__.n(isSafeInteger);
 
 // CONCATENATED MODULE: ./node_modules/@xotic750/color/dist/color.esm.js
