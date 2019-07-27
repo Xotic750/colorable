@@ -47,7 +47,7 @@ export const minimums = Object.freeze({
 const minimumsKeys = Object.freeze(Object.keys(minimums));
 
 /**
- * Colorable object.
+ * BaseColor object.
  *
  * @class
  * @type {object}
@@ -55,7 +55,7 @@ const minimumsKeys = Object.freeze(Object.keys(minimums));
  * @property {string} hexColor - The hex color.
  * @property {string} [name] - The name of the color.
  */
-export class Colorable extends Color {
+export class BaseColor extends Color {
   /**
    * @param {ConstructorOptions} options -
    */
@@ -63,15 +63,9 @@ export class Colorable extends Color {
     const {model, name, value} = options;
     super(value, model);
 
-    Object.defineProperties(this, {
-      combinations: {
-        enumerable: true,
-        value: [],
-      },
-      hexColor: {
-        enumerable: true,
-        value: this.hex(),
-      },
+    Object.defineProperty(this, 'hexColor', {
+      enumerable: true,
+      value: this.hex(),
     });
 
     if (name) {
@@ -80,6 +74,29 @@ export class Colorable extends Color {
         value: name,
       });
     }
+  }
+}
+
+/**
+ * Colorable object.
+ *
+ * @class
+ * @type {object}
+ * @property {ReadonlyArray<Combination|object>} combinations - Combinations that matched threshold.
+ * @property {string} hexColor - The hex color.
+ * @property {string} [name] - The name of the color.
+ */
+export class Colorable extends BaseColor {
+  /**
+   * @param {ConstructorOptions} options -
+   */
+  constructor(options) {
+    super(options);
+
+    Object.defineProperty(this, 'combinations', {
+      enumerable: true,
+      value: [],
+    });
   }
 
   /**
@@ -111,14 +128,13 @@ export class Colorable extends Color {
  * @property {string} hexColor - The hex color.
  * @property {string} [name] - The name of the color.
  */
-export class Combination extends Color {
+export class Combination extends BaseColor {
   /**
    * @param {Colorable} color -
    * @param {ConstructorOptions} options -
    */
   constructor(color, options) {
-    const {model, name, value} = options;
-    super(value, model);
+    super(options);
 
     const contrastRatio = color.contrast(this);
     Object.defineProperties(this, {
@@ -136,18 +152,7 @@ export class Combination extends Color {
         enumerable: true,
         value: contrastRatio,
       },
-      hexColor: {
-        enumerable: true,
-        value: this.hex(),
-      },
     });
-
-    if (name) {
-      Object.defineProperty(this, NAME, {
-        enumerable: true,
-        value: name,
-      });
-    }
   }
 
   /**

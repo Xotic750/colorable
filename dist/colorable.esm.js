@@ -8,11 +8,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 function _newArrowCheck(innerThis, boundThis) { if (innerThis !== boundThis) { throw new TypeError("Cannot instantiate an arrow function"); } }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
@@ -72,7 +72,7 @@ export var minimums = Object.freeze({
 
 var minimumsKeys = Object.freeze(Object.keys(minimums));
 /**
- * Colorable object.
+ * BaseColor object.
  *
  * @class
  * @type {object}
@@ -81,32 +81,26 @@ var minimumsKeys = Object.freeze(Object.keys(minimums));
  * @property {string} [name] - The name of the color.
  */
 
-export var Colorable =
+export var BaseColor =
 /*#__PURE__*/
 function (_Color) {
-  _inherits(Colorable, _Color);
+  _inherits(BaseColor, _Color);
 
   /**
    * @param {ConstructorOptions} options -
    */
-  function Colorable(options) {
+  function BaseColor(options) {
     var _this;
 
-    _classCallCheck(this, Colorable);
+    _classCallCheck(this, BaseColor);
 
     var model = options.model,
         name = options.name,
         value = options.value;
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Colorable).call(this, value, model));
-    Object.defineProperties(_assertThisInitialized(_this), {
-      combinations: {
-        enumerable: true,
-        value: []
-      },
-      hexColor: {
-        enumerable: true,
-        value: _this.hex()
-      }
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(BaseColor).call(this, value, model));
+    Object.defineProperty(_assertThisInitialized(_this), 'hexColor', {
+      enumerable: true,
+      value: _this.hex()
     });
 
     if (name) {
@@ -118,6 +112,39 @@ function (_Color) {
 
     return _this;
   }
+
+  return BaseColor;
+}(Color);
+/**
+ * Colorable object.
+ *
+ * @class
+ * @type {object}
+ * @property {ReadonlyArray<Combination|object>} combinations - Combinations that matched threshold.
+ * @property {string} hexColor - The hex color.
+ * @property {string} [name] - The name of the color.
+ */
+
+export var Colorable =
+/*#__PURE__*/
+function (_BaseColor) {
+  _inherits(Colorable, _BaseColor);
+
+  /**
+   * @param {ConstructorOptions} options -
+   */
+  function Colorable(options) {
+    var _this2;
+
+    _classCallCheck(this, Colorable);
+
+    _this2 = _possibleConstructorReturn(this, _getPrototypeOf(Colorable).call(this, options));
+    Object.defineProperty(_assertThisInitialized(_this2), 'combinations', {
+      enumerable: true,
+      value: []
+    });
+    return _this2;
+  }
   /**
    * Give a compact representation.
    *
@@ -128,11 +155,11 @@ function (_Color) {
   _createClass(Colorable, [{
     key: "compact",
     value: function compact() {
-      var _this2 = this;
+      var _this3 = this;
 
       var value = {
         combinations: this.combinations.map(function (combination) {
-          _newArrowCheck(this, _this2);
+          _newArrowCheck(this, _this3);
 
           return combination.compact();
         }.bind(this)),
@@ -148,7 +175,7 @@ function (_Color) {
   }]);
 
   return Colorable;
-}(Color);
+}(BaseColor);
 /**
  * Combination object.
  *
@@ -162,30 +189,27 @@ function (_Color) {
 
 export var Combination =
 /*#__PURE__*/
-function (_Color2) {
-  _inherits(Combination, _Color2);
+function (_BaseColor2) {
+  _inherits(Combination, _BaseColor2);
 
   /**
    * @param {Colorable} color -
    * @param {ConstructorOptions} options -
    */
   function Combination(color, options) {
-    var _this4 = this;
+    var _this5 = this;
 
-    var _this3;
+    var _this4;
 
     _classCallCheck(this, Combination);
 
-    var model = options.model,
-        name = options.name,
-        value = options.value;
-    _this3 = _possibleConstructorReturn(this, _getPrototypeOf(Combination).call(this, value, model));
-    var contrastRatio = color.contrast(_assertThisInitialized(_this3));
-    Object.defineProperties(_assertThisInitialized(_this3), {
+    _this4 = _possibleConstructorReturn(this, _getPrototypeOf(Combination).call(this, options));
+    var contrastRatio = color.contrast(_assertThisInitialized(_this4));
+    Object.defineProperties(_assertThisInitialized(_this4), {
       accessibility: {
         enumerable: true,
         value: Object.freeze(minimumsKeys.reduce(function (minimum, key) {
-          _newArrowCheck(this, _this4);
+          _newArrowCheck(this, _this5);
 
           minimum[key] = contrastRatio >= minimums[key];
           return minimum;
@@ -194,21 +218,9 @@ function (_Color2) {
       contrastRatio: {
         enumerable: true,
         value: contrastRatio
-      },
-      hexColor: {
-        enumerable: true,
-        value: _this3.hex()
       }
     });
-
-    if (name) {
-      Object.defineProperty(_assertThisInitialized(_this3), NAME, {
-        enumerable: true,
-        value: name
-      });
-    }
-
-    return _this3;
+    return _this4;
   }
   /**
    * Give a compact representation.
@@ -238,7 +250,7 @@ function (_Color2) {
   }]);
 
   return Combination;
-}(Color);
+}(BaseColor);
 /**
  * Merge the default and user options.
  *
@@ -276,11 +288,11 @@ var getIterationArray = function getIterationArray(array, unique) {
 
 
 var getColors = function getColors(colors, unique) {
-  var _this5 = this;
+  var _this6 = this;
 
   if (Array.isArray(colors)) {
     return Object.freeze(getIterationArray(colors, unique).map(function (value) {
-      _newArrowCheck(this, _this5);
+      _newArrowCheck(this, _this6);
 
       return Object.freeze({
         value: value
@@ -290,7 +302,7 @@ var getColors = function getColors(colors, unique) {
 
   if (colors && _typeof(colors) === 'object') {
     return Object.freeze(getIterationArray(Object.keys(colors), unique).map(function (key) {
-      _newArrowCheck(this, _this5);
+      _newArrowCheck(this, _this6);
 
       return Object.freeze({
         name: key,
@@ -311,18 +323,18 @@ var getColors = function getColors(colors, unique) {
 
 
 export default function colorable(colors, options) {
-  var _this6 = this;
+  var _this7 = this;
 
   var opts = getOptions(options);
   var colorsArray = getColors(colors, opts.uniq);
   return Object.freeze(colorsArray.map(function (textColor) {
-    var _this7 = this;
+    var _this8 = this;
 
-    _newArrowCheck(this, _this6);
+    _newArrowCheck(this, _this7);
 
     var color = new Colorable(textColor);
     colorsArray.forEach(function (backgroundColor) {
-      _newArrowCheck(this, _this7);
+      _newArrowCheck(this, _this8);
 
       if (textColor === backgroundColor) {
         return;

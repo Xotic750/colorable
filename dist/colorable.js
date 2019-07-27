@@ -2,11 +2,11 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) Graham Fairweather",
-  "date": "2019-07-27T22:26:44.638Z",
+  "date": "2019-07-27T23:20:06.439Z",
   "describe": "",
   "description": "Color palette combination contrast tester",
   "file": "colorable.js",
-  "hash": "bf41c1b32d99ed2ba8ae",
+  "hash": "276d931b91cd9f38e671",
   "license": "MIT",
   "version": "1.0.26"
 }
@@ -5651,6 +5651,7 @@ Object.keys(color_convert_default.a).forEach(function (model) {
 
 // CONCATENATED MODULE: ./dist/colorable.esm.js
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "minimums", function() { return colorable_esm_minimums; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BaseColor", function() { return BaseColor; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Colorable", function() { return Colorable; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Combination", function() { return Combination; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return colorable; });
@@ -5664,11 +5665,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 function colorable_esm_newArrowCheck(innerThis, boundThis) { if (innerThis !== boundThis) { throw new TypeError("Cannot instantiate an arrow function"); } }
 
-function colorable_esm_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 function colorable_esm_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function colorable_esm_createClass(Constructor, protoProps, staticProps) { if (protoProps) colorable_esm_defineProperties(Constructor.prototype, protoProps); if (staticProps) colorable_esm_defineProperties(Constructor, staticProps); return Constructor; }
+
+function colorable_esm_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (call && (colorable_esm_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
@@ -5728,7 +5729,7 @@ var colorable_esm_minimums = Object.freeze({
 
 var minimumsKeys = Object.freeze(Object.keys(colorable_esm_minimums));
 /**
- * Colorable object.
+ * BaseColor object.
  *
  * @class
  * @type {object}
@@ -5737,32 +5738,26 @@ var minimumsKeys = Object.freeze(Object.keys(colorable_esm_minimums));
  * @property {string} [name] - The name of the color.
  */
 
-var Colorable =
+var BaseColor =
 /*#__PURE__*/
 function (_Color) {
-  _inherits(Colorable, _Color);
+  _inherits(BaseColor, _Color);
 
   /**
    * @param {ConstructorOptions} options -
    */
-  function Colorable(options) {
+  function BaseColor(options) {
     var _this;
 
-    colorable_esm_classCallCheck(this, Colorable);
+    colorable_esm_classCallCheck(this, BaseColor);
 
     var model = options.model,
         name = options.name,
         value = options.value;
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Colorable).call(this, value, model));
-    Object.defineProperties(_assertThisInitialized(_this), {
-      combinations: {
-        enumerable: true,
-        value: []
-      },
-      hexColor: {
-        enumerable: true,
-        value: _this.hex()
-      }
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(BaseColor).call(this, value, model));
+    Object.defineProperty(_assertThisInitialized(_this), 'hexColor', {
+      enumerable: true,
+      value: _this.hex()
     });
 
     if (name) {
@@ -5774,6 +5769,39 @@ function (_Color) {
 
     return _this;
   }
+
+  return BaseColor;
+}(color_esm_Color);
+/**
+ * Colorable object.
+ *
+ * @class
+ * @type {object}
+ * @property {ReadonlyArray<Combination|object>} combinations - Combinations that matched threshold.
+ * @property {string} hexColor - The hex color.
+ * @property {string} [name] - The name of the color.
+ */
+
+var Colorable =
+/*#__PURE__*/
+function (_BaseColor) {
+  _inherits(Colorable, _BaseColor);
+
+  /**
+   * @param {ConstructorOptions} options -
+   */
+  function Colorable(options) {
+    var _this2;
+
+    colorable_esm_classCallCheck(this, Colorable);
+
+    _this2 = _possibleConstructorReturn(this, _getPrototypeOf(Colorable).call(this, options));
+    Object.defineProperty(_assertThisInitialized(_this2), 'combinations', {
+      enumerable: true,
+      value: []
+    });
+    return _this2;
+  }
   /**
    * Give a compact representation.
    *
@@ -5784,11 +5812,11 @@ function (_Color) {
   colorable_esm_createClass(Colorable, [{
     key: "compact",
     value: function compact() {
-      var _this2 = this;
+      var _this3 = this;
 
       var value = {
         combinations: this.combinations.map(function (combination) {
-          colorable_esm_newArrowCheck(this, _this2);
+          colorable_esm_newArrowCheck(this, _this3);
 
           return combination.compact();
         }.bind(this)),
@@ -5804,7 +5832,7 @@ function (_Color) {
   }]);
 
   return Colorable;
-}(color_esm_Color);
+}(BaseColor);
 /**
  * Combination object.
  *
@@ -5818,30 +5846,27 @@ function (_Color) {
 
 var Combination =
 /*#__PURE__*/
-function (_Color2) {
-  _inherits(Combination, _Color2);
+function (_BaseColor2) {
+  _inherits(Combination, _BaseColor2);
 
   /**
    * @param {Colorable} color -
    * @param {ConstructorOptions} options -
    */
   function Combination(color, options) {
-    var _this4 = this;
+    var _this5 = this;
 
-    var _this3;
+    var _this4;
 
     colorable_esm_classCallCheck(this, Combination);
 
-    var model = options.model,
-        name = options.name,
-        value = options.value;
-    _this3 = _possibleConstructorReturn(this, _getPrototypeOf(Combination).call(this, value, model));
-    var contrastRatio = color.contrast(_assertThisInitialized(_this3));
-    Object.defineProperties(_assertThisInitialized(_this3), {
+    _this4 = _possibleConstructorReturn(this, _getPrototypeOf(Combination).call(this, options));
+    var contrastRatio = color.contrast(_assertThisInitialized(_this4));
+    Object.defineProperties(_assertThisInitialized(_this4), {
       accessibility: {
         enumerable: true,
         value: Object.freeze(minimumsKeys.reduce(function (minimum, key) {
-          colorable_esm_newArrowCheck(this, _this4);
+          colorable_esm_newArrowCheck(this, _this5);
 
           minimum[key] = contrastRatio >= colorable_esm_minimums[key];
           return minimum;
@@ -5850,21 +5875,9 @@ function (_Color2) {
       contrastRatio: {
         enumerable: true,
         value: contrastRatio
-      },
-      hexColor: {
-        enumerable: true,
-        value: _this3.hex()
       }
     });
-
-    if (name) {
-      Object.defineProperty(_assertThisInitialized(_this3), NAME, {
-        enumerable: true,
-        value: name
-      });
-    }
-
-    return _this3;
+    return _this4;
   }
   /**
    * Give a compact representation.
@@ -5894,7 +5907,7 @@ function (_Color2) {
   }]);
 
   return Combination;
-}(color_esm_Color);
+}(BaseColor);
 /**
  * Merge the default and user options.
  *
@@ -5932,11 +5945,11 @@ var colorable_esm_getIterationArray = function getIterationArray(array, unique) 
 
 
 var getColors = function getColors(colors, unique) {
-  var _this5 = this;
+  var _this6 = this;
 
   if (Array.isArray(colors)) {
     return Object.freeze(colorable_esm_getIterationArray(colors, unique).map(function (value) {
-      colorable_esm_newArrowCheck(this, _this5);
+      colorable_esm_newArrowCheck(this, _this6);
 
       return Object.freeze({
         value: value
@@ -5946,7 +5959,7 @@ var getColors = function getColors(colors, unique) {
 
   if (colors && colorable_esm_typeof(colors) === 'object') {
     return Object.freeze(colorable_esm_getIterationArray(Object.keys(colors), unique).map(function (key) {
-      colorable_esm_newArrowCheck(this, _this5);
+      colorable_esm_newArrowCheck(this, _this6);
 
       return Object.freeze({
         name: key,
@@ -5967,18 +5980,18 @@ var getColors = function getColors(colors, unique) {
 
 
 function colorable(colors, options) {
-  var _this6 = this;
+  var _this7 = this;
 
   var opts = colorable_esm_getOptions(options);
   var colorsArray = getColors(colors, opts.uniq);
   return Object.freeze(colorsArray.map(function (textColor) {
-    var _this7 = this;
+    var _this8 = this;
 
-    colorable_esm_newArrowCheck(this, _this6);
+    colorable_esm_newArrowCheck(this, _this7);
 
     var color = new Colorable(textColor);
     colorsArray.forEach(function (backgroundColor) {
-      colorable_esm_newArrowCheck(this, _this7);
+      colorable_esm_newArrowCheck(this, _this8);
 
       if (textColor === backgroundColor) {
         return;
