@@ -2,7 +2,7 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) Graham Fairweather",
-  "date": "2019-08-04T16:03:59.531Z",
+  "date": "2019-08-04T23:54:46.522Z",
   "describe": "",
   "description": "Color palette combination contrast tester",
   "file": "colorable.js",
