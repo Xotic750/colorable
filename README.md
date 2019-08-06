@@ -18,9 +18,9 @@
   alt="devDependency status" height="18"/>
 </a>
 <a
-  href="https://badge.fury.io/js/%40xotic750%2Fcolorable"
+  href="https://badge.fury.io/js/%40xotic750%2colorable"
   title="npm version">
-<img src="https://badge.fury.io/js/%40xotic750%2Fcolorable.svg"
+<img src="https://badge.fury.io/js/%40xotic750%2colorable.svg"
   alt="npm version" height="18">
 </a>
 <a
@@ -34,6 +34,12 @@
   title="bettercodehub score">
 <img src="https://bettercodehub.com/edge/badge/Xotic750/colorable?branch=master"
   alt="bettercodehub score" height="18">
+</a>
+<a
+  href="https://coveralls.io/github/Xotic750/colorable?branch=master"
+  title="Coverage Status">
+<img src="https://coveralls.io/repos/github/Xotic750/colorable/badge.svg?branch=master"
+  alt="Coverage Status" height="18">
 </a>
 
 # @xotic750/colorable
