@@ -2,11 +2,11 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) Graham Fairweather",
-  "date": "2019-08-15T13:01:40.237Z",
+  "date": "2019-08-15T21:07:10.050Z",
   "describe": "",
   "description": "Color palette combination contrast tester",
   "file": "colorable.js",
-  "hash": "c50d63ed92a894baf732",
+  "hash": "15e50f3220b93830bf50",
   "license": "MIT",
   "version": "1.1.0"
 }
@@ -149,7 +149,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 19);
+/******/ 	return __webpack_require__(__webpack_require__.s = 21);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -182,7 +182,7 @@ module.exports = function isPrimitive(val) {
 
 
 var toStr = Object.prototype.toString;
-var hasSymbols = __webpack_require__(15)();
+var hasSymbols = __webpack_require__(17)();
 
 if (hasSymbols) {
 	var symToStr = Symbol.prototype.toString;
@@ -221,7 +221,7 @@ if (hasSymbols) {
 /***/ (function(module, exports, __webpack_require__) {
 
 const conversions = __webpack_require__(8);
-const route = __webpack_require__(14);
+const route = __webpack_require__(16);
 
 const convert = {};
 
@@ -336,7 +336,7 @@ module.exports = function isString(value) {
 
 /* MIT license */
 var colorNames = __webpack_require__(7);
-var swizzle = __webpack_require__(12);
+var swizzle = __webpack_require__(14);
 
 var reverseNames = {};
 
@@ -1728,6 +1728,32 @@ convert.rgb.gray = function (rgb) {
 
 /***/ }),
 /* 9 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1751,7 +1777,7 @@ module.exports = function isArguments(value) {
 
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1778,17 +1804,17 @@ module.exports = function isDateObject(value) {
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var slice = Array.prototype.slice;
-var isArgs = __webpack_require__(9);
+var isArgs = __webpack_require__(10);
 
 var origKeys = Object.keys;
-var keysShim = origKeys ? function keys(o) { return origKeys(o); } : __webpack_require__(18);
+var keysShim = origKeys ? function keys(o) { return origKeys(o); } : __webpack_require__(19);
 
 var originalKeys = Object.keys;
 
@@ -1817,13 +1843,81 @@ module.exports = keysShim;
 
 
 /***/ }),
-/* 12 */
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {
+
+var forEach = __webpack_require__(20);
+
+var toStr = Object.prototype.toString;
+var hasToStringTag = typeof Symbol === 'function' && typeof Symbol.toStringTag === 'symbol';
+
+var typedArrays = [
+	'Float32Array',
+	'Float64Array',
+	'Int8Array',
+	'Int16Array',
+	'Int32Array',
+	'Uint8Array',
+	'Uint8ClampedArray',
+	'Uint16Array',
+	'Uint32Array',
+	'BigInt64Array',
+	'BigUint64Array'
+];
+
+var slice = String.prototype.slice;
+var toStrTags = {};
+var gOPD = Object.getOwnPropertyDescriptor;
+if (hasToStringTag && gOPD && Object.getPrototypeOf) {
+	forEach(typedArrays, function (typedArray) {
+		if (typeof global[typedArray] === 'function') {
+			var arr = new global[typedArray]();
+			if (!(Symbol.toStringTag in arr)) {
+				throw new EvalError('this engine has support for Symbol.toStringTag, but ' + typedArray + ' does not have the property! Please report this.');
+			}
+			var proto = Object.getPrototypeOf(arr);
+			var descriptor = gOPD(proto, Symbol.toStringTag);
+			if (!descriptor) {
+				var superProto = Object.getPrototypeOf(proto);
+				descriptor = gOPD(superProto, Symbol.toStringTag);
+			}
+			toStrTags[typedArray] = descriptor.get;
+		}
+	});
+}
+
+var tryTypedArrays = function tryAllTypedArrays(value) {
+	var anyTrue = false;
+	forEach(toStrTags, function (getter, typedArray) {
+		if (!anyTrue) {
+			try {
+				anyTrue = getter.call(value) === typedArray;
+			} catch (e) { /**/ }
+		}
+	});
+	return anyTrue;
+};
+
+module.exports = function isTypedArray(value) {
+	if (!value || typeof value !== 'object') { return false; }
+	if (!hasToStringTag) { return typedArrays.indexOf(slice.call(toStr.call(value), 8, -1)) > -1; }
+	if (!gOPD) { return false; }
+	return tryTypedArrays(value);
+};
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(9)))
+
+/***/ }),
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var isArrayish = __webpack_require__(13);
+var isArrayish = __webpack_require__(15);
 
 var concat = Array.prototype.concat;
 var slice = Array.prototype.slice;
@@ -1853,7 +1947,7 @@ swizzle.wrap = function (fn) {
 
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports = function isArrayish(obj) {
@@ -1868,7 +1962,7 @@ module.exports = function isArrayish(obj) {
 
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 const conversions = __webpack_require__(8);
@@ -1971,14 +2065,14 @@ module.exports = function (fromModel) {
 
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {
 
 var origSymbol = global.Symbol;
-var hasSymbolSham = __webpack_require__(17);
+var hasSymbolSham = __webpack_require__(18);
 
 module.exports = function hasNativeSymbols() {
 	if (typeof origSymbol !== 'function') { return false; }
@@ -1989,36 +2083,10 @@ module.exports = function hasNativeSymbols() {
 	return hasSymbolSham();
 };
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(16)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(9)))
 
 /***/ }),
-/* 16 */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2067,7 +2135,7 @@ module.exports = function hasSymbols() {
 
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2078,7 +2146,7 @@ if (!Object.keys) {
 	// modified from https://github.com/es-shims/es5-shim
 	var has = Object.prototype.hasOwnProperty;
 	var toStr = Object.prototype.toString;
-	var isArgs = __webpack_require__(9); // eslint-disable-line global-require
+	var isArgs = __webpack_require__(10); // eslint-disable-line global-require
 	var isEnumerable = Object.prototype.propertyIsEnumerable;
 	var hasDontEnumBug = !isEnumerable.call({ toString: null }, 'toString');
 	var hasProtoEnumBug = isEnumerable.call(function () {}, 'prototype');
@@ -2196,7 +2264,35 @@ module.exports = keysShim;
 
 
 /***/ }),
-/* 19 */
+/* 20 */
+/***/ (function(module, exports) {
+
+
+var hasOwn = Object.prototype.hasOwnProperty;
+var toString = Object.prototype.toString;
+
+module.exports = function forEach (obj, fn, ctx) {
+    if (toString.call(fn) !== '[object Function]') {
+        throw new TypeError('iterator must be a function');
+    }
+    var l = obj.length;
+    if (l === +l) {
+        for (var i = 0; i < l; i++) {
+            fn.call(ctx, obj[i], i, obj);
+        }
+    } else {
+        for (var k in obj) {
+            if (hasOwn.call(obj, k)) {
+                fn.call(ctx, obj[k], k, obj);
+            }
+        }
+    }
+};
+
+
+
+/***/ }),
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2275,7 +2371,7 @@ var is_primitive = __webpack_require__(0);
 var is_primitive_default = /*#__PURE__*/__webpack_require__.n(is_primitive);
 
 // EXTERNAL MODULE: ./node_modules/is-date-object/index.js
-var is_date_object = __webpack_require__(10);
+var is_date_object = __webpack_require__(11);
 var is_date_object_default = /*#__PURE__*/__webpack_require__.n(is_date_object);
 
 // CONCATENATED MODULE: ./node_modules/to-boolean-x/dist/to-boolean-x.esm.js
@@ -5243,7 +5339,7 @@ var is_regexp_x_esm_isRegex = function isRegex(value) {
 
 
 // EXTERNAL MODULE: ./node_modules/object-keys/index.js
-var object_keys = __webpack_require__(11);
+var object_keys = __webpack_require__(12);
 var object_keys_default = /*#__PURE__*/__webpack_require__.n(object_keys);
 
 // CONCATENATED MODULE: ./node_modules/object-keys-x/dist/object-keys-x.esm.js
@@ -6510,7 +6606,7 @@ var toFixed = bind_x_esm($call, TO_FIXED_MAX.toFixed);
 var mathPow = Math.pow;
 var stringify = JSON.stringify;
 var nativeFreeze = {}.constructor.freeze;
-var freeze = typeof nativeFreeze === 'function' ? nativeFreeze : function freeze(value) {
+var color_esm_freeze = typeof nativeFreeze === 'function' ? nativeFreeze : function freeze(value) {
   return value;
 };
 
@@ -6542,10 +6638,10 @@ var AA = 'AA';
 var AAA = 'AAA';
 /** @type {ReadonlyArray<string>} */
 
-var rgbKeys = freeze(split(RGB, color_esm_EMPTY_STRING));
+var rgbKeys = color_esm_freeze(split(RGB, color_esm_EMPTY_STRING));
 /** @type {ReadonlyArray<string>} */
 
-var skippedModels = freeze([
+var skippedModels = color_esm_freeze([
 /* to be honest, I don't really feel like keyword belongs in color convert, but eh. */
 'keyword',
 /* gray conflicts with some method names, and has its own method defined. */
@@ -6554,7 +6650,7 @@ var skippedModels = freeze([
 'hex']);
 /** @type {Readonly<string>} */
 
-var hashedModelKeys = freeze(array_reduce_x_esm(object_keys_x_esm(color_convert_default.a), function iteratee(hashed, model) {
+var hashedModelKeys = color_esm_freeze(array_reduce_x_esm(object_keys_x_esm(color_convert_default.a), function iteratee(hashed, model) {
   var prop = join(stable_default()(array_slice_x_esm(color_convert_default.a[model].labels)), color_esm_EMPTY_STRING);
   hashed[prop] = model;
   return hashed;
@@ -6569,7 +6665,7 @@ var hashedModelKeys = freeze(array_reduce_x_esm(object_keys_x_esm(color_convert_
  * @property {number} aaLarge - AA Large minimum value.
  */
 
-var minimums = freeze({
+var minimums = color_esm_freeze({
   aa: 4.5,
   aaa: 7,
   aaaLarge: 4.5,
@@ -6679,7 +6775,7 @@ var color_esm_getModel = function getModel(value) {
  * */
 
 
-var instanceLockDescription = freeze({
+var instanceLockDescription = color_esm_freeze({
   configurable: false,
   enumerable: true,
   writable: false
@@ -6689,7 +6785,7 @@ var instanceLockDescription = freeze({
  * @type {Readonly<{color: Readonly<{enumerable: boolean, configurable: boolean, writable: boolean}>, model: Readonly<{enumerable: boolean, configurable: boolean, writable: boolean}>, valpha: Readonly<{enumerable: boolean, configurable: boolean, writable: boolean}>}>}
  */
 
-var colorDescription = freeze({
+var colorDescription = color_esm_freeze({
   color: instanceLockDescription,
   model: instanceLockDescription,
   valpha: instanceLockDescription
@@ -6790,7 +6886,7 @@ var color_esm_Color = function Color(obj, modelOption) {
   }
 
   this.valpha = math_clamp_x_esm(this.valpha, 0, 1);
-  freeze(this.color);
+  color_esm_freeze(this.color);
   object_define_properties_x_esm(this, colorDescription);
 };
 
@@ -7817,6 +7913,46 @@ var array_uniq_x_esm_uniq = function uniq(array) {
 /* harmony default export */ var array_uniq_x_esm = (array_uniq_x_esm_uniq);
 
 
+// EXTERNAL MODULE: ./node_modules/is-typed-array/index.js
+var is_typed_array = __webpack_require__(13);
+var is_typed_array_default = /*#__PURE__*/__webpack_require__.n(is_typed_array);
+
+// CONCATENATED MODULE: ./node_modules/object-freeze-x/dist/object-freeze-x.esm.js
+
+
+var object_freeze_x_esm_nativeFreeze = {}.constructor.freeze;
+
+var object_freeze_x_esm_assertTypedArray = function assertTypedArray(obj) {
+  if (is_typed_array_default()(obj) && obj.byteLength !== 0) {
+    throw new TypeError('Cannot freeze array buffer views with elements');
+  }
+
+  return obj;
+};
+
+var patchedFreeze = function freeze(obj) {
+  return is_primitive_default()(obj) ? obj : object_freeze_x_esm_nativeFreeze(object_freeze_x_esm_assertTypedArray(obj));
+}; // fake
+
+var object_freeze_x_esm_implementation = function freeze(obj) {
+  return object_freeze_x_esm_assertTypedArray(obj);
+};
+/**
+ * This method method freezes an object. A frozen object can no longer be changed; freezing an
+ * object prevents new properties from being added to it, existing properties from being removed,
+ * prevents changing the enumerability, configurability, or writability of existing properties,
+ * and prevents the values of existing properties from being changed. In addition, freezing an
+ * object also prevents its prototype from being changed. It returns the same object that
+ * was passed in.
+ *
+ * @param {*} obj - The object to freeze.
+ * @returns {*} The object that was passed to the function..
+ */
+
+var object_freeze_x_esm_freeze = typeof object_freeze_x_esm_nativeFreeze === 'function' ? patchedFreeze : object_freeze_x_esm_implementation;
+/* harmony default export */ var object_freeze_x_esm = (object_freeze_x_esm_freeze);
+
+
 // CONCATENATED MODULE: ./dist/colorable.esm.js
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "minimums", function() { return colorable_esm_minimums; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BaseColor", function() { return colorable_esm_BaseColor; });
@@ -7836,11 +7972,8 @@ function colorable_esm_typeof(obj) { if (typeof Symbol === "function" && typeof 
 
 
 
+
 var colorable_esm_push = bind_x_esm(bind_x_esm.call, [].push);
-var colorable_esm_nativeFreeze = {}.constructor.freeze;
-var colorable_esm_freeze = typeof colorable_esm_nativeFreeze === 'function' ? colorable_esm_nativeFreeze : function freeze(value) {
-  return value;
-};
 var NAME = 'name';
 /**
  * Constructor options.
@@ -7861,7 +7994,7 @@ var NAME = 'name';
  * @property {number} aaLarge - AA Large minimum value.
  */
 
-var colorable_esm_minimums = colorable_esm_freeze({
+var colorable_esm_minimums = object_freeze_x_esm({
   aa: 4.5,
   aaa: 7,
   aaaLarge: 4.5,
@@ -7883,7 +8016,7 @@ var colorable_esm_minimums = colorable_esm_freeze({
  * @type {ReadonlyArray<string>}
  */
 
-var minimumsKeys = colorable_esm_freeze(object_keys_x_esm(colorable_esm_minimums));
+var minimumsKeys = object_freeze_x_esm(object_keys_x_esm(colorable_esm_minimums));
 /**
  * BaseColor object.
  *
@@ -8000,7 +8133,7 @@ var colorable_esm_Combination = function Combination(color, options) {
   object_define_properties_x_esm(this, {
     accessibility: {
       enumerable: true,
-      value: colorable_esm_freeze(array_reduce_x_esm(minimumsKeys, iteratee, {}))
+      value: object_freeze_x_esm(array_reduce_x_esm(minimumsKeys, iteratee, {}))
     },
     contrastRatio: {
       enumerable: true,
@@ -8116,7 +8249,7 @@ var colorable_esm_getColors = function getColors(colors, unique) {
 function colorable(colors, options) {
   var opts = colorable_esm_getOptions(options);
   var colorsArray = colorable_esm_getColors(colors, opts.uniq);
-  return colorable_esm_freeze(array_map_x_esm(colorsArray, function iterateeOuter(textColor) {
+  return object_freeze_x_esm(array_map_x_esm(colorsArray, function iterateeOuter(textColor) {
     var color = new colorable_esm_Colorable(textColor);
     array_for_each_x_esm(colorsArray, function iterateeInner(backgroundColor) {
       if (textColor === backgroundColor) {
@@ -8129,7 +8262,7 @@ function colorable(colors, options) {
         colorable_esm_push(color.combinations, combination);
       }
     });
-    colorable_esm_freeze(color.combinations);
+    object_freeze_x_esm(color.combinations);
     return opts.compact ? color.compact() : color;
   }));
 }

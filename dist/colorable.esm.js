@@ -11,11 +11,8 @@ import bind from 'bind-x';
 import assign from 'object-assign-x';
 import uniq from 'array-uniq-x';
 import isArray from 'is-array-x';
+import freeze from 'object-freeze-x';
 var push = bind(bind.call, [].push);
-var nativeFreeze = {}.constructor.freeze;
-var freeze = typeof nativeFreeze === 'function' ? nativeFreeze : function freeze(value) {
-  return value;
-};
 var NAME = 'name';
 /**
  * Constructor options.

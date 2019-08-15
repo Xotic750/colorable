@@ -9,16 +9,9 @@ import bind from 'bind-x';
 import assign from 'object-assign-x';
 import uniq from 'array-uniq-x';
 import isArray from 'is-array-x';
+import freeze from 'object-freeze-x';
 
 const push = bind(bind.call, [].push);
-const nativeFreeze = {}.constructor.freeze;
-const freeze =
-  typeof nativeFreeze === 'function'
-    ? nativeFreeze
-    : function freeze(value) {
-        return value;
-      };
-
 const NAME = 'name';
 
 /**
