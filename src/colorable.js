@@ -1,7 +1,23 @@
-import assign from 'lodash/assign';
-import cloneDeep from 'lodash/cloneDeep';
-import uniq from 'lodash/uniq';
 import Color from '@xotic750/color';
+import create from 'object-create-x';
+import objectKeys from 'object-keys-x';
+import defineProperties, {defineProperty} from 'object-define-properties-x';
+import map from 'array-map-x';
+import forEach from 'array-for-each-x';
+import reduce from 'array-reduce-x';
+import bind from 'bind-x';
+import assign from 'object-assign-x';
+import uniq from 'array-uniq-x';
+import isArray from 'is-array-x';
+
+const push = bind(bind.call, [].push);
+const nativeFreeze = {}.constructor.freeze;
+const freeze =
+  typeof nativeFreeze === 'function'
+    ? nativeFreeze
+    : function freeze(value) {
+        return value;
+      };
 
 const NAME = 'name';
 
@@ -23,7 +39,7 @@ const NAME = 'name';
  * @property {number} aaaLarge - AAA Large minimum value.
  * @property {number} aaLarge - AA Large minimum value.
  */
-export const minimums = Object.freeze({
+export const minimums = freeze({
   aa: 4.5,
   aaa: 7,
   aaaLarge: 4.5,
@@ -44,7 +60,7 @@ export const minimums = Object.freeze({
  *
  * @type {ReadonlyArray<string>}
  */
-const minimumsKeys = Object.freeze(Object.keys(minimums));
+const minimumsKeys = freeze(objectKeys(minimums));
 
 /**
  * BaseColor object.
@@ -55,27 +71,36 @@ const minimumsKeys = Object.freeze(Object.keys(minimums));
  * @property {string} hexColor - The hex color.
  * @property {string} [name] - The name of the color.
  */
-export class BaseColor extends Color {
-  /**
-   * @param {ConstructorOptions} options -
-   */
-  constructor(options) {
-    const {model, name, value} = options;
-    super(value, model);
+export const BaseColor = function BaseColor(options) {
+  const {model, name, value} = options;
+  Color.call(this, value, model);
 
-    Object.defineProperty(this, 'hexColor', {
+  defineProperty(this, 'hexColor', {
+    enumerable: true,
+    value: new Color(this).hex(),
+  });
+
+  if (name) {
+    defineProperty(this, NAME, {
       enumerable: true,
-      value: this.hex(),
+      value: name,
     });
-
-    if (name) {
-      Object.defineProperty(this, NAME, {
-        enumerable: true,
-        value: name,
-      });
-    }
   }
-}
+};
+
+objectKeys(Color).forEach(function iteratee(key) {
+  defineProperty(BaseColor, key, {
+    configurable: true,
+    enumerable: true,
+    value: Color[key],
+  });
+});
+
+BaseColor.prototype = create(Color.prototype, {
+  constructor: {
+    value: BaseColor,
+  },
+});
 
 /**
  * Colorable object.
@@ -86,37 +111,53 @@ export class BaseColor extends Color {
  * @property {string} hexColor - The hex color.
  * @property {string} [name] - The name of the color.
  */
-export class Colorable extends BaseColor {
-  /**
-   * @param {ConstructorOptions} options -
-   */
-  constructor(options) {
-    super(options);
+export const Colorable = function Colorable(options) {
+  BaseColor.call(this, options);
 
-    Object.defineProperty(this, 'combinations', {
-      enumerable: true,
-      value: [],
-    });
-  }
+  defineProperty(this, 'combinations', {
+    configurable: true,
+    enumerable: true,
+    value: [],
+  });
+};
+
+objectKeys(BaseColor).forEach(function iteratee(key) {
+  defineProperty(Colorable, key, {
+    configurable: true,
+    enumerable: true,
+    value: BaseColor[key],
+  });
+});
+
+Colorable.prototype = create(BaseColor.prototype, {
+  constructor: {
+    value: Colorable,
+  },
 
   /**
    * Give a compact representation.
    *
+   * @function compact
    * @returns {{hexColor: string, combinations: Array<{contrastRatio: number, hexColor: string, accessibility: Accessibility}>}} - Compact representation.
    */
-  compact() {
-    const value = {
-      combinations: this.combinations.map((combination) => combination.compact()),
-      hexColor: this.hexColor,
-    };
+  compact: {
+    configurable: true,
+    value: function compact() {
+      const value = {
+        combinations: map(this.combinations, function iteratee(combination) {
+          return combination.compact();
+        }),
+        hexColor: this.hexColor,
+      };
 
-    if (this.name) {
-      value.name = this.name;
-    }
+      if (this.name) {
+        value.name = this.name;
+      }
 
-    return value;
-  }
-}
+      return value;
+    },
+  },
+});
 
 /**
  * Combination object.
@@ -128,54 +169,59 @@ export class Colorable extends BaseColor {
  * @property {string} hexColor - The hex color.
  * @property {string} [name] - The name of the color.
  */
-export class Combination extends BaseColor {
-  /**
-   * @param {Colorable} color -
-   * @param {ConstructorOptions} options -
-   */
-  constructor(color, options) {
-    super(options);
+export const Combination = function Combination(color, options) {
+  BaseColor.call(this, options);
 
-    const contrastRatio = color.contrast(this);
-    Object.defineProperties(this, {
-      accessibility: {
-        enumerable: true,
-        value: Object.freeze(
-          minimumsKeys.reduce((minimum, key) => {
-            minimum[key] = contrastRatio >= minimums[key];
+  const contrastRatio = new Color(color).contrast(new Color(this));
+  const iteratee = function iteratee(minimum, key) {
+    minimum[key] = contrastRatio >= minimums[key];
 
-            return minimum;
-          }, {}),
-        ),
-      },
-      contrastRatio: {
-        enumerable: true,
-        value: contrastRatio,
-      },
-    });
-  }
+    return minimum;
+  };
+
+  defineProperties(this, {
+    accessibility: {enumerable: true, value: freeze(reduce(minimumsKeys, iteratee, {}))},
+    contrastRatio: {enumerable: true, value: contrastRatio},
+  });
+};
+
+objectKeys(BaseColor).forEach(function iteratee(key) {
+  defineProperty(Combination, key, {
+    configurable: true,
+    enumerable: true,
+    value: BaseColor[key],
+  });
+});
+
+Combination.prototype = create(BaseColor.prototype, {
+  constructor: {
+    value: Combination,
+  },
 
   /**
    * Give a compact representation.
    *
+   * @function compact
    * @returns {{contrastRatio: number, hexColor: string, accessibility: Accessibility}} - Compact representation.
    */
-  compact() {
-    /** @type {Accessibility} */
-    const accessibility = {...this.accessibility};
-    const value = {
-      accessibility,
-      contrastRatio: this.contrastRatio,
-      hexColor: this.hexColor,
-    };
+  compact: {
+    value: function compact() {
+      /** @type {Accessibility} */
+      const accessibility = assign({}, this.accessibility);
+      const value = {
+        accessibility,
+        contrastRatio: this.contrastRatio,
+        hexColor: this.hexColor,
+      };
 
-    if (this.name) {
-      value.name = this.name;
-    }
+      if (this.name) {
+        value.name = this.name;
+      }
 
-    return value;
-  }
-}
+      return value;
+    },
+  },
+});
 
 /**
  * Merge the default and user options.
@@ -184,16 +230,7 @@ export class Combination extends BaseColor {
  * @returns {Readonly} - The options object.
  */
 const getOptions = function getOptions(options) {
-  return Object.freeze(
-    assign(
-      {
-        compact: false,
-        threshold: 0,
-        uniq: true,
-      },
-      options,
-    ),
-  );
+  return assign({compact: false, threshold: 0, uniq: true}, options);
 };
 
 /**
@@ -201,10 +238,10 @@ const getOptions = function getOptions(options) {
  *
  * @param {Array} array - The array of values.
  * @param {boolean} unique - Whether the returned array should be unique.
- * @returns {ReadonlyArray<any>} - An array of values.
+ * @returns {Array<any>} - An array of values.
  */
 const getIterationArray = function getIterationArray(array, unique) {
-  return Object.freeze(cloneDeep(unique ? uniq(array) : array));
+  return unique ? uniq(array) : array;
 };
 
 /**
@@ -216,14 +253,20 @@ const getIterationArray = function getIterationArray(array, unique) {
  * @throws {TypeError} - If definition is not an array or object.
  */
 const getColors = function getColors(colors, unique) {
-  if (Array.isArray(colors)) {
-    return Object.freeze(getIterationArray(colors, unique).map((value) => Object.freeze({value})));
+  if (isArray(colors)) {
+    const iteratee = function iteratee(value) {
+      return {value};
+    };
+
+    return map(getIterationArray(colors, unique), iteratee);
   }
 
   if (colors && typeof colors === 'object') {
-    return Object.freeze(
-      getIterationArray(Object.keys(colors), unique).map((key) => Object.freeze({name: key, value: colors[key]})),
-    );
+    const iteratee = function iteratee(key) {
+      return {name: key, value: colors[key]};
+    };
+
+    return map(getIterationArray(objectKeys(colors), unique), iteratee);
   }
 
   throw new TypeError('Must provide an array or object');
@@ -240,11 +283,11 @@ export default function colorable(colors, options) {
   const opts = getOptions(options);
   const colorsArray = getColors(colors, opts.uniq);
 
-  return Object.freeze(
-    colorsArray.map((textColor) => {
+  return freeze(
+    map(colorsArray, function iterateeOuter(textColor) {
       const color = new Colorable(textColor);
 
-      colorsArray.forEach((backgroundColor) => {
+      forEach(colorsArray, function iterateeInner(backgroundColor) {
         if (textColor === backgroundColor) {
           return;
         }
@@ -252,11 +295,11 @@ export default function colorable(colors, options) {
         const combination = new Combination(color, backgroundColor);
 
         if (combination.contrastRatio > opts.threshold) {
-          color.combinations.push(combination);
+          push(color.combinations, combination);
         }
       });
 
-      Object.freeze(color.combinations);
+      freeze(color.combinations);
 
       return opts.compact ? color.compact() : color;
     }),

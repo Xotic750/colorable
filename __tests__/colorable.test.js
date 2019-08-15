@@ -167,7 +167,7 @@ describe('colorable', () => {
         return item.combinations.every((combination) => combination instanceof Combination && item.contrast(combination) > 3);
       });
       expect(everyContrast).toBe(true);
-      expect(colorable(colorsCSS, {threshold: 3})).toMatchSnapshot();
+      expect(actual).toMatchSnapshot();
     });
 
     it('compact true threshold 3', () => {
