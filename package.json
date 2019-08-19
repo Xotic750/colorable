@@ -54,13 +54,13 @@
     "array-map-x": "^3.1.0",
     "array-reduce-x": "^3.1.0",
     "array-uniq-x": "^1.0.0",
-    "bind-x": "^4.1.0",
     "is-array-x": "^2.1.0",
     "object-assign-x": "^2.1.0",
     "object-create-x": "^3.1.0",
     "object-define-properties-x": "^5.1.0",
     "object-freeze-x": "^1.0.0",
-    "object-keys-x": "^3.1.0"
+    "object-keys-x": "^3.1.0",
+    "simple-methodize-x": "^1.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",

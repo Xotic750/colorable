@@ -5,13 +5,13 @@ import defineProperties, {defineProperty} from 'object-define-properties-x';
 import map from 'array-map-x';
 import forEach from 'array-for-each-x';
 import reduce from 'array-reduce-x';
-import bind from 'bind-x';
 import assign from 'object-assign-x';
 import uniq from 'array-uniq-x';
 import isArray from 'is-array-x';
 import freeze from 'object-freeze-x';
+import methodize from 'simple-methodize-x';
 
-const push = bind(bind.call, [].push);
+const push = methodize([].push);
 const NAME = 'name';
 
 /**
