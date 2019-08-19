@@ -60,6 +60,7 @@
     "object-define-properties-x": "^5.1.0",
     "object-freeze-x": "^1.0.0",
     "object-keys-x": "^3.1.0",
+    "simple-call-x": "^1.0.1",
     "simple-methodize-x": "^1.0.2"
   },
   "devDependencies": {

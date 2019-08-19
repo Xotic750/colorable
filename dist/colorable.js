@@ -2,11 +2,11 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) Graham Fairweather",
-  "date": "2019-08-19T22:47:24.429Z",
+  "date": "2019-08-19T23:06:49.413Z",
   "describe": "",
   "description": "Color palette combination contrast tester",
   "file": "colorable.js",
-  "hash": "9181233d57a72b2d6408",
+  "hash": "77f01b497adda19d7fb4",
   "license": "MIT",
   "version": "1.1.0"
 }
@@ -8261,6 +8261,7 @@ function colorable_esm_typeof(obj) { if (typeof Symbol === "function" && typeof 
 
 
 
+
 var colorable_esm_push = simple_methodize_x_esm([].push);
 var NAME = 'name';
 /**
@@ -8342,6 +8343,27 @@ object_keys_x_esm(color_esm).forEach(function iteratee(key) {
 colorable_esm_BaseColor.prototype = object_create_x_esm(color_esm.prototype, {
   constructor: {
     value: colorable_esm_BaseColor
+  },
+
+  /**
+   * Give a compact representation.
+   *
+   * @function compact
+   * @returns {{hexColor: string, combinations: Array<{hexColor: string}>}} - Compact representation.
+   */
+  compact: {
+    configurable: true,
+    value: function compact() {
+      var value = {
+        hexColor: this.hexColor
+      };
+
+      if (this.name) {
+        value.name = this.name;
+      }
+
+      return value;
+    }
   }
 });
 /**
@@ -8383,17 +8405,10 @@ colorable_esm_Colorable.prototype = object_create_x_esm(colorable_esm_BaseColor.
   compact: {
     configurable: true,
     value: function compact() {
-      var value = {
-        combinations: array_map_x_esm(this.combinations, function iteratee(combination) {
-          return combination.compact();
-        }),
-        hexColor: this.hexColor
-      };
-
-      if (this.name) {
-        value.name = this.name;
-      }
-
+      var value = simple_call_x_esm(colorable_esm_BaseColor.prototype.compact, this);
+      value.combinations = array_map_x_esm(this.combinations, function iteratee(combination) {
+        return combination.compact();
+      });
       return value;
     }
   }
@@ -8449,18 +8464,11 @@ colorable_esm_Combination.prototype = object_create_x_esm(colorable_esm_BaseColo
    */
   compact: {
     value: function compact() {
+      var value = simple_call_x_esm(colorable_esm_BaseColor.prototype.compact, this);
       /** @type {Accessibility} */
-      var accessibility = object_assign_x_esm({}, this.accessibility);
-      var value = {
-        accessibility: accessibility,
-        contrastRatio: this.contrastRatio,
-        hexColor: this.hexColor
-      };
 
-      if (this.name) {
-        value.name = this.name;
-      }
-
+      value.accessibility = object_assign_x_esm({}, this.accessibility);
+      value.contrastRatio = this.contrastRatio;
       return value;
     }
   }

@@ -10,6 +10,7 @@ import uniq from 'array-uniq-x';
 import isArray from 'is-array-x';
 import freeze from 'object-freeze-x';
 import methodize from 'simple-methodize-x';
+import call from 'simple-call-x';
 
 const push = methodize([].push);
 const NAME = 'name';
@@ -93,6 +94,27 @@ BaseColor.prototype = create(Color.prototype, {
   constructor: {
     value: BaseColor,
   },
+
+  /**
+   * Give a compact representation.
+   *
+   * @function compact
+   * @returns {{hexColor: string, combinations: Array<{hexColor: string}>}} - Compact representation.
+   */
+  compact: {
+    configurable: true,
+    value: function compact() {
+      const value = {
+        hexColor: this.hexColor,
+      };
+
+      if (this.name) {
+        value.name = this.name;
+      }
+
+      return value;
+    },
+  },
 });
 
 /**
@@ -136,16 +158,10 @@ Colorable.prototype = create(BaseColor.prototype, {
   compact: {
     configurable: true,
     value: function compact() {
-      const value = {
-        combinations: map(this.combinations, function iteratee(combination) {
-          return combination.compact();
-        }),
-        hexColor: this.hexColor,
-      };
-
-      if (this.name) {
-        value.name = this.name;
-      }
+      const value = call(BaseColor.prototype.compact, this);
+      value.combinations = map(this.combinations, function iteratee(combination) {
+        return combination.compact();
+      });
 
       return value;
     },
@@ -199,17 +215,10 @@ Combination.prototype = create(BaseColor.prototype, {
    */
   compact: {
     value: function compact() {
+      const value = call(BaseColor.prototype.compact, this);
       /** @type {Accessibility} */
-      const accessibility = assign({}, this.accessibility);
-      const value = {
-        accessibility,
-        contrastRatio: this.contrastRatio,
-        hexColor: this.hexColor,
-      };
-
-      if (this.name) {
-        value.name = this.name;
-      }
+      value.accessibility = assign({}, this.accessibility);
+      value.contrastRatio = this.contrastRatio;
 
       return value;
     },
