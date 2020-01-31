@@ -2,11 +2,11 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) Graham Fairweather",
-  "date": "2019-09-05T20:57:45.657Z",
+  "date": "2020-01-31T12:39:56.792Z",
   "describe": "",
   "description": "Color palette combination contrast tester",
   "file": "colorable.js",
-  "hash": "a22a7465973a27fa2a54",
+  "hash": "6d7f851d4c040bb9424b",
   "license": "MIT",
   "version": "1.1.2"
 }
@@ -8185,7 +8185,7 @@ var array_uniq_x_esm_uniq = function uniq(array, useSameValue) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Colorable", function() { return colorable_esm_Colorable; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Combination", function() { return colorable_esm_Combination; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return colorable; });
-function colorable_esm_typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { colorable_esm_typeof = function _typeof(obj) { return typeof obj; }; } else { colorable_esm_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return colorable_esm_typeof(obj); }
+function colorable_esm_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { colorable_esm_typeof = function _typeof(obj) { return typeof obj; }; } else { colorable_esm_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return colorable_esm_typeof(obj); }
 
 
 
